@@ -1,0 +1,55 @@
+{
+  "name": "HomeScreen for HomeKit",
+  "subtitle": "HomeKit-dashboard voor de iPad.",
+  "description": "AltStore PAL source voor HomeScreen for HomeKit. Deze source wordt niet discoverable gemaakt.",
+  "iconURL": "https://fdb1984.github.io/homescreen/icon.png",
+  "headerURL": "https://fdb1984.github.io/homescreen/icon.png",
+  "tintColor": "#F7C844",
+  "featuredApps": [
+    "com.dbruin.HomeScreen"
+  ],
+  "apps": [
+    {
+      "name": "HomeScreen for HomeKit",
+      "bundleIdentifier": "com.dbruin.HomeScreen",
+      "marketplaceID": "6771712686",
+      "developerName": "Frank de Bruin",
+      "subtitle": "Woningdashboard voor de iPad in huis.",
+      "localizedDescription": "HomeScreen for HomeKit verandert een iPad in een helder woningdashboard. De app toont tijd, weer, klimaat, deuren, rolluiken, camera's, scenes en verlichting. HomeKit-data blijft gekoppeld aan de woning van de gebruiker.",
+      "iconURL": "https://fdb1984.github.io/homescreen/icon.png",
+      "tintColor": "#F7C844",
+      "category": "utilities",
+      "screenshots": {
+        "ipad": [
+          {
+            "imageURL": "https://fdb1984.github.io/homescreen/screenshots/ipad-landscape-1.png",
+            "width": 2752,
+            "height": 2064
+          }
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0",
+          "buildVersion": "2",
+          "date": "2026-05-21",
+          "localizedDescription": "Eerste release voor AltStore PAL.",
+          "downloadURL": "https://fdb1984.github.io/homescreen/adp/HomeScreen-1.0-2/manifest.json",
+          "size": 2356449,
+          "minOSVersion": "26.5"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [
+          "com.apple.developer.homekit",
+          "com.apple.developer.ubiquity-kvstore-identifier"
+        ],
+        "privacy": {
+          "NSHomeKitUsageDescription": "HomeScreen gebruikt HomeKit om camera's, scenes en accessoires in de woonkamer te tonen en bedienen.",
+          "NSLocationWhenInUseUsageDescription": "HomeScreen gebruikt je locatie om het actuele weer voor deze plek te tonen."
+        }
+      }
+    }
+  ],
+  "news": []
+}
