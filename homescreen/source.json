@@ -30,12 +30,12 @@
       },
       "versions": [
         {
-          "version": "1.0",
-          "buildVersion": "2",
-          "date": "2026-05-21",
-          "localizedDescription": "Eerste release voor AltStore PAL.",
-          "downloadURL": "https://fdb1984.github.io/homescreen/adp/HomeScreen-1.0-2/manifest.json",
-          "size": 2356449,
+          "version": "1.1",
+          "buildVersion": "6",
+          "date": "2026-05-22",
+          "localizedDescription": "Stabiliteitsverbetering voor langdurig gebruik: HomeKit-updates worden begrensd, het nachtscherm kan tijdelijk wakker worden met een tik en de dimfix voor Begeleide toegang blijft actief.",
+          "downloadURL": "https://fdb1984.github.io/homescreen/adp/HomeScreen-1.1-6/manifest.json",
+          "size": 2439324,
           "minOSVersion": "26.5"
         }
       ],
@@ -45,7 +45,7 @@
           "com.apple.developer.ubiquity-kvstore-identifier"
         ],
         "privacy": {
-          "NSHomeKitUsageDescription": "HomeScreen gebruikt HomeKit om camera's, scenes en accessoires in de woonkamer te tonen en bedienen.",
+          "NSHomeKitUsageDescription": "HomeScreen gebruikt HomeKit om je woningdashboard te tonen en accessoires, scenes en camera's te bedienen.",
           "NSLocationWhenInUseUsageDescription": "HomeScreen gebruikt je locatie om het actuele weer voor deze plek te tonen."
         }
       }
