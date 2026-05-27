@@ -5,61 +5,384 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacybeleid - HomeScreen for HomeKit</title>
   <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0b0c;
+      --panel: #171719;
+      --line: #2a2a2d;
+      --text: #f6f6f7;
+      --muted: #c8c8cf;
+      --soft: #98989f;
+      --blue: #4cc9ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background: #0b0b0c;
-      color: #f6f6f7;
+      background: var(--bg);
+      color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.55;
     }
+
     main {
-      max-width: 760px;
-      padding: 48px 24px;
+      max-width: 820px;
+      padding: 48px 24px 72px;
       margin: 0 auto;
     }
+
     h1 {
-      font-size: 34px;
-      line-height: 1.15;
-      margin: 0 0 8px;
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.05;
+      margin: 0 0 10px;
+      letter-spacing: 0;
     }
+
     h2 {
-      margin: 32px 0 8px;
-      font-size: 20px;
+      font-size: 22px;
+      line-height: 1.2;
+      margin: 0 0 12px;
     }
+
     p, li {
-      color: #d2d2d7;
+      color: var(--muted);
       font-size: 17px;
     }
-    a {
-      color: #8cc8ff;
+
+    p {
+      margin: 0 0 12px;
     }
+
+    a, button {
+      color: var(--blue);
+    }
+
+    button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button[aria-pressed="true"] {
+      color: #041014;
+      background: var(--blue);
+      border-color: transparent;
+    }
+
+    header {
+      margin-bottom: 28px;
+    }
+
+    section {
+      padding: 22px;
+      margin-top: 16px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
     .muted {
-      color: #98989f;
+      color: var(--soft);
+    }
+
+    .language-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding: 32px 16px 56px;
+      }
+
+      section {
+        padding: 18px;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Privacybeleid</h1>
-    <p class="muted">HomeScreen for HomeKit - laatst bijgewerkt op 21 mei 2026</p>
-
-    <p>HomeScreen for HomeKit is een iPad-dashboard voor het tonen en bedienen van woningfuncties via HomeKit.</p>
-
-    <h2>Gegevens die de app gebruikt</h2>
-    <ul>
-      <li>HomeKit-gegevens, zoals kamers, scenes, lampen, sensoren en camera's die beschikbaar zijn in de woning van de gebruiker.</li>
-      <li>Locatiegegevens om lokaal weer te tonen.</li>
-      <li>App-instellingen, zoals zichtbaarheid van onderdelen, aangepaste namen en een optionele settingscode.</li>
-    </ul>
-
-    <h2>Opslag</h2>
-    <p>HomeKit-gegevens blijven binnen HomeKit en worden niet door deze app naar een eigen server gestuurd. App-instellingen kunnen via iCloud key-value storage worden gesynchroniseerd binnen het Apple account van de gebruiker.</p>
-
-    <h2>Delen met derden</h2>
-    <p>De app verkoopt geen gegevens, bevat geen advertenties en gebruikt geen tracking. Weergegevens kunnen worden opgehaald bij een externe weerprovider op basis van locatiecoordinaten.</p>
-
-    <h2>Contact</h2>
-    <p>Voor vragen over deze app kun je contact opnemen via <a href="mailto:support@dbruin.com">support@dbruin.com</a>.</p>
+  <main id="privacy-content">
+    <header>
+      <h1>Privacybeleid</h1>
+      <p class="muted">HomeScreen for HomeKit</p>
+      <p>Privacyinformatie wordt geladen.</p>
+      <noscript>
+        <p>JavaScript is nodig om automatisch de juiste taal te tonen.</p>
+      </noscript>
+    </header>
   </main>
+
+  <script>
+    const supportEmail = "support@dbruin.com";
+
+    const copy = {
+      nl: {
+        documentTitle: "Privacybeleid - HomeScreen for HomeKit",
+        languageLabel: "Taal",
+        languageNames: {
+          nl: "Nederlands",
+          en: "English",
+          de: "Deutsch"
+        },
+        heading: "Privacybeleid",
+        updated: "HomeScreen for HomeKit - laatst bijgewerkt op 27 mei 2026",
+        intro: "HomeScreen for HomeKit is een dashboard voor het tonen en bedienen van woningfuncties via Apple HomeKit.",
+        sections: [
+          {
+            title: "Gegevens die de app gebruikt",
+            bullets: [
+              "HomeKit-gegevens die beschikbaar zijn in de woning van de gebruiker, zoals kamers, scenes, lampen, schakelaars, sensoren, thermostaten, camera's, deuren en rolluiken.",
+              "Locatiegegevens om lokaal weer en regenverwachting te tonen.",
+              "App-instellingen, zoals borden, zichtbaarheid van onderdelen, gekozen kamericonen, schermrust, klimaatkeuze en voorkeuren voor het beginscherm.",
+              "Aankoopstatus via Apple StoreKit, zodat de app kan controleren of de proefperiode actief is of de eenmalige aankoop is gedaan."
+            ]
+          },
+          {
+            title: "Opslag",
+            paragraphs: [
+              "HomeKit-data blijft in Apple HomeKit. HomeScreen stuurt HomeKit-data niet naar een eigen server.",
+              "App-instellingen kunnen via iCloud key-value storage worden gesynchroniseerd binnen het Apple account van de gebruiker. Bij een nieuwe installatie kan de gebruiker kiezen of iCloud-instellingen worden hersteld."
+            ]
+          },
+          {
+            title: "Delen met derden",
+            paragraphs: [
+              "De app verkoopt geen gegevens, bevat geen advertenties en gebruikt geen tracking.",
+              "Weergegevens kunnen worden opgehaald bij een weerprovider op basis van locatiecoordinaten. Aankopen worden verwerkt door Apple."
+            ]
+          },
+          {
+            title: "Geen HomeScreen-account",
+            paragraphs: [
+              "HomeScreen gebruikt geen eigen account, login of profiel bij de ontwikkelaar."
+            ]
+          },
+          {
+            title: "Contact",
+            contact: "Voor vragen over deze app kun je contact opnemen via "
+          }
+        ]
+      },
+      en: {
+        documentTitle: "Privacy Policy - HomeScreen for HomeKit",
+        languageLabel: "Language",
+        languageNames: {
+          nl: "Nederlands",
+          en: "English",
+          de: "Deutsch"
+        },
+        heading: "Privacy Policy",
+        updated: "HomeScreen for HomeKit - last updated on May 27, 2026",
+        intro: "HomeScreen for HomeKit is a dashboard for viewing and controlling home features through Apple HomeKit.",
+        sections: [
+          {
+            title: "Data the app uses",
+            bullets: [
+              "HomeKit data available in the user's home, such as rooms, scenes, lights, switches, sensors, thermostats, cameras, doors, and shutters.",
+              "Location data to show local weather and rain forecast.",
+              "App settings, such as boards, item visibility, selected room icons, idle screen behavior, climate choice, and home screen preferences.",
+              "Purchase status through Apple StoreKit, so the app can check whether the trial is active or the one-time purchase has been made."
+            ]
+          },
+          {
+            title: "Storage",
+            paragraphs: [
+              "HomeKit data stays in Apple HomeKit. HomeScreen does not send HomeKit data to its own server.",
+              "App settings can be synced with iCloud key-value storage within the user's Apple account. On a new installation, the user can choose whether iCloud settings are restored."
+            ]
+          },
+          {
+            title: "Sharing with third parties",
+            paragraphs: [
+              "The app does not sell data, does not contain ads, and does not use tracking.",
+              "Weather data may be fetched from a weather provider based on location coordinates. Purchases are processed by Apple."
+            ]
+          },
+          {
+            title: "No HomeScreen account",
+            paragraphs: [
+              "HomeScreen does not use its own developer account, login, or profile."
+            ]
+          },
+          {
+            title: "Contact",
+            contact: "For questions about this app, contact "
+          }
+        ]
+      },
+      de: {
+        documentTitle: "Datenschutzerklärung - HomeScreen for HomeKit",
+        languageLabel: "Sprache",
+        languageNames: {
+          nl: "Nederlands",
+          en: "English",
+          de: "Deutsch"
+        },
+        heading: "Datenschutzerklärung",
+        updated: "HomeScreen for HomeKit - zuletzt aktualisiert am 27. Mai 2026",
+        intro: "HomeScreen for HomeKit ist ein Dashboard zum Anzeigen und Steuern von Zuhause-Funktionen über Apple HomeKit.",
+        sections: [
+          {
+            title: "Daten, die die App verwendet",
+            bullets: [
+              "HomeKit-Daten, die im Zuhause des Nutzers verfügbar sind, zum Beispiel Räume, Szenen, Lampen, Schalter, Sensoren, Thermostate, Kameras, Türen und Rollläden.",
+              "Standortdaten, um lokales Wetter und Regenvorhersage anzuzeigen.",
+              "App-Einstellungen, wie Boards, Sichtbarkeit von Elementen, gewählte Raum-Icons, Bildschirmruhe, Klimaauswahl und Einstellungen für den Startbildschirm.",
+              "Kaufstatus über Apple StoreKit, damit die App prüfen kann, ob der Testzeitraum aktiv ist oder der einmalige Kauf getätigt wurde."
+            ]
+          },
+          {
+            title: "Speicherung",
+            paragraphs: [
+              "HomeKit-Daten bleiben in Apple HomeKit. HomeScreen sendet HomeKit-Daten nicht an einen eigenen Server.",
+              "App-Einstellungen können über iCloud Key-Value Storage innerhalb des Apple Accounts des Nutzers synchronisiert werden. Bei einer neuen Installation kann der Nutzer wählen, ob iCloud-Einstellungen wiederhergestellt werden."
+            ]
+          },
+          {
+            title: "Weitergabe an Dritte",
+            paragraphs: [
+              "Die App verkauft keine Daten, enthält keine Werbung und verwendet kein Tracking.",
+              "Wetterdaten können anhand von Standortkoordinaten von einem Wetteranbieter abgerufen werden. Käufe werden von Apple verarbeitet."
+            ]
+          },
+          {
+            title: "Kein HomeScreen-Konto",
+            paragraphs: [
+              "HomeScreen verwendet kein eigenes Entwicklerkonto, keinen Login und kein Profil."
+            ]
+          },
+          {
+            title: "Kontakt",
+            contact: "Bei Fragen zu dieser App kontaktiere "
+          }
+        ]
+      }
+    };
+
+    function normalizeLanguage(value) {
+      const language = String(value || "").toLowerCase();
+      if (language.startsWith("de")) return "de";
+      if (language.startsWith("en")) return "en";
+      return "nl";
+    }
+
+    function selectedLanguage() {
+      const queryLanguage = new URLSearchParams(window.location.search).get("lang");
+      if (queryLanguage) return normalizeLanguage(queryLanguage);
+
+      const browserLanguages = navigator.languages && navigator.languages.length
+        ? navigator.languages
+        : [navigator.language];
+
+      const matched = browserLanguages.find((language) => {
+        const normalized = normalizeLanguage(language);
+        return normalized === "de" || normalized === "en" || normalized === "nl";
+      });
+
+      return normalizeLanguage(matched);
+    }
+
+    function element(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text) node.textContent = text;
+      return node;
+    }
+
+    function paragraph(text, className = "") {
+      return element("p", className, text);
+    }
+
+    function bulletList(items) {
+      const list = document.createElement("ul");
+      items.forEach((item) => {
+        const entry = document.createElement("li");
+        entry.textContent = item;
+        list.append(entry);
+      });
+      return list;
+    }
+
+    function updateUrlLanguage(language) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", language);
+      window.history.replaceState({}, "", url);
+    }
+
+    function renderSection(data) {
+      const section = element("section");
+      section.append(element("h2", "", data.title));
+
+      if (data.bullets) section.append(bulletList(data.bullets));
+      if (data.paragraphs) data.paragraphs.forEach((item) => section.append(paragraph(item)));
+
+      if (data.contact) {
+        const contact = document.createElement("p");
+        contact.append(document.createTextNode(data.contact));
+        const mail = document.createElement("a");
+        mail.href = `mailto:${supportEmail}`;
+        mail.textContent = supportEmail;
+        contact.append(mail, document.createTextNode("."));
+        section.append(contact);
+      }
+
+      return section;
+    }
+
+    function render(language) {
+      const content = copy[language] || copy.nl;
+      document.documentElement.lang = language;
+      document.title = content.documentTitle;
+
+      const main = document.getElementById("privacy-content");
+      main.replaceChildren();
+
+      const header = document.createElement("header");
+      header.append(element("h1", "", content.heading));
+      header.append(paragraph(content.updated, "muted"));
+      header.append(paragraph(content.intro));
+
+      const switcher = element("div", "language-switcher");
+      switcher.setAttribute("aria-label", content.languageLabel);
+      ["nl", "en", "de"].forEach((code) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = content.languageNames[code];
+        button.setAttribute("aria-pressed", code === language ? "true" : "false");
+        button.addEventListener("click", () => {
+          updateUrlLanguage(code);
+          render(code);
+        });
+        switcher.append(button);
+      });
+
+      header.append(switcher);
+      main.append(header);
+      content.sections.forEach((section) => main.append(renderSection(section)));
+    }
+
+    render(selectedLanguage());
+  </script>
 </body>
 </html>

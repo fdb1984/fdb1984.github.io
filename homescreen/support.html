@@ -14,8 +14,6 @@
       --muted: #c8c8cf;
       --soft: #8f8f98;
       --blue: #4cc9ff;
-      --yellow: #ffd60a;
-      --green: #30d158;
       --red: #ff6961;
     }
 
@@ -63,8 +61,26 @@
       margin: 0 0 12px;
     }
 
-    a {
+    a, button {
       color: var(--blue);
+    }
+
+    button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button[aria-pressed="true"] {
+      color: #041014;
+      background: var(--blue);
+      border-color: transparent;
     }
 
     section {
@@ -82,6 +98,13 @@
 
     li + li {
       margin-top: 8px;
+    }
+
+    .language-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
     }
 
     .note {
@@ -138,129 +161,521 @@
   </style>
 </head>
 <body>
-  <main>
+  <main id="support-content">
     <header>
       <h1>HomeScreen for HomeKit support</h1>
-      <p>HomeScreen maakt van een iPad of iPhone een rustig HomeKit-dashboard voor in huis. De app is bedoeld voor landscape gebruik, bijvoorbeeld met Guided Access op een vaste plek aan de muur.</p>
-      <p>Voor support of vragen kun je contact opnemen via <a href="mailto:support@dbruin.com">support@dbruin.com</a>.</p>
+      <p>Supportinformatie wordt geladen.</p>
+      <noscript>
+        <p>JavaScript is nodig om automatisch de juiste taal te tonen.</p>
+      </noscript>
     </header>
-
-    <section class="note">
-      <div class="label">Snel starten</div>
-      <h2>De eerste keer openen</h2>
-      <ul>
-        <li>Zet het apparaat horizontaal. In portrait toont HomeScreen alleen een draaiverzoek.</li>
-        <li>Geef HomeKit-toegang wanneer iOS daarom vraagt.</li>
-        <li>Als er nog geen HomeKit-data beschikbaar is, toont de app voorbeelddata zodat je de bediening kunt bekijken.</li>
-        <li>De eerste 30 dagen kun je de app volledig proberen. Daarna ontgrendel je HomeScreen met een eenmalige aankoop via Apple.</li>
-      </ul>
-    </section>
-
-    <div class="grid">
-      <section>
-        <div class="label">Homescherm</div>
-        <h2>Wat je ziet</h2>
-        <p>Het homescherm toont tijd, datum, weer, regenverwachting, klimaat, verlichting, deuren en rolluiken. Alleen panelen met relevante data worden getoond.</p>
-        <ul>
-          <li>Tik op verlichting, deuren of rolluiken om de details te openen.</li>
-          <li>Bij geen gebruik gaat het scherm naar zwart en wordt het bij aanraken weer actief.</li>
-          <li>Als je meerdere borden gebruikt, zie je op het homescherm welk bord actief is.</li>
-        </ul>
-      </section>
-
-      <section>
-        <div class="label">Bediening</div>
-        <h2>Tikken op het scherm</h2>
-        <p>Na een tik kies je tussen camera's, scenes, verlichting, schakelaars en Settings. Opties zonder HomeKit-data worden verborgen.</p>
-        <ul>
-          <li>Verlichting werkt per ruimte.</li>
-          <li>Dimbare lampen hebben opties voor uit, laatste aan-stand en 100%.</li>
-          <li>Scenes staan per kamer en kunnen direct gestart worden.</li>
-        </ul>
-      </section>
-
-      <section>
-        <div class="label">Borden</div>
-        <h2>Dashboards per kamer</h2>
-        <p>In Settings &gt; Borden kun je meerdere dashboards maken. Het standaardbord is er altijd en kan niet worden verwijderd.</p>
-        <ul>
-          <li>Geef elk bord een eigen naam, bijvoorbeeld Woonkamer of Nacht.</li>
-          <li>Per bord kun je kiezen welke HomeKit-kamers, lampen, schakelaars, scenes en panelen zichtbaar zijn.</li>
-          <li>Borden worden via iCloud bewaard.</li>
-        </ul>
-      </section>
-
-      <section>
-        <div class="label">iCloud</div>
-        <h2>Opslaan en herstellen</h2>
-        <p>HomeScreen bewaart appvoorkeuren in iCloud, zoals borden, zichtbaarheid, gekozen panelen, schermrust en klimaatkeuze.</p>
-        <ul>
-          <li>Bij een nieuwe installatie vraagt de app eerst of je iCloud-instellingen wilt herstellen.</li>
-          <li>Je kunt een specifiek bord uit iCloud kiezen.</li>
-          <li>Kies je voor deze installatie gebruiken, dan bewaart HomeScreen de huidige instellingen opnieuw in iCloud.</li>
-        </ul>
-      </section>
-
-      <section>
-        <div class="label">Settings</div>
-        <h2>Beheer</h2>
-        <p>Settings is verdeeld in tabs voor Algemeen, Borden, Kamers, Verlichting, Schakelaars, Scenes en App. Settings opent met Face ID, Touch ID of de toestelcode.</p>
-        <ul>
-          <li>Kies welke lampen, schakelaars en scenes zichtbaar zijn.</li>
-          <li>Kies welk klimaataccessoire op het homescherm staat.</li>
-          <li>Kies in Kamers per HomeKit-kamer een eigen icoon, of laat HomeScreen automatisch kiezen.</li>
-          <li>Stel bij Scherm bij rust in of het scherm zwart wordt, alleen dimt of actief blijft.</li>
-          <li>Gebruik Reset naar standaard om appvoorkeuren terug te zetten zonder je aankoop te wissen.</li>
-        </ul>
-      </section>
-
-      <section>
-        <div class="label">Aankoop</div>
-        <h2>Proefperiode en ontgrendelen</h2>
-        <p>HomeScreen is de eerste 30 dagen volledig te gebruiken. Daarna kun je de app ontgrendelen met een eenmalige aankoop via Apple.</p>
-        <ul>
-          <li>Er is geen abonnement.</li>
-          <li>De proefstatus staat onderin het homescherm en in Settings &gt; App.</li>
-          <li>Heb je de aankoop al gedaan, gebruik dan Herstel aankoop in Settings &gt; App.</li>
-        </ul>
-      </section>
-
-      <section>
-        <div class="label">HomeKit</div>
-        <h2>Namen en scenes</h2>
-        <p>Je kunt namen van verlichting, schakelaars en scenes aanpassen. Wanneer HomeKit dit toestaat, schrijft HomeScreen die naam terug naar HomeKit.</p>
-        <ul>
-          <li>Scenes worden automatisch bij kamers gezet op basis van HomeKit-kamers en de naam van de scene.</li>
-          <li>Klopt de kamer niet, kies dan in Settings &gt; Scenes handmatig een andere HomeKit-kamer.</li>
-          <li>Schakelaars staan apart, behalve als HomeKit ze als lamp doorgeeft.</li>
-        </ul>
-      </section>
-    </div>
-
-    <section class="warning">
-      <div class="label">Let op</div>
-      <h2>Verbergen is iets anders dan verwijderen</h2>
-      <p>Een item uitzetten in Settings verbergt het alleen in HomeScreen. De data blijft gewoon in HomeKit bestaan.</p>
-      <p>Gebruik je de prullenbak bij een lamp of schakelaar, dan probeert HomeScreen het accessoire echt uit HomeKit te verwijderen. HomeKit staat verwijderen vanuit apps niet bij elk accessoire toe; verberg zo'n accessoire met de zichtbaar/verborgen knop of verwijder het via Apple's Woning-app.</p>
-      <p>Scenes kunnen na bevestiging uit HomeKit worden verwijderd.</p>
-    </section>
-
-    <section>
-      <div class="label">Camera's</div>
-      <h2>Camera en deurbel</h2>
-      <ul>
-        <li>Tik een camera om fullscreen te openen.</li>
-        <li>Als de deurbel gaat, opent HomeScreen automatisch de gekoppelde camera en gaat na ongeveer 60 seconden terug.</li>
-        <li>Op Mac kan HomeKit soms wel een camera tonen, maar geen livestreamprofiel doorgeven.</li>
-      </ul>
-    </section>
-
-    <section>
-      <div class="label">Privacy</div>
-      <h2>Welke data wordt bewaard?</h2>
-      <p>HomeKit-data blijft in HomeKit. HomeScreen bewaart alleen appvoorkeuren in iCloud binnen je eigen Apple-account. Er is geen HomeScreen-account en er worden geen advertenties gebruikt.</p>
-      <p>Zie ook het <a href="privacy.html">privacybeleid</a>.</p>
-    </section>
   </main>
+
+  <script>
+    const supportEmail = "support@dbruin.com";
+
+    const copy = {
+      nl: {
+        documentTitle: "Support - HomeScreen for HomeKit",
+        languageLabel: "Taal",
+        languageNames: {
+          nl: "Nederlands",
+          en: "English",
+          de: "Deutsch"
+        },
+        heading: "HomeScreen for HomeKit support",
+        intro: [
+          "HomeScreen maakt van een iPad of iPhone een rustig HomeKit-dashboard voor in huis. De app is bedoeld voor landscape gebruik, bijvoorbeeld met Guided Access op een vaste plek aan de muur.",
+          "Voor support of vragen kun je contact opnemen via "
+        ],
+        quickStart: {
+          label: "Snel starten",
+          title: "De eerste keer openen",
+          bullets: [
+            "Zet het apparaat horizontaal. In portrait toont HomeScreen alleen een draaiverzoek.",
+            "Geef HomeKit-toegang wanneer iOS daarom vraagt.",
+            "Als er nog geen HomeKit-data beschikbaar is, toont de app voorbeelddata zodat je de bediening kunt bekijken.",
+            "De eerste 30 dagen kun je de app volledig proberen. Daarna ontgrendel je HomeScreen met een eenmalige aankoop via Apple."
+          ]
+        },
+        cards: [
+          {
+            label: "Homescherm",
+            title: "Wat je ziet",
+            body: "Het homescherm toont tijd, datum, weer, regenverwachting, klimaat, verlichting, deuren en rolluiken. Alleen panelen met relevante data worden getoond.",
+            bullets: [
+              "Tik op verlichting, deuren of rolluiken om de details te openen.",
+              "Bij geen gebruik gaat het scherm naar zwart en wordt het bij aanraken weer actief.",
+              "Als je meerdere borden gebruikt, zie je op het homescherm welk bord actief is."
+            ]
+          },
+          {
+            label: "Bediening",
+            title: "Tikken op het scherm",
+            body: "Na een tik kies je tussen camera's, scenes, verlichting, schakelaars en Settings. Opties zonder HomeKit-data worden verborgen.",
+            bullets: [
+              "Verlichting werkt per ruimte.",
+              "Dimbare lampen hebben opties voor uit, laatste aan-stand en 100%.",
+              "Scenes staan per kamer en kunnen direct gestart worden."
+            ]
+          },
+          {
+            label: "Borden",
+            title: "Dashboards per kamer",
+            body: "In Settings > Borden kun je meerdere dashboards maken. Het standaardbord is er altijd en kan niet worden verwijderd.",
+            bullets: [
+              "Geef elk bord een eigen naam, bijvoorbeeld Woonkamer of Nacht.",
+              "Per bord kun je kiezen welke HomeKit-kamers, lampen, schakelaars, scenes en panelen zichtbaar zijn.",
+              "Borden worden via iCloud bewaard."
+            ]
+          },
+          {
+            label: "iCloud",
+            title: "Opslaan en herstellen",
+            body: "HomeScreen bewaart appvoorkeuren in iCloud, zoals borden, zichtbaarheid, gekozen panelen, schermrust en klimaatkeuze.",
+            bullets: [
+              "Bij een nieuwe installatie vraagt de app eerst of je iCloud-instellingen wilt herstellen.",
+              "Je kunt een specifiek bord uit iCloud kiezen.",
+              "Kies je voor deze installatie gebruiken, dan bewaart HomeScreen de huidige instellingen opnieuw in iCloud."
+            ]
+          },
+          {
+            label: "Settings",
+            title: "Beheer",
+            body: "Settings is verdeeld in tabs voor Algemeen, Borden, Kamers, Verlichting, Schakelaars, Scenes en App. Settings opent met Face ID, Touch ID of de toestelcode.",
+            bullets: [
+              "Kies welke lampen, schakelaars en scenes zichtbaar zijn.",
+              "Kies welk klimaataccessoire op het homescherm staat.",
+              "Kies in Kamers per HomeKit-kamer een eigen icoon, of laat HomeScreen automatisch kiezen.",
+              "Stel bij Scherm bij rust in of het scherm zwart wordt, alleen dimt of actief blijft.",
+              "Gebruik Reset naar standaard om appvoorkeuren terug te zetten zonder je aankoop te wissen."
+            ]
+          },
+          {
+            label: "Aankoop",
+            title: "Proefperiode en ontgrendelen",
+            body: "HomeScreen is de eerste 30 dagen volledig te gebruiken. Daarna kun je de app ontgrendelen met een eenmalige aankoop via Apple.",
+            bullets: [
+              "Er is geen abonnement.",
+              "De proefstatus staat onderin het homescherm en in Settings > App.",
+              "Heb je de aankoop al gedaan, gebruik dan Herstel aankoop in Settings > App."
+            ]
+          },
+          {
+            label: "HomeKit",
+            title: "Namen en scenes",
+            body: "Je kunt namen van verlichting, schakelaars en scenes aanpassen. Wanneer HomeKit dit toestaat, schrijft HomeScreen die naam terug naar HomeKit.",
+            bullets: [
+              "Scenes worden automatisch bij kamers gezet op basis van HomeKit-kamers en de naam van de scene.",
+              "Klopt de kamer niet, kies dan in Settings > Scenes handmatig een andere HomeKit-kamer.",
+              "Schakelaars staan apart, behalve als HomeKit ze als lamp doorgeeft."
+            ]
+          }
+        ],
+        warning: {
+          label: "Let op",
+          title: "Verbergen is iets anders dan verwijderen",
+          paragraphs: [
+            "Een item uitzetten in Settings verbergt het alleen in HomeScreen. De data blijft gewoon in HomeKit bestaan.",
+            "Gebruik je de prullenbak bij een lamp of schakelaar, dan probeert HomeScreen het accessoire echt uit HomeKit te verwijderen. HomeKit staat verwijderen vanuit apps niet bij elk accessoire toe; verberg zo'n accessoire met de zichtbaar/verborgen knop of verwijder het via Apple's Woning-app.",
+            "Scenes kunnen na bevestiging uit HomeKit worden verwijderd."
+          ]
+        },
+        camera: {
+          label: "Camera's",
+          title: "Camera en deurbel",
+          bullets: [
+            "Tik een camera om fullscreen te openen.",
+            "Als de deurbel gaat, opent HomeScreen automatisch de gekoppelde camera en gaat na ongeveer 60 seconden terug.",
+            "Op Mac kan HomeKit soms wel een camera tonen, maar geen livestreamprofiel doorgeven."
+          ]
+        },
+        privacy: {
+          label: "Privacy",
+          title: "Welke data wordt bewaard?",
+          paragraphs: [
+            "HomeKit-data blijft in HomeKit. HomeScreen bewaart alleen appvoorkeuren in iCloud binnen je eigen Apple-account. Er is geen HomeScreen-account en er worden geen advertenties gebruikt."
+          ],
+          linkPrefix: "Zie ook het ",
+          linkText: "privacybeleid",
+          linkSuffix: "."
+        }
+      },
+      en: {
+        documentTitle: "Support - HomeScreen for HomeKit",
+        languageLabel: "Language",
+        languageNames: {
+          nl: "Nederlands",
+          en: "English",
+          de: "Deutsch"
+        },
+        heading: "HomeScreen for HomeKit support",
+        intro: [
+          "HomeScreen turns an iPad or iPhone into a calm HomeKit dashboard for your home. The app is designed for landscape use, for example with Guided Access on a fixed wall-mounted device.",
+          "For support or questions, contact "
+        ],
+        quickStart: {
+          label: "Quick start",
+          title: "Opening the app for the first time",
+          bullets: [
+            "Turn the device sideways. In portrait, HomeScreen only shows a rotate request.",
+            "Allow HomeKit access when iOS asks for it.",
+            "If no HomeKit data is available yet, the app shows sample data so you can explore the controls.",
+            "You can use the full app for the first 30 days. After that, unlock HomeScreen with a one-time purchase through Apple."
+          ]
+        },
+        cards: [
+          {
+            label: "Home screen",
+            title: "What you see",
+            body: "The home screen shows the time, date, weather, rain forecast, climate, lights, doors, and shutters. Panels only appear when relevant data is available.",
+            bullets: [
+              "Tap lights, doors, or shutters to open their details.",
+              "When idle, the screen turns black and wakes again when touched.",
+              "If you use multiple boards, the home screen shows which board is active."
+            ]
+          },
+          {
+            label: "Controls",
+            title: "Tap the screen",
+            body: "After a tap, choose between cameras, scenes, lighting, switches, and Settings. Options without HomeKit data are hidden.",
+            bullets: [
+              "Lighting works by room.",
+              "Dimmable lights offer off, previous on level, and 100%.",
+              "Scenes are grouped by room and can be started directly."
+            ]
+          },
+          {
+            label: "Boards",
+            title: "Dashboards per room",
+            body: "In Settings > Boards you can create multiple dashboards. The default board is always present and cannot be deleted.",
+            bullets: [
+              "Give each board its own name, such as Living Room or Night.",
+              "For each board, choose which HomeKit rooms, lights, switches, scenes, and panels are visible.",
+              "Boards are saved with iCloud."
+            ]
+          },
+          {
+            label: "iCloud",
+            title: "Save and restore",
+            body: "HomeScreen saves app preferences in iCloud, including boards, visibility, selected panels, idle screen behavior, and climate choice.",
+            bullets: [
+              "On a new installation, the app first asks whether you want to restore iCloud settings.",
+              "You can choose a specific board from iCloud.",
+              "If you choose to use this installation, HomeScreen saves the current settings back to iCloud."
+            ]
+          },
+          {
+            label: "Settings",
+            title: "Management",
+            body: "Settings is split into tabs for General, Boards, Rooms, Lighting, Switches, Scenes, and App. Settings opens with Face ID, Touch ID, or the device passcode.",
+            bullets: [
+              "Choose which lights, switches, and scenes are visible.",
+              "Choose which climate accessory appears on the home screen.",
+              "In Rooms, choose a custom icon for each HomeKit room or let HomeScreen pick one automatically.",
+              "In Idle screen, choose whether the display turns black, dims, or stays active.",
+              "Use Reset to defaults to reset app preferences without removing your purchase."
+            ]
+          },
+          {
+            label: "Purchase",
+            title: "Trial and unlock",
+            body: "HomeScreen is fully usable for the first 30 days. After that, you can unlock the app with a one-time purchase through Apple.",
+            bullets: [
+              "There is no subscription.",
+              "The trial status is shown at the bottom of the home screen and in Settings > App.",
+              "If you already purchased, use Restore purchase in Settings > App."
+            ]
+          },
+          {
+            label: "HomeKit",
+            title: "Names and scenes",
+            body: "You can rename lights, switches, and scenes. When HomeKit allows it, HomeScreen writes the name back to HomeKit.",
+            bullets: [
+              "Scenes are automatically assigned to rooms using your HomeKit rooms and the scene name.",
+              "If the room is wrong, choose another HomeKit room manually in Settings > Scenes.",
+              "Switches are shown separately, unless HomeKit exposes them as lights."
+            ]
+          }
+        ],
+        warning: {
+          label: "Note",
+          title: "Hiding is different from deleting",
+          paragraphs: [
+            "Turning an item off in Settings only hides it in HomeScreen. The data remains in HomeKit.",
+            "If you use the trash button on a light or switch, HomeScreen tries to remove the accessory from HomeKit. HomeKit does not allow every accessory to be removed by third-party apps; hide that accessory with the visible/hidden button or remove it in Apple's Home app.",
+            "Scenes can be removed from HomeKit after confirmation."
+          ]
+        },
+        camera: {
+          label: "Cameras",
+          title: "Camera and doorbell",
+          bullets: [
+            "Tap a camera to open it fullscreen.",
+            "When the doorbell rings, HomeScreen automatically opens the linked camera and returns after about 60 seconds.",
+            "On Mac, HomeKit can sometimes show a camera without providing a livestream profile."
+          ]
+        },
+        privacy: {
+          label: "Privacy",
+          title: "What data is saved?",
+          paragraphs: [
+            "HomeKit data stays in HomeKit. HomeScreen only saves app preferences in iCloud within your own Apple account. There is no HomeScreen account and no advertising."
+          ],
+          linkPrefix: "See also the ",
+          linkText: "privacy policy",
+          linkSuffix: "."
+        }
+      },
+      de: {
+        documentTitle: "Support - HomeScreen for HomeKit",
+        languageLabel: "Sprache",
+        languageNames: {
+          nl: "Nederlands",
+          en: "English",
+          de: "Deutsch"
+        },
+        heading: "HomeScreen for HomeKit Support",
+        intro: [
+          "HomeScreen macht aus einem iPad oder iPhone ein ruhiges HomeKit-Dashboard für dein Zuhause. Die App ist für die Nutzung im Querformat gedacht, zum Beispiel mit Geführtem Zugriff auf einem fest montierten Gerät.",
+          "Für Support oder Fragen kontaktiere "
+        ],
+        quickStart: {
+          label: "Schnellstart",
+          title: "Die App zum ersten Mal öffnen",
+          bullets: [
+            "Drehe das Gerät ins Querformat. Im Hochformat zeigt HomeScreen nur einen Drehhinweis.",
+            "Erlaube den HomeKit-Zugriff, wenn iOS danach fragt.",
+            "Wenn noch keine HomeKit-Daten verfügbar sind, zeigt die App Beispieldaten, damit du die Bedienung ansehen kannst.",
+            "In den ersten 30 Tagen kannst du die App vollständig testen. Danach schaltest du HomeScreen mit einem einmaligen Kauf über Apple frei."
+          ]
+        },
+        cards: [
+          {
+            label: "Startbildschirm",
+            title: "Was du siehst",
+            body: "Der Startbildschirm zeigt Uhrzeit, Datum, Wetter, Regenvorhersage, Klima, Beleuchtung, Türen und Rollläden. Es werden nur Panels mit passenden Daten angezeigt.",
+            bullets: [
+              "Tippe auf Beleuchtung, Türen oder Rollläden, um Details zu öffnen.",
+              "Bei Inaktivität wird der Bildschirm schwarz und durch Berührung wieder aktiv.",
+              "Wenn du mehrere Boards nutzt, zeigt der Startbildschirm das aktive Board."
+            ]
+          },
+          {
+            label: "Bedienung",
+            title: "Auf den Bildschirm tippen",
+            body: "Nach einem Tippen wählst du zwischen Kameras, Szenen, Beleuchtung, Schaltern und Einstellungen. Optionen ohne HomeKit-Daten werden ausgeblendet.",
+            bullets: [
+              "Beleuchtung funktioniert pro Raum.",
+              "Dimmbare Lampen bieten Aus, letzte Ein-Stufe und 100%.",
+              "Szenen sind nach Raum gruppiert und können direkt gestartet werden."
+            ]
+          },
+          {
+            label: "Boards",
+            title: "Dashboards pro Raum",
+            body: "In Einstellungen > Boards kannst du mehrere Dashboards erstellen. Das Standard-Board ist immer vorhanden und kann nicht gelöscht werden.",
+            bullets: [
+              "Gib jedem Board einen eigenen Namen, zum Beispiel Wohnzimmer oder Nacht.",
+              "Pro Board wählst du, welche HomeKit-Räume, Lampen, Schalter, Szenen und Panels sichtbar sind.",
+              "Boards werden über iCloud gespeichert."
+            ]
+          },
+          {
+            label: "iCloud",
+            title: "Speichern und wiederherstellen",
+            body: "HomeScreen speichert App-Einstellungen in iCloud, darunter Boards, Sichtbarkeit, gewählte Panels, Bildschirmruhe und Klimaauswahl.",
+            bullets: [
+              "Bei einer neuen Installation fragt die App zuerst, ob iCloud-Einstellungen wiederhergestellt werden sollen.",
+              "Du kannst ein bestimmtes Board aus iCloud auswählen.",
+              "Wenn du diese Installation verwendest, speichert HomeScreen die aktuellen Einstellungen erneut in iCloud."
+            ]
+          },
+          {
+            label: "Einstellungen",
+            title: "Verwaltung",
+            body: "Einstellungen ist in Tabs für Allgemein, Boards, Räume, Beleuchtung, Schalter, Szenen und App aufgeteilt. Einstellungen öffnen mit Face ID, Touch ID oder dem Gerätecode.",
+            bullets: [
+              "Wähle, welche Lampen, Schalter und Szenen sichtbar sind.",
+              "Wähle, welches Klima-Zubehör auf dem Startbildschirm steht.",
+              "In Räume wählst du pro HomeKit-Raum ein eigenes Icon oder lässt HomeScreen automatisch wählen.",
+              "In Bildschirmruhe legst du fest, ob das Display schwarz wird, dimmt oder aktiv bleibt.",
+              "Mit Auf Standard zurücksetzen setzt du App-Einstellungen zurück, ohne deinen Kauf zu entfernen."
+            ]
+          },
+          {
+            label: "Kauf",
+            title: "Testzeitraum und Freischalten",
+            body: "HomeScreen ist in den ersten 30 Tagen vollständig nutzbar. Danach kannst du die App mit einem einmaligen Kauf über Apple freischalten.",
+            bullets: [
+              "Es gibt kein Abonnement.",
+              "Der Teststatus steht unten auf dem Startbildschirm und in Einstellungen > App.",
+              "Wenn du bereits gekauft hast, nutze Kauf wiederherstellen in Einstellungen > App."
+            ]
+          },
+          {
+            label: "HomeKit",
+            title: "Namen und Szenen",
+            body: "Du kannst Lampen, Schalter und Szenen umbenennen. Wenn HomeKit es erlaubt, schreibt HomeScreen den Namen zurück nach HomeKit.",
+            bullets: [
+              "Szenen werden automatisch Räumen zugeordnet, basierend auf deinen HomeKit-Räumen und dem Szenennamen.",
+              "Wenn der Raum nicht stimmt, wähle in Einstellungen > Szenen manuell einen anderen HomeKit-Raum.",
+              "Schalter werden separat angezeigt, außer HomeKit meldet sie als Beleuchtung."
+            ]
+          }
+        ],
+        warning: {
+          label: "Hinweis",
+          title: "Ausblenden ist nicht Löschen",
+          paragraphs: [
+            "Wenn du ein Element in Einstellungen ausschaltest, wird es nur in HomeScreen ausgeblendet. Die Daten bleiben in HomeKit.",
+            "Wenn du bei einer Lampe oder einem Schalter den Papierkorb nutzt, versucht HomeScreen, das Zubehör wirklich aus HomeKit zu entfernen. HomeKit erlaubt nicht bei jedem Zubehör das Löschen durch Drittanbieter-Apps; blende dieses Zubehör mit der Sichtbar/Versteckt-Schaltfläche aus oder entferne es in Apples Home-App.",
+            "Szenen können nach Bestätigung aus HomeKit entfernt werden."
+          ]
+        },
+        camera: {
+          label: "Kameras",
+          title: "Kamera und Türklingel",
+          bullets: [
+            "Tippe auf eine Kamera, um sie im Vollbild zu öffnen.",
+            "Wenn die Türklingel klingelt, öffnet HomeScreen automatisch die verknüpfte Kamera und kehrt nach etwa 60 Sekunden zurück.",
+            "Auf dem Mac kann HomeKit manchmal eine Kamera anzeigen, ohne ein Livestream-Profil bereitzustellen."
+          ]
+        },
+        privacy: {
+          label: "Datenschutz",
+          title: "Welche Daten werden gespeichert?",
+          paragraphs: [
+            "HomeKit-Daten bleiben in HomeKit. HomeScreen speichert nur App-Einstellungen in iCloud innerhalb deines eigenen Apple Accounts. Es gibt kein HomeScreen-Konto und keine Werbung."
+          ],
+          linkPrefix: "Siehe auch die ",
+          linkText: "Datenschutzerklärung",
+          linkSuffix: "."
+        }
+      }
+    };
+
+    function normalizeLanguage(value) {
+      const language = String(value || "").toLowerCase();
+      if (language.startsWith("de")) return "de";
+      if (language.startsWith("en")) return "en";
+      return "nl";
+    }
+
+    function selectedLanguage() {
+      const queryLanguage = new URLSearchParams(window.location.search).get("lang");
+      if (queryLanguage) return normalizeLanguage(queryLanguage);
+
+      const browserLanguages = navigator.languages && navigator.languages.length
+        ? navigator.languages
+        : [navigator.language];
+
+      const matched = browserLanguages.find((language) => {
+        const normalized = normalizeLanguage(language);
+        return normalized === "de" || normalized === "en" || normalized === "nl";
+      });
+
+      return normalizeLanguage(matched);
+    }
+
+    function textNode(value) {
+      return document.createTextNode(value);
+    }
+
+    function element(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text) node.textContent = text;
+      return node;
+    }
+
+    function paragraph(text) {
+      return element("p", "", text);
+    }
+
+    function bulletList(items) {
+      const list = document.createElement("ul");
+      items.forEach((item) => {
+        const entry = document.createElement("li");
+        entry.textContent = item;
+        list.append(entry);
+      });
+      return list;
+    }
+
+    function section(data, className = "") {
+      const node = element("section", className);
+      node.append(element("div", "label", data.label));
+      node.append(element("h2", "", data.title));
+      if (data.body) node.append(paragraph(data.body));
+      if (data.paragraphs) data.paragraphs.forEach((item) => node.append(paragraph(item)));
+      if (data.bullets) node.append(bulletList(data.bullets));
+      return node;
+    }
+
+    function updateUrlLanguage(language) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", language);
+      window.history.replaceState({}, "", url);
+    }
+
+    function render(language) {
+      const content = copy[language] || copy.nl;
+      document.documentElement.lang = language;
+      document.title = content.documentTitle;
+
+      const main = document.getElementById("support-content");
+      main.replaceChildren();
+
+      const header = document.createElement("header");
+      header.append(element("h1", "", content.heading));
+      header.append(paragraph(content.intro[0]));
+
+      const contact = document.createElement("p");
+      contact.append(textNode(content.intro[1]));
+      const mail = document.createElement("a");
+      mail.href = `mailto:${supportEmail}`;
+      mail.textContent = supportEmail;
+      contact.append(mail, textNode("."));
+      header.append(contact);
+
+      const switcher = element("div", "language-switcher");
+      switcher.setAttribute("aria-label", content.languageLabel);
+      ["nl", "en", "de"].forEach((code) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = content.languageNames[code];
+        button.setAttribute("aria-pressed", code === language ? "true" : "false");
+        button.addEventListener("click", () => {
+          updateUrlLanguage(code);
+          render(code);
+        });
+        switcher.append(button);
+      });
+      header.append(switcher);
+      main.append(header);
+
+      main.append(section(content.quickStart, "note"));
+
+      const grid = element("div", "grid");
+      content.cards.forEach((card) => grid.append(section(card)));
+      main.append(grid);
+
+      main.append(section(content.warning, "warning"));
+      main.append(section(content.camera));
+
+      const privacy = section(content.privacy);
+      const privacyText = document.createElement("p");
+      privacyText.append(textNode(content.privacy.linkPrefix));
+      const privacyLink = document.createElement("a");
+      privacyLink.href = "privacy.html";
+      privacyLink.textContent = content.privacy.linkText;
+      privacyText.append(privacyLink, textNode(content.privacy.linkSuffix));
+      privacy.append(privacyText);
+      main.append(privacy);
+    }
+
+    render(selectedLanguage());
+  </script>
 </body>
 </html>
