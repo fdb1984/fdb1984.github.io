@@ -204,7 +204,7 @@
             title: "Wat je ziet",
             body: "Het homescherm toont tijd, datum, weer, regenverwachting, klimaat, verlichting, deuren en rolluiken. Alleen panelen met relevante data worden getoond.",
             bullets: [
-              "Tik op verlichting, deuren of rolluiken om de details te openen.",
+              "Tik op verlichting, deuren, rolluiken of het weer om de details te openen.",
               "Bij geen gebruik gaat het scherm naar zwart en wordt het bij aanraken weer actief.",
               "Als je meerdere borden gebruikt, zie je op het homescherm welk bord actief is."
             ]
@@ -212,11 +212,22 @@
           {
             label: "Bediening",
             title: "Tikken op het scherm",
-            body: "Na een tik kies je tussen camera's, scenes, verlichting, schakelaars en Settings. Opties zonder HomeKit-data worden verborgen.",
+            body: "Na een tik kies je tussen camera's, scenes, verlichting, schakelaars, rolluiken en Settings. Opties zonder HomeKit-data worden verborgen.",
             bullets: [
               "Verlichting werkt per ruimte.",
               "Dimbare lampen hebben opties voor uit, laatste aan-stand en 100%.",
+              "Rolluiken en screens hebben een slider voor de positie.",
               "Scenes staan per kamer en kunnen direct gestart worden."
+            ]
+          },
+          {
+            label: "Rolluiken",
+            title: "Open, dicht of deels",
+            body: "Rolluiken, screens en zonwering staan apart per ruimte. Je kunt ze met een slider openen, sluiten of op een percentage zetten.",
+            bullets: [
+              "Het homescherm laat zien welke rolluiken dicht of deels open zijn.",
+              "Tik op de rolluikenkaart om rolluiken die dicht of deels open staan meteen te bedienen.",
+              "In Settings > Rolluiken kies je per rolluik vanaf welk percentage het als open telt."
             ]
           },
           {
@@ -225,14 +236,14 @@
             body: "In Settings > Borden kun je meerdere dashboards maken. Het standaardbord is er altijd en kan niet worden verwijderd.",
             bullets: [
               "Geef elk bord een eigen naam, bijvoorbeeld Woonkamer of Nacht.",
-              "Per bord kun je kiezen welke HomeKit-kamers, lampen, schakelaars, scenes en panelen zichtbaar zijn.",
+              "Per bord kun je kiezen welke HomeKit-kamers, lampen, schakelaars, rolluiken, scenes en panelen zichtbaar zijn.",
               "Borden worden via iCloud bewaard."
             ]
           },
           {
             label: "iCloud",
             title: "Opslaan en herstellen",
-            body: "HomeScreen bewaart appvoorkeuren in iCloud, zoals borden, zichtbaarheid, gekozen panelen, schermrust en klimaatkeuze.",
+            body: "HomeScreen bewaart appvoorkeuren in iCloud, zoals borden, zichtbaarheid, gekozen panelen, schermrust, kamericonen, klimaatkeuze en rolluikgrenzen.",
             bullets: [
               "Bij een nieuwe installatie vraagt de app eerst of je iCloud-instellingen wilt herstellen.",
               "Je kunt een specifiek bord uit iCloud kiezen.",
@@ -242,10 +253,11 @@
           {
             label: "Settings",
             title: "Beheer",
-            body: "Settings is verdeeld in tabs voor Algemeen, Borden, Kamers, Verlichting, Schakelaars, Scenes en App. Settings opent met Face ID, Touch ID of de toestelcode.",
+            body: "Settings is verdeeld in tabs voor Algemeen, Borden, Kamers, Verlichting, Schakelaars, Rolluiken, Scenes en App. Settings opent met Face ID, Touch ID of de toestelcode.",
             bullets: [
-              "Kies welke lampen, schakelaars en scenes zichtbaar zijn.",
+              "Kies welke lampen, schakelaars, rolluiken en scenes zichtbaar zijn.",
               "Kies welk klimaataccessoire op het homescherm staat.",
+              "Kies per rolluik vanaf welk percentage het als open telt op het homescherm.",
               "Kies in Kamers per HomeKit-kamer een eigen icoon, of laat HomeScreen automatisch kiezen.",
               "Stel bij Scherm bij rust in of het scherm zwart wordt, alleen dimt of actief blijft.",
               "Gebruik Reset naar standaard om appvoorkeuren terug te zetten zonder je aankoop te wissen."
@@ -330,7 +342,7 @@
             title: "What you see",
             body: "The home screen shows the time, date, weather, rain forecast, climate, lights, doors, and shutters. Panels only appear when relevant data is available.",
             bullets: [
-              "Tap lights, doors, or shutters to open their details.",
+              "Tap lights, doors, shutters, or the weather to open their details.",
               "When idle, the screen turns black and wakes again when touched.",
               "If you use multiple boards, the home screen shows which board is active."
             ]
@@ -338,11 +350,22 @@
           {
             label: "Controls",
             title: "Tap the screen",
-            body: "After a tap, choose between cameras, scenes, lighting, switches, and Settings. Options without HomeKit data are hidden.",
+            body: "After a tap, choose between cameras, scenes, lighting, switches, shutters, and Settings. Options without HomeKit data are hidden.",
             bullets: [
               "Lighting works by room.",
               "Dimmable lights offer off, previous on level, and 100%.",
+              "Shutters and screens have a slider for position.",
               "Scenes are grouped by room and can be started directly."
+            ]
+          },
+          {
+            label: "Shutters",
+            title: "Open, closed, or partly open",
+            body: "Shutters, screens, and blinds are shown separately by room. You can open, close, or set them to a percentage with a slider.",
+            bullets: [
+              "The home screen shows which shutters are closed or partly open.",
+              "Tap the shutter card to control shutters that are closed or partly open right away.",
+              "In Settings > Shutters, choose per shutter from which percentage it counts as open."
             ]
           },
           {
@@ -351,14 +374,14 @@
             body: "In Settings > Boards you can create multiple dashboards. The default board is always present and cannot be deleted.",
             bullets: [
               "Give each board its own name, such as Living Room or Night.",
-              "For each board, choose which HomeKit rooms, lights, switches, scenes, and panels are visible.",
+              "For each board, choose which HomeKit rooms, lights, switches, shutters, scenes, and panels are visible.",
               "Boards are saved with iCloud."
             ]
           },
           {
             label: "iCloud",
             title: "Save and restore",
-            body: "HomeScreen saves app preferences in iCloud, including boards, visibility, selected panels, idle screen behavior, and climate choice.",
+            body: "HomeScreen saves app preferences in iCloud, including boards, visibility, selected panels, idle screen behavior, room icons, climate choice, and shutter thresholds.",
             bullets: [
               "On a new installation, the app first asks whether you want to restore iCloud settings.",
               "You can choose a specific board from iCloud.",
@@ -368,10 +391,11 @@
           {
             label: "Settings",
             title: "Management",
-            body: "Settings is split into tabs for General, Boards, Rooms, Lighting, Switches, Scenes, and App. Settings opens with Face ID, Touch ID, or the device passcode.",
+            body: "Settings is split into tabs for General, Boards, Rooms, Lighting, Switches, Shutters, Scenes, and App. Settings opens with Face ID, Touch ID, or the device passcode.",
             bullets: [
-              "Choose which lights, switches, and scenes are visible.",
+              "Choose which lights, switches, shutters, and scenes are visible.",
               "Choose which climate accessory appears on the home screen.",
+              "Choose per shutter from which percentage it counts as open on the home screen.",
               "In Rooms, choose a custom icon for each HomeKit room or let HomeScreen pick one automatically.",
               "In Idle screen, choose whether the display turns black, dims, or stays active.",
               "Use Reset to defaults to reset app preferences without removing your purchase."
@@ -456,7 +480,7 @@
             title: "Was du siehst",
             body: "Der Startbildschirm zeigt Uhrzeit, Datum, Wetter, Regenvorhersage, Klima, Beleuchtung, Türen und Rollläden. Es werden nur Panels mit passenden Daten angezeigt.",
             bullets: [
-              "Tippe auf Beleuchtung, Türen oder Rollläden, um Details zu öffnen.",
+              "Tippe auf Beleuchtung, Türen, Rollläden oder das Wetter, um Details zu öffnen.",
               "Bei Inaktivität wird der Bildschirm schwarz und durch Berührung wieder aktiv.",
               "Wenn du mehrere Boards nutzt, zeigt der Startbildschirm das aktive Board."
             ]
@@ -464,11 +488,22 @@
           {
             label: "Bedienung",
             title: "Auf den Bildschirm tippen",
-            body: "Nach einem Tippen wählst du zwischen Kameras, Szenen, Beleuchtung, Schaltern und Einstellungen. Optionen ohne HomeKit-Daten werden ausgeblendet.",
+            body: "Nach einem Tippen wählst du zwischen Kameras, Szenen, Beleuchtung, Schaltern, Rollläden und Einstellungen. Optionen ohne HomeKit-Daten werden ausgeblendet.",
             bullets: [
               "Beleuchtung funktioniert pro Raum.",
               "Dimmbare Lampen bieten Aus, letzte Ein-Stufe und 100%.",
+              "Rollläden und Screens haben einen Slider für die Position.",
               "Szenen sind nach Raum gruppiert und können direkt gestartet werden."
+            ]
+          },
+          {
+            label: "Rollläden",
+            title: "Offen, geschlossen oder teilweise offen",
+            body: "Rollläden, Screens und Sonnenschutz stehen separat pro Raum. Du kannst sie mit einem Slider öffnen, schließen oder auf einen Prozentwert setzen.",
+            bullets: [
+              "Der Startbildschirm zeigt, welche Rollläden geschlossen oder teilweise offen sind.",
+              "Tippe auf die Rollladen-Karte, um geschlossene oder teilweise offene Rollläden direkt zu bedienen.",
+              "In Einstellungen > Rollläden wählst du pro Rollladen, ab welchem Prozentwert er als offen zählt."
             ]
           },
           {
@@ -477,14 +512,14 @@
             body: "In Einstellungen > Boards kannst du mehrere Dashboards erstellen. Das Standard-Board ist immer vorhanden und kann nicht gelöscht werden.",
             bullets: [
               "Gib jedem Board einen eigenen Namen, zum Beispiel Wohnzimmer oder Nacht.",
-              "Pro Board wählst du, welche HomeKit-Räume, Lampen, Schalter, Szenen und Panels sichtbar sind.",
+              "Pro Board wählst du, welche HomeKit-Räume, Lampen, Schalter, Rollläden, Szenen und Panels sichtbar sind.",
               "Boards werden über iCloud gespeichert."
             ]
           },
           {
             label: "iCloud",
             title: "Speichern und wiederherstellen",
-            body: "HomeScreen speichert App-Einstellungen in iCloud, darunter Boards, Sichtbarkeit, gewählte Panels, Bildschirmruhe und Klimaauswahl.",
+            body: "HomeScreen speichert App-Einstellungen in iCloud, darunter Boards, Sichtbarkeit, gewählte Panels, Bildschirmruhe, Raum-Icons, Klimaauswahl und Rollladen-Grenzen.",
             bullets: [
               "Bei einer neuen Installation fragt die App zuerst, ob iCloud-Einstellungen wiederhergestellt werden sollen.",
               "Du kannst ein bestimmtes Board aus iCloud auswählen.",
@@ -494,10 +529,11 @@
           {
             label: "Einstellungen",
             title: "Verwaltung",
-            body: "Einstellungen ist in Tabs für Allgemein, Boards, Räume, Beleuchtung, Schalter, Szenen und App aufgeteilt. Einstellungen öffnen mit Face ID, Touch ID oder dem Gerätecode.",
+            body: "Einstellungen ist in Tabs für Allgemein, Boards, Räume, Beleuchtung, Schalter, Rollläden, Szenen und App aufgeteilt. Einstellungen öffnen mit Face ID, Touch ID oder dem Gerätecode.",
             bullets: [
-              "Wähle, welche Lampen, Schalter und Szenen sichtbar sind.",
+              "Wähle, welche Lampen, Schalter, Rollläden und Szenen sichtbar sind.",
               "Wähle, welches Klima-Zubehör auf dem Startbildschirm steht.",
+              "Wähle pro Rollladen, ab welchem Prozentwert er auf dem Startbildschirm als offen zählt.",
               "In Räume wählst du pro HomeKit-Raum ein eigenes Icon oder lässt HomeScreen automatisch wählen.",
               "In Bildschirmruhe legst du fest, ob das Display schwarz wird, dimmt oder aktiv bleibt.",
               "Mit Auf Standard zurücksetzen setzt du App-Einstellungen zurück, ohne deinen Kauf zu entfernen."
