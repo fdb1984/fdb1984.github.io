@@ -185,15 +185,16 @@
         },
         heading: "HomeScreen for HomeKit support",
         intro: [
-          "HomeScreen maakt van een iPad of iPhone een rustig HomeKit-dashboard voor in huis. De app is bedoeld voor landscape gebruik, bijvoorbeeld met Guided Access op een vaste plek aan de muur.",
+          "HomeScreen maakt van een iPad of iPhone een rustig HomeKit-dashboard en bedieningsscherm voor in huis. Op iPad is de app bedoeld voor landscape gebruik, bijvoorbeeld met Guided Access aan de muur. Op iPhone werkt het dashboard ook in portrait.",
           "Voor support of vragen kun je contact opnemen via "
         ],
         quickStart: {
           label: "Snel starten",
           title: "De eerste keer openen",
           bullets: [
-            "Zet het apparaat horizontaal. In portrait toont HomeScreen alleen een draaiverzoek.",
+            "Gebruik op iPad bij voorkeur landscape. Op iPhone kun je HomeScreen ook in portrait gebruiken.",
             "Geef HomeKit-toegang wanneer iOS daarom vraagt.",
+            "Geef locatie-toegang wanneer je lokaal weer en regenverwachting wilt zien.",
             "Als er nog geen HomeKit-data beschikbaar is, toont de app voorbeelddata zodat je de bediening kunt bekijken.",
             "De eerste 30 dagen kun je de app volledig proberen. Daarna ontgrendel je HomeScreen met een eenmalige aankoop via Apple."
           ]
@@ -202,11 +203,12 @@
           {
             label: "Homescherm",
             title: "Wat je ziet",
-            body: "Het homescherm toont tijd, datum, weer, regenverwachting, klimaat, verlichting, deuren en schermen. Alleen panelen met relevante data worden getoond.",
+            body: "Het homescherm toont tijd, datum, weer, regenverwachting, klimaat, verlichting, deuren, schermen, sensoren en meldingen. Alleen panelen met relevante data worden getoond.",
             bullets: [
               "Tik op verlichting, deuren, schermen of het weer om de details te openen.",
+              "Tik op sensoren of meldingen om direct de volledige lijst te openen.",
               "Bij geen gebruik gaat het scherm naar zwart en wordt het bij aanraken weer actief.",
-              "Als je meerdere borden gebruikt, zie je op het homescherm welk bord actief is."
+              "Als je meerdere borden gebruikt, zie je op het homescherm welk bord actief is en kun je daar van bord wisselen."
             ]
           },
           {
@@ -218,6 +220,36 @@
               "Dimbare lampen hebben opties voor uit, laatste aan-stand en 100%.",
               "Schermen hebben een slider voor de positie.",
               "Scenes staan per kamer en kunnen direct gestart worden."
+            ]
+          },
+          {
+            label: "Sensoren",
+            title: "Temperatuur en vochtigheid",
+            body: "Je kunt favoriete sensoren kiezen en deze als aparte kaart op het homescherm tonen. In de sensorenlijst zie je temperatuur en, wanneer beschikbaar, luchtvochtigheid.",
+            bullets: [
+              "Gebruik Settings om te kiezen welke sensoren zichtbaar zijn.",
+              "Tik op de sensorenkaart om de volledige lijst te openen.",
+              "Sensoren worden compact weergegeven op iPhone en ruimer op iPad."
+            ]
+          },
+          {
+            label: "Meldingen",
+            title: "Alerts zonder ruis",
+            body: "HomeScreen kan meldingen tonen voor accessoires die aandacht nodig hebben, zoals lage batterij, offline camera's, open deuren na zonsondergang, rookmelders en waterlekken.",
+            bullets: [
+              "Meerdere services van hetzelfde fysieke accessoire worden samengevoegd waar mogelijk.",
+              "Bekende meldingen kun je negeren zodat ze niet meetellen op het dashboard.",
+              "Genegeerde meldingen staan in een apart scherm en kunnen later weer worden hersteld."
+            ]
+          },
+          {
+            label: "Kamers",
+            title: "Volgorde en iconen",
+            body: "Kamers kunnen in je eigen volgorde worden gezet. Die volgorde wordt gebruikt bij verlichting, scenes, klimaat, sensoren en andere room-lijsten.",
+            bullets: [
+              "Gebruik Verplaats in de kamerweergave om kamers te sorteren.",
+              "Kamericonen kun je direct bij de kamer aanpassen.",
+              "Kies Alfabetisch om terug te gaan naar automatische sortering."
             ]
           },
           {
@@ -236,14 +268,14 @@
             body: "In Settings > Borden kun je meerdere dashboards maken. Het standaardbord is er altijd en kan niet worden verwijderd.",
             bullets: [
               "Geef elk bord een eigen naam, bijvoorbeeld Woonkamer of Nacht.",
-              "Per bord kun je kiezen welke HomeKit-kamers, lampen, schakelaars, schermen, scenes en panelen zichtbaar zijn.",
+              "Per bord kun je kiezen welke HomeKit-kamers, lampen, schakelaars, schermen, scenes, camera's, sensoren en panelen zichtbaar zijn.",
               "Borden worden via iCloud bewaard."
             ]
           },
           {
             label: "iCloud",
             title: "Opslaan en herstellen",
-            body: "HomeScreen bewaart appvoorkeuren in iCloud, zoals borden, zichtbaarheid, gekozen panelen, schermrust, kamericonen, klimaatkeuze en open-grenzen voor schermen.",
+            body: "HomeScreen bewaart appvoorkeuren in iCloud, zoals borden, zichtbaarheid, volgorde, aangepaste namen, gekozen panelen, schermrust, kamericonen, klimaatkeuze, favoriete sensoren, genegeerde meldingen en open-grenzen voor schermen.",
             bullets: [
               "Bij een nieuwe installatie vraagt de app eerst of je iCloud-instellingen wilt herstellen.",
               "Je kunt een specifiek bord uit iCloud kiezen.",
@@ -253,9 +285,10 @@
           {
             label: "Settings",
             title: "Beheer",
-            body: "Settings is verdeeld in tabs voor Algemeen, Borden, Kamers, Verlichting, Schakelaars, Schermen, Scenes en App. Settings opent met Face ID, Touch ID of de toestelcode.",
+            body: "Settings is verdeeld in tabs voor Algemeen, Borden, Kamers, Verlichting, Schakelaars, Schermen, Scenes, Sensoren, Camera's en App. Settings opent met Face ID, Touch ID of de toestelcode.",
             bullets: [
               "Kies welke lampen, schakelaars, schermen en scenes zichtbaar zijn.",
+              "Kies welke sensoren en camera's zichtbaar zijn en in welke volgorde ze staan.",
               "Kies welk klimaataccessoire op het homescherm staat.",
               "Kies per scherm vanaf welk percentage het als open telt op het homescherm.",
               "Kies in Kamers per HomeKit-kamer een eigen icoon, of laat HomeScreen automatisch kiezen.",
@@ -298,8 +331,17 @@
           title: "Camera en deurbel",
           bullets: [
             "Tik een camera om fullscreen te openen.",
+            "Camera's kun je in eigen volgorde zetten, bijvoorbeeld de belangrijkste camera bovenaan.",
             "Als de deurbel gaat, opent HomeScreen automatisch de gekoppelde camera en gaat na ongeveer 60 seconden terug.",
             "Op Mac kan HomeKit soms wel een camera tonen, maar geen livestreamprofiel doorgeven."
+          ]
+        },
+        weather: {
+          label: "Weer",
+          title: "Apple Weather",
+          paragraphs: [
+            "Het weer en de regenverwachting worden opgehaald via Apple Weather wanneer locatie en netwerk beschikbaar zijn. HomeScreen ververst weerdata bij openen, bij terugkeer naar actief gebruik en periodiek zolang de app actief is.",
+            "De Apple Weather-attributie staat in de app bij het weer en verwijst naar de wettelijke broninformatie: https://weatherkit.apple.com/legal-attribution.html"
           ]
         },
         privacy: {
@@ -323,15 +365,16 @@
         },
         heading: "HomeScreen for HomeKit support",
         intro: [
-          "HomeScreen turns an iPad or iPhone into a calm HomeKit dashboard for your home. The app is designed for landscape use, for example with Guided Access on a fixed wall-mounted device.",
+          "HomeScreen turns an iPad or iPhone into a calm HomeKit dashboard and control panel for your home. On iPad, the app is designed for landscape use, for example with Guided Access on a fixed wall-mounted device. On iPhone, the dashboard also works in portrait.",
           "For support or questions, contact "
         ],
         quickStart: {
           label: "Quick start",
           title: "Opening the app for the first time",
           bullets: [
-            "Turn the device sideways. In portrait, HomeScreen only shows a rotate request.",
+            "Use landscape on iPad when possible. On iPhone, HomeScreen can also be used in portrait.",
             "Allow HomeKit access when iOS asks for it.",
+            "Allow location access if you want local weather and rain forecast.",
             "If no HomeKit data is available yet, the app shows sample data so you can explore the controls.",
             "You can use the full app for the first 30 days. After that, unlock HomeScreen with a one-time purchase through Apple."
           ]
@@ -340,11 +383,12 @@
           {
             label: "Home screen",
             title: "What you see",
-            body: "The home screen shows the time, date, weather, rain forecast, climate, lights, doors, and shades. Panels only appear when relevant data is available.",
+            body: "The home screen shows the time, date, weather, rain forecast, climate, lights, doors, shades, sensors, and alerts. Panels only appear when relevant data is available.",
             bullets: [
               "Tap lights, doors, shades, or the weather to open their details.",
+              "Tap sensors or alerts to open the full list right away.",
               "When idle, the screen turns black and wakes again when touched.",
-              "If you use multiple boards, the home screen shows which board is active."
+              "If you use multiple boards, the home screen shows which board is active and lets you switch boards."
             ]
           },
           {
@@ -356,6 +400,36 @@
               "Dimmable lights offer off, previous on level, and 100%.",
               "Shades have a slider for position.",
               "Scenes are grouped by room and can be started directly."
+            ]
+          },
+          {
+            label: "Sensors",
+            title: "Temperature and humidity",
+            body: "You can choose favorite sensors and show them as a separate card on the home screen. The sensors list shows temperature and, when available, humidity.",
+            bullets: [
+              "Use Settings to choose which sensors are visible.",
+              "Tap the sensors card to open the full list.",
+              "Sensors are shown compactly on iPhone and with more room on iPad."
+            ]
+          },
+          {
+            label: "Alerts",
+            title: "Warnings without noise",
+            body: "HomeScreen can show alerts for accessories that need attention, such as low battery, offline cameras, doors open after sunset, smoke alarms, and water leaks.",
+            bullets: [
+              "Multiple services from the same physical accessory are combined where possible.",
+              "Known alerts can be ignored so they no longer count on the dashboard.",
+              "Ignored alerts live in a separate screen and can be restored later."
+            ]
+          },
+          {
+            label: "Rooms",
+            title: "Order and icons",
+            body: "Rooms can be arranged in your own order. That order is used for lighting, scenes, climate, sensors, and other room-based lists.",
+            bullets: [
+              "Use Move in the room overview to reorder rooms.",
+              "Room icons can be changed directly from the room.",
+              "Choose Alphabetical to return to automatic sorting."
             ]
           },
           {
@@ -374,14 +448,14 @@
             body: "In Settings > Boards you can create multiple dashboards. The default board is always present and cannot be deleted.",
             bullets: [
               "Give each board its own name, such as Living Room or Night.",
-              "For each board, choose which HomeKit rooms, lights, switches, shades, scenes, and panels are visible.",
+              "For each board, choose which HomeKit rooms, lights, switches, shades, scenes, cameras, sensors, and panels are visible.",
               "Boards are saved with iCloud."
             ]
           },
           {
             label: "iCloud",
             title: "Save and restore",
-            body: "HomeScreen saves app preferences in iCloud, including boards, visibility, selected panels, idle screen behavior, room icons, climate choice, and open thresholds for shades.",
+            body: "HomeScreen saves app preferences in iCloud, including boards, visibility, order, custom names, selected panels, idle screen behavior, room icons, climate choice, favorite sensors, ignored alerts, and open thresholds for shades.",
             bullets: [
               "On a new installation, the app first asks whether you want to restore iCloud settings.",
               "You can choose a specific board from iCloud.",
@@ -391,9 +465,10 @@
           {
             label: "Settings",
             title: "Management",
-            body: "Settings is split into tabs for General, Boards, Rooms, Lighting, Switches, Shades, Scenes, and App. Settings opens with Face ID, Touch ID, or the device passcode.",
+            body: "Settings is split into tabs for General, Boards, Rooms, Lighting, Switches, Shades, Scenes, Sensors, Cameras, and App. Settings opens with Face ID, Touch ID, or the device passcode.",
             bullets: [
               "Choose which lights, switches, shades, and scenes are visible.",
+              "Choose which sensors and cameras are visible and in which order they appear.",
               "Choose which climate accessory appears on the home screen.",
               "Choose per shade from which percentage it counts as open on the home screen.",
               "In Rooms, choose a custom icon for each HomeKit room or let HomeScreen pick one automatically.",
@@ -436,8 +511,17 @@
           title: "Camera and doorbell",
           bullets: [
             "Tap a camera to open it fullscreen.",
+            "Cameras can be reordered, for example to place the most important camera first.",
             "When the doorbell rings, HomeScreen automatically opens the linked camera and returns after about 60 seconds.",
             "On Mac, HomeKit can sometimes show a camera without providing a livestream profile."
+          ]
+        },
+        weather: {
+          label: "Weather",
+          title: "Apple Weather",
+          paragraphs: [
+            "Weather and rain forecast are fetched through Apple Weather when location and network access are available. HomeScreen refreshes weather when opened, when returning to active use, and periodically while the app is active.",
+            "Apple Weather attribution is shown in the app near the weather and links to the legal source information: https://weatherkit.apple.com/legal-attribution.html"
           ]
         },
         privacy: {
@@ -461,15 +545,16 @@
         },
         heading: "HomeScreen for HomeKit Support",
         intro: [
-          "HomeScreen macht aus einem iPad oder iPhone ein ruhiges HomeKit-Dashboard für dein Zuhause. Die App ist für die Nutzung im Querformat gedacht, zum Beispiel mit Geführtem Zugriff auf einem fest montierten Gerät.",
+          "HomeScreen macht aus einem iPad oder iPhone ein ruhiges HomeKit-Dashboard und Bedienfeld für dein Zuhause. Auf dem iPad ist die App für Querformat gedacht, zum Beispiel mit Geführtem Zugriff auf einem fest montierten Gerät. Auf dem iPhone funktioniert das Dashboard auch im Hochformat.",
           "Für Support oder Fragen kontaktiere "
         ],
         quickStart: {
           label: "Schnellstart",
           title: "Die App zum ersten Mal öffnen",
           bullets: [
-            "Drehe das Gerät ins Querformat. Im Hochformat zeigt HomeScreen nur einen Drehhinweis.",
+            "Nutze auf dem iPad möglichst Querformat. Auf dem iPhone kann HomeScreen auch im Hochformat verwendet werden.",
             "Erlaube den HomeKit-Zugriff, wenn iOS danach fragt.",
+            "Erlaube Standortzugriff, wenn du lokales Wetter und Regenvorhersage sehen möchtest.",
             "Wenn noch keine HomeKit-Daten verfügbar sind, zeigt die App Beispieldaten, damit du die Bedienung ansehen kannst.",
             "In den ersten 30 Tagen kannst du die App vollständig testen. Danach schaltest du HomeScreen mit einem einmaligen Kauf über Apple frei."
           ]
@@ -478,11 +563,12 @@
           {
             label: "Startbildschirm",
             title: "Was du siehst",
-            body: "Der Startbildschirm zeigt Uhrzeit, Datum, Wetter, Regenvorhersage, Klima, Beleuchtung, Türen und Beschattung. Es werden nur Panels mit passenden Daten angezeigt.",
+            body: "Der Startbildschirm zeigt Uhrzeit, Datum, Wetter, Regenvorhersage, Klima, Beleuchtung, Türen, Beschattung, Sensoren und Hinweise. Es werden nur Panels mit passenden Daten angezeigt.",
             bullets: [
               "Tippe auf Beleuchtung, Türen, Beschattung oder das Wetter, um Details zu öffnen.",
+              "Tippe auf Sensoren oder Hinweise, um direkt die vollständige Liste zu öffnen.",
               "Bei Inaktivität wird der Bildschirm schwarz und durch Berührung wieder aktiv.",
-              "Wenn du mehrere Boards nutzt, zeigt der Startbildschirm das aktive Board."
+              "Wenn du mehrere Boards nutzt, zeigt der Startbildschirm das aktive Board und du kannst dort wechseln."
             ]
           },
           {
@@ -494,6 +580,36 @@
               "Dimmbare Lampen bieten Aus, letzte Ein-Stufe und 100%.",
               "Beschattung hat einen Slider für die Position.",
               "Szenen sind nach Raum gruppiert und können direkt gestartet werden."
+            ]
+          },
+          {
+            label: "Sensoren",
+            title: "Temperatur und Luftfeuchtigkeit",
+            body: "Du kannst Lieblingssensoren auswählen und als eigene Karte auf dem Startbildschirm anzeigen. In der Sensorenliste siehst du Temperatur und, wenn verfügbar, Luftfeuchtigkeit.",
+            bullets: [
+              "In den Einstellungen wählst du, welche Sensoren sichtbar sind.",
+              "Tippe auf die Sensorenkarte, um die vollständige Liste zu öffnen.",
+              "Sensoren werden auf dem iPhone kompakt und auf dem iPad großzügiger dargestellt."
+            ]
+          },
+          {
+            label: "Hinweise",
+            title: "Warnungen ohne Lärm",
+            body: "HomeScreen kann Hinweise für Zubehör anzeigen, das Aufmerksamkeit braucht, zum Beispiel niedrige Batterie, Offline-Kameras, offene Türen nach Sonnenuntergang, Rauchmelder und Wasserlecks.",
+            bullets: [
+              "Mehrere Services desselben physischen Zubehörs werden, wenn möglich, zusammengefasst.",
+              "Bekannte Hinweise kannst du ignorieren, damit sie nicht mehr auf dem Dashboard mitzählen.",
+              "Ignorierte Hinweise stehen in einem separaten Bildschirm und können später wiederhergestellt werden."
+            ]
+          },
+          {
+            label: "Räume",
+            title: "Reihenfolge und Icons",
+            body: "Räume können in eine eigene Reihenfolge gebracht werden. Diese Reihenfolge wird für Beleuchtung, Szenen, Klima, Sensoren und andere Raumlisten genutzt.",
+            bullets: [
+              "Nutze Verschieben in der Raumübersicht, um Räume zu sortieren.",
+              "Raum-Icons können direkt am Raum angepasst werden.",
+              "Wähle Alphabetisch, um zur automatischen Sortierung zurückzukehren."
             ]
           },
           {
@@ -512,14 +628,14 @@
             body: "In Einstellungen > Boards kannst du mehrere Dashboards erstellen. Das Standard-Board ist immer vorhanden und kann nicht gelöscht werden.",
             bullets: [
               "Gib jedem Board einen eigenen Namen, zum Beispiel Wohnzimmer oder Nacht.",
-              "Pro Board wählst du, welche HomeKit-Räume, Lampen, Schalter, Beschattung, Szenen und Panels sichtbar sind.",
+              "Pro Board wählst du, welche HomeKit-Räume, Lampen, Schalter, Beschattung, Szenen, Kameras, Sensoren und Panels sichtbar sind.",
               "Boards werden über iCloud gespeichert."
             ]
           },
           {
             label: "iCloud",
             title: "Speichern und wiederherstellen",
-            body: "HomeScreen speichert App-Einstellungen in iCloud, darunter Boards, Sichtbarkeit, gewählte Panels, Bildschirmruhe, Raum-Icons, Klimaauswahl und Offen-Grenzen für Beschattung.",
+            body: "HomeScreen speichert App-Einstellungen in iCloud, darunter Boards, Sichtbarkeit, Reihenfolge, eigene Namen, gewählte Panels, Bildschirmruhe, Raum-Icons, Klimaauswahl, Lieblingssensoren, ignorierte Hinweise und Offen-Grenzen für Beschattung.",
             bullets: [
               "Bei einer neuen Installation fragt die App zuerst, ob iCloud-Einstellungen wiederhergestellt werden sollen.",
               "Du kannst ein bestimmtes Board aus iCloud auswählen.",
@@ -529,9 +645,10 @@
           {
             label: "Einstellungen",
             title: "Verwaltung",
-            body: "Einstellungen ist in Tabs für Allgemein, Boards, Räume, Beleuchtung, Schalter, Beschattung, Szenen und App aufgeteilt. Einstellungen öffnen mit Face ID, Touch ID oder dem Gerätecode.",
+            body: "Einstellungen ist in Tabs für Allgemein, Boards, Räume, Beleuchtung, Schalter, Beschattung, Szenen, Sensoren, Kameras und App aufgeteilt. Einstellungen öffnen mit Face ID, Touch ID oder dem Gerätecode.",
             bullets: [
               "Wähle, welche Lampen, Schalter, Beschattung und Szenen sichtbar sind.",
+              "Wähle, welche Sensoren und Kameras sichtbar sind und in welcher Reihenfolge sie erscheinen.",
               "Wähle, welches Klima-Zubehör auf dem Startbildschirm steht.",
               "Wähle pro Element, ab welchem Prozentwert es auf dem Startbildschirm als offen zählt.",
               "In Räume wählst du pro HomeKit-Raum ein eigenes Icon oder lässt HomeScreen automatisch wählen.",
@@ -574,8 +691,17 @@
           title: "Kamera und Türklingel",
           bullets: [
             "Tippe auf eine Kamera, um sie im Vollbild zu öffnen.",
+            "Kameras können sortiert werden, zum Beispiel damit die wichtigste Kamera oben steht.",
             "Wenn die Türklingel klingelt, öffnet HomeScreen automatisch die verknüpfte Kamera und kehrt nach etwa 60 Sekunden zurück.",
             "Auf dem Mac kann HomeKit manchmal eine Kamera anzeigen, ohne ein Livestream-Profil bereitzustellen."
+          ]
+        },
+        weather: {
+          label: "Wetter",
+          title: "Apple Weather",
+          paragraphs: [
+            "Wetter und Regenvorhersage werden über Apple Weather geladen, wenn Standort und Netzwerk verfügbar sind. HomeScreen aktualisiert Wetter beim Öffnen, beim Zurückkehren zur aktiven Nutzung und regelmäßig solange die App aktiv ist.",
+            "Apple Weather-Attribution wird in der App beim Wetter angezeigt und verweist auf die rechtlichen Quelleninformationen: https://weatherkit.apple.com/legal-attribution.html"
           ]
         },
         privacy: {
@@ -699,6 +825,7 @@
 
       main.append(section(content.warning, "warning"));
       main.append(section(content.camera));
+      if (content.weather) main.append(section(content.weather, "note"));
 
       const privacy = section(content.privacy);
       const privacyText = document.createElement("p");
