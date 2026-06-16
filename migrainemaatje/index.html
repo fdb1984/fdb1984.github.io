@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MigraineMaatje - Support en privacy</title>
+  <meta name="description" content="Support- en privacyinformatie voor MigraineMaatje.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07090b;
+      --panel: #161a1f;
+      --panel-soft: #101418;
+      --line: #2a3038;
+      --text: #f7f8fa;
+      --muted: #b9c0c8;
+      --soft: #8f98a3;
+      --mint: #64e6bd;
+      --amber: #f2c45c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 50% -10%, rgba(100, 230, 189, 0.14), transparent 35%), var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 56px 22px 72px;
+    }
+
+    header { margin-bottom: 28px; }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 62px);
+      line-height: 1.02;
+      margin: 0 0 12px;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 10px;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    p { margin: 0 0 12px; }
+
+    a {
+      color: var(--mint);
+      font-weight: 700;
+    }
+
+    .eyebrow {
+      color: var(--mint);
+      font-weight: 800;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .lead {
+      font-size: 20px;
+      color: #dfe5ea;
+      max-width: 680px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .card {
+      display: block;
+      padding: 22px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: linear-gradient(160deg, var(--panel), var(--panel-soft));
+      text-decoration: none;
+    }
+
+    .card h2 { color: var(--text); }
+    .card p { margin-bottom: 0; }
+
+    .note {
+      margin-top: 22px;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid rgba(242, 196, 92, 0.32);
+      background: rgba(242, 196, 92, 0.08);
+    }
+
+    .note strong { color: var(--amber); }
+
+    footer {
+      margin-top: 34px;
+      color: var(--soft);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      main { padding-top: 40px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">MigraineMaatje</p>
+      <h1>Support en privacy</h1>
+      <p class="lead">MigraineMaatje helpt je migraine vastleggen en persoonlijke signalen beter begrijpen, zonder advertenties en zonder verkoop van gezondheidsdata.</p>
+    </header>
+
+    <div class="grid">
+      <a class="card" href="privacy.html">
+        <h2>Privacybeleid</h2>
+        <p>Welke gegevens MigraineMaatje gebruikt, waar ze blijven en hoe Apple Gezondheid, weerdata en iCloud worden gebruikt.</p>
+      </a>
+      <a class="card" href="support.html">
+        <h2>Help en support</h2>
+        <p>Hulp bij starten, Apple Gezondheid, weerdata, Apple Watch, meldingen, Premium en contact.</p>
+      </a>
+    </div>
+
+    <section class="note" aria-label="Belangrijke informatie">
+      <p><strong>Belangrijk:</strong> MigraineMaatje geeft geen diagnose en geen medisch advies. Bespreek medische vragen, medicatie en aanhoudende klachten met je arts.</p>
+    </section>
+
+    <footer>
+      <p>Contact: <a href="mailto:support@dbruin.com">support@dbruin.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
