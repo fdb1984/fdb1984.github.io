@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MigraineMaatje - Support and Privacy</title>
-  <meta name="description" content="Support and privacy information for MigraineMaatje.">
+  <title>MigraineMaatje</title>
+  <meta name="description" content="Support- en privacyinformatie voor MigraineMaatje.">
   <style>
     :root {
       color-scheme: dark;
@@ -75,6 +75,33 @@
       max-width: 680px;
     }
 
+    .language-switch {
+      display: inline-flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      padding: 6px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .language-switch button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 700;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+
+    .language-switch button.active {
+      background: var(--mint);
+      color: #08120f;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -110,6 +137,9 @@
       font-size: 14px;
     }
 
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+
     @media (max-width: 720px) {
       main { padding-top: 40px; }
       .grid { grid-template-columns: 1fr; }
@@ -118,30 +148,113 @@
 </head>
 <body>
   <main>
-    <header>
-      <p class="eyebrow">MigraineMaatje</p>
-      <h1>Support and Privacy</h1>
-      <p class="lead">MigraineMaatje helps you log migraine and better understand personal signals, with no ads and no sale of health data.</p>
-    </header>
-
-    <div class="grid">
-      <a class="card" href="privacy.html">
-        <h2>Privacy Policy</h2>
-        <p>What data MigraineMaatje uses, where it stays, and how Apple Health, weather data, and iCloud are used.</p>
-      </a>
-      <a class="card" href="support.html">
-        <h2>Help and Support</h2>
-        <p>Help with getting started, Apple Health, weather data, Apple Watch, notifications, Premium, and contact.</p>
-      </a>
+    <div class="language-switch" aria-label="Language switch">
+      <button type="button" data-language-button="nl">Nederlands</button>
+      <button type="button" data-language-button="en">English</button>
     </div>
 
-    <section class="note" aria-label="Important information">
-      <p><strong>Important:</strong> MigraineMaatje does not provide diagnosis or medical advice. Discuss medical questions, medication, and ongoing symptoms with your doctor.</p>
+    <section data-lang="nl">
+      <header>
+        <p class="eyebrow">MigraineMaatje</p>
+        <h1>Support en privacy</h1>
+        <p class="lead">MigraineMaatje helpt je migraine vastleggen en persoonlijke signalen beter begrijpen, zonder advertenties en zonder verkoop van gezondheidsdata.</p>
+      </header>
+
+      <div class="grid">
+        <a class="card" href="privacy.html?lang=nl">
+          <h2>Privacybeleid</h2>
+          <p>Welke gegevens MigraineMaatje gebruikt, waar die blijven en hoe Apple Gezondheid, weerdata en iCloud worden gebruikt.</p>
+        </a>
+        <a class="card" href="support.html?lang=nl">
+          <h2>Hulp en support</h2>
+          <p>Hulp bij starten, Apple Gezondheid, weerdata, Apple Watch, meldingen, Premium en contact.</p>
+        </a>
+      </div>
+
+      <section class="note" aria-label="Belangrijke informatie">
+        <p><strong>Belangrijk:</strong> MigraineMaatje geeft geen diagnose of medisch advies. Bespreek medische vragen, medicatie en aanhoudende klachten altijd met je arts.</p>
+      </section>
+
+      <footer>
+        <p>Contact: <a href="mailto:support@dbruin.com">support@dbruin.com</a></p>
+      </footer>
     </section>
 
-    <footer>
-      <p>Contact: <a href="mailto:support@dbruin.com">support@dbruin.com</a></p>
-    </footer>
+    <section data-lang="en">
+      <header>
+        <p class="eyebrow">MigraineMaatje</p>
+        <h1>Support and Privacy</h1>
+        <p class="lead">MigraineMaatje helps you log migraine and better understand personal signals, with no ads and no sale of health data.</p>
+      </header>
+
+      <div class="grid">
+        <a class="card" href="privacy.html?lang=en">
+          <h2>Privacy Policy</h2>
+          <p>What data MigraineMaatje uses, where it stays, and how Apple Health, weather data, and iCloud are used.</p>
+        </a>
+        <a class="card" href="support.html?lang=en">
+          <h2>Help and Support</h2>
+          <p>Help with getting started, Apple Health, weather data, Apple Watch, notifications, Premium, and contact.</p>
+        </a>
+      </div>
+
+      <section class="note" aria-label="Important information">
+        <p><strong>Important:</strong> MigraineMaatje does not provide diagnosis or medical advice. Discuss medical questions, medication, and ongoing symptoms with your doctor.</p>
+      </section>
+
+      <footer>
+        <p>Contact: <a href="mailto:support@dbruin.com">support@dbruin.com</a></p>
+      </footer>
+    </section>
   </main>
+
+  <script>
+    (function () {
+      const preferred = new URLSearchParams(window.location.search).get("lang");
+      const browserLanguage = (navigator.language || "nl").toLowerCase();
+      const initialLanguage = preferred === "en" || preferred === "nl"
+        ? preferred
+        : (browserLanguage.startsWith("en") ? "en" : "nl");
+      const descriptions = {
+        nl: "Support- en privacyinformatie voor MigraineMaatje.",
+        en: "Support and privacy information for MigraineMaatje."
+      };
+      const titles = {
+        nl: "MigraineMaatje - Support en privacy",
+        en: "MigraineMaatje - Support and Privacy"
+      };
+
+      const sections = document.querySelectorAll("[data-lang]");
+      const buttons = document.querySelectorAll("[data-language-button]");
+      const metaDescription = document.querySelector('meta[name="description"]');
+
+      function setLanguage(language) {
+        document.documentElement.lang = language;
+        document.title = titles[language] || titles.nl;
+        if (metaDescription) {
+          metaDescription.setAttribute("content", descriptions[language] || descriptions.nl);
+        }
+        document.querySelector(".language-switch")?.setAttribute("aria-label", language === "en" ? "Language switch" : "Taalwisselaar");
+        sections.forEach((section) => {
+          section.classList.toggle("active", section.getAttribute("data-lang") === language);
+        });
+        buttons.forEach((button) => {
+          button.classList.toggle("active", button.getAttribute("data-language-button") === language);
+        });
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const language = button.getAttribute("data-language-button");
+          setLanguage(language);
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", language);
+          window.history.replaceState({}, "", url);
+        });
+      });
+
+      setLanguage(initialLanguage);
+    })();
+  </script>
 </body>
 </html>

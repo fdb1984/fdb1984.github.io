@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Help and Support - MigraineMaatje</title>
-  <meta name="description" content="Help and support for MigraineMaatje.">
+  <title>MigraineMaatje</title>
+  <meta name="description" content="Hulp en supportinformatie voor MigraineMaatje.">
   <style>
     :root {
       color-scheme: dark;
@@ -62,7 +62,7 @@
 
     header { margin-bottom: 24px; }
 
-    section {
+    section.card {
       padding: 22px;
       margin-top: 16px;
       background: var(--panel);
@@ -81,91 +81,256 @@
     .important { border-color: rgba(242, 196, 92, 0.36); background: rgba(242, 196, 92, 0.08); }
     .important strong { color: var(--amber); }
 
+    .language-switch {
+      display: inline-flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      padding: 6px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .language-switch button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 700;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+
+    .language-switch button.active {
+      background: var(--mint);
+      color: #08120f;
+    }
+
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+
     @media (max-width: 720px) {
       main { padding: 32px 16px 56px; }
-      section { padding: 18px; }
+      section.card { padding: 18px; }
       .grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
   <main>
-    <nav><a href="index.html">Back to MigraineMaatje</a></nav>
+    <div class="language-switch" aria-label="Language switch">
+      <button type="button" data-language-button="nl">Nederlands</button>
+      <button type="button" data-language-button="en">English</button>
+    </div>
 
-    <header>
-      <h1>Help and Support</h1>
-      <p class="muted">MigraineMaatje - last updated on June 16, 2026</p>
-      <p>MigraineMaatje is designed as a calm daily companion: quickly log an attack, fill in the rest later, and better understand personal signals over time.</p>
-    </header>
+    <section data-lang="nl">
+      <nav><a href="index.html?lang=nl">Terug naar MigraineMaatje</a></nav>
 
-    <section class="important">
-      <h2>Important</h2>
-      <p><strong>MigraineMaatje does not provide diagnosis or medical advice.</strong> For severe, new, or unusual symptoms, contact your doctor or emergency care.</p>
-    </section>
+      <header>
+        <h1>Hulp en support</h1>
+        <p class="muted">MigraineMaatje - bijgewerkt op 16 juni 2026</p>
+        <p>MigraineMaatje is bedoeld als rustige dagelijkse metgezel: snel een aanval vastleggen, later aanvullen en stap voor stap persoonlijke signalen beter begrijpen.</p>
+      </header>
 
-    <div class="grid">
-      <section>
-        <h2>Quick Start</h2>
+      <section class="card important">
+        <h2>Belangrijk</h2>
+        <p><strong>MigraineMaatje geeft geen diagnose of medisch advies.</strong> Neem bij ernstige, nieuwe of ongebruikelijke klachten contact op met je arts of spoedzorg.</p>
+      </section>
+
+      <div class="grid">
+        <section class="card">
+          <h2>Snel starten</h2>
+          <ul>
+            <li>Open de app en doorloop de eerste stappen voor toestemming en basisinstellingen.</li>
+            <li>Geef Apple Gezondheid en locatie alleen toegang als jij dat wilt.</li>
+            <li>Leg een aanval vast met <strong>Aanval vastleggen</strong>.</li>
+            <li>Tijdens migraine hoef je zo min mogelijk in te vullen; details kun je later afronden.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Apple Watch</h2>
+          <p>De Watch-app is bewust klein gehouden: één status, één hoofdreden en een snelle manier om een aanval vast te leggen. De uitgebreide informatie blijft op de iPhone.</p>
+        </section>
+      </div>
+
+      <section class="card">
+        <h2>Apple Gezondheid werkt niet of laat weinig data zien</h2>
         <ul>
-          <li>Open the app and complete the first permission and setup steps.</li>
-          <li>Only grant Apple Health and location access if you want to.</li>
-          <li>Log an attack with <strong>Log attack</strong>.</li>
-          <li>During migraine, enter as little as possible; you can finish the details later.</li>
+          <li>Controleer op iPhone: Instellingen &gt; Privacy en beveiliging &gt; Gezondheid &gt; MigraineMaatje.</li>
+          <li>Controleer ook in de Apple Gezondheid-app welke categorieën zijn toegestaan.</li>
+          <li>Niet iedereen heeft Apple Watch-data. MigraineMaatje blijft bruikbaar met alleen dagboek, medicatie en handmatige registraties.</li>
         </ul>
       </section>
 
-      <section>
-        <h2>Apple Watch</h2>
-        <p>The Watch app is intentionally small: one status, one main reason, and a quick way to log an attack. Detailed information stays on iPhone.</p>
+      <section class="card">
+        <h2>Weer of luchtdruk ververst niet</h2>
+        <ul>
+          <li>Controleer of locatie-toegang voor MigraineMaatje aan staat.</li>
+          <li>Controleer of internet beschikbaar is.</li>
+          <li>Als Apple Weather / WeatherKit tijdelijk niet beschikbaar is, blijft de app gewoon werken met de data die wel beschikbaar is.</li>
+        </ul>
       </section>
-    </div>
 
-    <section>
-      <h2>Apple Health Is Not Working or Shows Little Data</h2>
-      <ul>
-        <li>On iPhone, check: Settings &gt; Privacy &amp; Security &gt; Health &gt; MigraineMaatje.</li>
-        <li>Also check in the Apple Health app that the correct categories are allowed.</li>
-        <li>Not everyone has Apple Watch data. MigraineMaatje remains useful with diary entries, medication, and manual logging alone.</li>
-      </ul>
+      <section class="card">
+        <h2>Medicatie beheren</h2>
+        <p>Je kunt aanvalsmedicatie en preventieve medicatie op één compacte plek bijhouden. Voorraad is optioneel. De app geeft geen dosisadvies en vervangt Apple Medicatie of advies van je arts niet.</p>
+      </section>
+
+      <section class="card">
+        <h2>Premium en aankoop herstellen</h2>
+        <ul>
+          <li>Basis migraine vastleggen blijft gratis.</li>
+          <li>Premium is bedoeld voor diepere interpretatie, zoals waarom je status verandert, maandanalyse in gewone taal, medicatie-effect, terugkeer binnen 24 uur en consultvoorbereiding.</li>
+          <li>Gebruik <strong>Herstel aankoop</strong> in de app als Premium na aankoop of herinstallatie niet zichtbaar is.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Veelgestelde vragen</h2>
+        <ul>
+          <li><strong>Moet ik elke dag alles invullen?</strong> Nee. Richt je vooral op aanvallen, medicatie en opvallende dagen.</li>
+          <li><strong>Waarom laat de app soms maar beperkte signalen zien?</strong> Dat betekent meestal dat er nog weinig recente metingen of dagboekdata zijn. De uitleg wordt persoonlijker zodra er meer betrouwbare data beschikbaar is.</li>
+          <li><strong>Kan ik data uit een andere app importeren?</strong> De app ondersteunt import waar mogelijk en kan vragen om velden te bevestigen als die niet zeker genoeg herkend worden.</li>
+          <li><strong>Kan ik dit met mijn arts gebruiken?</strong> Ja. De app kan een basisrapport en bespreekpunten tonen. Het is bedoeld als voorbereiding, niet als diagnose.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Mail naar <a href="mailto:support@dbruin.com">support@dbruin.com</a> voor hulp. Stuur bij technische vragen liefst ook je iPhone-model, iOS-versie, Apple Watch-model als je die gebruikt en wat je probeerde te doen.</p>
+      </section>
     </section>
 
-    <section>
-      <h2>Weather or Air Pressure Is Not Updating</h2>
-      <ul>
-        <li>Check that location access for MigraineMaatje is enabled.</li>
-        <li>Check that internet is available.</li>
-        <li>If Apple Weather / WeatherKit is temporarily unavailable, the app keeps working with the data that is available.</li>
-      </ul>
-    </section>
+    <section data-lang="en">
+      <nav><a href="index.html?lang=en">Back to MigraineMaatje</a></nav>
 
-    <section>
-      <h2>Managing Medication</h2>
-      <p>You can keep acute medication and preventive medication in one compact place. Stock is optional. The app does not provide dosage advice and does not replace Apple Medications or your doctor’s advice.</p>
-    </section>
+      <header>
+        <h1>Help and Support</h1>
+        <p class="muted">MigraineMaatje - last updated on June 16, 2026</p>
+        <p>MigraineMaatje is designed as a calm daily companion: quickly log an attack, fill in the rest later, and better understand personal signals over time.</p>
+      </header>
 
-    <section>
-      <h2>Premium and Restoring Purchases</h2>
-      <ul>
-        <li>Basic migraine logging remains free.</li>
-        <li>Premium is for deeper interpretation, such as why your status changes, plain-language monthly analysis, medication effect, recurrence within 24 hours, and appointment preparation.</li>
-        <li>Use <strong>Restore Purchase</strong> in the app if Premium does not appear after purchase or reinstall.</li>
-      </ul>
-    </section>
+      <section class="card important">
+        <h2>Important</h2>
+        <p><strong>MigraineMaatje does not provide diagnosis or medical advice.</strong> For severe, new, or unusual symptoms, contact your doctor or emergency care.</p>
+      </section>
 
-    <section>
-      <h2>Frequently Asked Questions</h2>
-      <ul>
-        <li><strong>Do I need to fill in everything every day?</strong> No. Focus mainly on attacks, medication, and notable days.</li>
-        <li><strong>Why does the app sometimes show only limited signals?</strong> That usually means there are few recent measurements or diary entries. Explanations become more personal as more reliable data is available.</li>
-        <li><strong>Can I import data from another app?</strong> The app supports import where possible and may ask you to confirm fields it cannot confidently interpret.</li>
-        <li><strong>Can I use this with my doctor?</strong> Yes. The app can show a basic report and discussion points. It is meant as preparation, not diagnosis.</li>
-      </ul>
-    </section>
+      <div class="grid">
+        <section class="card">
+          <h2>Quick Start</h2>
+          <ul>
+            <li>Open the app and complete the first permission and setup steps.</li>
+            <li>Only grant Apple Health and location access if you want to.</li>
+            <li>Log an attack with <strong>Log attack</strong>.</li>
+            <li>During migraine, enter as little as possible; you can finish the details later.</li>
+          </ul>
+        </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email <a href="mailto:support@dbruin.com">support@dbruin.com</a> for support. For technical questions, please include your iPhone model, iOS version, Apple Watch model if you use one, and what you were trying to do.</p>
+        <section class="card">
+          <h2>Apple Watch</h2>
+          <p>The Watch app is intentionally small: one status, one main reason, and a quick way to log an attack. Detailed information stays on iPhone.</p>
+        </section>
+      </div>
+
+      <section class="card">
+        <h2>Apple Health Is Not Working or Shows Little Data</h2>
+        <ul>
+          <li>On iPhone, check: Settings &gt; Privacy &amp; Security &gt; Health &gt; MigraineMaatje.</li>
+          <li>Also check in the Apple Health app that the correct categories are allowed.</li>
+          <li>Not everyone has Apple Watch data. MigraineMaatje remains useful with diary entries, medication, and manual logging alone.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Weather or Air Pressure Is Not Updating</h2>
+        <ul>
+          <li>Check that location access for MigraineMaatje is enabled.</li>
+          <li>Check that internet is available.</li>
+          <li>If Apple Weather / WeatherKit is temporarily unavailable, the app keeps working with the data that is available.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Managing Medication</h2>
+        <p>You can keep acute medication and preventive medication in one compact place. Stock is optional. The app does not provide dosage advice and does not replace Apple Medications or your doctor’s advice.</p>
+      </section>
+
+      <section class="card">
+        <h2>Premium and Restoring Purchases</h2>
+        <ul>
+          <li>Basic migraine logging remains free.</li>
+          <li>Premium is for deeper interpretation, such as why your status changes, plain-language monthly analysis, medication effect, recurrence within 24 hours, and appointment preparation.</li>
+          <li>Use <strong>Restore Purchase</strong> in the app if Premium does not appear after purchase or reinstall.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+          <li><strong>Do I need to fill in everything every day?</strong> No. Focus mainly on attacks, medication, and notable days.</li>
+          <li><strong>Why does the app sometimes show only limited signals?</strong> That usually means there are few recent measurements or diary entries. Explanations become more personal as more reliable data is available.</li>
+          <li><strong>Can I import data from another app?</strong> The app supports import where possible and may ask you to confirm fields it cannot confidently interpret.</li>
+          <li><strong>Can I use this with my doctor?</strong> Yes. The app can show a basic report and discussion points. It is meant as preparation, not diagnosis.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Email <a href="mailto:support@dbruin.com">support@dbruin.com</a> for support. For technical questions, please include your iPhone model, iOS version, Apple Watch model if you use one, and what you were trying to do.</p>
+      </section>
     </section>
   </main>
+
+  <script>
+    (function () {
+      const preferred = new URLSearchParams(window.location.search).get("lang");
+      const browserLanguage = (navigator.language || "nl").toLowerCase();
+      const initialLanguage = preferred === "en" || preferred === "nl"
+        ? preferred
+        : (browserLanguage.startsWith("en") ? "en" : "nl");
+      const descriptions = {
+        nl: "Hulp en supportinformatie voor MigraineMaatje.",
+        en: "Help and support information for MigraineMaatje."
+      };
+      const titles = {
+        nl: "Hulp en support - MigraineMaatje",
+        en: "Help and Support - MigraineMaatje"
+      };
+
+      const sections = document.querySelectorAll("[data-lang]");
+      const buttons = document.querySelectorAll("[data-language-button]");
+      const metaDescription = document.querySelector('meta[name="description"]');
+
+      function setLanguage(language) {
+        document.documentElement.lang = language;
+        document.title = titles[language] || titles.nl;
+        if (metaDescription) {
+          metaDescription.setAttribute("content", descriptions[language] || descriptions.nl);
+        }
+        document.querySelector(".language-switch")?.setAttribute("aria-label", language === "en" ? "Language switch" : "Taalwisselaar");
+        sections.forEach((section) => {
+          section.classList.toggle("active", section.getAttribute("data-lang") === language);
+        });
+        buttons.forEach((button) => {
+          button.classList.toggle("active", button.getAttribute("data-language-button") === language);
+        });
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const language = button.getAttribute("data-language-button");
+          setLanguage(language);
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", language);
+          window.history.replaceState({}, "", url);
+        });
+      });
+
+      setLanguage(initialLanguage);
+    })();
+  </script>
 </body>
 </html>

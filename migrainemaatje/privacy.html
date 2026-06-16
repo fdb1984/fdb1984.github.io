@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy - MigraineMaatje</title>
-  <meta name="description" content="Privacy policy for MigraineMaatje.">
+  <title>MigraineMaatje</title>
+  <meta name="description" content="Privacybeleid voor MigraineMaatje.">
   <style>
     :root {
       color-scheme: dark;
@@ -62,7 +62,7 @@
 
     header { margin-bottom: 24px; }
 
-    section {
+    section.card {
       padding: 22px;
       margin-top: 16px;
       background: var(--panel);
@@ -74,77 +74,229 @@
     .important { border-color: rgba(242, 196, 92, 0.36); background: rgba(242, 196, 92, 0.08); }
     .important strong { color: var(--amber); }
 
+    .language-switch {
+      display: inline-flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      padding: 6px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .language-switch button {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-weight: 700;
+      padding: 8px 14px;
+      cursor: pointer;
+    }
+
+    .language-switch button.active {
+      background: var(--mint);
+      color: #08120f;
+    }
+
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+
     @media (max-width: 720px) {
       main { padding: 32px 16px 56px; }
-      section { padding: 18px; }
+      section.card { padding: 18px; }
     }
   </style>
 </head>
 <body>
   <main>
-    <nav><a href="index.html">Back to MigraineMaatje</a></nav>
+    <div class="language-switch" aria-label="Language switch">
+      <button type="button" data-language-button="nl">Nederlands</button>
+      <button type="button" data-language-button="en">English</button>
+    </div>
 
-    <header>
-      <h1>Privacy Policy</h1>
-      <p class="muted">MigraineMaatje - last updated on June 16, 2026</p>
-      <p>MigraineMaatje is a migraine diary and personal signal app for iPhone and Apple Watch. This page explains what data the app uses and how that data is protected.</p>
-    </header>
+    <section data-lang="nl">
+      <nav><a href="index.html?lang=nl">Terug naar MigraineMaatje</a></nav>
 
-    <section class="important">
-      <h2>Quick Summary</h2>
-      <p><strong>No ads. No tracking for advertising. No sale of health data.</strong></p>
-      <p>MigraineMaatje uses data only to provide diary features, signals, medication insight, notifications, Apple Watch support, widgets, and reports inside the app.</p>
+      <header>
+        <h1>Privacybeleid</h1>
+        <p class="muted">MigraineMaatje - bijgewerkt op 16 juni 2026</p>
+        <p>MigraineMaatje is een migraine-dagboek en persoonlijke-signalen app voor iPhone en Apple Watch. Op deze pagina lees je welke gegevens de app gebruikt en hoe die gegevens worden beschermd.</p>
+      </header>
+
+      <section class="card important">
+        <h2>Korte samenvatting</h2>
+        <p><strong>Geen advertenties. Geen tracking voor reclame. Geen verkoop van gezondheidsdata.</strong></p>
+        <p>MigraineMaatje gebruikt gegevens alleen om dagboekfuncties, signalen, medicatie-inzicht, meldingen, Apple Watch-ondersteuning, widgets en rapporten in de app zelf te laten werken.</p>
+      </section>
+
+      <section class="card">
+        <h2>Gegevens die je zelf invoert</h2>
+        <ul>
+          <li>Migraine-aanvallen, ernst, begin- en eindtijd, symptomen, aura, medicatie, medicatie-effect en gemiste activiteiten.</li>
+          <li>Migrainevrije periodes of opvallende dagen als je die zelf vastlegt.</li>
+          <li>Aanvalsmedicatie en preventieve medicatie die je zelf toevoegt, inclusief optionele voorraad of volgende dosisdatum.</li>
+          <li>Voorkeuren voor meldingen, Premium, taal, instellingen en appgedrag.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Apple Gezondheid</h2>
+        <p>Als jij toestemming geeft, kan MigraineMaatje gegevens uit Apple Gezondheid gebruiken zoals slaap, hartslag, hartritmevariatie (HRV), rusthartslag, stappen, polstemperatuur en relevante cyclusinformatie. De app gebruikt alleen de categorieën die jij toestaat.</p>
+        <p>Als jij toestemming geeft, kan MigraineMaatje ondersteunde migraine-dagboekregistraties terugschrijven naar Apple Gezondheid. Je kunt deze rechten altijd wijzigen in de Apple Gezondheid-app of iOS-instellingen.</p>
+        <p>Apple Gezondheid-data wordt niet naar een aparte MigraineMaatje-server gestuurd.</p>
+      </section>
+
+      <section class="card">
+        <h2>Locatie- en weerdata</h2>
+        <p>Als jij toestemming geeft, gebruikt MigraineMaatje je locatie om lokaal weer en luchtdruk rond je huidige omgeving op te halen. De app gebruikt weerdata om signalen rustiger en persoonlijker uit te leggen.</p>
+        <p>Weerdata kan komen van Apple Weather / WeatherKit of een ingestelde fallback-provider. MigraineMaatje gebruikt deze data niet voor advertenties of tracking.</p>
+      </section>
+
+      <section class="card">
+        <h2>Opslag en synchronisatie</h2>
+        <p>Dagboekdata en instellingen worden op je apparaat opgeslagen. Als iCloud-sync beschikbaar is en je die gebruikt, kan MigraineMaatje gegevens in iCloud bewaren zodat die na een nieuwe installatie of op je eigen apparaten beschikbaar blijven.</p>
+        <p>Apple Watch, widgets en meldingen gebruiken alleen de data die nodig is om status, snelle acties en herinneringen te tonen.</p>
+      </section>
+
+      <section class="card">
+        <h2>Premium en aankopen</h2>
+        <p>Premium-aankopen en proefperiodes worden via Apple verwerkt met StoreKit. MigraineMaatje ontvangt geen betaalkaartgegevens. De app kan wel je aankoopstatus controleren om Premium-functies vrij te geven.</p>
+      </section>
+
+      <section class="card">
+        <h2>Delen met derden</h2>
+        <p>MigraineMaatje verkoopt geen data, bevat geen advertenties en gebruikt geen advertentietrackers.</p>
+        <p>Gegevens kunnen via Apple-diensten lopen wanneer jij daarvoor kiest of toestemming geeft, zoals Apple Gezondheid, iCloud, StoreKit, meldingen en Apple Weather. Op die diensten zijn de eigen voorwaarden en privacyregels van Apple van toepassing.</p>
+      </section>
+
+      <section class="card">
+        <h2>Geen medisch advies</h2>
+        <p>MigraineMaatje geeft geen diagnose of medisch advies. De app helpt bij vastleggen, terugkijken en beter begrijpen van persoonlijke signalen. Bespreek medische vragen, medicatie, bijwerkingen en aanhoudende klachten altijd met je arts.</p>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>Voor privacyvragen of support kun je mailen naar <a href="mailto:support@dbruin.com">support@dbruin.com</a>.</p>
+      </section>
     </section>
 
-    <section>
-      <h2>Data You Enter Yourself</h2>
-      <ul>
-        <li>Migraine attacks, severity, start and end time, symptoms, aura, medication, medication effect, and missed activities.</li>
-        <li>Migraine-free periods or notable days if you choose to record them.</li>
-        <li>Acute medication and preventive medication you add yourself, including optional stock or next dose date.</li>
-        <li>Preferences for notifications, Premium, language, settings, and app behavior.</li>
-      </ul>
-    </section>
+    <section data-lang="en">
+      <nav><a href="index.html?lang=en">Back to MigraineMaatje</a></nav>
 
-    <section>
-      <h2>Apple Health</h2>
-      <p>If you grant permission, MigraineMaatje can use data from Apple Health such as sleep, heart rate, heart rate variability (HRV), resting heart rate, steps, wrist temperature, and relevant cycle information. The app only uses the categories you allow.</p>
-      <p>If you grant permission, MigraineMaatje can write supported migraine diary entries back to Apple Health. You can change these permissions at any time in the Apple Health app or iOS settings.</p>
-      <p>Apple Health data is not sent to a separate MigraineMaatje server.</p>
-    </section>
+      <header>
+        <h1>Privacy Policy</h1>
+        <p class="muted">MigraineMaatje - last updated on June 16, 2026</p>
+        <p>MigraineMaatje is a migraine diary and personal signal app for iPhone and Apple Watch. This page explains what data the app uses and how that data is protected.</p>
+      </header>
 
-    <section>
-      <h2>Location and Weather Data</h2>
-      <p>If you grant permission, MigraineMaatje uses your location to fetch local weather and air pressure around your current area. The app uses weather data to explain signals in a calmer and more personal way.</p>
-      <p>Weather data may come from Apple Weather / WeatherKit or a configured fallback provider. MigraineMaatje does not use this data for advertising or tracking.</p>
-    </section>
+      <section class="card important">
+        <h2>Quick Summary</h2>
+        <p><strong>No ads. No tracking for advertising. No sale of health data.</strong></p>
+        <p>MigraineMaatje uses data only to provide diary features, signals, medication insight, notifications, Apple Watch support, widgets, and reports inside the app.</p>
+      </section>
 
-    <section>
-      <h2>Storage and Sync</h2>
-      <p>Diary data and settings are stored on your device. If iCloud sync is available and you use it, MigraineMaatje may keep data in iCloud so it remains available after a reinstall or across your own devices.</p>
-      <p>Apple Watch, widgets, and notifications only use the data needed to show status, quick actions, and reminders.</p>
-    </section>
+      <section class="card">
+        <h2>Data You Enter Yourself</h2>
+        <ul>
+          <li>Migraine attacks, severity, start and end time, symptoms, aura, medication, medication effect, and missed activities.</li>
+          <li>Migraine-free periods or notable days if you choose to record them.</li>
+          <li>Acute medication and preventive medication you add yourself, including optional stock or next dose date.</li>
+          <li>Preferences for notifications, Premium, language, settings, and app behavior.</li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>Premium and Purchases</h2>
-      <p>Premium purchases and trial periods are processed by Apple through StoreKit. MigraineMaatje does not receive payment card details. The app may check purchase status to unlock Premium features.</p>
-    </section>
+      <section class="card">
+        <h2>Apple Health</h2>
+        <p>If you grant permission, MigraineMaatje can use data from Apple Health such as sleep, heart rate, heart rate variability (HRV), resting heart rate, steps, wrist temperature, and relevant cycle information. The app only uses the categories you allow.</p>
+        <p>If you grant permission, MigraineMaatje can write supported migraine diary entries back to Apple Health. You can change these permissions at any time in the Apple Health app or iOS settings.</p>
+        <p>Apple Health data is not sent to a separate MigraineMaatje server.</p>
+      </section>
 
-    <section>
-      <h2>Sharing with Third Parties</h2>
-      <p>MigraineMaatje does not sell data, does not contain ads, and does not use advertising trackers.</p>
-      <p>Data may pass through Apple services when you choose to use them or grant permission, such as Apple Health, iCloud, StoreKit, notifications, and Apple Weather. Those services are governed by Apple's own terms and privacy policies.</p>
-    </section>
+      <section class="card">
+        <h2>Location and Weather Data</h2>
+        <p>If you grant permission, MigraineMaatje uses your location to fetch local weather and air pressure around your current area. The app uses weather data to explain signals in a calmer and more personal way.</p>
+        <p>Weather data may come from Apple Weather / WeatherKit or a configured fallback provider. MigraineMaatje does not use this data for advertising or tracking.</p>
+      </section>
 
-    <section>
-      <h2>No Medical Advice</h2>
-      <p>MigraineMaatje does not provide diagnosis or medical advice. The app helps with logging, reviewing, and understanding personal signals. Discuss medical questions, medication, side effects, and ongoing symptoms with your doctor.</p>
-    </section>
+      <section class="card">
+        <h2>Storage and Sync</h2>
+        <p>Diary data and settings are stored on your device. If iCloud sync is available and you use it, MigraineMaatje may keep data in iCloud so it remains available after a reinstall or across your own devices.</p>
+        <p>Apple Watch, widgets, and notifications only use the data needed to show status, quick actions, and reminders.</p>
+      </section>
 
-    <section>
-      <h2>Contact</h2>
-      <p>For privacy questions or support, email <a href="mailto:support@dbruin.com">support@dbruin.com</a>.</p>
+      <section class="card">
+        <h2>Premium and Purchases</h2>
+        <p>Premium purchases and trial periods are processed by Apple through StoreKit. MigraineMaatje does not receive payment card details. The app may check purchase status to unlock Premium features.</p>
+      </section>
+
+      <section class="card">
+        <h2>Sharing with Third Parties</h2>
+        <p>MigraineMaatje does not sell data, does not contain ads, and does not use advertising trackers.</p>
+        <p>Data may pass through Apple services when you choose to use them or grant permission, such as Apple Health, iCloud, StoreKit, notifications, and Apple Weather. Those services are governed by Apple's own terms and privacy policies.</p>
+      </section>
+
+      <section class="card">
+        <h2>No Medical Advice</h2>
+        <p>MigraineMaatje does not provide diagnosis or medical advice. The app helps with logging, reviewing, and understanding personal signals. Discuss medical questions, medication, side effects, and ongoing symptoms with your doctor.</p>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p>For privacy questions or support, email <a href="mailto:support@dbruin.com">support@dbruin.com</a>.</p>
+      </section>
     </section>
   </main>
+
+  <script>
+    (function () {
+      const preferred = new URLSearchParams(window.location.search).get("lang");
+      const browserLanguage = (navigator.language || "nl").toLowerCase();
+      const initialLanguage = preferred === "en" || preferred === "nl"
+        ? preferred
+        : (browserLanguage.startsWith("en") ? "en" : "nl");
+      const descriptions = {
+        nl: "Privacybeleid voor MigraineMaatje.",
+        en: "Privacy policy for MigraineMaatje."
+      };
+      const titles = {
+        nl: "Privacybeleid - MigraineMaatje",
+        en: "Privacy Policy - MigraineMaatje"
+      };
+
+      const sections = document.querySelectorAll("[data-lang]");
+      const buttons = document.querySelectorAll("[data-language-button]");
+      const metaDescription = document.querySelector('meta[name="description"]');
+
+      function setLanguage(language) {
+        document.documentElement.lang = language;
+        document.title = titles[language] || titles.nl;
+        if (metaDescription) {
+          metaDescription.setAttribute("content", descriptions[language] || descriptions.nl);
+        }
+        document.querySelector(".language-switch")?.setAttribute("aria-label", language === "en" ? "Language switch" : "Taalwisselaar");
+        sections.forEach((section) => {
+          section.classList.toggle("active", section.getAttribute("data-lang") === language);
+        });
+        buttons.forEach((button) => {
+          button.classList.toggle("active", button.getAttribute("data-language-button") === language);
+        });
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const language = button.getAttribute("data-language-button");
+          setLanguage(language);
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", language);
+          window.history.replaceState({}, "", url);
+        });
+      });
+
+      setLanguage(initialLanguage);
+    })();
+  </script>
 </body>
 </html>
