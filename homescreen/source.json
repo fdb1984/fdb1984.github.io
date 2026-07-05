@@ -1,7 +1,7 @@
 {
   "name": "HomeScreen for HomeKit",
-  "subtitle": "HomeKit-dashboard voor de iPad.",
-  "description": "AltStore PAL source voor HomeScreen for HomeKit. Deze source wordt niet discoverable gemaakt.",
+  "subtitle": "Rustig HomeKit-dashboard en bediening.",
+  "description": "AltStore PAL source voor HomeScreen for HomeKit. De app werkt als rustig dashboard en bedieningsscherm voor iPad en iPhone. Deze source wordt niet discoverable gemaakt.",
   "iconURL": "https://fdb1984.github.io/homescreen/icon.png",
   "headerURL": "https://fdb1984.github.io/homescreen/icon.png",
   "tintColor": "#F7C844",
