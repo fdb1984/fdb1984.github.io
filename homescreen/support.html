@@ -199,6 +199,17 @@
             "De eerste 30 dagen kun je de app volledig proberen. Daarna ontgrendel je HomeScreen met een eenmalige aankoop via Apple."
           ]
         },
+        bestFor: {
+          label: "Waarvoor gebruik je HomeScreen?",
+          title: "Overzicht en bediening zonder zoeken",
+          body: "HomeScreen is bedoeld voor plekken waar je snel wilt zien wat er thuis speelt en meteen iets wilt kunnen bedienen.",
+          bullets: [
+            "Als wandpaneel in woonkamer, keuken, hal, kantoor, tuinruimte of bijgebouw.",
+            "Als eenvoudige bediening voor gezinsleden of gasten die de standaard Woning-app niet kennen.",
+            "Als snelle zoek- en bedienlaag voor HomeKit-huizen met veel accessoires.",
+            "Als persoonlijk dashboard per plek, met alleen de kamers, tegels en acties die daar logisch zijn."
+          ]
+        },
         cards: [
           {
             label: "Homescherm",
@@ -401,6 +412,17 @@
             "You can use the full app for the first 30 days. After that, unlock HomeScreen with a one-time purchase through Apple."
           ]
         },
+        bestFor: {
+          label: "What is HomeScreen for?",
+          title: "Status and control without hunting",
+          body: "HomeScreen is made for places where you want to see what is happening at home and control something right away.",
+          bullets: [
+            "As a wall panel in a living room, kitchen, hallway, office, garden room, or outbuilding.",
+            "As simple controls for family members or guests who do not know the standard Home app.",
+            "As a fast search and control layer for HomeKit homes with many accessories.",
+            "As a personal dashboard per place, showing only the rooms, tiles, and actions that make sense there."
+          ]
+        },
         cards: [
           {
             label: "Home screen",
@@ -601,6 +623,17 @@
             "Erlaube Standortzugriff, wenn du lokales Wetter und Regenvorhersage sehen möchtest.",
             "Wenn noch keine HomeKit-Daten verfügbar sind, zeigt die App Beispieldaten, damit du die Bedienung ansehen kannst.",
             "In den ersten 30 Tagen kannst du die App vollständig testen. Danach schaltest du HomeScreen mit einem einmaligen Kauf über Apple frei."
+          ]
+        },
+        bestFor: {
+          label: "Wofür ist HomeScreen gedacht?",
+          title: "Überblick und Bedienung ohne Suchen",
+          body: "HomeScreen ist für Orte gemacht, an denen du schnell sehen willst, was zuhause passiert, und direkt etwas steuern möchtest.",
+          bullets: [
+            "Als Wandpanel im Wohnzimmer, in der Küche, im Flur, Büro, Gartenraum oder Nebengebäude.",
+            "Als einfache Bedienung für Familienmitglieder oder Gäste, die die Standard-Home-App nicht kennen.",
+            "Als schnelle Such- und Bedienebene für HomeKit-Zuhause mit vielen Geräten.",
+            "Als persönliches Dashboard pro Ort, mit nur den Räumen, Kacheln und Aktionen, die dort sinnvoll sind."
           ]
         },
         cards: [
@@ -884,6 +917,7 @@
       main.append(header);
 
       main.append(section(content.quickStart, "note"));
+      main.append(section(content.bestFor, "note"));
 
       const grid = element("div", "grid");
       content.cards.forEach((card) => grid.append(section(card)));
