@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MigraineMaatje</title>
+  <title>Hulp en support - MigraineMaatje</title>
   <meta name="description" content="Hulp en supportinformatie voor MigraineMaatje.">
   <style>
     :root {
       color-scheme: dark;
       --bg: #07090b;
       --panel: #161a1f;
+      --panel-soft: #101418;
       --line: #2a3038;
       --text: #f7f8fa;
       --muted: #b9c0c8;
@@ -17,105 +18,43 @@
       --mint: #64e6bd;
       --amber: #f2c45c;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
-      background: var(--bg);
+      background: radial-gradient(circle at 50% -10%, rgba(100, 230, 189, 0.14), transparent 35%), var(--bg);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
     }
-
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 46px 22px 72px;
-    }
-
+    main { max-width: 920px; margin: 0 auto; padding: 46px 22px 72px; }
     nav { margin-bottom: 22px; }
     nav a { color: var(--mint); font-weight: 800; text-decoration: none; }
-
-    h1 {
-      font-size: clamp(34px, 6vw, 54px);
-      line-height: 1.05;
-      margin: 0 0 10px;
-      letter-spacing: 0;
-    }
-
-    h2 {
-      font-size: 22px;
-      line-height: 1.2;
-      margin: 0 0 12px;
-    }
-
-    p, li {
-      color: var(--muted);
-      font-size: 17px;
-    }
-
+    h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.05; margin: 0 0 12px; letter-spacing: 0; }
+    h2 { font-size: 22px; line-height: 1.2; margin: 0 0 12px; }
+    p, li { color: var(--muted); font-size: 17px; }
     p { margin: 0 0 12px; }
     a { color: var(--mint); font-weight: 700; }
     ul { margin: 10px 0 0; padding-left: 22px; }
     li + li { margin-top: 8px; }
-
     header { margin-bottom: 24px; }
-
-    section.card {
-      padding: 22px;
-      margin-top: 16px;
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 16px;
-    }
-
+    .eyebrow { color: var(--mint); font-weight: 800; letter-spacing: .02em; text-transform: uppercase; font-size: 13px; }
+    .lead { font-size: 20px; color: #dfe5ea; max-width: 720px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
+    .card { display: block; padding: 22px; margin-top: 16px; border-radius: 12px; border: 1px solid var(--line); background: linear-gradient(160deg, var(--panel), var(--panel-soft)); text-decoration: none; }
+    .card h2 { color: var(--text); }
+    .card p:last-child { margin-bottom: 0; }
+    .note { margin-top: 18px; padding: 18px; border-radius: 12px; border: 1px solid rgba(242, 196, 92, 0.32); background: rgba(242, 196, 92, 0.08); }
+    .note strong, .important strong { color: var(--amber); }
     .muted { color: var(--soft); }
     .important { border-color: rgba(242, 196, 92, 0.36); background: rgba(242, 196, 92, 0.08); }
-    .important strong { color: var(--amber); }
-
-    .language-switch {
-      display: inline-flex;
-      gap: 8px;
-      margin-bottom: 20px;
-      padding: 6px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.03);
-    }
-
-    .language-switch button {
-      appearance: none;
-      border: 0;
-      border-radius: 999px;
-      background: transparent;
-      color: var(--muted);
-      font: inherit;
-      font-weight: 700;
-      padding: 8px 14px;
-      cursor: pointer;
-    }
-
-    .language-switch button.active {
-      background: var(--mint);
-      color: #08120f;
-    }
-
+    .language-switch { display: inline-flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; padding: 6px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.03); }
+    .language-switch button { appearance: none; border: 0; border-radius: 999px; background: transparent; color: var(--muted); font: inherit; font-weight: 700; padding: 8px 14px; cursor: pointer; }
+    .language-switch button.active { background: var(--mint); color: #08120f; }
+    footer { margin-top: 34px; color: var(--soft); font-size: 14px; }
     [data-lang] { display: none; }
     [data-lang].active { display: block; }
+    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .grid { grid-template-columns: 1fr; } .card { padding: 18px; } }
 
-    @media (max-width: 720px) {
-      main { padding: 32px 16px 56px; }
-      section.card { padding: 18px; }
-      .grid { grid-template-columns: 1fr; }
-    }
   </style>
 </head>
 <body>
@@ -123,190 +62,52 @@
     <div class="language-switch" aria-label="Language switch">
       <button type="button" data-language-button="nl">Nederlands</button>
       <button type="button" data-language-button="en">English</button>
+      <button type="button" data-language-button="de">Deutsch</button>
+      <button type="button" data-language-button="fr">Français</button>
     </div>
 
     <section data-lang="nl">
       <nav><a href="index.html?lang=nl">Terug naar MigraineMaatje</a></nav>
-
-      <header>
-        <h1>Hulp en support</h1>
-        <p class="muted">MigraineMaatje - bijgewerkt op 2 juli 2026</p>
-        <p>MigraineMaatje is bedoeld als rustige dagelijkse metgezel: snel een aanval vastleggen, later aanvullen en stap voor stap persoonlijke signalen beter begrijpen.</p>
-      </header>
-
-      <section class="card important">
-        <h2>Belangrijk</h2>
-        <p><strong>MigraineMaatje geeft geen diagnose of medisch advies.</strong> Neem bij ernstige, nieuwe of ongebruikelijke klachten contact op met je arts of spoedzorg.</p>
-      </section>
-
-      <div class="grid">
-        <section class="card">
-          <h2>Snel starten</h2>
-          <ul>
-            <li>Open de app en doorloop de eerste stappen voor toestemming en basisinstellingen.</li>
-            <li>Geef Apple Gezondheid en locatie alleen toegang als jij dat wilt.</li>
-            <li>Leg een aanval vast met <strong>Aanval vastleggen</strong>.</li>
-            <li>Tijdens migraine hoef je zo min mogelijk in te vullen; details kun je later afronden.</li>
-          </ul>
-        </section>
-
-        <section class="card">
-          <h2>Apple Watch</h2>
-          <p>De Watch-app is bewust klein gehouden: één status, één hoofdreden en een snelle manier om een aanval vast te leggen. De uitgebreide informatie blijft op de iPhone.</p>
-        </section>
-      </div>
-
-      <section class="card">
-        <h2>Apple Gezondheid werkt niet of laat weinig data zien</h2>
-        <ul>
-          <li>Controleer op iPhone: Instellingen &gt; Privacy en beveiliging &gt; Gezondheid &gt; MigraineMaatje.</li>
-          <li>Controleer ook in de Apple Gezondheid-app welke categorieën zijn toegestaan.</li>
-          <li>Niet iedereen heeft Apple Watch-data. MigraineMaatje blijft bruikbaar met alleen dagboek, medicatie en handmatige registraties.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Weer of luchtdruk ververst niet</h2>
-        <ul>
-          <li>Controleer of locatie-toegang voor MigraineMaatje aan staat.</li>
-          <li>Controleer of internet beschikbaar is.</li>
-          <li>Als Apple Weather / WeatherKit tijdelijk niet beschikbaar is, blijft de app gewoon werken met de data die wel beschikbaar is.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>iCloud-reservekopie en herstellen</h2>
-        <ul>
-          <li>Je kunt in de app een optionele iCloud-reservekopie gebruiken voor dagboek, medicatie, profiel, check-ins en instellingen.</li>
-          <li>Bij een lege of nieuwe installatie kan MigraineMaatje vragen of je een gevonden reservekopie wilt terugzetten.</li>
-          <li>Apple Gezondheid is hiervoor niet verplicht. Toestemming voor Apple Gezondheid blijft altijd apart.</li>
-          <li>Gebruik dit alleen als je je gegevens in je eigen iCloud wilt bewaren voor herstel of eigen apparaten.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Medicatie beheren</h2>
-        <p>Je kunt aanvalsmedicatie en preventieve medicatie op één compacte plek bijhouden. Voorraad en meerdere innamemomenten zijn optioneel. De app geeft geen dosisadvies en vervangt Apple Medicatie of advies van je arts niet.</p>
-      </section>
-
-      <section class="card">
-        <h2>Premium en aankoop herstellen</h2>
-        <ul>
-          <li>Basis migraine vastleggen blijft gratis.</li>
-          <li>Premium is bedoeld voor concretere persoonlijke interpretatie, zoals waarom je status verandert, maandanalyse in gewone taal, medicatie-effect, terugkeer binnen 24 uur en consultvoorbereiding.</li>
-          <li>Met <strong>Wat werkt voor mij?</strong> kan Premium persoonlijke tellingen tonen uit afgeronde aanvallen, zoals welke medicatie in je vastgelegde aanvallen hielp, deels hielp of niet hielp.</li>
-          <li>De maandoptie is voorbereid vanaf €1,99 per maand. De actuele prijs, proefperiode en voorwaarden worden altijd door Apple getoond voordat je koopt.</li>
-          <li>Gebruik <strong>Herstel aankoop</strong> in de app als Premium na aankoop of herinstallatie niet zichtbaar is.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Veelgestelde vragen</h2>
-        <ul>
-          <li><strong>Moet ik elke dag alles invullen?</strong> Nee. Richt je vooral op aanvallen, medicatie en opvallende dagen.</li>
-          <li><strong>Waarom laat de app soms maar beperkte signalen zien?</strong> Dat betekent meestal dat er nog weinig recente metingen of dagboekdata zijn. De uitleg wordt persoonlijker zodra er meer betrouwbare data beschikbaar is.</li>
-          <li><strong>Kan ik data uit een andere app importeren?</strong> De app ondersteunt import waar mogelijk en kan vragen om velden te bevestigen als die niet zeker genoeg herkend worden.</li>
-          <li><strong>Wat gebeurt er bij een herinstallatie?</strong> Als je iCloud-reservekopie gebruikte, kan de app een gevonden reservekopie aanbieden om je gegevens terug te zetten.</li>
-          <li><strong>Kan ik dit met mijn arts gebruiken?</strong> Ja. De app kan een basisrapport en bespreekpunten tonen. Het is bedoeld als voorbereiding, niet als diagnose.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Contact</h2>
-        <p>Mail naar <a href="mailto:support@dbruin.com">support@dbruin.com</a> voor hulp. Stuur bij technische vragen liefst ook je iPhone-model, iOS-versie, Apple Watch-model als je die gebruikt en wat je probeerde te doen.</p>
-      </section>
+      <header><h1>Hulp en support</h1><p class="muted">MigraineMaatje 1.3.5 - bijgewerkt op 27 juli 2026</p><p>MigraineMaatje is bedoeld als rustige dagelijkse metgezel: snel een aanval vastleggen, later aanvullen en stap voor stap persoonlijke signalen beter begrijpen.</p></header>
+      <section class="card important"><h2>Belangrijk</h2><p><strong>MigraineMaatje geeft geen diagnose of medisch advies.</strong> Neem bij ernstige, nieuwe of ongebruikelijke klachten contact op met je arts of spoedzorg.</p></section>
+      <div class="grid"><section class="card"><h2>Snel starten</h2><ul><li>Doorloop de korte eerste stappen en kies zelf welke toestemmingen je geeft.</li><li>Leg een aanval vast met <strong>Aanval vastleggen</strong>.</li><li>Vul details later aan als het rustiger is.</li></ul></section><section class="card"><h2>iPhone, iPad en Apple Watch</h2><p>De volledige app werkt op iPhone en iPad. De optionele Watch-app toont één status, één hoofdreden en een snelle manier om een aanval vast te leggen.</p></section></div>
+      <section class="card"><h2>Een open aanval aanpassen</h2><p>Tik bij <strong>Ernst nu</strong> op Licht, Matig of Zwaar. Je keuze wordt direct opgeslagen en onder de knoppen bevestigd. Gebruik <strong>Aanpassen</strong> voor overige details en <strong>Afronden</strong> wanneer de aanval voorbij is.</p></section>
+      <section class="card"><h2>Apple Gezondheid</h2><p>Apple Gezondheid is optioneel. Controleer toegang via iOS Instellingen of de Gezondheid-app. MigraineMaatje blijft bruikbaar met handmatige registraties, medicatie en het dagboek.</p></section><section class="card"><h2>Weer en locatie</h2><p>Locatie wordt alleen gebruikt als jij toestemming geeft, om lokaal weer en luchtdruk op te halen. Als weerdata tijdelijk ontbreekt, blijft de app rustig werken met de beschikbare gegevens.</p></section><section class="card"><h2>iCloud-reservekopie</h2><p>Je kunt dagboek, medicatie, profiel, check-ins en instellingen optioneel in je eigen iCloud bewaren. Bij een lege of nieuwe installatie kan MigraineMaatje een gevonden reservekopie herstellen.</p></section><section class="card"><h2>Premium en aankopen</h2><p>De basis blijft gratis: aanvallen vastleggen en afronden, dagboek, kalender, medicatie en het basisrapport. Premium helpt je begrijpen wat in jouw registraties opvalt, zoals statusveranderingen, medicatie-effect, terugkeer binnen 24 uur, maandverschillen, komende dagen en bespreekpunten voor je arts.</p><p>Apple toont altijd het beschikbare maand- of jaarabonnement, de actuele prijs en een eventuele proefperiode voordat je koopt. Gebruik <strong>Herstel aankoop</strong> als Premium na aankoop of herinstallatie niet verschijnt.</p></section>
+      <section class="card"><h2>Veelgestelde vragen</h2><ul><li><strong>Moet ik elke dag iets invullen?</strong> Nee. Richt je vooral op aanvallen, medicatie en opvallende dagen.</li><li><strong>Waarom zie ik nog weinig persoonlijke inzichten?</strong> De uitleg wordt persoonlijker zodra er voldoende recente en betrouwbare registraties zijn.</li><li><strong>Kan ik data importeren?</strong> Waar mogelijk ondersteunt de app import en vraagt hij bevestiging bij velden die niet zeker herkend worden.</li><li><strong>Kan ik dit met mijn arts gebruiken?</strong> Ja. Het rapport en de bespreekpunten helpen je het gesprek voor te bereiden.</li></ul></section>
+      <section class="card"><h2>Contact</h2><p>Mail <a href="mailto:support@dbruin.com">support@dbruin.com</a>. Vermeld bij technische vragen je apparaatmodel, systeemversie en wat je probeerde te doen.</p><p><a href="privacy.html?lang=nl">Privacybeleid</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Gebruiksvoorwaarden (EULA)</a></p></section>
     </section>
 
     <section data-lang="en">
       <nav><a href="index.html?lang=en">Back to MigraineMaatje</a></nav>
+      <header><h1>Help and Support</h1><p class="muted">MigraineMaatje 1.3.5 - updated July 27, 2026</p><p>MigraineMaatje is designed as a calm daily companion: quickly log an attack, complete details later, and gradually understand personal signals better.</p></header>
+      <section class="card important"><h2>Important</h2><p><strong>MigraineMaatje does not provide diagnosis or medical advice.</strong> Contact your doctor or emergency care for severe, new, or unusual symptoms.</p></section>
+      <div class="grid"><section class="card"><h2>Getting started</h2><ul><li>Complete the short setup and choose which permissions you want to grant.</li><li>Log an attack with <strong>Log attack</strong>.</li><li>Add details later when things are calmer.</li></ul></section><section class="card"><h2>iPhone, iPad, and Apple Watch</h2><p>The full app works on iPhone and iPad. The optional Watch app shows one status, one main reason, and a quick way to log an attack.</p></section></div>
+      <section class="card"><h2>Updating an active attack</h2><p>Under <strong>Severity now</strong>, tap Mild, Moderate, or Severe. Your choice is saved immediately and confirmed below the buttons. Use <strong>Edit</strong> for other details and <strong>Finish</strong> when the attack is over.</p></section>
+      <section class="card"><h2>Apple Health</h2><p>Apple Health is optional. Check access in iOS Settings or the Health app. MigraineMaatje remains useful with manual entries, medication, and the diary.</p></section><section class="card"><h2>Weather and location</h2><p>Location is only used with your permission to fetch local weather and air pressure. If weather data is temporarily unavailable, the app keeps working calmly with the data that is available.</p></section><section class="card"><h2>iCloud backup</h2><p>You can optionally store diary entries, medication, profile, check-ins, and settings in your own iCloud. On an empty or new installation, MigraineMaatje can restore a backup it finds.</p></section><section class="card"><h2>Premium and purchases</h2><p>The essentials stay free: logging and finishing attacks, diary, calendar, medication, and the basic report. Premium helps you understand what stands out in your entries, including status changes, medication effect, recurrence within 24 hours, monthly differences, upcoming days, and discussion points for your doctor.</p><p>Apple always shows the available monthly or yearly subscription, current price, and any trial before purchase. Use <strong>Restore Purchase</strong> if Premium does not appear after a purchase or reinstall.</p></section>
+      <section class="card"><h2>Frequently Asked Questions</h2><ul><li><strong>Do I need to enter something every day?</strong> No. Focus mainly on attacks, medication, and notable days.</li><li><strong>Why do I see few personal insights?</strong> Explanations become more personal once enough recent and reliable entries are available.</li><li><strong>Can I import data?</strong> Where possible, the app supports import and asks for confirmation when fields are not confidently recognized.</li><li><strong>Can I use this with my doctor?</strong> Yes. Reports and discussion points help you prepare for the conversation.</li></ul></section>
+      <section class="card"><h2>Contact</h2><p>Email <a href="mailto:support@dbruin.com">support@dbruin.com</a>. For technical questions, include your device model, system version, and what you were trying to do.</p><p><a href="privacy.html?lang=en">Privacy Policy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (EULA)</a></p></section>
+    </section>
 
-      <header>
-        <h1>Help and Support</h1>
-        <p class="muted">MigraineMaatje - last updated on July 2, 2026</p>
-        <p>MigraineMaatje is designed as a calm daily companion: quickly log an attack, fill in the rest later, and better understand personal signals over time.</p>
-      </header>
+    <section data-lang="de">
+      <nav><a href="index.html?lang=de">Zurück zu MigraineMaatje</a></nav>
+      <header><h1>Hilfe und Support</h1><p class="muted">MigraineMaatje 1.3.5 - aktualisiert am 27. Juli 2026</p><p>MigraineMaatje ist als ruhiger täglicher Begleiter gedacht: Attacke schnell erfassen, Details später ergänzen und persönliche Signale Schritt für Schritt besser verstehen.</p></header>
+      <section class="card important"><h2>Wichtig</h2><p><strong>MigraineMaatje stellt keine Diagnose und gibt keinen medizinischen Rat.</strong> Bei schweren, neuen oder ungewöhnlichen Beschwerden wende dich an deinen Arzt oder den Notdienst.</p></section>
+      <div class="grid"><section class="card"><h2>Schnell starten</h2><ul><li>Schließe die kurze Einrichtung ab und wähle selbst, welche Berechtigungen du gibst.</li><li>Erfasse eine Attacke mit <strong>Attacke erfassen</strong>.</li><li>Ergänze Details später, wenn es ruhiger ist.</li></ul></section><section class="card"><h2>iPhone, iPad und Apple Watch</h2><p>Die vollständige App funktioniert auf iPhone und iPad. Die optionale Watch-App zeigt einen Status, einen Hauptgrund und eine schnelle Möglichkeit, eine Attacke zu erfassen.</p></section></div>
+      <section class="card"><h2>Eine laufende Attacke anpassen</h2><p>Tippe unter <strong>Stärke jetzt</strong> auf Leicht, Mittel oder Stark. Deine Auswahl wird sofort gespeichert und unter den Schaltflächen bestätigt. Nutze <strong>Bearbeiten</strong> für weitere Details und <strong>Abschließen</strong>, wenn die Attacke vorbei ist.</p></section>
+      <section class="card"><h2>Apple Health</h2><p>Apple Health ist optional. Prüfe den Zugriff in den iOS-Einstellungen oder in der Health-App. MigraineMaatje bleibt mit manuellen Einträgen, Medikamenten und dem Tagebuch nutzbar.</p></section><section class="card"><h2>Wetter und Standort</h2><p>Der Standort wird nur mit deiner Erlaubnis genutzt, um lokales Wetter und Luftdruck abzurufen. Fehlen Wetterdaten vorübergehend, arbeitet die App ruhig mit den verfügbaren Daten weiter.</p></section><section class="card"><h2>iCloud-Backup</h2><p>Du kannst Tagebuch, Medikamente, Profil, Check-ins und Einstellungen optional in deiner eigenen iCloud sichern. Bei einer leeren oder neuen Installation kann MigraineMaatje ein gefundenes Backup wiederherstellen.</p></section><section class="card"><h2>Premium und Käufe</h2><p>Die Grundlagen bleiben kostenlos: Attacken erfassen und abschließen, Tagebuch, Kalender, Medikamente und der Basisbericht. Premium hilft dir zu verstehen, was in deinen Einträgen auffällt, darunter Statusänderungen, Medikamentenwirkung, Rückkehr innerhalb von 24 Stunden, Monatsunterschiede, kommende Tage und Gesprächspunkte für deinen Arzt.</p><p>Apple zeigt vor dem Kauf immer das verfügbare Monats- oder Jahresabo, den aktuellen Preis und eine mögliche Probephase. Nutze <strong>Kauf wiederherstellen</strong>, wenn Premium nach einem Kauf oder einer Neuinstallation nicht erscheint.</p></section>
+      <section class="card"><h2>Häufige Fragen</h2><ul><li><strong>Muss ich jeden Tag etwas eintragen?</strong> Nein. Konzentriere dich vor allem auf Attacken, Medikamente und auffällige Tage.</li><li><strong>Warum sehe ich nur wenige persönliche Erkenntnisse?</strong> Die Erklärungen werden persönlicher, sobald genügend aktuelle und zuverlässige Einträge verfügbar sind.</li><li><strong>Kann ich Daten importieren?</strong> Wo möglich unterstützt die App den Import und fragt nach Bestätigung, wenn Felder nicht sicher erkannt werden.</li><li><strong>Kann ich das mit meinem Arzt verwenden?</strong> Ja. Berichte und Gesprächspunkte helfen dir, das Gespräch vorzubereiten.</li></ul></section>
+      <section class="card"><h2>Kontakt</h2><p>Schreibe an <a href="mailto:support@dbruin.com">support@dbruin.com</a>. Nenne bei technischen Fragen dein Gerätemodell, die Systemversion und was du versucht hast.</p><p><a href="privacy.html?lang=de">Datenschutz</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Nutzungsbedingungen (EULA)</a></p></section>
+    </section>
 
-      <section class="card important">
-        <h2>Important</h2>
-        <p><strong>MigraineMaatje does not provide diagnosis or medical advice.</strong> For severe, new, or unusual symptoms, contact your doctor or emergency care.</p>
-      </section>
-
-      <div class="grid">
-        <section class="card">
-          <h2>Quick Start</h2>
-          <ul>
-            <li>Open the app and complete the first permission and setup steps.</li>
-            <li>Only grant Apple Health and location access if you want to.</li>
-            <li>Log an attack with <strong>Log attack</strong>.</li>
-            <li>During migraine, enter as little as possible; you can finish the details later.</li>
-          </ul>
-        </section>
-
-        <section class="card">
-          <h2>Apple Watch</h2>
-          <p>The Watch app is intentionally small: one status, one main reason, and a quick way to log an attack. Detailed information stays on iPhone.</p>
-        </section>
-      </div>
-
-      <section class="card">
-        <h2>Apple Health Is Not Working or Shows Little Data</h2>
-        <ul>
-          <li>On iPhone, check: Settings &gt; Privacy &amp; Security &gt; Health &gt; MigraineMaatje.</li>
-          <li>Also check in the Apple Health app that the correct categories are allowed.</li>
-          <li>Not everyone has Apple Watch data. MigraineMaatje remains useful with diary entries, medication, and manual logging alone.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Weather or Air Pressure Is Not Updating</h2>
-        <ul>
-          <li>Check that location access for MigraineMaatje is enabled.</li>
-          <li>Check that internet is available.</li>
-          <li>If Apple Weather / WeatherKit is temporarily unavailable, the app keeps working with the data that is available.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>iCloud Backup and Restore</h2>
-        <ul>
-          <li>You can use optional iCloud backup in the app for diary entries, medication, profile, check-ins, and settings.</li>
-          <li>On an empty or new installation, MigraineMaatje may ask whether you want to restore a found backup.</li>
-          <li>Apple Health is not required for this. Apple Health permission always remains separate.</li>
-          <li>Use this only if you want to keep your data in your own iCloud account for restore or your own devices.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Managing Medication</h2>
-        <p>You can keep acute medication and preventive medication in one compact place. Stock and multiple intake times are optional. The app does not provide dosage advice and does not replace Apple Medications or your doctor’s advice.</p>
-      </section>
-
-      <section class="card">
-        <h2>Premium and Restoring Purchases</h2>
-        <ul>
-          <li>Basic migraine logging remains free.</li>
-          <li>Premium is for more concrete personal interpretation, such as why your status changes, plain-language monthly analysis, medication effect, recurrence within 24 hours, and appointment preparation.</li>
-          <li>With <strong>What works for me?</strong>, Premium can show personal counts from completed attacks, such as which medication helped, partly helped, or did not help in your recorded attacks.</li>
-          <li>The monthly option is prepared from €1.99 per month. The current price, trial period, and terms are always shown by Apple before purchase.</li>
-          <li>Use <strong>Restore Purchase</strong> in the app if Premium does not appear after purchase or reinstall.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Frequently Asked Questions</h2>
-        <ul>
-          <li><strong>Do I need to fill in everything every day?</strong> No. Focus mainly on attacks, medication, and notable days.</li>
-          <li><strong>Why does the app sometimes show only limited signals?</strong> That usually means there are few recent measurements or diary entries. Explanations become more personal as more reliable data is available.</li>
-          <li><strong>Can I import data from another app?</strong> The app supports import where possible and may ask you to confirm fields it cannot confidently interpret.</li>
-          <li><strong>What happens after reinstalling?</strong> If you used iCloud backup, the app may offer a found backup so you can restore your data.</li>
-          <li><strong>Can I use this with my doctor?</strong> Yes. The app can show a basic report and discussion points. It is meant as preparation, not diagnosis.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Contact</h2>
-        <p>Email <a href="mailto:support@dbruin.com">support@dbruin.com</a> for support. For technical questions, please include your iPhone model, iOS version, Apple Watch model if you use one, and what you were trying to do.</p>
-      </section>
+    <section data-lang="fr">
+      <nav><a href="index.html?lang=fr">Retour à MigraineMaatje</a></nav>
+      <header><h1>Aide et support</h1><p class="muted">MigraineMaatje 1.3.5 - mis à jour le 27 juillet 2026</p><p>MigraineMaatje est conçu comme un compagnon quotidien calme : enregistrer rapidement une crise, compléter les détails plus tard et mieux comprendre progressivement vos signaux personnels.</p></header>
+      <section class="card important"><h2>Important</h2><p><strong>MigraineMaatje ne fournit pas de diagnostic ni de conseil médical.</strong> En cas de symptômes graves, nouveaux ou inhabituels, contactez votre médecin ou les urgences.</p></section>
+      <div class="grid"><section class="card"><h2>Démarrer rapidement</h2><ul><li>Terminez la configuration rapide et choisissez les autorisations que vous souhaitez accorder.</li><li>Enregistrez une crise avec <strong>Enregistrer une crise</strong>.</li><li>Ajoutez les détails plus tard, quand c’est plus calme.</li></ul></section><section class="card"><h2>iPhone, iPad et Apple Watch</h2><p>L’app complète fonctionne sur iPhone et iPad. L’app Watch facultative affiche un statut, une raison principale et une façon rapide d’enregistrer une crise.</p></section></div>
+      <section class="card"><h2>Modifier une crise en cours</h2><p>Sous <strong>Intensité actuelle</strong>, touchez Légère, Modérée ou Forte. Votre choix est enregistré immédiatement et confirmé sous les boutons. Utilisez <strong>Modifier</strong> pour les autres détails et <strong>Terminer</strong> lorsque la crise est passée.</p></section>
+      <section class="card"><h2>Apple Santé</h2><p>L’accès à Apple Santé est facultatif. Vérifiez l’accès dans les réglages iOS ou l’app Santé. MigraineMaatje reste utile avec les saisies manuelles, les médicaments et le journal.</p></section><section class="card"><h2>Météo et localisation</h2><p>La localisation n’est utilisée qu’avec votre autorisation pour récupérer la météo locale et la pression atmosphérique. Si les données météo manquent temporairement, l’app continue sereinement avec les données disponibles.</p></section><section class="card"><h2>Sauvegarde iCloud</h2><p>Vous pouvez sauvegarder le journal, les médicaments, le profil, les bilans et les réglages dans votre propre iCloud. Sur une installation vide ou nouvelle, MigraineMaatje peut restaurer une sauvegarde trouvée.</p></section><section class="card"><h2>Premium et achats</h2><p>L’essentiel reste gratuit : enregistrer et terminer les crises, le journal, le calendrier, les médicaments et le rapport de base. Premium vous aide à comprendre ce qui ressort de vos saisies, notamment les changements de statut, l’effet des médicaments, le retour dans les 24 heures, les différences mensuelles, les prochains jours et les points à discuter avec votre médecin.</p><p>Apple affiche toujours l’abonnement mensuel ou annuel disponible, le prix actuel et toute période d’essai avant l’achat. Utilisez <strong>Restaurer l’achat</strong> si Premium n’apparaît pas après un achat ou une réinstallation.</p></section>
+      <section class="card"><h2>Questions fréquentes</h2><ul><li><strong>Faut-il saisir quelque chose chaque jour ?</strong> Non. Concentrez-vous surtout sur les crises, les médicaments et les jours remarquables.</li><li><strong>Pourquoi vois-je encore peu d’informations personnelles ?</strong> Les explications deviennent plus personnelles lorsque suffisamment de saisies récentes et fiables sont disponibles.</li><li><strong>Puis-je importer des données ?</strong> Quand c’est possible, l’app prend en charge l’import et demande confirmation pour les champs reconnus avec incertitude.</li><li><strong>Puis-je l’utiliser avec mon médecin ?</strong> Oui. Les rapports et points de discussion vous aident à préparer l’échange.</li></ul></section>
+      <section class="card"><h2>Contact</h2><p>Écrivez à <a href="mailto:support@dbruin.com">support@dbruin.com</a>. Pour une question technique, indiquez le modèle de votre appareil, la version du système et ce que vous essayiez de faire.</p><p><a href="privacy.html?lang=fr">Politique de confidentialité</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Conditions d’utilisation (EULA)</a></p></section>
     </section>
   </main>
 
@@ -314,37 +115,28 @@
     (function () {
       const preferred = new URLSearchParams(window.location.search).get("lang");
       const browserLanguage = (navigator.language || "nl").toLowerCase();
-      const initialLanguage = preferred === "en" || preferred === "nl"
+      const supported = ["nl", "en", "de", "fr"];
+      const initialLanguage = supported.includes(preferred)
         ? preferred
-        : (browserLanguage.startsWith("en") ? "en" : "nl");
-      const descriptions = {
-        nl: "Hulp en supportinformatie voor MigraineMaatje.",
-        en: "Help and support information for MigraineMaatje."
-      };
-      const titles = {
-        nl: "Hulp en support - MigraineMaatje",
-        en: "Help and Support - MigraineMaatje"
-      };
-
+        : (browserLanguage.startsWith("de") ? "de" : browserLanguage.startsWith("fr") ? "fr" : browserLanguage.startsWith("en") ? "en" : "nl");
+      const descriptions = {"nl": "Hulp en supportinformatie voor MigraineMaatje.", "en": "Help and support information for MigraineMaatje.", "de": "Hilfe- und Supportinformationen für MigraineMaatje.", "fr": "Informations d’aide et de support pour MigraineMaatje."};
+      const titles = {"nl": "Hulp en support - MigraineMaatje", "en": "Help and Support - MigraineMaatje", "de": "Hilfe und Support - MigraineMaatje", "fr": "Aide et support - MigraineMaatje"};
+      const switchLabels = {"nl": "Taal kiezen", "en": "Choose language", "de": "Sprache wählen", "fr": "Choisir la langue"};
       const sections = document.querySelectorAll("[data-lang]");
       const buttons = document.querySelectorAll("[data-language-button]");
       const metaDescription = document.querySelector('meta[name="description"]');
-
       function setLanguage(language) {
         document.documentElement.lang = language;
         document.title = titles[language] || titles.nl;
-        if (metaDescription) {
-          metaDescription.setAttribute("content", descriptions[language] || descriptions.nl);
-        }
-        document.querySelector(".language-switch")?.setAttribute("aria-label", language === "en" ? "Language switch" : "Taalwisselaar");
-        sections.forEach((section) => {
-          section.classList.toggle("active", section.getAttribute("data-lang") === language);
-        });
+        if (metaDescription) metaDescription.setAttribute("content", descriptions[language] || descriptions.nl);
+        document.querySelector(".language-switch")?.setAttribute("aria-label", switchLabels[language] || switchLabels.nl);
+        sections.forEach((section) => section.classList.toggle("active", section.getAttribute("data-lang") === language));
         buttons.forEach((button) => {
-          button.classList.toggle("active", button.getAttribute("data-language-button") === language);
+          const isActive = button.getAttribute("data-language-button") === language;
+          button.classList.toggle("active", isActive);
+          button.setAttribute("aria-pressed", String(isActive));
         });
       }
-
       buttons.forEach((button) => {
         button.addEventListener("click", function () {
           const language = button.getAttribute("data-language-button");
@@ -354,7 +146,6 @@
           window.history.replaceState({}, "", url);
         });
       });
-
       setLanguage(initialLanguage);
     })();
   </script>
