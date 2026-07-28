@@ -26,7 +26,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
     }
-    main { max-width: 920px; margin: 0 auto; padding: 46px 22px 72px; }
+    main { width: 100%; max-width: 920px; min-width: 0; margin: 0 auto; padding: 46px 22px 72px; }
     nav { margin-bottom: 22px; }
     nav a { color: var(--mint); font-weight: 800; text-decoration: none; }
     h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.05; margin: 0 0 12px; letter-spacing: 0; }
@@ -40,7 +40,7 @@
     .eyebrow { color: var(--mint); font-weight: 800; letter-spacing: .02em; text-transform: uppercase; font-size: 13px; }
     .lead { font-size: 20px; color: #dfe5ea; max-width: 720px; }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
-    .card { display: block; padding: 22px; margin-top: 16px; border-radius: 12px; border: 1px solid var(--line); background: linear-gradient(160deg, var(--panel), var(--panel-soft)); text-decoration: none; }
+    .card { display: block; min-width: 0; padding: 22px; margin-top: 16px; border-radius: 12px; border: 1px solid var(--line); background: linear-gradient(160deg, var(--panel), var(--panel-soft)); overflow-wrap: anywhere; text-decoration: none; }
     .card h2 { color: var(--text); }
     .card p:last-child { margin-bottom: 0; }
     .note { margin-top: 18px; padding: 18px; border-radius: 12px; border: 1px solid rgba(242, 196, 92, 0.32); background: rgba(242, 196, 92, 0.08); }
@@ -53,7 +53,7 @@
     footer { margin-top: 34px; color: var(--soft); font-size: 14px; }
     [data-lang] { display: none; }
     [data-lang].active { display: block; }
-    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .grid { grid-template-columns: 1fr; } .card { padding: 18px; } }
+    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid { grid-template-columns: minmax(0, 1fr); } .card { padding: 18px; } }
 
   </style>
 </head>
@@ -75,11 +75,15 @@
       <div class="grid">
         <a class="card" href="privacy.html?lang=nl">
           <h2>Privacybeleid</h2>
-          <p>Welke gegevens MigraineMaatje gebruikt, waar die blijven en hoe Apple Gezondheid, weerdata en lokale opslag worden gebruikt.</p>
+          <p>Welke gegevens MigraineMaatje gebruikt, waar die blijven en hoe Apple Gezondheid, Health Connect, weerdata en lokale opslag worden gebruikt.</p>
         </a>
         <a class="card" href="support.html?lang=nl">
           <h2>Hulp en support</h2>
-          <p>Hulp bij starten, Apple Gezondheid, weerdata, Apple Watch, lokale gegevens, meldingen, Premium en contact.</p>
+          <p>Hulp bij starten op Apple en Android, gezondheidsdata, weer, horloge, meldingen, Premium en contact.</p>
+        </a>
+        <a class="card" href="terms.html?lang=nl">
+          <h2>Gebruiksvoorwaarden</h2>
+          <p>Voorwaarden voor gratis gebruik, Premium, abonnementen en verantwoord gebruik van MigraineMaatje.</p>
         </a>
       </div>
       <section class="note">
@@ -99,11 +103,15 @@
       <div class="grid">
         <a class="card" href="privacy.html?lang=en">
           <h2>Privacy Policy</h2>
-          <p>What data MigraineMaatje uses, where it stays, and how Apple Health, weather data, and local storage are used.</p>
+          <p>What data MigraineMaatje uses, where it stays, and how Apple Health, Health Connect, weather data, and local storage are used.</p>
         </a>
         <a class="card" href="support.html?lang=en">
           <h2>Help and Support</h2>
-          <p>Help with getting started, Apple Health, weather data, Apple Watch, local data, notifications, Premium, and contact.</p>
+          <p>Help with getting started on Apple and Android, health data, weather, watches, notifications, Premium, and contact.</p>
+        </a>
+        <a class="card" href="terms.html?lang=en">
+          <h2>Terms of Use</h2>
+          <p>Terms for free use, Premium, subscriptions, and responsible use of MigraineMaatje.</p>
         </a>
       </div>
       <section class="note">
@@ -123,11 +131,15 @@
       <div class="grid">
         <a class="card" href="privacy.html?lang=de">
           <h2>Datenschutzerklärung</h2>
-          <p>Welche Daten MigraineMaatje nutzt, wo sie bleiben und wie Apple Health, Wetterdaten und lokale Speicherung verwendet werden.</p>
+          <p>Welche Daten MigraineMaatje nutzt, wo sie bleiben und wie Apple Health, Health Connect, Wetterdaten und lokale Speicherung verwendet werden.</p>
         </a>
         <a class="card" href="support.html?lang=de">
           <h2>Hilfe und Support</h2>
-          <p>Hilfe beim Start, Apple Health, Wetterdaten, Apple Watch, lokalen Daten, Mitteilungen, Premium und Kontakt.</p>
+          <p>Hilfe beim Start auf Apple und Android, Gesundheitsdaten, Wetter, Uhren, Mitteilungen, Premium und Kontakt.</p>
+        </a>
+        <a class="card" href="terms.html?lang=de">
+          <h2>Nutzungsbedingungen</h2>
+          <p>Bedingungen für kostenlose Nutzung, Premium, Abonnements und verantwortungsvolle Nutzung von MigraineMaatje.</p>
         </a>
       </div>
       <section class="note">
@@ -147,11 +159,15 @@
       <div class="grid">
         <a class="card" href="privacy.html?lang=fr">
           <h2>Politique de confidentialité</h2>
-          <p>Les données utilisées par MigraineMaatje, où elles restent, et comment Apple Santé, la météo et le stockage local sont utilisés.</p>
+          <p>Les données utilisées par MigraineMaatje, où elles restent, et comment Apple Santé, Health Connect, la météo et le stockage local sont utilisés.</p>
         </a>
         <a class="card" href="support.html?lang=fr">
           <h2>Aide et support</h2>
-          <p>Aide pour démarrer, Apple Santé, la météo, Apple Watch, données locales, notifications, Premium et contact.</p>
+          <p>Aide pour démarrer sur Apple et Android, données de santé, météo, montres, notifications, Premium et contact.</p>
+        </a>
+        <a class="card" href="terms.html?lang=fr">
+          <h2>Conditions d’utilisation</h2>
+          <p>Conditions de l’utilisation gratuite, de Premium, des abonnements et de l’usage responsable de MigraineMaatje.</p>
         </a>
       </div>
       <section class="note">
