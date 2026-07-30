@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://debruinstudio.nl
+Sitemap: https://debruinstudio.nl/sitemap.xml
