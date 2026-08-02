@@ -352,10 +352,10 @@ body.app-page-home {
 
 .app-page .app-disclosure > summary {
   min-height: 86px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 34px;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  gap: 18px;
   padding: 24px 28px;
   list-style: none;
   cursor: pointer;
@@ -372,6 +372,13 @@ body.app-page-home {
 
 .app-page .app-disclosure > summary h2 {
   margin: 0;
+}
+
+.app-page .app-disclosure-number {
+  color: var(--page-accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
 .app-page .app-disclosure-heading {
@@ -412,13 +419,103 @@ body.app-page-home {
 }
 
 .app-page .app-disclosure-content {
-  margin: 0 28px;
-  padding: 24px 0 28px;
+  margin: 0 28px 0 88px;
+  padding: 24px 0 30px;
   border-top: 1px solid var(--line);
+}
+
+.app-page .app-answer-label {
+  display: block;
+  margin-bottom: 13px;
+  color: var(--page-accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .app-page .app-disclosure-content > :last-child {
   margin-bottom: 0;
+}
+
+.app-topic-index {
+  margin: 0 0 42px !important;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.app-topic-index > p {
+  margin: 0 0 18px;
+  color: var(--page-accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.app-topic-index > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.app-topic-index a {
+  min-height: 58px;
+  display: grid !important;
+  grid-template-columns: 26px 1fr;
+  gap: 10px !important;
+  align-items: center;
+  padding: 12px 14px;
+  background: var(--panel);
+  color: #c7ced2 !important;
+  font-size: 11px !important;
+  font-weight: 650 !important;
+  line-height: 1.35;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.app-topic-index a:hover {
+  background: var(--panel-soft);
+  color: var(--text) !important;
+}
+
+.app-topic-index a::before {
+  display: none;
+}
+
+.app-topic-index a span {
+  color: var(--page-accent);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.app-page-policy .app-page-visual {
+  margin-bottom: 28px;
+}
+
+.app-page-policy .card:not(.important),
+.app-page-policy.app-page-home main section:not(.important) {
+  margin-top: 0;
+  padding: 36px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+}
+
+.app-page-policy .card:not(.important) h2,
+.app-page-policy.app-page-home main section:not(.important) h2 {
+  font-size: clamp(23px, 3vw, 30px);
+}
+
+.app-page-policy .card:not(.important) p,
+.app-page-policy .card:not(.important) li,
+.app-page-policy.app-page-home main section:not(.important) p,
+.app-page-policy.app-page-home main section:not(.important) li {
+  max-width: 840px;
 }
 
 .app-page-migraine a.card {
@@ -587,12 +684,23 @@ body.app-page-home {
 
   .app-page .app-disclosure > summary {
     min-height: 76px;
+    grid-template-columns: 30px minmax(0, 1fr) 32px;
+    gap: 12px;
     padding: 20px 22px;
   }
 
   .app-page .app-disclosure-content {
-    margin: 0 22px;
+    margin: 0 22px 0 64px;
     padding: 20px 0 22px;
+  }
+
+  .app-topic-index {
+    padding: 18px;
+    border-radius: 17px;
+  }
+
+  .app-topic-index > div {
+    grid-template-columns: 1fr;
   }
 }
 
