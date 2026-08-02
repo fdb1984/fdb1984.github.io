@@ -160,6 +160,82 @@ body.app-page-home {
   box-shadow: 0 24px 52px rgba(0, 0, 0, 0.38);
 }
 
+.app-page-visual {
+  position: relative;
+  min-height: 410px;
+  margin: -6px 0 54px;
+  display: grid;
+  place-items: end center;
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at 50% 36%, color-mix(in srgb, var(--page-accent) 18%, transparent), transparent 42%),
+    linear-gradient(145deg, #11181c, #080b0d);
+  overflow: hidden;
+}
+
+.app-page-visual::before,
+.app-page-visual::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.app-page-visual::before {
+  inset: 50% 0 auto;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.app-page-visual::after {
+  width: 310px;
+  height: 310px;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  box-shadow: 0 0 0 72px rgba(255, 255, 255, 0.016);
+}
+
+.app-page-visual img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: auto;
+  filter: drop-shadow(0 30px 48px rgba(0, 0, 0, 0.52));
+}
+
+.app-page-migraine .app-page-visual img {
+  width: min(270px, 56vw);
+  margin-bottom: -122px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 38px 38px 0 0;
+}
+
+.app-page-home .app-page-visual img {
+  width: min(820px, 88vw);
+  margin-bottom: -44px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 22px 22px 0 0;
+}
+
+.app-page-visual figcaption {
+  position: absolute;
+  z-index: 2;
+  left: 26px;
+  bottom: 24px;
+  max-width: 240px;
+  padding: 10px 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(7, 10, 12, 0.82);
+  color: #c8cfd3;
+  font-size: 11px;
+  font-weight: 700;
+  backdrop-filter: blur(14px);
+}
+
 .app-page h1 {
   max-width: 820px;
   margin: 0 0 22px;
@@ -466,6 +542,31 @@ body.app-page-home {
 
   .app-page h1 {
     font-size: clamp(42px, 13vw, 62px);
+  }
+
+  .app-page-visual {
+    min-height: 330px;
+    margin-bottom: 38px;
+    border-radius: 22px;
+  }
+
+  .app-page-migraine .app-page-visual img {
+    width: min(240px, 67vw);
+  }
+
+  .app-page-home .app-page-visual {
+    min-height: 280px;
+  }
+
+  .app-page-home .app-page-visual img {
+    width: 148%;
+    max-width: none;
+    margin-left: 48%;
+  }
+
+  .app-page-visual figcaption {
+    left: 16px;
+    bottom: 15px;
   }
 
   .app-page .grid {
