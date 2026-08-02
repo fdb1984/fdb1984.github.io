@@ -56,8 +56,13 @@
     @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid { grid-template-columns: minmax(0, 1fr); } .card { padding: 18px; } }
 
   </style>
+  <link rel="stylesheet" href="/app-pages.css">
 </head>
-<body>
+<body class="app-page app-page-migraine">
+  <nav class="app-site-nav" aria-label="de Bruin Studio">
+    <a class="app-wordmark" href="/">de Bruin <strong>Studio</strong></a>
+    <a class="app-site-link" href="/">debruinstudio.nl <span aria-hidden="true">↗</span></a>
+  </nav>
   <main>
     <div class="language-switch" aria-label="Language switch">
       <button type="button" data-language-button="nl">Nederlands</button>

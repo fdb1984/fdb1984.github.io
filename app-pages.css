@@ -1,0 +1,414 @@
+:root {
+  --bg: #070a0c;
+  --panel: #0d1215;
+  --panel-soft: #12181c;
+  --text: #f5f7f8;
+  --muted: #9aa4aa;
+  --soft: #77838a;
+  --line: rgba(255, 255, 255, 0.12);
+  --mint: #65e8c2;
+  --blue: #55d5ed;
+  --amber: #f2c45c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.app-page {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 82% 8%, color-mix(in srgb, var(--page-accent) 9%, transparent), transparent 28rem),
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    var(--bg);
+  background-size: auto, 72px 72px, 72px 72px, auto;
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+}
+
+body.app-page-migraine {
+  --page-accent: var(--mint);
+  --page-accent-ink: #07130f;
+  --page-icon: url("/migrainemaatje-icon.png");
+}
+
+body.app-page-home {
+  --page-accent: var(--blue);
+  --page-accent-ink: #041115;
+  --page-icon: url("/homescreen-icon.png");
+}
+
+.app-page *,
+.app-page *::before,
+.app-page *::after {
+  box-sizing: border-box;
+}
+
+.app-site-nav {
+  width: min(1180px, calc(100% - 48px));
+  min-height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.app-site-nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.app-wordmark {
+  font-size: 16px;
+  font-weight: 450;
+  letter-spacing: -0.035em;
+}
+
+.app-wordmark strong {
+  font-weight: 760;
+}
+
+.app-site-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #cbd1d4 !important;
+  font-size: 12px;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+  transition: color 160ms ease;
+}
+
+.app-site-link:hover {
+  color: var(--text) !important;
+}
+
+.app-page main {
+  width: min(1040px, calc(100% - 48px));
+  max-width: none;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 72px 0 112px;
+}
+
+.app-page main > .language-switch,
+.app-page main header .language-switcher {
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 5px;
+  margin: 0 0 48px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.app-page main header .language-switcher {
+  margin: 28px 0 0;
+}
+
+.app-page button {
+  appearance: none;
+  min-width: 44px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #879198;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 9px 12px;
+  cursor: pointer;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.app-page button:hover {
+  color: var(--text);
+}
+
+.app-page button.active,
+.app-page button[aria-pressed="true"] {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.11);
+  color: var(--text);
+}
+
+.app-page main header {
+  position: relative;
+  max-width: 840px;
+  margin: 0 0 48px;
+  padding-left: 106px;
+}
+
+.app-page main header::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 76px;
+  height: 76px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 19px;
+  background: var(--page-icon) center / cover no-repeat;
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.38);
+}
+
+.app-page h1 {
+  max-width: 820px;
+  margin: 0 0 22px;
+  color: var(--text);
+  font-size: clamp(48px, 7vw, 78px);
+  font-weight: 660;
+  line-height: 0.98;
+  letter-spacing: -0.058em;
+}
+
+.app-page h2 {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-size: clamp(20px, 2.5vw, 25px);
+  font-weight: 650;
+  line-height: 1.16;
+  letter-spacing: -0.028em;
+}
+
+.app-page p,
+.app-page li {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+.app-page p {
+  margin: 0 0 13px;
+}
+
+.app-page .lead,
+.app-page main header > p:not(.eyebrow):not(.muted) {
+  max-width: 760px;
+  color: #b8c0c4;
+  font-size: clamp(17px, 1.9vw, 20px);
+  line-height: 1.65;
+  letter-spacing: -0.015em;
+}
+
+.app-page .eyebrow,
+.app-page .label {
+  display: block;
+  margin: 0 0 13px;
+  color: var(--page-accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.app-page .label::before {
+  display: none;
+}
+
+.app-page .muted {
+  color: var(--soft);
+}
+
+.app-page a {
+  color: var(--page-accent);
+  font-weight: 650;
+  text-underline-offset: 4px;
+}
+
+.app-page a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.app-page main nav {
+  margin: 0 0 28px;
+}
+
+.app-page main nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #c7ced2;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.app-page main nav a::before {
+  content: "←";
+  color: var(--page-accent);
+}
+
+.app-page .grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.app-page-home main section,
+.app-page-migraine .card,
+.app-page-migraine .note {
+  min-width: 0;
+  margin-top: 16px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.022), transparent 46%),
+    var(--panel);
+  overflow-wrap: anywhere;
+}
+
+.app-page-migraine a.card {
+  position: relative;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.app-page-migraine a.card::after {
+  content: "↗";
+  position: absolute;
+  top: 25px;
+  right: 26px;
+  color: var(--page-accent);
+  font-size: 18px;
+}
+
+.app-page-migraine a.card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--page-accent) 42%, transparent);
+  background: var(--panel-soft);
+}
+
+.app-page-migraine a.card h2 {
+  padding-right: 32px;
+}
+
+.app-page .note,
+.app-page .important,
+.app-page .warning {
+  border-color: rgba(242, 196, 92, 0.32);
+  background:
+    linear-gradient(145deg, rgba(242, 196, 92, 0.06), transparent 55%),
+    var(--panel);
+}
+
+.app-page .note strong,
+.app-page .important strong,
+.app-page .warning strong {
+  color: var(--amber);
+}
+
+.app-page ul {
+  margin: 12px 0 0;
+  padding-left: 21px;
+}
+
+.app-page li + li {
+  margin-top: 9px;
+}
+
+.app-page footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  color: var(--soft);
+  font-size: 14px;
+}
+
+.app-page [data-lang] {
+  display: none;
+}
+
+.app-page [data-lang].active {
+  display: block;
+}
+
+.app-page :focus-visible {
+  outline: 2px solid var(--page-accent);
+  outline-offset: 4px;
+}
+
+@media (max-width: 720px) {
+  .app-site-nav,
+  .app-page main {
+    width: min(100% - 32px, 1040px);
+  }
+
+  .app-site-nav {
+    min-height: 68px;
+  }
+
+  .app-site-link {
+    font-size: 0;
+  }
+
+  .app-site-link::before {
+    content: "Apps";
+    font-size: 11px;
+  }
+
+  .app-page main {
+    padding: 48px 0 72px;
+  }
+
+  .app-page main > .language-switch,
+  .app-page main header .language-switcher {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .app-page main header {
+    margin-bottom: 36px;
+    padding-left: 0;
+  }
+
+  .app-page main header::before {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 26px;
+    border-radius: 16px;
+  }
+
+  .app-page h1 {
+    font-size: clamp(42px, 13vw, 62px);
+  }
+
+  .app-page .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .app-page-home main section,
+  .app-page-migraine .card,
+  .app-page-migraine .note {
+    padding: 22px;
+    border-radius: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .app-page-migraine a.card {
+    transition: none;
+  }
+}
