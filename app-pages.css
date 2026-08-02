@@ -256,7 +256,8 @@ body.app-page-home {
 
 .app-page-home main section,
 .app-page-migraine .card,
-.app-page-migraine .note {
+.app-page-migraine .note,
+.app-page .app-disclosure {
   min-width: 0;
   margin-top: 16px;
   padding: 28px;
@@ -266,6 +267,82 @@ body.app-page-home {
     linear-gradient(145deg, rgba(255, 255, 255, 0.022), transparent 46%),
     var(--panel);
   overflow-wrap: anywhere;
+}
+
+.app-page .app-disclosure {
+  padding: 0;
+  overflow: hidden;
+}
+
+.app-page .app-disclosure > summary {
+  min-height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 28px;
+  list-style: none;
+  cursor: pointer;
+  transition: background 160ms ease;
+}
+
+.app-page .app-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.app-page .app-disclosure > summary:hover {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.app-page .app-disclosure > summary h2 {
+  margin: 0;
+}
+
+.app-page .app-disclosure-heading {
+  min-width: 0;
+}
+
+.app-page .app-disclosure-preview {
+  max-width: 720px;
+  margin: 7px 0 0;
+  color: var(--soft);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.app-page .app-disclosure[open] .app-disclosure-preview {
+  display: none;
+}
+
+.app-page .app-disclosure > summary::after {
+  content: "+";
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--page-accent);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  transition: rotate 180ms ease, border-color 180ms ease;
+}
+
+.app-page .app-disclosure[open] > summary::after {
+  rotate: 45deg;
+  border-color: color-mix(in srgb, var(--page-accent) 42%, transparent);
+}
+
+.app-page .app-disclosure-content {
+  margin: 0 28px;
+  padding: 24px 0 28px;
+  border-top: 1px solid var(--line);
+}
+
+.app-page .app-disclosure-content > :last-child {
+  margin-bottom: 0;
 }
 
 .app-page-migraine a.card {
@@ -397,9 +474,24 @@ body.app-page-home {
 
   .app-page-home main section,
   .app-page-migraine .card,
-  .app-page-migraine .note {
+  .app-page-migraine .note,
+  .app-page .app-disclosure {
     padding: 22px;
     border-radius: 17px;
+  }
+
+  .app-page .app-disclosure {
+    padding: 0;
+  }
+
+  .app-page .app-disclosure > summary {
+    min-height: 76px;
+    padding: 20px 22px;
+  }
+
+  .app-page .app-disclosure-content {
+    margin: 0 22px;
+    padding: 20px 0 22px;
   }
 }
 
@@ -409,6 +501,10 @@ body.app-page-home {
   }
 
   .app-page-migraine a.card {
+    transition: none;
+  }
+
+  .app-page .app-disclosure > summary::after {
     transition: none;
   }
 }
