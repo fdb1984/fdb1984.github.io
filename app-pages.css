@@ -330,6 +330,20 @@ body.app-page-home {
   margin-top: 22px;
 }
 
+/* HomeScreen guides contain substantially more copy than the other cards.
+   A single editorial column keeps every title readable and prevents native
+   details elements from stretching their neighbour to the same height. */
+.app-page-home.app-page-support .grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+}
+
+.app-page-home.app-page-support .grid > .app-disclosure {
+  width: 100%;
+  margin-top: 0;
+  align-self: start;
+}
+
 .app-page-home main section,
 .app-page-migraine .card,
 .app-page-migraine .note,
@@ -385,6 +399,21 @@ body.app-page-home {
   min-width: 0;
 }
 
+.app-page-home.app-page-support .app-disclosure > summary {
+  width: 100%;
+  grid-template-columns: 42px minmax(0, 1fr) 34px;
+}
+
+.app-page-home.app-page-support .app-disclosure-heading,
+.app-page-home.app-page-support .app-disclosure > summary h2,
+.app-page-home.app-page-support .app-disclosure-preview {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 .app-page .app-disclosure-preview {
   max-width: 720px;
   margin: 7px 0 0;
@@ -436,6 +465,109 @@ body.app-page-home {
 
 .app-page .app-disclosure-content > :last-child {
   margin-bottom: 0;
+}
+
+.app-page .app-faq-section {
+  margin-top: 58px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.app-page .app-faq-section > h2 {
+  margin: 0 0 24px;
+  font-size: clamp(30px, 4vw, 42px);
+  letter-spacing: -0.045em;
+}
+
+.app-faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.app-faq-item {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.018);
+  overflow: hidden;
+  transition: border-color 160ms ease, background 160ms ease;
+}
+
+.app-faq-item[open] {
+  border-color: color-mix(in srgb, var(--page-accent) 34%, var(--line));
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.app-faq-item > summary {
+  min-height: 82px;
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) 32px;
+  gap: 16px;
+  align-items: center;
+  padding: 18px 22px;
+  color: var(--text);
+  list-style: none;
+  cursor: pointer;
+}
+
+.app-faq-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.app-faq-item > summary::after {
+  content: "+";
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--page-accent);
+  font-size: 18px;
+  transition: rotate 160ms ease;
+}
+
+.app-faq-item[open] > summary::after {
+  rotate: 45deg;
+}
+
+.app-faq-number {
+  color: var(--page-accent);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.app-faq-question {
+  font-size: 15px;
+  font-weight: 680;
+  line-height: 1.45;
+}
+
+.app-faq-answer {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 16px;
+  margin: 0 22px;
+  padding: 22px 0 24px;
+  border-top: 1px solid var(--line);
+}
+
+.app-faq-answer > span {
+  color: var(--page-accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-faq-answer p {
+  max-width: 760px;
+  margin: 0;
+  color: #aeb7bb;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 .app-topic-index {
@@ -692,6 +824,25 @@ body.app-page-home {
   .app-page .app-disclosure-content {
     margin: 0 22px 0 64px;
     padding: 20px 0 22px;
+  }
+
+  .app-page .app-faq-section {
+    margin-top: 44px;
+    padding: 0;
+  }
+
+  .app-faq-item > summary {
+    min-height: 74px;
+    grid-template-columns: 28px minmax(0, 1fr) 30px;
+    gap: 11px;
+    padding: 16px 18px;
+  }
+
+  .app-faq-answer {
+    grid-template-columns: 28px minmax(0, 1fr);
+    gap: 11px;
+    margin: 0 18px;
+    padding: 18px 0 20px;
   }
 
   .app-topic-index {

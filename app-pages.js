@@ -49,6 +49,10 @@
   }
 
   function addVisuals() {
+    // The main product page already introduces the app with this screenshot.
+    // Repeating that same image on support pages adds no useful context.
+    if (pageType === "support") return;
+
     const headers = isHome
       ? document.querySelectorAll("main > header")
       : document.querySelectorAll("main > section[data-lang] > header");
@@ -92,6 +96,7 @@
         || section.classList.contains("note")
         || section.classList.contains("warning")
         || section.classList.contains("important")
+        || section.classList.contains("app-faq-section")
         || section.querySelector('a[href^="mailto:"]');
       if (shouldStayVisible) return;
 
@@ -134,9 +139,67 @@
       section.replaceWith(details);
 
       if (!firstByGroup.has(group)) {
-        details.open = true;
+        // HomeScreen contains longer, task-based guides. Keeping every topic
+        // collapsed avoids one open item stretching an entire card row.
+        if (!isHome) details.open = true;
         firstByGroup.set(group, details);
       }
+    });
+  }
+
+  function addEmbeddedFaqs() {
+    if (pageType !== "support") return;
+
+    const faqTitles = new Set([
+      "Veelgestelde vragen",
+      "Frequently Asked Questions",
+      "Häufige Fragen",
+      "Questions fréquentes",
+    ]);
+
+    document.querySelectorAll("main section.card").forEach((section) => {
+      const heading = section.querySelector(":scope > h2");
+      const list = section.querySelector(":scope > ul");
+      if (!heading || !list || !faqTitles.has(heading.textContent.trim()) || section.classList.contains("app-faq-section")) return;
+
+      const language = languageFor(section);
+      const faqList = document.createElement("div");
+      faqList.className = "app-faq-list";
+
+      Array.from(list.children).forEach((item, index) => {
+        const questionNode = item.querySelector(":scope > strong");
+        if (!questionNode) return;
+        const question = questionNode.textContent.trim();
+        questionNode.remove();
+        const answer = item.textContent.replace(/\s+/g, " ").trim();
+
+        const details = document.createElement("details");
+        details.className = "app-faq-item";
+        if (index === 0) details.open = true;
+
+        const summary = document.createElement("summary");
+        const number = document.createElement("span");
+        number.className = "app-faq-number";
+        number.textContent = String(index + 1).padStart(2, "0");
+        const questionText = document.createElement("span");
+        questionText.className = "app-faq-question";
+        questionText.textContent = question;
+        summary.append(number, questionText);
+
+        const answerBox = document.createElement("div");
+        answerBox.className = "app-faq-answer";
+        const answerLabel = document.createElement("span");
+        answerLabel.textContent = interfaceLabels[language]?.answer || interfaceLabels.nl.answer;
+        const answerText = document.createElement("p");
+        answerText.textContent = answer;
+        answerBox.append(answerLabel, answerText);
+
+        details.append(summary, answerBox);
+        faqList.append(details);
+      });
+
+      list.replaceWith(faqList);
+      section.classList.add("app-faq-section");
     });
   }
 
@@ -180,6 +243,7 @@
 
   function enhancePage() {
     addVisuals();
+    addEmbeddedFaqs();
     addDisclosures();
     addPolicyIndexes();
   }
