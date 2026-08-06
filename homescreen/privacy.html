@@ -120,7 +120,7 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="/app-pages.css?v=20260802-2">
+  <link rel="stylesheet" href="/app-pages.css?v=20260806-1">
   <script src="/app-pages.js?v=20260802-2" defer></script>
 </head>
 <body class="app-page app-page-home">
@@ -136,31 +136,35 @@
       <noscript>
         <section>
           <h2>Nederlands</h2>
-          <p>HomeScreen for HomeKit is een dashboard en bedieningsscherm voor Apple HomeKit. De app gebruikt HomeKit-gegevens uit je woning, locatie voor lokaal weer, app-instellingen via iCloud key-value storage en aankoopstatus via Apple StoreKit.</p>
+          <p>HomeScreen for HomeKit is een dashboard en bedieningsscherm voor Apple HomeKit. De app gebruikt HomeKit-gegevens uit je woning, locatie voor lokaal weer, bepaalde app-instellingen via iCloud key-value storage en aankoopstatus via Apple StoreKit. Favorieten, schermrust en deurbelgedrag blijven per toestel ingesteld.</p>
           <p>HomeKit-data blijft in Apple HomeKit. HomeScreen stuurt HomeKit-data niet naar een eigen server, verkoopt geen gegevens, bevat geen advertenties en gebruikt geen tracking.</p>
           <p>Camera's worden alleen getoond via HomeKit. HomeScreen neemt geen camerabeelden op, bewaart geen camerabeelden en uploadt geen beelden naar een eigen server.</p>
-          <p>Weergegevens kunnen worden opgehaald bij Apple Weather op basis van locatiecoordinaten. Aankopen worden verwerkt door Apple.</p>
+          <p>Weergegevens kunnen worden opgehaald bij Apple Weather op basis van locatiecoordinaten. Aankopen worden verwerkt door Apple. De app kan maximaal eenmaal per dag bij Apple controleren of een nieuwere App Store-versie beschikbaar is.</p>
           <p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p>
         </section>
         <section>
           <h2>English</h2>
-          <p>HomeScreen for HomeKit is a dashboard and control panel for Apple HomeKit. The app uses HomeKit data from your home, location for local weather, app settings through iCloud key-value storage, and purchase status through Apple StoreKit.</p>
+          <p>HomeScreen for HomeKit is a dashboard and control panel for Apple HomeKit. The app uses HomeKit data from your home, location for local weather, selected app settings through iCloud key-value storage, and purchase status through Apple StoreKit. Favorites, idle-screen behavior, and doorbell behavior remain device-specific.</p>
           <p>HomeKit data stays in Apple HomeKit. HomeScreen does not send HomeKit data to its own server, does not sell data, does not contain ads, and does not use tracking.</p>
           <p>Cameras are only shown through HomeKit. HomeScreen does not record camera video, does not store camera video, and does not upload images to its own server.</p>
-          <p>Weather data may be fetched from Apple Weather based on location coordinates. Purchases are processed by Apple.</p>
+          <p>Weather data may be fetched from Apple Weather based on location coordinates. Purchases are processed by Apple. The app may check with Apple at most once a day whether a newer App Store version is available.</p>
           <p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p>
         </section>
         <section>
           <h2>Deutsch</h2>
-          <p>HomeScreen for HomeKit ist ein Dashboard und Bedienfeld für Apple HomeKit. Die App verwendet HomeKit-Daten aus deinem Zuhause, Standort für lokales Wetter, App-Einstellungen über iCloud Key-Value Storage und Kaufstatus über Apple StoreKit.</p>
+          <p>HomeScreen for HomeKit ist ein Dashboard und Bedienfeld für Apple HomeKit. Die App verwendet HomeKit-Daten aus deinem Zuhause, Standort für lokales Wetter, ausgewählte App-Einstellungen über iCloud Key-Value Storage und Kaufstatus über Apple StoreKit. Favoriten, Bildschirmruhe und Türklingelverhalten bleiben gerätespezifisch.</p>
           <p>HomeKit-Daten bleiben in Apple HomeKit. HomeScreen sendet HomeKit-Daten nicht an einen eigenen Server, verkauft keine Daten, enthält keine Werbung und nutzt kein Tracking.</p>
           <p>Kameras werden nur über HomeKit angezeigt. HomeScreen zeichnet keine Kamerabilder auf, speichert keine Kamerabilder und lädt keine Bilder auf einen eigenen Server hoch.</p>
-          <p>Wetterdaten können anhand von Standortkoordinaten von Apple Weather abgerufen werden. Käufe werden von Apple verarbeitet.</p>
+          <p>Wetterdaten können anhand von Standortkoordinaten von Apple Weather abgerufen werden. Käufe werden von Apple verarbeitet. Die App kann höchstens einmal täglich bei Apple prüfen, ob eine neuere App-Store-Version verfügbar ist.</p>
           <p>Kontakt: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p>
         </section>
       </noscript>
     </header>
   </main>
+  <footer class="app-brand-footer">
+    <span>© 2026 De Bruin Studio</span>
+    <a href="/">debruinstudio.nl <span aria-hidden="true">↗</span></a>
+  </footer>
 
   <script>
     const supportEmail = "support@debruinstudio.nl";
@@ -175,7 +179,7 @@
           de: "Deutsch"
         },
         heading: "Privacybeleid",
-        updated: "HomeScreen for HomeKit - laatst bijgewerkt op 28 juli 2026",
+        updated: "HomeScreen for HomeKit - laatst bijgewerkt op 6 augustus 2026",
         intro: "HomeScreen for HomeKit is een dashboard en bedieningsscherm voor het tonen en bedienen van woningfuncties via Apple HomeKit.",
         sections: [
           {
@@ -191,7 +195,8 @@
             title: "Opslag",
             paragraphs: [
               "HomeKit-data blijft in Apple HomeKit. HomeScreen stuurt HomeKit-data niet naar een eigen server.",
-              "App-instellingen kunnen via iCloud key-value storage worden gesynchroniseerd binnen het Apple account van de gebruiker. Hieronder vallen ook genegeerde meldingen, zodat verbergen en herstellen op de apparaten van de gebruiker gelijk blijft. Bij een nieuwe installatie kan de gebruiker kiezen of iCloud-instellingen worden hersteld.",
+              "Via iCloud key-value storage bewaart HomeScreen borden, woningkeuze, zichtbaarheid, tegelindeling en -namen, kamer- en camera-inrichting, klimaatkeuze, schermgrenzen, recente acties en genegeerde meldingen binnen het Apple account van de gebruiker. Bij een nieuwe installatie kan de gebruiker kiezen of deze iCloud-instellingen worden hersteld.",
+              "Favorieten, schermrust en deurbelgedrag blijven per toestel ingesteld. Wanneer de gebruiker bewust een bord herstelt, worden de opgeslagen favorieten van dat bord eenmalig geladen.",
               "Wanneer je in HomeScreen een accessoire bedient, een scene start, een naam wijzigt of een item probeert te verwijderen, wordt die actie via HomeKit uitgevoerd. HomeScreen bewaart geen kopie van camerabeelden en uploadt geen livestreams."
             ]
           },
@@ -200,7 +205,8 @@
             paragraphs: [
               "De app verkoopt geen gegevens, bevat geen advertenties en gebruikt geen tracking.",
               "Weergegevens kunnen worden opgehaald bij Apple Weather op basis van locatiecoordinaten wanneer de gebruiker locatie-toegang geeft. De wettelijke broninformatie voor Apple Weather staat op https://weatherkit.apple.com/legal-attribution.html.",
-              "Aankopen worden verwerkt door Apple. HomeScreen ontvangt geen betaalkaartgegevens."
+              "Aankopen worden verwerkt door Apple. HomeScreen ontvangt geen betaalkaartgegevens.",
+              "HomeScreen kan maximaal eenmaal per 24 uur Apple's openbare App Store-opzoekdienst benaderen om te controleren of een nieuwere versie beschikbaar is. Daarbij worden alleen de App Store-ID van HomeScreen en de landcode uit de toestelregio gebruikt; er wordt geen HomeKit-data meegestuurd."
             ]
           },
           {
@@ -224,7 +230,7 @@
           de: "Deutsch"
         },
         heading: "Privacy Policy",
-        updated: "HomeScreen for HomeKit - last updated on July 28, 2026",
+        updated: "HomeScreen for HomeKit - last updated on August 6, 2026",
         intro: "HomeScreen for HomeKit is a dashboard and control panel for viewing and controlling home features through Apple HomeKit.",
         sections: [
           {
@@ -240,7 +246,8 @@
             title: "Storage",
             paragraphs: [
               "HomeKit data stays in Apple HomeKit. HomeScreen does not send HomeKit data to its own server.",
-              "App settings can be synced with iCloud key-value storage within the user's Apple account. This includes ignored alerts, so hiding and restoring them stays consistent across the user's devices. On a new installation, the user can choose whether iCloud settings are restored.",
+              "Through iCloud key-value storage, HomeScreen saves boards, home selection, visibility, tile layout and names, room and camera setup, climate selection, shade thresholds, recent actions, and ignored alerts within the user's Apple account. On a new installation, the user can choose whether these iCloud settings are restored.",
+              "Favorites, idle-screen behavior, and doorbell behavior remain device-specific. When the user explicitly restores a board, its saved favorites are loaded once.",
               "When you control an accessory, start a scene, rename an item, or try to remove an item in HomeScreen, that action is performed through HomeKit. HomeScreen does not store camera recordings and does not upload livestreams."
             ]
           },
@@ -249,7 +256,8 @@
             paragraphs: [
               "The app does not sell data, does not contain ads, and does not use tracking.",
               "Weather data may be fetched from Apple Weather based on location coordinates when the user grants location access. Apple Weather legal source information is available at https://weatherkit.apple.com/legal-attribution.html.",
-              "Purchases are processed by Apple. HomeScreen does not receive payment card details."
+              "Purchases are processed by Apple. HomeScreen does not receive payment card details.",
+              "HomeScreen may contact Apple's public App Store lookup service at most once every 24 hours to check whether a newer version is available. Only the HomeScreen App Store ID and the country code from the device region are used; no HomeKit data is included."
             ]
           },
           {
@@ -273,7 +281,7 @@
           de: "Deutsch"
         },
         heading: "Datenschutzerklärung",
-        updated: "HomeScreen for HomeKit - zuletzt aktualisiert am 28. Juli 2026",
+        updated: "HomeScreen for HomeKit - zuletzt aktualisiert am 6. August 2026",
         intro: "HomeScreen for HomeKit ist ein Dashboard und Bedienfeld zum Anzeigen und Steuern von Zuhause-Funktionen über Apple HomeKit.",
         sections: [
           {
@@ -289,7 +297,8 @@
             title: "Speicherung",
             paragraphs: [
               "HomeKit-Daten bleiben in Apple HomeKit. HomeScreen sendet HomeKit-Daten nicht an einen eigenen Server.",
-              "App-Einstellungen können über iCloud Key-Value Storage innerhalb des Apple Accounts des Nutzers synchronisiert werden. Dazu gehören auch ignorierte Hinweise, damit Ausblenden und Wiederherstellen auf den Geräten des Nutzers einheitlich bleiben. Bei einer neuen Installation kann der Nutzer wählen, ob iCloud-Einstellungen wiederhergestellt werden.",
+              "Über iCloud Key-Value Storage speichert HomeScreen Boards, Zuhause-Auswahl, Sichtbarkeit, Kachelanordnung und -namen, Raum- und Kameraeinrichtung, Klimaauswahl, Grenzen für Beschattung, letzte Aktionen und ignorierte Hinweise innerhalb des Apple Accounts des Nutzers. Bei einer neuen Installation kann der Nutzer wählen, ob diese iCloud-Einstellungen wiederhergestellt werden.",
+              "Favoriten, Bildschirmruhe und Türklingelverhalten bleiben gerätespezifisch. Wenn der Nutzer bewusst ein Board wiederherstellt, werden dessen gespeicherte Favoriten einmal geladen.",
               "Wenn du in HomeScreen ein Zubehör steuerst, eine Szene startest, einen Namen änderst oder ein Element entfernen möchtest, wird diese Aktion über HomeKit ausgeführt. HomeScreen speichert keine Kameraaufnahmen und lädt keine Livestreams hoch."
             ]
           },
@@ -298,7 +307,8 @@
             paragraphs: [
               "Die App verkauft keine Daten, enthält keine Werbung und verwendet kein Tracking.",
               "Wetterdaten können anhand von Standortkoordinaten von Apple Weather abgerufen werden, wenn der Nutzer Standortzugriff erlaubt. Die rechtlichen Quelleninformationen für Apple Weather stehen unter https://weatherkit.apple.com/legal-attribution.html.",
-              "Käufe werden von Apple verarbeitet. HomeScreen erhält keine Zahlungskartendaten."
+              "Käufe werden von Apple verarbeitet. HomeScreen erhält keine Zahlungskartendaten.",
+              "HomeScreen kann höchstens einmal alle 24 Stunden Apples öffentlichen App-Store-Lookup-Dienst aufrufen, um nach einer neueren Version zu suchen. Dabei werden nur die App-Store-ID von HomeScreen und der Ländercode aus der Geräteregion verwendet; HomeKit-Daten werden nicht übertragen."
             ]
           },
           {

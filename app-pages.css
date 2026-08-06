@@ -868,3 +868,56 @@ body.app-page-home {
     transition: none;
   }
 }
+
+/* De Bruin Studio brand */
+.app-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0;
+}
+
+.app-wordmark::before {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  content: "";
+  border-radius: 8px;
+  background: #fff url("/de-bruin-studio-mark.svg") center / 27px 27px no-repeat;
+  box-shadow: inset 0 0 0 1px rgb(17 24 32 / 8%);
+}
+
+.app-brand-footer {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto 24px;
+  padding: 24px 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.app-brand-footer a {
+  color: var(--soft);
+  text-decoration: none;
+}
+
+.app-brand-footer a:hover {
+  color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .app-wordmark::before {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+    border-radius: 7px;
+    background-size: 24px 24px;
+  }
+
+  .app-brand-footer {
+    width: min(100% - 32px, 1040px);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

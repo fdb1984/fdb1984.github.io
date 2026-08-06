@@ -159,7 +159,7 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="/app-pages.css?v=20260802-2">
+  <link rel="stylesheet" href="/app-pages.css?v=20260806-1">
   <script src="/app-pages.js?v=20260802-2" defer></script>
 </head>
 <body class="app-page app-page-home">
@@ -205,6 +205,10 @@
       </noscript>
     </header>
   </main>
+  <footer class="app-brand-footer">
+    <span>© 2026 De Bruin Studio</span>
+    <a href="/">debruinstudio.nl <span aria-hidden="true">↗</span></a>
+  </footer>
 
   <script>
     const supportEmail = "support@debruinstudio.nl";
@@ -247,6 +251,18 @@
           ]
         },
         cards: [
+          {
+            label: "Nieuw in 1.11",
+            title: "Meer controle, minder ruis",
+            body: "Versie 1.11 maakt HomeScreen duidelijker in te stellen en betrouwbaarder in dagelijks gebruik.",
+            bullets: [
+              "Kies per camera, sensor, scherm en airco wat zichtbaar is in HomeScreen.",
+              "Bepaal per toestel of de deurbelcamera automatisch wordt geopend.",
+              "Camera-overzichten schalen slimmer mee met het aantal camera's en de beschikbare ruimte.",
+              "Settings is overzichtelijker gegroepeerd en belangrijke bediening is makkelijker bereikbaar.",
+              "Na een update toont HomeScreen wat er is veranderd en controleert de app maximaal eenmaal per dag of een nieuwere App Store-versie beschikbaar is."
+            ]
+          },
           {
             label: "Homescherm",
             title: "Wat je ziet",
@@ -351,20 +367,22 @@
           {
             label: "iCloud",
             title: "Opslaan en herstellen",
-            body: "HomeScreen bewaart appvoorkeuren in iCloud, zoals borden, zichtbaarheid, tegelvolgorde, dashboardfavorieten, recente acties, aangepaste namen, gekozen panelen, schermrust, kamericonen, klimaatkeuze, favoriete sensoren, genegeerde meldingen en open-grenzen voor schermen.",
+            body: "Via iCloud bewaart HomeScreen borden, woningkeuze, zichtbaarheid, tegelindeling en -namen, kamer- en camera-inrichting, klimaatkeuze, schermgrenzen, Recent en genegeerde meldingen.",
             bullets: [
               "Bij een nieuwe installatie vraagt de app eerst of je iCloud-instellingen wilt herstellen.",
               "Je kunt een specifiek bord uit iCloud kiezen.",
-              "Kies je voor deze installatie gebruiken, dan bewaart HomeScreen de huidige instellingen opnieuw in iCloud."
+              "Favorieten, schermrust en deurbelgedrag blijven per toestel ingesteld. Herstel je bewust een bord, dan worden de opgeslagen favorieten van dat bord één keer geladen.",
+              "Woningen, kamers, accessoires, scenes, camera's en hun HomeKit-namen blijven in HomeKit; HomeScreen maakt daarvan geen reservekopie."
             ]
           },
           {
             label: "Settings",
             title: "Beheer",
-            body: "Settings is verdeeld in tabs voor Algemeen, Borden, Camera's, Verlichting, Schakelaars, Schermen, Sensoren, Scenes en App. Op smallere schermen lopen de tabs automatisch door op een volgende regel. Settings opent met Face ID, Touch ID of de toestelcode.",
+            body: "Settings groepeert Algemeen en Borden onder Dashboard, alle apparaatcategorieën onder Bediening, en hulp, aankoop en privacy onder App en privacy. Settings opent met Face ID, Touch ID of de toestelcode.",
             bullets: [
-              "Kies welke lampen, schakelaars, schermen en scenes zichtbaar zijn.",
-              "Kies welke sensoren en camera's zichtbaar zijn en in welke volgorde ze staan.",
+              "Kies per tab welke camera's, lampen, schakelaars, schermen, sensoren, airco's en scenes zichtbaar zijn.",
+              "Verberg een airco die door HomeKit verkeerd wordt herkend zonder het apparaat uit HomeKit te verwijderen.",
+              "Kies in Algemeen per toestel of de deurbelcamera automatisch wordt geopend.",
               "Kies welk klimaataccessoire op het homescherm staat.",
               "Kies per scherm vanaf welk percentage het als open telt op het homescherm.",
               "Pas de kamervolgorde en iconen aan via Verplaats in een kamerweergave.",
@@ -408,7 +426,8 @@
           bullets: [
             "Tik een camera om fullscreen te openen.",
             "Camera's kun je in eigen volgorde zetten, bijvoorbeeld de belangrijkste camera bovenaan.",
-            "Als de deurbel gaat, opent HomeScreen automatisch de gekoppelde camera en gaat na ongeveer 60 seconden terug.",
+            "Camera-overzichten passen hun indeling aan het aantal zichtbare camera's en de beschikbare schermruimte aan.",
+            "In Settings > Algemeen kies je per toestel of HomeScreen bij aanbellen automatisch de gekoppelde camera opent en na ongeveer 60 seconden teruggaat. Op iPhone is dit beschikbaar wanneer HomeScreen openstaat in landscape.",
             "Beweegbare camera's kun je optioneel als PTZ-camera instellen. Kies dan per camera welke HomeKit-schakelaars links, rechts, omhoog en omlaag bedienen.",
             "Op Mac kan HomeKit soms wel een camera tonen, maar geen livestreamprofiel doorgeven."
           ]
@@ -469,6 +488,18 @@
           ]
         },
         cards: [
+          {
+            label: "New in 1.11",
+            title: "More control, less clutter",
+            body: "Version 1.11 makes HomeScreen easier to configure and more dependable in daily use.",
+            bullets: [
+              "Choose which cameras, sensors, shades, and air conditioners are visible in HomeScreen.",
+              "Choose per device whether the doorbell camera opens automatically.",
+              "Camera overviews scale more intelligently for the number of cameras and available space.",
+              "Settings is grouped more clearly and important controls are easier to reach.",
+              "After an update, HomeScreen shows what changed and checks at most once a day whether a newer App Store version is available."
+            ]
+          },
           {
             label: "Home screen",
             title: "What you see",
@@ -573,20 +604,22 @@
           {
             label: "iCloud",
             title: "Save and restore",
-            body: "HomeScreen saves app preferences in iCloud, including boards, visibility, tile order, dashboard favorites, recent actions, custom names, selected panels, idle screen behavior, room icons, climate choice, favorite sensors, ignored alerts, and open thresholds for shades.",
+            body: "Through iCloud, HomeScreen saves boards, home selection, visibility, tile layout and names, room and camera setup, climate selection, shade thresholds, Recent, and ignored alerts.",
             bullets: [
               "On a new installation, the app first asks whether you want to restore iCloud settings.",
               "You can choose a specific board from iCloud.",
-              "If you choose to use this installation, HomeScreen saves the current settings back to iCloud."
+              "Favorites, idle-screen behavior, and doorbell behavior remain device-specific. If you explicitly restore a board, its saved favorites are loaded once.",
+              "Homes, rooms, accessories, scenes, cameras, and their HomeKit names remain in HomeKit; HomeScreen does not create a backup of them."
             ]
           },
           {
             label: "Settings",
             title: "Management",
-            body: "Settings is split into tabs for General, Boards, Cameras, Lighting, Switches, Shades, Sensors, Scenes, and App. On narrower screens, the tabs automatically wrap to another row. Settings opens with Face ID, Touch ID, or the device passcode.",
+            body: "Settings groups General and Boards under Dashboard, all device categories under Controls, and help, purchases, and privacy under App and privacy. Settings opens with Face ID, Touch ID, or the device passcode.",
             bullets: [
-              "Choose which lights, switches, shades, and scenes are visible.",
-              "Choose which sensors and cameras are visible and in which order they appear.",
+              "Choose per tab which cameras, lights, switches, shades, sensors, air conditioners, and scenes are visible.",
+              "Hide an air conditioner that HomeKit identifies incorrectly without removing the device from HomeKit.",
+              "In General, choose per device whether the doorbell camera opens automatically.",
               "Choose which climate accessory appears on the home screen.",
               "Choose per shade from which percentage it counts as open on the home screen.",
               "Change room order and icons with Move in a room overview.",
@@ -630,7 +663,8 @@
           bullets: [
             "Tap a camera to open it fullscreen.",
             "Cameras can be reordered, for example to place the most important camera first.",
-            "When the doorbell rings, HomeScreen automatically opens the linked camera and returns after about 60 seconds.",
+            "Camera overviews adapt their layout to the number of visible cameras and the available screen space.",
+            "In Settings > General, choose per device whether HomeScreen opens the linked camera when the doorbell rings and returns after about 60 seconds. On iPhone, this is available while HomeScreen is open in landscape.",
             "Moving cameras can optionally be set up as PTZ cameras. For each camera, choose which HomeKit switches control left, right, up, and down.",
             "On Mac, HomeKit can sometimes show a camera without providing a livestream profile."
           ]
@@ -691,6 +725,18 @@
           ]
         },
         cards: [
+          {
+            label: "Neu in 1.11",
+            title: "Mehr Kontrolle, weniger Unruhe",
+            body: "Version 1.11 macht HomeScreen übersichtlicher einzurichten und im Alltag zuverlässiger.",
+            bullets: [
+              "Wähle, welche Kameras, Sensoren, Beschattung und Klimageräte in HomeScreen sichtbar sind.",
+              "Lege pro Gerät fest, ob die Türklingelkamera automatisch geöffnet wird.",
+              "Kameraübersichten passen sich intelligenter an Anzahl und verfügbaren Platz an.",
+              "Einstellungen ist klarer gruppiert und wichtige Bedienung ist leichter erreichbar.",
+              "Nach einem Update zeigt HomeScreen die Änderungen und prüft höchstens einmal täglich, ob eine neuere App-Store-Version verfügbar ist."
+            ]
+          },
           {
             label: "Startbildschirm",
             title: "Was du siehst",
@@ -795,20 +841,22 @@
           {
             label: "iCloud",
             title: "Speichern und wiederherstellen",
-            body: "HomeScreen speichert App-Einstellungen in iCloud, darunter Boards, Sichtbarkeit, Kachelreihenfolge, Dashboard-Favoriten, letzte Aktionen, eigene Namen, gewählte Panels, Bildschirmruhe, Raum-Icons, Klimaauswahl, Lieblingssensoren, ignorierte Hinweise und Offen-Grenzen für Beschattung.",
+            body: "Über iCloud speichert HomeScreen Boards, Zuhause-Auswahl, Sichtbarkeit, Kachelanordnung und -namen, Raum- und Kameraeinrichtung, Klimaauswahl, Grenzen für Beschattung, Zuletzt und ignorierte Hinweise.",
             bullets: [
               "Bei einer neuen Installation fragt die App zuerst, ob iCloud-Einstellungen wiederhergestellt werden sollen.",
               "Du kannst ein bestimmtes Board aus iCloud auswählen.",
-              "Wenn du diese Installation verwendest, speichert HomeScreen die aktuellen Einstellungen erneut in iCloud."
+              "Favoriten, Bildschirmruhe und Türklingelverhalten bleiben gerätespezifisch. Wenn du bewusst ein Board wiederherstellst, werden dessen gespeicherte Favoriten einmal geladen.",
+              "Zuhause, Räume, Zubehör, Szenen, Kameras und ihre HomeKit-Namen bleiben in HomeKit; HomeScreen erstellt davon keine Sicherung."
             ]
           },
           {
             label: "Einstellungen",
             title: "Verwaltung",
-            body: "Einstellungen ist in Tabs für Allgemein, Boards, Kameras, Beleuchtung, Schalter, Beschattung, Sensoren, Szenen und App aufgeteilt. Auf schmaleren Displays werden die Tabs automatisch in einer weiteren Zeile angeordnet. Einstellungen öffnen mit Face ID, Touch ID oder dem Gerätecode.",
+            body: "Einstellungen gruppiert Allgemein und Boards unter Dashboard, alle Gerätekategorien unter Bedienung sowie Hilfe, Käufe und Datenschutz unter App und Datenschutz. Einstellungen öffnen mit Face ID, Touch ID oder dem Gerätecode.",
             bullets: [
-              "Wähle, welche Lampen, Schalter, Beschattung und Szenen sichtbar sind.",
-              "Wähle, welche Sensoren und Kameras sichtbar sind und in welcher Reihenfolge sie erscheinen.",
+              "Wähle pro Tab, welche Kameras, Lampen, Schalter, Beschattung, Sensoren, Klimageräte und Szenen sichtbar sind.",
+              "Blende ein von HomeKit falsch erkanntes Klimagerät aus, ohne es aus HomeKit zu entfernen.",
+              "Lege unter Allgemein pro Gerät fest, ob die Türklingelkamera automatisch geöffnet wird.",
               "Wähle, welches Klima-Zubehör auf dem Startbildschirm steht.",
               "Wähle pro Element, ab welchem Prozentwert es auf dem Startbildschirm als offen zählt.",
               "Ändere Raumreihenfolge und Icons über Verschieben in einer Raumübersicht.",
@@ -852,7 +900,8 @@
           bullets: [
             "Tippe auf eine Kamera, um sie im Vollbild zu öffnen.",
             "Kameras können sortiert werden, zum Beispiel damit die wichtigste Kamera oben steht.",
-            "Wenn die Türklingel klingelt, öffnet HomeScreen automatisch die verknüpfte Kamera und kehrt nach etwa 60 Sekunden zurück.",
+            "Kameraübersichten passen ihre Anordnung an die Zahl sichtbarer Kameras und den verfügbaren Platz an.",
+            "Unter Einstellungen > Allgemein legst du pro Gerät fest, ob HomeScreen beim Klingeln automatisch die verknüpfte Kamera öffnet und nach etwa 60 Sekunden zurückkehrt. Auf dem iPhone ist dies verfügbar, solange HomeScreen im Querformat geöffnet ist.",
             "Bewegliche Kameras können optional als PTZ-Kameras eingerichtet werden. Wähle pro Kamera, welche HomeKit-Schalter links, rechts, hoch und runter steuern.",
             "Auf dem Mac kann HomeKit manchmal eine Kamera anzeigen, ohne ein Livestream-Profil bereitzustellen."
           ]
