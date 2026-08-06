@@ -897,6 +897,16 @@ body.app-page-home {
   gap: 18px;
 }
 
+.app-brand-footer-identity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.app-brand-footer .app-wordmark {
+  color: var(--text);
+}
+
 .app-brand-footer a {
   color: var(--soft);
   text-decoration: none;
@@ -919,5 +929,10 @@ body.app-page-home {
     width: min(100% - 32px, 1040px);
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .app-brand-footer-identity {
+    width: 100%;
+    justify-content: space-between;
   }
 }
