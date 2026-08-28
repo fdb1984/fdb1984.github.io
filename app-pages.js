@@ -23,6 +23,7 @@
     de: isHome ? "HomeScreen auf dem iPad" : "Ein Blick in MigraineMaatje",
     fr: isHome ? "HomeScreen sur iPad" : "Un aperçu de MigraineMaatje",
   };
+  const migraineScreenshotVersion = "20260828-1";
 
   function languageFor(element) {
     return element.closest("[data-lang]")?.getAttribute("data-lang")
@@ -67,7 +68,7 @@
       const image = document.createElement("img");
       image.src = isHome
         ? `/homescreen-screen-${screenshotLanguage}.png`
-        : `/migrainemaatje-screen-${screenshotLanguage}.png`;
+        : `/migrainemaatje-screen-${screenshotLanguage}.png?v=${migraineScreenshotVersion}`;
       image.alt = visualLabels[language] || visualLabels.nl;
       image.loading = "lazy";
       image.decoding = "async";
