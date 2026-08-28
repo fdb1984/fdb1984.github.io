@@ -47,13 +47,20 @@
     .note strong, .important strong { color: var(--amber); }
     .muted { color: var(--soft); }
     .important { border-color: rgba(242, 196, 92, 0.36); background: rgba(242, 196, 92, 0.08); }
+    .showcase { margin-top: 28px; }
+    .showcase h2 { margin-bottom: 8px; }
+    .showcase-intro { max-width: 700px; }
+    .showcase-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+    .showcase-figure { min-width: 0; margin: 0; padding: 8px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-soft); }
+    .showcase-figure img { display: block; width: 100%; height: 250px; object-fit: contain; object-position: top; border-radius: 7px; background: #07090b; }
+    .showcase-figure figcaption { margin-top: 8px; color: var(--soft); font-size: 13px; line-height: 1.35; }
     .language-switch { display: inline-flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; padding: 6px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.03); }
     .language-switch button { appearance: none; border: 0; border-radius: 999px; background: transparent; color: var(--muted); font: inherit; font-weight: 700; padding: 8px 14px; cursor: pointer; }
     .language-switch button.active { background: var(--mint); color: #08120f; }
     footer { margin-top: 34px; color: var(--soft); font-size: 14px; }
     [data-lang] { display: none; }
     [data-lang].active { display: block; }
-    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid { grid-template-columns: minmax(0, 1fr); } .card { padding: 18px; } }
+    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid { grid-template-columns: minmax(0, 1fr); } .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .showcase-figure img { height: 260px; } .card { padding: 18px; } }
 
   </style>
   <link rel="stylesheet" href="/app-pages.css?v=20260806-2">
@@ -76,25 +83,38 @@
       <header>
         <p class="eyebrow">MigraineMaatje</p>
         <h1>Support en privacy</h1>
-        <p class="lead">MigraineMaatje helpt je migraine rustig vastleggen en persoonlijke signalen beter begrijpen. Gezondheidsgegevens worden beveiligd op je apparaat bewaard, zonder advertenties en zonder verkoop van gezondheidsdata.</p>
+        <p class="lead">Een rustige plek om aanvallen, medicatie en persoonlijke signalen bij te houden. Je gegevens blijven op je eigen apparaat. Geen advertenties en geen verkoop van gezondheidsdata.</p>
       </header>
       <div class="grid">
         <a class="card" href="privacy.html?lang=nl">
           <h2>Privacybeleid</h2>
-          <p>Welke gegevens MigraineMaatje gebruikt, waar die blijven en hoe Apple Gezondheid, Health Connect, weerdata en lokale opslag worden gebruikt.</p>
+          <p>Lees wat de app gebruikt, waar je gegevens staan en wat er gebeurt met Apple Gezondheid, Health Connect en weerdata.</p>
         </a>
         <a class="card" href="support.html?lang=nl">
           <h2>Hulp en support</h2>
-          <p>Hulp bij starten op Apple en Android, gezondheidsdata, weer, horloge, meldingen, Premium en contact.</p>
+          <p>Antwoorden over aanvallen vastleggen, horloge, weer, meldingen, Premium en contact.</p>
         </a>
         <a class="card" href="terms.html?lang=nl">
           <h2>Gebruiksvoorwaarden</h2>
-          <p>Voorwaarden voor gratis gebruik, Premium, abonnementen en verantwoord gebruik van MigraineMaatje.</p>
+          <p>De afspraken voor gratis gebruik, Premium en abonnementen.</p>
         </a>
       </div>
       <section class="note">
-        <p><strong>Nieuw in 1.3.5:</strong> bereid afspraken met je arts voor, gebruik tijdens het gesprek je persoonlijke afvinklijst en bewaar daarna wat is afgesproken. Medicatie, bijwerkingen en persoonlijke Premium-inzichten zijn ook duidelijker geworden.</p>
-        <p><a href="support.html?lang=nl#arts-afspraken">Lees wat er nieuw is en hoe Arts &amp; afspraken werkt</a>.</p>
+        <p><strong>In de nieuwste versie:</strong> bereid afspraken met je arts voor, gebruik tijdens het gesprek je eigen checklist en bewaar daarna wat jullie hebben afgesproken. Ook medicatie, bijwerkingen en persoonlijke Premium-inzichten zijn overzichtelijker.</p>
+        <p><a href="support.html?lang=nl#arts-afspraken">Lees hoe Arts &amp; afspraken werkt</a>.</p>
+      </section>
+      <section class="showcase" aria-labelledby="showcase-nl-title">
+        <p class="eyebrow">Even kijken</p>
+        <h2 id="showcase-nl-title">Zo ziet MigraineMaatje eruit</h2>
+        <p class="showcase-intro">Een rustig overzicht van je signalen, medicatie, persoonlijke verdieping en consultvoorbereiding. Ook op iPad en Apple Watch blijft de app overzichtelijk.</p>
+        <div class="showcase-grid">
+          <figure class="showcase-figure"><img src="assets/signalen-nu-rustig.png" alt="Signalen nu in MigraineMaatje" loading="lazy"><figcaption>Signalen nu</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/premium.png" alt="Premium met persoonlijke inzichten" loading="lazy"><figcaption>Persoonlijke verdieping</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/medicatie-beheren.png" alt="Medicatie beheren in MigraineMaatje" loading="lazy"><figcaption>Medicatie beheren</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/afspraken.png" alt="Arts en afspraken in MigraineMaatje" loading="lazy"><figcaption>Arts &amp; afspraken</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/ipad.png" alt="MigraineMaatje op iPad" loading="lazy"><figcaption>Op iPad</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/watch.png" alt="MigraineMaatje op Apple Watch" loading="lazy"><figcaption>Op Apple Watch</figcaption></figure>
+        </div>
       </section>
       <section class="note"><p><strong>Belangrijk:</strong> MigraineMaatje geeft geen diagnose of medisch advies. Bespreek medische vragen, medicatie en aanhoudende klachten altijd met je arts.</p></section>
       <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
@@ -104,25 +124,38 @@
       <header>
         <p class="eyebrow">MigraineMaatje</p>
         <h1>Support and Privacy</h1>
-        <p class="lead">MigraineMaatje helps you log migraine calmly and better understand personal signals. Health data is stored securely on your device, with no ads and no sale of health data.</p>
+        <p class="lead">A calm place to keep track of attacks, medication, and personal signals. Your data stays on your own device. No ads and no sale of health data.</p>
       </header>
       <div class="grid">
         <a class="card" href="privacy.html?lang=en">
           <h2>Privacy Policy</h2>
-          <p>What data MigraineMaatje uses, where it stays, and how Apple Health, Health Connect, weather data, and local storage are used.</p>
+          <p>See what the app uses, where your data stays, and how Apple Health, Health Connect, and weather data work.</p>
         </a>
         <a class="card" href="support.html?lang=en">
           <h2>Help and Support</h2>
-          <p>Help with getting started on Apple and Android, health data, weather, watches, notifications, Premium, and contact.</p>
+          <p>Answers about recording attacks, watches, weather, notifications, Premium, and contact.</p>
         </a>
         <a class="card" href="terms.html?lang=en">
           <h2>Terms of Use</h2>
-          <p>Terms for free use, Premium, subscriptions, and responsible use of MigraineMaatje.</p>
+          <p>The basics of free use, Premium, and subscriptions.</p>
         </a>
       </div>
       <section class="note">
-        <p><strong>New in 1.3.5:</strong> prepare appointments with your doctor, use your personal checklist during the conversation, and save what was agreed afterwards. Medication, side effects, and personal Premium insights are clearer too.</p>
-        <p><a href="support.html?lang=en#doctor-appointments">See what is new and how Doctors &amp; appointments works</a>.</p>
+        <p><strong>In the latest version:</strong> prepare for appointments, use your own checklist during the conversation, and save what you agreed afterwards. Medication, side effects, and personal Premium insights are clearer too.</p>
+        <p><a href="support.html?lang=en#doctor-appointments">See how Doctors &amp; appointments works</a>.</p>
+      </section>
+      <section class="showcase" aria-labelledby="showcase-en-title">
+        <p class="eyebrow">Take a look</p>
+        <h2 id="showcase-en-title">A calmer way to keep track</h2>
+        <p class="showcase-intro">See your current signals, medication, personal depth, and appointment preparation in one clear place. The iPad and Apple Watch views stay focused too.</p>
+        <div class="showcase-grid">
+          <figure class="showcase-figure"><img src="assets/signalen-nu-rustig.png" alt="Current signals in MigraineMaatje" loading="lazy"><figcaption>Current signals</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/premium.png" alt="Premium personal insights" loading="lazy"><figcaption>Personal depth</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/medicatie-beheren.png" alt="Medication management in MigraineMaatje" loading="lazy"><figcaption>Medication management</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/afspraken.png" alt="Doctors and appointments in MigraineMaatje" loading="lazy"><figcaption>Doctors &amp; appointments</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/ipad.png" alt="MigraineMaatje on iPad" loading="lazy"><figcaption>On iPad</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/watch.png" alt="MigraineMaatje on Apple Watch" loading="lazy"><figcaption>On Apple Watch</figcaption></figure>
+        </div>
       </section>
       <section class="note"><p><strong>Important:</strong> MigraineMaatje does not provide diagnosis or medical advice. Discuss medical questions, medication, and ongoing symptoms with your doctor.</p></section>
       <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
@@ -132,53 +165,79 @@
       <header>
         <p class="eyebrow">MigraineMaatje</p>
         <h1>Support und Datenschutz</h1>
-        <p class="lead">MigraineMaatje hilft dir, Migräne ruhig festzuhalten und persönliche Signale besser zu verstehen. Gesundheitsdaten werden sicher auf deinem Gerät gespeichert, ohne Werbung und ohne Verkauf von Gesundheitsdaten.</p>
+        <p class="lead">Ein ruhiger Ort, an dem du Attacken, Medikamente und persönliche Signale festhältst. Deine Daten bleiben auf deinem eigenen Gerät. Keine Werbung und kein Verkauf von Gesundheitsdaten.</p>
       </header>
       <div class="grid">
         <a class="card" href="privacy.html?lang=de">
           <h2>Datenschutzerklärung</h2>
-          <p>Welche Daten MigraineMaatje nutzt, wo sie bleiben und wie Apple Health, Health Connect, Wetterdaten und lokale Speicherung verwendet werden.</p>
+          <p>Erfahre, welche Daten die App nutzt, wo sie bleiben und wie Apple Health, Health Connect und Wetterdaten funktionieren.</p>
         </a>
         <a class="card" href="support.html?lang=de">
           <h2>Hilfe und Support</h2>
-          <p>Hilfe beim Start auf Apple und Android, Gesundheitsdaten, Wetter, Uhren, Mitteilungen, Premium und Kontakt.</p>
+          <p>Antworten zu Attacken, Uhr, Wetter, Mitteilungen, Premium und Kontakt.</p>
         </a>
         <a class="card" href="terms.html?lang=de">
           <h2>Nutzungsbedingungen</h2>
-          <p>Bedingungen für kostenlose Nutzung, Premium, Abonnements und verantwortungsvolle Nutzung von MigraineMaatje.</p>
+          <p>Die wichtigsten Regeln für die kostenlose Nutzung, Premium und Abos.</p>
         </a>
       </div>
       <section class="note">
-        <p><strong>Neu in 1.3.5:</strong> Bereite Arzttermine vor, nutze während des Gesprächs deine persönliche Checkliste und halte anschließend Absprachen fest. Auch Medikamente, Nebenwirkungen und persönliche Premium-Erkenntnisse sind jetzt verständlicher.</p>
-        <p><a href="support.html?lang=de#arzt-termine">Erfahre, was neu ist und wie Ärzte &amp; Termine funktioniert</a>.</p>
+        <p><strong>In der neuesten Version:</strong> Bereite Arzttermine vor, nutze deine eigene Checkliste im Gespräch und halte anschließend eure Absprachen fest. Auch Medikamente, Nebenwirkungen und persönliche Premium-Erkenntnisse sind übersichtlicher.</p>
+        <p><a href="support.html?lang=de#arzt-termine">Erfahre, wie Ärzte &amp; Termine funktioniert</a>.</p>
+      </section>
+      <section class="showcase" aria-labelledby="showcase-de-title">
+        <p class="eyebrow">Ein Blick in die App</p>
+        <h2 id="showcase-de-title">Übersichtlich festhalten</h2>
+        <p class="showcase-intro">Status, Medikamente, persönliche Vertiefung und Terminvorbereitung an einem ruhigen Ort. Auch auf iPad und Apple Watch bleibt das Wesentliche im Blick.</p>
+        <div class="showcase-grid">
+          <figure class="showcase-figure"><img src="assets/signalen-nu-rustig.png" alt="Aktueller Status in MigraineMaatje" loading="lazy"><figcaption>Aktueller Status</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/premium.png" alt="Persönliche Premium-Erkenntnisse" loading="lazy"><figcaption>Persönliche Vertiefung</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/medicatie-beheren.png" alt="Medikamentenverwaltung in MigraineMaatje" loading="lazy"><figcaption>Medikamente</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/afspraken.png" alt="Ärzte und Termine in MigraineMaatje" loading="lazy"><figcaption>Ärzte &amp; Termine</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/ipad.png" alt="MigraineMaatje auf dem iPad" loading="lazy"><figcaption>Auf dem iPad</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/watch.png" alt="MigraineMaatje auf der Apple Watch" loading="lazy"><figcaption>Auf der Apple Watch</figcaption></figure>
+        </div>
       </section>
       <section class="note"><p><strong>Wichtig:</strong> MigraineMaatje stellt keine Diagnose und gibt keinen medizinischen Rat. Besprich medizinische Fragen, Medikamente und anhaltende Beschwerden immer mit deinem Arzt.</p></section>
-      <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
+      <footer><p>Kontakt: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
     </section>
 
     <section data-lang="fr">
       <header>
         <p class="eyebrow">MigraineMaatje</p>
         <h1>Support et confidentialité</h1>
-        <p class="lead">MigraineMaatje vous aide à enregistrer vos migraines calmement et à mieux comprendre vos signaux personnels. Les données de santé sont conservées de façon sécurisée sur votre appareil, sans publicité ni vente de données de santé.</p>
+        <p class="lead">Un espace calme pour noter vos crises, vos médicaments et vos signaux personnels. Vos données restent sur votre appareil. Sans publicité et sans vente de données de santé.</p>
       </header>
       <div class="grid">
         <a class="card" href="privacy.html?lang=fr">
           <h2>Politique de confidentialité</h2>
-          <p>Les données utilisées par MigraineMaatje, où elles restent, et comment Apple Santé, Health Connect, la météo et le stockage local sont utilisés.</p>
+          <p>Découvrez les données utilisées, leur lieu de stockage et le fonctionnement d’Apple Santé, Health Connect et de la météo.</p>
         </a>
         <a class="card" href="support.html?lang=fr">
           <h2>Aide et support</h2>
-          <p>Aide pour démarrer sur Apple et Android, données de santé, météo, montres, notifications, Premium et contact.</p>
+          <p>Réponses sur les crises, les montres, la météo, les notifications, Premium et le contact.</p>
         </a>
         <a class="card" href="terms.html?lang=fr">
           <h2>Conditions d’utilisation</h2>
-          <p>Conditions de l’utilisation gratuite, de Premium, des abonnements et de l’usage responsable de MigraineMaatje.</p>
+          <p>Les règles essentielles pour l’utilisation gratuite, Premium et les abonnements.</p>
         </a>
       </div>
       <section class="note">
-        <p><strong>Nouveau dans la version 1.3.5 :</strong> préparez vos rendez-vous médicaux, utilisez votre liste personnelle pendant la consultation et conservez ensuite ce qui a été convenu. Les médicaments, les effets indésirables et les analyses Premium personnelles sont également plus clairs.</p>
-        <p><a href="support.html?lang=fr#medecin-rendez-vous">Découvrez les nouveautés et le fonctionnement de Médecins et rendez-vous</a>.</p>
+        <p><strong>Dans la dernière version :</strong> préparez vos rendez-vous, utilisez votre propre liste pendant la consultation et gardez ensuite une trace de ce qui a été convenu. Les médicaments, les effets indésirables et les analyses Premium personnelles sont aussi plus clairs.</p>
+        <p><a href="support.html?lang=fr#medecin-rendez-vous">Découvrez le fonctionnement de Médecins et rendez-vous</a>.</p>
+      </section>
+      <section class="showcase" aria-labelledby="showcase-fr-title">
+        <p class="eyebrow">Un aperçu</p>
+        <h2 id="showcase-fr-title">Un suivi plus simple</h2>
+        <p class="showcase-intro">Retrouvez le statut, les médicaments, les informations personnelles et la préparation du rendez-vous dans un espace calme. Les versions iPad et Apple Watch restent simples aussi.</p>
+        <div class="showcase-grid">
+          <figure class="showcase-figure"><img src="assets/signalen-nu-rustig.png" alt="Signaux actuels dans MigraineMaatje" loading="lazy"><figcaption>Signaux actuels</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/premium.png" alt="Informations personnelles Premium" loading="lazy"><figcaption>Approfondissement personnel</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/medicatie-beheren.png" alt="Gestion des médicaments dans MigraineMaatje" loading="lazy"><figcaption>Gestion des médicaments</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/afspraken.png" alt="Médecins et rendez-vous dans MigraineMaatje" loading="lazy"><figcaption>Médecins et rendez-vous</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/ipad.png" alt="MigraineMaatje sur iPad" loading="lazy"><figcaption>Sur iPad</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/watch.png" alt="MigraineMaatje sur Apple Watch" loading="lazy"><figcaption>Sur Apple Watch</figcaption></figure>
+        </div>
       </section>
       <section class="note"><p><strong>Important :</strong> MigraineMaatje ne fournit pas de diagnostic ni de conseil médical. Discutez toujours de vos questions médicales, médicaments et symptômes persistants avec votre médecin.</p></section>
       <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
