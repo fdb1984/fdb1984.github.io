@@ -2,313 +2,230 @@
 <html lang="nl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MigraineMaatje - migraine- en hoofdpijndagboek</title>
-  <meta name="description" content="Leg migraine, hoofdpijn en medicatie rustig vast en ontdek wat in jouw eigen dagboek opvalt. Download MigraineMaatje voor iPhone, iPad en Android.">
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #07090b;
-      --panel: #161a1f;
-      --panel-soft: #101418;
-      --line: #2a3038;
-      --text: #f7f8fa;
-      --muted: #b9c0c8;
-      --soft: #8f98a3;
-      --mint: #64e6bd;
-      --amber: #f2c45c;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: radial-gradient(circle at 50% -10%, rgba(100, 230, 189, 0.14), transparent 35%), var(--bg);
-      color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.6;
-    }
-    main { width: 100%; max-width: 920px; min-width: 0; margin: 0 auto; padding: 46px 22px 72px; }
-    nav { margin-bottom: 22px; }
-    nav a { color: var(--mint); font-weight: 800; text-decoration: none; }
-    h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.05; margin: 0 0 12px; letter-spacing: 0; }
-    h2 { font-size: 22px; line-height: 1.2; margin: 0 0 12px; }
-    p, li { color: var(--muted); font-size: 17px; }
-    p { margin: 0 0 12px; }
-    a { color: var(--mint); font-weight: 700; }
-    ul { margin: 10px 0 0; padding-left: 22px; }
-    li + li { margin-top: 8px; }
-    header { margin-bottom: 24px; }
-    .eyebrow { color: var(--mint); font-weight: 800; letter-spacing: .02em; text-transform: uppercase; font-size: 13px; }
-    .lead { font-size: 20px; color: #dfe5ea; max-width: 720px; }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
-    .card { display: block; min-width: 0; padding: 22px; margin-top: 16px; border-radius: 12px; border: 1px solid var(--line); background: linear-gradient(160deg, var(--panel), var(--panel-soft)); overflow-wrap: anywhere; text-decoration: none; }
-    .card h2 { color: var(--text); }
-    .card p:last-child { margin-bottom: 0; }
-    .note { margin-top: 18px; padding: 18px; border-radius: 12px; border: 1px solid rgba(242, 196, 92, 0.32); background: rgba(242, 196, 92, 0.08); }
-    .note strong, .important strong { color: var(--amber); }
-    .muted { color: var(--soft); }
-    .important { border-color: rgba(242, 196, 92, 0.36); background: rgba(242, 196, 92, 0.08); }
-    .showcase { margin-top: 28px; }
-    .showcase h2 { margin-bottom: 8px; }
-    .showcase-intro { max-width: 700px; }
-    .showcase-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
-    .showcase-figure { min-width: 0; margin: 0; padding: 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-soft); }
-    .showcase-figure img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: cover; object-position: top; border-radius: 7px; background: #07090b; }
-    .showcase-figure figcaption { margin-top: 8px; color: var(--soft); font-size: 13px; line-height: 1.35; }
-    .store-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 22px 0 8px; }
-    .store-button { display: flex; min-width: 0; min-height: 68px; flex-direction: column; justify-content: center; padding: 13px 18px; border: 1px solid rgba(100, 230, 189, 0.34); border-radius: 12px; background: rgba(100, 230, 189, 0.08); color: var(--text); text-decoration: none; }
-    .store-button:hover { border-color: var(--mint); background: rgba(100, 230, 189, 0.13); }
-    .store-button small { color: var(--soft); font-size: 12px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; }
-    .store-button strong { margin-top: 2px; color: var(--text); font-size: 17px; line-height: 1.25; }
-    .store-note { color: var(--soft); font-size: 14px; }
-    .language-switch { display: inline-flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; padding: 6px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.03); }
-    .language-switch button { appearance: none; border: 0; border-radius: 999px; background: transparent; color: var(--muted); font: inherit; font-weight: 700; padding: 8px 14px; cursor: pointer; }
-    .language-switch button.active { background: var(--mint); color: #08120f; }
-    footer { margin-top: 34px; color: var(--soft); font-size: 14px; }
-    [data-lang] { display: none; }
-    [data-lang].active { display: block; }
-    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid, .store-actions { grid-template-columns: minmax(0, 1fr); } .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .showcase-figure { padding: 7px; } .card { padding: 18px; } }
-
-  </style>
-  <link rel="stylesheet" href="/app-pages.css?v=20260806-2">
-  <script src="/app-pages.js?v=20260828-1" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MigraineMaatje - migraine bijhouden zonder gedoe</title>
+  <meta name="description" content="Leg een migraineaanval snel vast, vul later aan en ontdek wat in jouw eigen dagboek, medicatie en herstel opvalt.">
+  <meta name="theme-color" content="#07090b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MigraineMaatje - migraine bijhouden zonder gedoe">
+  <meta property="og:description" content="Rust tijdens een aanval. Persoonlijk inzicht wanneer jij eraan toe bent.">
+  <meta property="og:url" content="https://debruinstudio.nl/migrainemaatje/">
+  <meta property="og:image" content="https://debruinstudio.nl/migrainemaatje-icon.png">
+  <meta property="og:locale" content="nl_NL">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MigraineMaatje - migraine bijhouden zonder gedoe">
+  <meta name="twitter:description" content="Rust tijdens een aanval. Persoonlijk inzicht wanneer jij eraan toe bent.">
+  <link rel="canonical" href="https://debruinstudio.nl/migrainemaatje/">
+  <link rel="icon" href="../migrainemaatje-icon.png">
+  <link rel="stylesheet" href="../product-site.css?v=20260830b">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MigraineMaatje",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS, iPadOS, watchOS, Android, Wear OS",
+    "author": { "@type": "Organization", "name": "de Bruin Studio", "url": "https://debruinstudio.nl" },
+    "downloadUrl": ["https://apps.apple.com/app/id6779200491", "https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje"]
+  }
+  </script>
 </head>
-<body class="app-page app-page-migraine">
-  <nav class="app-site-nav" aria-label="de Bruin Studio">
-    <a class="app-wordmark" href="/">de Bruin <strong>Studio</strong></a>
-    <a class="app-site-link" href="/">debruinstudio.nl <span aria-hidden="true">↗</span></a>
-  </nav>
-  <main>
-    <div class="language-switch" aria-label="Language switch">
-      <button type="button" data-language-button="nl">Nederlands</button>
-      <button type="button" data-language-button="en">English</button>
-      <button type="button" data-language-button="de">Deutsch</button>
-      <button type="button" data-language-button="fr">Français</button>
+<body class="product-migraine" data-languages="nl,en,de,fr" data-default-language="nl">
+  <a class="skip-link" href="#main" data-i18n="global.skip">Ga naar inhoud</a>
+
+  <header class="site-nav">
+    <div class="shell site-nav-inner">
+      <a class="brand-link" href="../" data-keep-language>
+        <img src="../migrainemaatje-icon.png" alt="" width="30" height="30">
+        <span><strong>MigraineMaatje</strong> <span data-i18n="global.byStudio">door de Bruin Studio</span></span>
+      </a>
+      <div class="nav-cluster">
+        <nav class="nav-links" data-i18n-aria="global.navigationLabel">
+          <a href="#how" data-i18n="nav.how">Zo werkt het</a>
+          <a href="#insight" data-i18n="nav.insight">Inzichten</a>
+          <a href="#care" data-i18n="nav.care">Voor je arts</a>
+          <a href="#privacy" data-i18n="nav.privacy">Privacy</a>
+        </nav>
+        <div class="language-switch" data-i18n-aria="global.languageLabel">
+          <button type="button" data-lang="nl">NL</button>
+          <button type="button" data-lang="en">EN</button>
+          <button type="button" data-lang="de">DE</button>
+          <button type="button" data-lang="fr">FR</button>
+        </div>
+        <a class="nav-store" href="https://apps.apple.com/app/id6779200491" data-i18n="nav.download">Download</a>
+      </div>
     </div>
+  </header>
 
-    <section data-lang="nl">
-      <header>
-        <p class="eyebrow">MigraineMaatje</p>
-        <h1>Support en privacy</h1>
-        <p class="lead">Een rustige plek om aanvallen, medicatie en persoonlijke signalen bij te houden. Je gegevens blijven privé op je eigen apparaten en, alleen als jij dat kiest, in je eigen Apple Gezondheid- of Google Drive-omgeving. Geen advertenties en geen verkoop van gezondheidsdata.</p>
-        <div class="store-actions" aria-label="MigraineMaatje downloaden">
-          <a class="store-button" href="https://apps.apple.com/app/id6779200491"><small>iPhone en iPad</small><strong>Download in de App Store</strong></a>
-          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje"><small>Android</small><strong>Download via Google Play</strong></a>
+  <main id="main">
+    <section class="product-hero">
+      <div class="shell">
+        <div class="hero-copy" data-reveal>
+          <div class="app-identity">
+            <img src="../migrainemaatje-icon.png" alt="" width="44" height="44">
+            <span data-i18n="hero.identity">Voor iPhone, iPad, Apple Watch en Android</span>
+          </div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Een rustig migraine-dagboek</p>
+          <h1>MigraineMaatje</h1>
+          <p class="hero-promise" data-i18n="hero.promise">Migraine bijhouden zonder gedoe.</p>
+          <p class="hero-description" data-i18n="hero.description">Leg een aanval in een paar tikken vast. Vul later aan wat hielp en zie pas daarna wat in jouw eigen gegevens opvalt.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="https://apps.apple.com/app/id6779200491" data-i18n="actions.appStore">Download in de App Store</a>
+            <a class="secondary-action" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" data-i18n="actions.playStore">Download via Google Play</a>
+          </div>
+          <ul class="hero-facts">
+            <li data-i18n="hero.factOne">Snel vastleggen blijft gratis</li>
+            <li data-i18n="hero.factTwo">Geen advertenties</li>
+            <li data-i18n="hero.factThree">Geen verkoop van gezondheidsdata</li>
+          </ul>
         </div>
-        <p class="store-note">Aanvallen vastleggen, dagboek, medicatie en het basisrapport blijven gratis.</p>
-      </header>
-      <div class="grid">
-        <a class="card" href="privacy.html?lang=nl">
-          <h2>Privacybeleid</h2>
-          <p>Lees wat de app gebruikt, waar je gegevens staan en wat er gebeurt met Apple Gezondheid, Health Connect en weerdata.</p>
-        </a>
-        <a class="card" href="support.html?lang=nl">
-          <h2>Hulp en support</h2>
-          <p>Antwoorden over aanvallen vastleggen, horloge, weer, meldingen, Premium en contact.</p>
-        </a>
-        <a class="card" href="terms.html?lang=nl">
-          <h2>Gebruiksvoorwaarden</h2>
-          <p>De afspraken voor gratis gebruik, Premium en abonnementen.</p>
-        </a>
       </div>
-      <section class="note">
-        <p><strong>Nieuw in versie 2.1:</strong> aanvallen blijven betrouwbaarder gelijk op je apparaten. iPhone en iPad werken aanvallen bij via Apple Gezondheid; op Android kun je je eigen Google Drive gebruiken voor automatische synchronisatie. Ook de verbinding met Apple Watch en Wear OS is verbeterd.</p>
-        <p><a href="support.html?lang=nl#apparaten-synchroniseren">Lees hoe synchronisatie en privacy werken</a>.</p>
-      </section>
-      <section class="showcase" aria-labelledby="showcase-nl-title">
-        <p class="eyebrow">Even kijken</p>
-        <h2 id="showcase-nl-title">Zo ziet MigraineMaatje eruit</h2>
-        <p class="showcase-intro">Een rustig overzicht van je signalen, medicatie, persoonlijke verdieping en consultvoorbereiding. Dezelfde heldere lijn op iPhone, iPad en Android, met snel vastleggen op Apple Watch en Wear OS.</p>
-        <div class="showcase-grid">
-          <figure class="showcase-figure"><img src="assets/screens/nl/signals.png?v=20260830-3" alt="Signalen nu in MigraineMaatje" loading="lazy"><figcaption>Signalen nu</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/nl/log.png?v=20260830-3" alt="Een aanval vastleggen in MigraineMaatje" loading="lazy"><figcaption>Aanval vastleggen</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/nl/diary.png?v=20260830-3" alt="Het migrainedagboek in MigraineMaatje" loading="lazy"><figcaption>Dagboek en kalender</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/nl/insights.png?v=20260830-3" alt="Persoonlijke inzichten in MigraineMaatje" loading="lazy"><figcaption>Persoonlijke inzichten</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/nl/medication.png?v=20260830-3" alt="Medicatie vastleggen in MigraineMaatje" loading="lazy"><figcaption>Medicatie vastleggen</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/nl/care.png?v=20260830-3" alt="Arts en afspraken in MigraineMaatje" loading="lazy"><figcaption>Arts &amp; afspraken</figcaption></figure>
+      <div class="hero-media" aria-hidden="true">
+        <div class="phone-stage">
+          <div class="phone-device secondary"><img data-image="log" width="1320" height="2868" loading="eager"></div>
+          <div class="phone-device primary"><img data-image="hero" width="1320" height="2868" loading="eager"></div>
+          <div class="floating-note note-one">
+            <strong><span class="live-dot"></span><span data-i18n="hero.noteOneTitle">Aanval vastgelegd</span></strong>
+            <small data-i18n="hero.noteOneText">De rest kan wachten.</small>
+          </div>
+          <div class="floating-note note-two">
+            <strong data-i18n="hero.noteTwoTitle">Later aanvullen</strong>
+            <small data-i18n="hero.noteTwoText">Medicatie, herstel en terugkeer.</small>
+          </div>
         </div>
-      </section>
-      <section class="note"><p><strong>Belangrijk:</strong> MigraineMaatje geeft geen diagnose of medisch advies. Bespreek medische vragen, medicatie en aanhoudende klachten altijd met je arts.</p></section>
-      <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
+      </div>
     </section>
 
-    <section data-lang="en">
-      <header>
-        <p class="eyebrow">MigraineMaatje</p>
-        <h1>Support and Privacy</h1>
-        <p class="lead">A calm place to keep track of attacks, medication, and personal signals. Your data stays private on your own devices and, only when you choose it, in your own Apple Health or Google Drive environment. No ads and no sale of health data.</p>
-        <div class="store-actions" aria-label="Download MigraineMaatje">
-          <a class="store-button" href="https://apps.apple.com/app/id6779200491"><small>iPhone and iPad</small><strong>Download on the App Store</strong></a>
-          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje"><small>Android</small><strong>Get it on Google Play</strong></a>
-        </div>
-        <p class="store-note">Attack logging, diary, medication, and the basic report remain free.</p>
-      </header>
-      <div class="grid">
-        <a class="card" href="privacy.html?lang=en">
-          <h2>Privacy Policy</h2>
-          <p>See what the app uses, where your data stays, and how Apple Health, Health Connect, and weather data work.</p>
-        </a>
-        <a class="card" href="support.html?lang=en">
-          <h2>Help and Support</h2>
-          <p>Answers about recording attacks, watches, weather, notifications, Premium, and contact.</p>
-        </a>
-        <a class="card" href="terms.html?lang=en">
-          <h2>Terms of Use</h2>
-          <p>The basics of free use, Premium, and subscriptions.</p>
-        </a>
+    <section class="trust-strip">
+      <div class="shell trust-grid">
+        <div class="trust-item"><span class="trust-mark">01</span><div><strong data-i18n="trust.oneTitle">Rust tijdens migraine</strong><span data-i18n="trust.oneText">Alleen vastleggen wat nu nodig is</span></div></div>
+        <div class="trust-item"><span class="trust-mark">02</span><div><strong data-i18n="trust.twoTitle">Inzicht uit je eigen gegevens</strong><span data-i18n="trust.twoText">Geen algemene conclusie vermomd als zekerheid</span></div></div>
+        <div class="trust-item"><span class="trust-mark">03</span><div><strong data-i18n="trust.threeTitle">Gebouwd voor vertrouwen</strong><span data-i18n="trust.threeText">Jij kiest welke koppelingen je gebruikt</span></div></div>
       </div>
-      <section class="note">
-        <p><strong>New in version 2.1:</strong> attacks stay in sync more reliably across your devices. iPhone and iPad update attacks through Apple Health; on Android you can use your own Google Drive for automatic device sync. Apple Watch and Wear OS syncing is more reliable too.</p>
-        <p><a href="support.html?lang=en#device-sync">See how syncing and privacy work</a>.</p>
-      </section>
-      <section class="showcase" aria-labelledby="showcase-en-title">
-        <p class="eyebrow">Take a look</p>
-        <h2 id="showcase-en-title">A calmer way to keep track</h2>
-        <p class="showcase-intro">See your current signals, medication, personal insights, and appointment preparation in one clear place. The same calm design works across iPhone, iPad, and Android, with quick logging on Apple Watch and Wear OS.</p>
-        <div class="showcase-grid">
-          <figure class="showcase-figure"><img src="assets/screens/en/signals.png?v=20260830-3" alt="Current signals in MigraineMaatje" loading="lazy"><figcaption>Current signals</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/en/log.png?v=20260830-3" alt="Recording an attack in MigraineMaatje" loading="lazy"><figcaption>Record an attack</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/en/diary.png?v=20260830-3" alt="The migraine diary in MigraineMaatje" loading="lazy"><figcaption>Diary and calendar</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/en/insights.png?v=20260830-3" alt="Personal insights in MigraineMaatje" loading="lazy"><figcaption>Personal insights</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/en/medication.png?v=20260830-3" alt="Recording medication in MigraineMaatje" loading="lazy"><figcaption>Record medication</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/en/care.png?v=20260830-3" alt="Doctors and appointments in MigraineMaatje" loading="lazy"><figcaption>Doctors &amp; appointments</figcaption></figure>
-        </div>
-      </section>
-      <section class="note"><p><strong>Important:</strong> MigraineMaatje does not provide diagnosis or medical advice. Discuss medical questions, medication, and ongoing symptoms with your doctor.</p></section>
-      <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
     </section>
 
-    <section data-lang="de">
-      <header>
-        <p class="eyebrow">MigraineMaatje</p>
-        <h1>Support und Datenschutz</h1>
-        <p class="lead">Ein ruhiger Ort, an dem du Attacken, Medikamente und persönliche Signale festhältst. Deine Daten bleiben privat auf deinen Geräten und, nur wenn du es auswählst, in deiner eigenen Apple-Health- oder Google-Drive-Umgebung. Keine Werbung und kein Verkauf von Gesundheitsdaten.</p>
-        <div class="store-actions" aria-label="MigraineMaatje herunterladen">
-          <a class="store-button" href="https://apps.apple.com/app/id6779200491"><small>iPhone und iPad</small><strong>Im App Store laden</strong></a>
-          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje"><small>Android</small><strong>Bei Google Play herunterladen</strong></a>
+    <section class="section" id="how">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow" data-i18n="moments.eyebrow">Op het juiste moment</p>
+          <h2 data-i18n="moments.title">De app vraagt nooit meer dan nodig.</h2>
+          <p data-i18n="moments.description">Tijdens pijn wil je snelheid. Later wil je kunnen terugvinden wat er gebeurde. MigraineMaatje houdt die momenten bewust uit elkaar.</p>
         </div>
-        <p class="store-note">Attackenerfassung, Tagebuch, Medikamente und Basisbericht bleiben kostenlos.</p>
-      </header>
-      <div class="grid">
-        <a class="card" href="privacy.html?lang=de">
-          <h2>Datenschutzerklärung</h2>
-          <p>Erfahre, welche Daten die App nutzt, wo sie bleiben und wie Apple Health, Health Connect und Wetterdaten funktionieren.</p>
-        </a>
-        <a class="card" href="support.html?lang=de">
-          <h2>Hilfe und Support</h2>
-          <p>Antworten zu Attacken, Uhr, Wetter, Mitteilungen, Premium und Kontakt.</p>
-        </a>
-        <a class="card" href="terms.html?lang=de">
-          <h2>Nutzungsbedingungen</h2>
-          <p>Die wichtigsten Regeln für die kostenlose Nutzung, Premium und Abos.</p>
-        </a>
+        <div class="moment-grid">
+          <article class="moment-card" data-reveal><span class="moment-number">01</span><h3 data-i18n="moments.cardOneTitle">Wanneer het begint</h3><p data-i18n="moments.cardOneText">Kies migraine of hoofdpijn, geef de ernst aan en sla op. Details zijn niet verplicht.</p></article>
+          <article class="moment-card" data-reveal data-reveal-delay="1"><span class="moment-number">02</span><h3 data-i18n="moments.cardTwoTitle">Wanneer het rustiger is</h3><p data-i18n="moments.cardTwoText">Rond de aanval kort af met medicatie, aura, misselijkheid en herstel. Alleen wanneer jij eraan toe bent.</p></article>
+          <article class="moment-card" data-reveal data-reveal-delay="2"><span class="moment-number">03</span><h3 data-i18n="moments.cardThreeTitle">Wanneer je wilt begrijpen</h3><p data-i18n="moments.cardThreeText">Bekijk medicatiedagen, terugkeer, maandverschillen en bespreekpunten in gewone taal.</p></article>
+        </div>
       </div>
-      <section class="note">
-        <p><strong>Neu in Version 2.1:</strong> Attacken bleiben auf deinen Geräten zuverlässiger synchron. iPhone und iPad aktualisieren Attacken über Apple Health; unter Android kannst du dein eigenes Google Drive für die automatische Gerätesynchronisierung verwenden. Auch die Synchronisierung mit Apple Watch und Wear OS wurde verbessert.</p>
-        <p><a href="support.html?lang=de#geraete-synchronisieren">Erfahre, wie Synchronisierung und Datenschutz funktionieren</a>.</p>
-      </section>
-      <section class="showcase" aria-labelledby="showcase-de-title">
-        <p class="eyebrow">Ein Blick in die App</p>
-        <h2 id="showcase-de-title">Übersichtlich festhalten</h2>
-        <p class="showcase-intro">Signale, Medikamente, persönliche Erkenntnisse und Terminvorbereitung an einem ruhigen Ort. Dasselbe klare Design auf iPhone, iPad und Android, mit schneller Erfassung auf Apple Watch und Wear OS.</p>
-        <div class="showcase-grid">
-          <figure class="showcase-figure"><img src="assets/screens/de/signals.png?v=20260830-3" alt="Aktuelle Signale in MigraineMaatje" loading="lazy"><figcaption>Aktuelle Signale</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/de/log.png?v=20260830-3" alt="Eine Attacke in MigraineMaatje erfassen" loading="lazy"><figcaption>Attacke erfassen</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/de/diary.png?v=20260830-3" alt="Das Migränetagebuch in MigraineMaatje" loading="lazy"><figcaption>Tagebuch und Kalender</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/de/insights.png?v=20260830-3" alt="Persönliche Erkenntnisse in MigraineMaatje" loading="lazy"><figcaption>Persönliche Erkenntnisse</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/de/medication.png?v=20260830-3" alt="Medikamente in MigraineMaatje erfassen" loading="lazy"><figcaption>Medikamente erfassen</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/de/care.png?v=20260830-3" alt="Ärzte und Termine in MigraineMaatje" loading="lazy"><figcaption>Ärzte &amp; Termine</figcaption></figure>
-        </div>
-      </section>
-      <section class="note"><p><strong>Wichtig:</strong> MigraineMaatje stellt keine Diagnose und gibt keinen medizinischen Rat. Besprich medizinische Fragen, Medikamente und anhaltende Beschwerden immer mit deinem Arzt.</p></section>
-      <footer><p>Kontakt: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
     </section>
 
-    <section data-lang="fr">
-      <header>
-        <p class="eyebrow">MigraineMaatje</p>
-        <h1>Support et confidentialité</h1>
-        <p class="lead">Un espace calme pour noter vos crises, vos médicaments et vos signaux personnels. Vos données restent privées sur vos appareils et, uniquement si vous le choisissez, dans votre environnement Apple Santé ou Google Drive. Sans publicité et sans vente de données de santé.</p>
-        <div class="store-actions" aria-label="Télécharger MigraineMaatje">
-          <a class="store-button" href="https://apps.apple.com/app/id6779200491"><small>iPhone et iPad</small><strong>Télécharger dans l’App Store</strong></a>
-          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje"><small>Android</small><strong>Disponible sur Google Play</strong></a>
+    <section class="section section-soft">
+      <div class="shell showcase-split">
+        <div class="split-copy" data-reveal>
+          <p class="eyebrow" data-i18n="attack.eyebrow">Tijdens een aanval</p>
+          <h2 data-i18n="attack.title">Eerst voor jezelf zorgen. De app wacht wel.</h2>
+          <p data-i18n="attack.description">Een aanval openen duurt enkele seconden. De timer loopt mee, je kunt de ernst aanpassen en later pas aanvullen wat er verder speelde.</p>
+          <ul class="insight-list">
+            <li><span>01</span><div><strong data-i18n="attack.pointOneTitle">Weinig tikken</strong><small data-i18n="attack.pointOneText">Geen lang formulier terwijl je pijn hebt.</small></div></li>
+            <li><span>02</span><div><strong data-i18n="attack.pointTwoTitle">Medicatie blijft dichtbij</strong><small data-i18n="attack.pointTwoText">Kies je eigen aanvalsmedicatie en vul later het effect aan.</small></div></li>
+            <li><span>03</span><div><strong data-i18n="attack.pointThreeTitle">Open aanval blijft zichtbaar</strong><small data-i18n="attack.pointThreeText">Aanpassen, afronden of verwijderen blijft helder.</small></div></li>
+          </ul>
         </div>
-        <p class="store-note">La saisie des crises, le journal, les médicaments et le rapport de base restent gratuits.</p>
-      </header>
-      <div class="grid">
-        <a class="card" href="privacy.html?lang=fr">
-          <h2>Politique de confidentialité</h2>
-          <p>Découvrez les données utilisées, leur lieu de stockage et le fonctionnement d’Apple Santé, Health Connect et de la météo.</p>
-        </a>
-        <a class="card" href="support.html?lang=fr">
-          <h2>Aide et support</h2>
-          <p>Réponses sur les crises, les montres, la météo, les notifications, Premium et le contact.</p>
-        </a>
-        <a class="card" href="terms.html?lang=fr">
-          <h2>Conditions d’utilisation</h2>
-          <p>Les règles essentielles pour l’utilisation gratuite, Premium et les abonnements.</p>
-        </a>
+        <div class="visual-composition" aria-hidden="true" data-reveal data-reveal-delay="1">
+          <div class="visual-phone back"><img data-image="log" width="1320" height="2868" loading="lazy"></div>
+          <div class="visual-phone front"><img data-image="hero" width="1320" height="2868" loading="lazy"></div>
+        </div>
       </div>
-      <section class="note">
-        <p><strong>Nouveau dans la version 2.1 :</strong> les crises restent synchronisées plus fiablement entre vos appareils. L’iPhone et l’iPad les mettent à jour via Apple Santé ; sous Android, vous pouvez utiliser votre propre Google Drive pour la synchronisation automatique. La connexion avec l’Apple Watch et Wear OS a également été améliorée.</p>
-        <p><a href="support.html?lang=fr#synchronisation-appareils">Découvrez le fonctionnement de la synchronisation et de la confidentialité</a>.</p>
-      </section>
-      <section class="showcase" aria-labelledby="showcase-fr-title">
-        <p class="eyebrow">Un aperçu</p>
-        <h2 id="showcase-fr-title">Un suivi plus simple</h2>
-        <p class="showcase-intro">Retrouvez les signaux, les médicaments, les informations personnelles et la préparation du rendez-vous dans un espace clair. Le même design calme sur iPhone, iPad et Android, avec une saisie rapide sur Apple Watch et Wear OS.</p>
-        <div class="showcase-grid">
-          <figure class="showcase-figure"><img src="assets/screens/fr/signals.png?v=20260830-3" alt="Signaux actuels dans MigraineMaatje" loading="lazy"><figcaption>Signaux actuels</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/fr/log.png?v=20260830-3" alt="Noter une crise dans MigraineMaatje" loading="lazy"><figcaption>Noter une crise</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/fr/diary.png?v=20260830-3" alt="Le journal de migraine dans MigraineMaatje" loading="lazy"><figcaption>Journal et calendrier</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/fr/insights.png?v=20260830-3" alt="Informations personnelles dans MigraineMaatje" loading="lazy"><figcaption>Informations personnelles</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/fr/medication.png?v=20260830-3" alt="Noter un médicament dans MigraineMaatje" loading="lazy"><figcaption>Noter un médicament</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/screens/fr/care.png?v=20260830-3" alt="Médecins et rendez-vous dans MigraineMaatje" loading="lazy"><figcaption>Médecins et rendez-vous</figcaption></figure>
+    </section>
+
+    <section class="section" id="insight">
+      <div class="shell showcase-split reverse">
+        <div class="split-copy" data-reveal>
+          <p class="eyebrow" data-i18n="insight.eyebrow">Jouw verhaal, niet een gemiddelde</p>
+          <h2 data-i18n="insight.title">Van registreren naar iets waar je wat aan hebt.</h2>
+          <p data-i18n="insight.description">Het dagboek blijft overzichtelijk. Als er genoeg gegevens zijn, maakt Premium zichtbaar wat in jouw vastgelegde aanvallen, medicatie en herstel terugkomt.</p>
+          <ul class="insight-list">
+            <li><span>01</span><div><strong data-i18n="insight.pointOneTitle">Wat helpt?</strong><small data-i18n="insight.pointOneText">Effect per middel, rustig geteld uit afgeronde aanvallen.</small></div></li>
+            <li><span>02</span><div><strong data-i18n="insight.pointTwoTitle">Wat kwam terug?</strong><small data-i18n="insight.pointTwoText">Terugkeer binnen 24 uur blijft apart zichtbaar.</small></div></li>
+            <li><span>03</span><div><strong data-i18n="insight.pointThreeTitle">Wat veranderde?</strong><small data-i18n="insight.pointThreeText">Vergelijk migrainedagen en medicatiedagen met de vorige periode.</small></div></li>
+          </ul>
         </div>
-      </section>
-      <section class="note"><p><strong>Important :</strong> MigraineMaatje ne fournit pas de diagnostic ni de conseil médical. Discutez toujours de vos questions médicales, médicaments et symptômes persistants avec votre médecin.</p></section>
-      <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
+        <div class="visual-composition" aria-hidden="true" data-reveal data-reveal-delay="1">
+          <div class="visual-phone back"><img data-image="diary" width="1320" height="2868" loading="lazy"></div>
+          <div class="visual-phone front"><img data-image="insights" width="1320" height="2868" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="care">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Van dagboek tot spreekkamer</p>
+          <h2 data-i18n="gallery.title">Terugvinden wat ertoe doet.</h2>
+          <p data-i18n="gallery.description">Je kalender, medicatie en afspraakvoorbereiding vormen samen één rustig overzicht. Geen losse notities meer vlak voor je gesprek.</p>
+        </div>
+        <div class="screen-gallery">
+          <figure class="screen-shot" data-reveal><div class="screen-frame"><img data-image="diary" width="1320" height="2868" loading="lazy"></div><figcaption><span data-i18n="gallery.diaryTitle">Dagboek en kalender</span><small data-i18n="gallery.diaryText">Zie aanvallen, hoofdpijn en medicatiedagen terug.</small></figcaption></figure>
+          <figure class="screen-shot" data-reveal data-reveal-delay="1"><div class="screen-frame"><img data-image="medication" width="1320" height="2868" loading="lazy"></div><figcaption><span data-i18n="gallery.medicationTitle">Medicatie bij elkaar</span><small data-i18n="gallery.medicationText">Aanvalsmedicatie, preventie, voorraad en wijzigingen.</small></figcaption></figure>
+          <figure class="screen-shot" data-reveal data-reveal-delay="2"><div class="screen-frame"><img data-image="care" width="1320" height="2868" loading="lazy"></div><figcaption><span data-i18n="gallery.careTitle">Voorbereid naar je arts</span><small data-i18n="gallery.careText">Bewaar vragen, afspraken en wat je later wilt opvolgen.</small></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow" data-i18n="value.eyebrow">Eerlijk geprijsd</p>
+          <h2 data-i18n="value.title">Gratis bijhouden. Premium begrijpen.</h2>
+          <p data-i18n="value.description">De basis blijft bruikbaar zonder abonnement. Premium is er voor terugkerende persoonlijke verdieping.</p>
+        </div>
+        <div class="value-grid">
+          <article class="value-panel" data-reveal>
+            <h3 data-i18n="value.freeTitle">Altijd gratis</h3><p data-i18n="value.freeText">Alles wat je nodig hebt om een betrouwbaar migraine-dagboek bij te houden.</p>
+            <ul class="plain-list"><li data-i18n="value.freeOne">Aanvallen vastleggen en later afronden</li><li data-i18n="value.freeTwo">Dagboek, kalender en medicatiebeheer</li><li data-i18n="value.freeThree">Basisstatus en basisrapport voor je arts</li><li data-i18n="value.freeFour">Reservekopie en herstel op je eigen platform</li></ul>
+          </article>
+          <article class="value-panel featured" data-reveal data-reveal-delay="1">
+            <p class="eyebrow">Premium</p><h3 data-i18n="value.premiumTitle">Wat verandert er bij mij?</h3><p data-i18n="value.premiumText">Persoonlijke uitleg uit wat je zelf vastlegt, zonder te doen alsof een verband een zekerheid is.</p>
+            <ul class="plain-list"><li data-i18n="value.premiumOne">Waarom je actuele status verandert</li><li data-i18n="value.premiumTwo">Medicatie-effect en terugkeer binnen 24 uur</li><li data-i18n="value.premiumThree">Maandanalyse in gewone taal</li><li data-i18n="value.premiumFour">Consultvoorbereiding en bespreekpunten</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section privacy-band" id="privacy">
+      <div class="shell privacy-grid">
+        <div class="split-copy" data-reveal><p class="eyebrow" data-i18n="privacy.eyebrow">Gezondheidsdata vraagt om vertrouwen</p><h2 data-i18n="privacy.title">Jouw gegevens blijven van jou.</h2><p data-i18n="privacy.description">MigraineMaatje heeft geen advertenties en verkoopt geen gezondheidsdata. Je kiest zelf welke koppelingen of reservekopie je gebruikt.</p></div>
+        <div class="privacy-points">
+          <div class="privacy-point" data-reveal><strong data-i18n="privacy.oneTitle">Geen advertentieprofiel</strong><p data-i18n="privacy.oneText">Geen trackers om gezondheidsinformatie te gelde te maken.</p></div>
+          <div class="privacy-point" data-reveal data-reveal-delay="1"><strong data-i18n="privacy.twoTitle">Koppelingen zijn optioneel</strong><p data-i18n="privacy.twoText">De app blijft bruikbaar zonder Apple Gezondheid of Health Connect.</p></div>
+          <div class="privacy-point" data-reveal data-reveal-delay="2"><strong data-i18n="privacy.threeTitle">Voorzichtige uitleg</strong><p data-i18n="privacy.threeText">Geen diagnose, voorspelling of medisch advies.</p></div>
+          <div class="privacy-point" data-reveal data-reveal-delay="3"><strong data-i18n="privacy.fourTitle">Jouw eigen opslag</strong><p data-i18n="privacy.fourText">Reservekopieën blijven in je eigen iCloud of Google Drive.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <img class="app-icon-large" src="../migrainemaatje-icon.png" alt="MigraineMaatje app-icoon" width="80" height="80" data-reveal>
+      <h2 data-i18n="final.title" data-reveal>Minder invullen. Meer terugvinden.</h2>
+      <p data-i18n="final.description" data-reveal>Begin gratis met vastleggen. Persoonlijke inzichten groeien mee wanneer er genoeg van jouw eigen gegevens zijn.</p>
+      <div class="final-actions" data-reveal><a class="primary-action" href="https://apps.apple.com/app/id6779200491" data-i18n="actions.appStore">Download in de App Store</a><a class="secondary-action" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" data-i18n="actions.playStore">Download via Google Play</a></div>
     </section>
   </main>
 
-  <footer class="app-brand-footer">
-    <div class="app-brand-footer-identity">
-      <a class="app-wordmark" href="/" aria-label="de Bruin Studio">de Bruin <strong>Studio</strong></a>
-      <span>© 2026</span>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand"><strong>de Bruin Studio</strong><span>© 2026</span></div>
+      <nav class="footer-links" data-i18n-aria="global.footerLabel">
+        <a href="support.html" data-keep-language data-i18n="footer.support">Support</a>
+        <a href="privacy.html" data-keep-language data-i18n="footer.privacy">Privacy</a>
+        <a href="terms.html" data-keep-language data-i18n="footer.terms">Voorwaarden</a>
+        <a href="../homescreen/" data-keep-language>HomeScreen for HomeKit</a>
+        <a href="../" data-keep-language data-i18n="footer.studio">Alle apps</a>
+      </nav>
     </div>
-    <a href="/">debruinstudio.nl <span aria-hidden="true">↗</span></a>
   </footer>
 
-  <script>
-    (function () {
-      const preferred = new URLSearchParams(window.location.search).get("lang");
-      const browserLanguage = (navigator.language || "nl").toLowerCase();
-      const supported = ["nl", "en", "de", "fr"];
-      const initialLanguage = supported.includes(preferred)
-        ? preferred
-        : (browserLanguage.startsWith("de") ? "de" : browserLanguage.startsWith("fr") ? "fr" : browserLanguage.startsWith("en") ? "en" : "nl");
-      const descriptions = {"nl": "Support-, privacy- en versieinformatie voor MigraineMaatje.", "en": "Support, privacy, and version information for MigraineMaatje.", "de": "Support-, Datenschutz- und Versionsinformationen für MigraineMaatje.", "fr": "Support, confidentialité et informations de version pour MigraineMaatje."};
-      const titles = {"nl": "MigraineMaatje - Support en privacy", "en": "MigraineMaatje - Support and Privacy", "de": "MigraineMaatje - Support und Datenschutz", "fr": "MigraineMaatje - Support et confidentialité"};
-      const sections = document.querySelectorAll("[data-lang]");
-      const buttons = document.querySelectorAll("[data-language-button]");
-      const metaDescription = document.querySelector('meta[name="description"]');
-      function setLanguage(language) {
-        document.documentElement.lang = language;
-        document.title = titles[language] || titles.nl;
-        if (metaDescription) metaDescription.setAttribute("content", descriptions[language] || descriptions.nl);
-        sections.forEach((section) => section.classList.toggle("active", section.getAttribute("data-lang") === language));
-        buttons.forEach((button) => button.classList.toggle("active", button.getAttribute("data-language-button") === language));
-      }
-      buttons.forEach((button) => {
-        button.addEventListener("click", function () {
-          const language = button.getAttribute("data-language-button");
-          setLanguage(language);
-          const url = new URL(window.location.href);
-          url.searchParams.set("lang", language);
-          window.history.replaceState({}, "", url);
-        });
-      });
-      setLanguage(initialLanguage);
-    })();
-  </script>
+  <script src="product-copy.js?v=20260830b"></script>
+  <script src="../product-site.js?v=20260830b"></script>
 </body>
 </html>
