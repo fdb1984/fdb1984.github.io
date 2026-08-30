@@ -50,9 +50,9 @@
     .showcase { margin-top: 28px; }
     .showcase h2 { margin-bottom: 8px; }
     .showcase-intro { max-width: 700px; }
-    .showcase-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
-    .showcase-figure { min-width: 0; margin: 0; padding: 8px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-soft); }
-    .showcase-figure img { display: block; width: 100%; height: 250px; object-fit: contain; object-position: top; border-radius: 7px; background: #07090b; }
+    .showcase-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+    .showcase-figure { min-width: 0; margin: 0; padding: 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-soft); }
+    .showcase-figure img { display: block; width: 100%; height: auto; aspect-ratio: 9 / 16; object-fit: cover; object-position: top; border-radius: 7px; background: #07090b; }
     .showcase-figure figcaption { margin-top: 8px; color: var(--soft); font-size: 13px; line-height: 1.35; }
     .store-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 22px 0 8px; }
     .store-button { display: flex; min-width: 0; min-height: 68px; flex-direction: column; justify-content: center; padding: 13px 18px; border: 1px solid rgba(100, 230, 189, 0.34); border-radius: 12px; background: rgba(100, 230, 189, 0.08); color: var(--text); text-decoration: none; }
@@ -66,7 +66,7 @@
     footer { margin-top: 34px; color: var(--soft); font-size: 14px; }
     [data-lang] { display: none; }
     [data-lang].active { display: block; }
-    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid, .store-actions { grid-template-columns: minmax(0, 1fr); } .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .showcase-figure img { height: 260px; } .card { padding: 18px; } }
+    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid, .store-actions { grid-template-columns: minmax(0, 1fr); } .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .showcase-figure { padding: 7px; } .card { padding: 18px; } }
 
   </style>
   <link rel="stylesheet" href="/app-pages.css?v=20260806-2">
@@ -117,14 +117,14 @@
       <section class="showcase" aria-labelledby="showcase-nl-title">
         <p class="eyebrow">Even kijken</p>
         <h2 id="showcase-nl-title">Zo ziet MigraineMaatje eruit</h2>
-        <p class="showcase-intro">Een rustig overzicht van je signalen, medicatie, persoonlijke verdieping en consultvoorbereiding. Ook op iPad en Apple Watch blijft de app overzichtelijk.</p>
+        <p class="showcase-intro">Een rustig overzicht van je signalen, medicatie, persoonlijke verdieping en consultvoorbereiding. Dezelfde heldere lijn op iPhone, iPad en Android, met snel vastleggen op Apple Watch en Wear OS.</p>
         <div class="showcase-grid">
-          <figure class="showcase-figure"><img src="assets/signalen-nu-rustig.png" alt="Signalen nu in MigraineMaatje" loading="lazy"><figcaption>Signalen nu</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/premium.png" alt="Premium met persoonlijke inzichten" loading="lazy"><figcaption>Persoonlijke verdieping</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/medicatie-beheren.png" alt="Medicatie beheren in MigraineMaatje" loading="lazy"><figcaption>Medicatie beheren</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/afspraken.png" alt="Arts en afspraken in MigraineMaatje" loading="lazy"><figcaption>Arts &amp; afspraken</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/ipad.png" alt="MigraineMaatje op iPad" loading="lazy"><figcaption>Op iPad</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/watch.png" alt="MigraineMaatje op Apple Watch" loading="lazy"><figcaption>Op Apple Watch</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/nl/signals.png?v=20260830-3" alt="Signalen nu in MigraineMaatje" loading="lazy"><figcaption>Signalen nu</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/nl/log.png?v=20260830-3" alt="Een aanval vastleggen in MigraineMaatje" loading="lazy"><figcaption>Aanval vastleggen</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/nl/diary.png?v=20260830-3" alt="Het migrainedagboek in MigraineMaatje" loading="lazy"><figcaption>Dagboek en kalender</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/nl/insights.png?v=20260830-3" alt="Persoonlijke inzichten in MigraineMaatje" loading="lazy"><figcaption>Persoonlijke inzichten</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/nl/medication.png?v=20260830-3" alt="Medicatie vastleggen in MigraineMaatje" loading="lazy"><figcaption>Medicatie vastleggen</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/nl/care.png?v=20260830-3" alt="Arts en afspraken in MigraineMaatje" loading="lazy"><figcaption>Arts &amp; afspraken</figcaption></figure>
         </div>
       </section>
       <section class="note"><p><strong>Belangrijk:</strong> MigraineMaatje geeft geen diagnose of medisch advies. Bespreek medische vragen, medicatie en aanhoudende klachten altijd met je arts.</p></section>
@@ -163,14 +163,14 @@
       <section class="showcase" aria-labelledby="showcase-en-title">
         <p class="eyebrow">Take a look</p>
         <h2 id="showcase-en-title">A calmer way to keep track</h2>
-        <p class="showcase-intro">See your current signals, medication, personal depth, and appointment preparation in one clear place. The iPad and Apple Watch views stay focused too.</p>
+        <p class="showcase-intro">See your current signals, medication, personal insights, and appointment preparation in one clear place. The same calm design works across iPhone, iPad, and Android, with quick logging on Apple Watch and Wear OS.</p>
         <div class="showcase-grid">
-          <figure class="showcase-figure"><img src="assets/signalen-nu-rustig.png" alt="Current signals in MigraineMaatje" loading="lazy"><figcaption>Current signals</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/premium.png" alt="Premium personal insights" loading="lazy"><figcaption>Personal depth</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/medicatie-beheren.png" alt="Medication management in MigraineMaatje" loading="lazy"><figcaption>Medication management</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/afspraken.png" alt="Doctors and appointments in MigraineMaatje" loading="lazy"><figcaption>Doctors &amp; appointments</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/ipad.png" alt="MigraineMaatje on iPad" loading="lazy"><figcaption>On iPad</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/watch.png" alt="MigraineMaatje on Apple Watch" loading="lazy"><figcaption>On Apple Watch</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/en/signals.png?v=20260830-3" alt="Current signals in MigraineMaatje" loading="lazy"><figcaption>Current signals</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/en/log.png?v=20260830-3" alt="Recording an attack in MigraineMaatje" loading="lazy"><figcaption>Record an attack</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/en/diary.png?v=20260830-3" alt="The migraine diary in MigraineMaatje" loading="lazy"><figcaption>Diary and calendar</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/en/insights.png?v=20260830-3" alt="Personal insights in MigraineMaatje" loading="lazy"><figcaption>Personal insights</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/en/medication.png?v=20260830-3" alt="Recording medication in MigraineMaatje" loading="lazy"><figcaption>Record medication</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/en/care.png?v=20260830-3" alt="Doctors and appointments in MigraineMaatje" loading="lazy"><figcaption>Doctors &amp; appointments</figcaption></figure>
         </div>
       </section>
       <section class="note"><p><strong>Important:</strong> MigraineMaatje does not provide diagnosis or medical advice. Discuss medical questions, medication, and ongoing symptoms with your doctor.</p></section>
@@ -209,14 +209,14 @@
       <section class="showcase" aria-labelledby="showcase-de-title">
         <p class="eyebrow">Ein Blick in die App</p>
         <h2 id="showcase-de-title">Übersichtlich festhalten</h2>
-        <p class="showcase-intro">Status, Medikamente, persönliche Vertiefung und Terminvorbereitung an einem ruhigen Ort. Auch auf iPad und Apple Watch bleibt das Wesentliche im Blick.</p>
+        <p class="showcase-intro">Signale, Medikamente, persönliche Erkenntnisse und Terminvorbereitung an einem ruhigen Ort. Dasselbe klare Design auf iPhone, iPad und Android, mit schneller Erfassung auf Apple Watch und Wear OS.</p>
         <div class="showcase-grid">
-          <figure class="showcase-figure"><img src="assets/signalen-nu-rustig.png" alt="Aktueller Status in MigraineMaatje" loading="lazy"><figcaption>Aktueller Status</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/premium.png" alt="Persönliche Premium-Erkenntnisse" loading="lazy"><figcaption>Persönliche Vertiefung</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/medicatie-beheren.png" alt="Medikamentenverwaltung in MigraineMaatje" loading="lazy"><figcaption>Medikamente</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/afspraken.png" alt="Ärzte und Termine in MigraineMaatje" loading="lazy"><figcaption>Ärzte &amp; Termine</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/ipad.png" alt="MigraineMaatje auf dem iPad" loading="lazy"><figcaption>Auf dem iPad</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/watch.png" alt="MigraineMaatje auf der Apple Watch" loading="lazy"><figcaption>Auf der Apple Watch</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/de/signals.png?v=20260830-3" alt="Aktuelle Signale in MigraineMaatje" loading="lazy"><figcaption>Aktuelle Signale</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/de/log.png?v=20260830-3" alt="Eine Attacke in MigraineMaatje erfassen" loading="lazy"><figcaption>Attacke erfassen</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/de/diary.png?v=20260830-3" alt="Das Migränetagebuch in MigraineMaatje" loading="lazy"><figcaption>Tagebuch und Kalender</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/de/insights.png?v=20260830-3" alt="Persönliche Erkenntnisse in MigraineMaatje" loading="lazy"><figcaption>Persönliche Erkenntnisse</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/de/medication.png?v=20260830-3" alt="Medikamente in MigraineMaatje erfassen" loading="lazy"><figcaption>Medikamente erfassen</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/de/care.png?v=20260830-3" alt="Ärzte und Termine in MigraineMaatje" loading="lazy"><figcaption>Ärzte &amp; Termine</figcaption></figure>
         </div>
       </section>
       <section class="note"><p><strong>Wichtig:</strong> MigraineMaatje stellt keine Diagnose und gibt keinen medizinischen Rat. Besprich medizinische Fragen, Medikamente und anhaltende Beschwerden immer mit deinem Arzt.</p></section>
@@ -255,14 +255,14 @@
       <section class="showcase" aria-labelledby="showcase-fr-title">
         <p class="eyebrow">Un aperçu</p>
         <h2 id="showcase-fr-title">Un suivi plus simple</h2>
-        <p class="showcase-intro">Retrouvez le statut, les médicaments, les informations personnelles et la préparation du rendez-vous dans un espace calme. Les versions iPad et Apple Watch restent simples aussi.</p>
+        <p class="showcase-intro">Retrouvez les signaux, les médicaments, les informations personnelles et la préparation du rendez-vous dans un espace clair. Le même design calme sur iPhone, iPad et Android, avec une saisie rapide sur Apple Watch et Wear OS.</p>
         <div class="showcase-grid">
-          <figure class="showcase-figure"><img src="assets/signalen-nu-rustig.png" alt="Signaux actuels dans MigraineMaatje" loading="lazy"><figcaption>Signaux actuels</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/premium.png" alt="Informations personnelles Premium" loading="lazy"><figcaption>Approfondissement personnel</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/medicatie-beheren.png" alt="Gestion des médicaments dans MigraineMaatje" loading="lazy"><figcaption>Gestion des médicaments</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/afspraken.png" alt="Médecins et rendez-vous dans MigraineMaatje" loading="lazy"><figcaption>Médecins et rendez-vous</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/ipad.png" alt="MigraineMaatje sur iPad" loading="lazy"><figcaption>Sur iPad</figcaption></figure>
-          <figure class="showcase-figure"><img src="assets/watch.png" alt="MigraineMaatje sur Apple Watch" loading="lazy"><figcaption>Sur Apple Watch</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/fr/signals.png?v=20260830-3" alt="Signaux actuels dans MigraineMaatje" loading="lazy"><figcaption>Signaux actuels</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/fr/log.png?v=20260830-3" alt="Noter une crise dans MigraineMaatje" loading="lazy"><figcaption>Noter une crise</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/fr/diary.png?v=20260830-3" alt="Le journal de migraine dans MigraineMaatje" loading="lazy"><figcaption>Journal et calendrier</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/fr/insights.png?v=20260830-3" alt="Informations personnelles dans MigraineMaatje" loading="lazy"><figcaption>Informations personnelles</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/fr/medication.png?v=20260830-3" alt="Noter un médicament dans MigraineMaatje" loading="lazy"><figcaption>Noter un médicament</figcaption></figure>
+          <figure class="showcase-figure"><img src="assets/screens/fr/care.png?v=20260830-3" alt="Médecins et rendez-vous dans MigraineMaatje" loading="lazy"><figcaption>Médecins et rendez-vous</figcaption></figure>
         </div>
       </section>
       <section class="note"><p><strong>Important :</strong> MigraineMaatje ne fournit pas de diagnostic ni de conseil médical. Discutez toujours de vos questions médicales, médicaments et symptômes persistants avec votre médecin.</p></section>
