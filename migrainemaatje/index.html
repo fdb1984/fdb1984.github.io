@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MigraineMaatje - Support en privacy</title>
-  <meta name="description" content="Support-, privacy- en versieinformatie voor MigraineMaatje.">
+  <title>MigraineMaatje - migraine- en hoofdpijndagboek</title>
+  <meta name="description" content="Leg migraine, hoofdpijn en medicatie rustig vast en ontdek wat in jouw eigen dagboek opvalt. Download MigraineMaatje voor iPhone, iPad en Android.">
   <style>
     :root {
       color-scheme: dark;
@@ -54,13 +54,19 @@
     .showcase-figure { min-width: 0; margin: 0; padding: 8px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-soft); }
     .showcase-figure img { display: block; width: 100%; height: 250px; object-fit: contain; object-position: top; border-radius: 7px; background: #07090b; }
     .showcase-figure figcaption { margin-top: 8px; color: var(--soft); font-size: 13px; line-height: 1.35; }
+    .store-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 22px 0 8px; }
+    .store-button { display: flex; min-width: 0; min-height: 68px; flex-direction: column; justify-content: center; padding: 13px 18px; border: 1px solid rgba(100, 230, 189, 0.34); border-radius: 12px; background: rgba(100, 230, 189, 0.08); color: var(--text); text-decoration: none; }
+    .store-button:hover { border-color: var(--mint); background: rgba(100, 230, 189, 0.13); }
+    .store-button small { color: var(--soft); font-size: 12px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; }
+    .store-button strong { margin-top: 2px; color: var(--text); font-size: 17px; line-height: 1.25; }
+    .store-note { color: var(--soft); font-size: 14px; }
     .language-switch { display: inline-flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; padding: 6px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.03); }
     .language-switch button { appearance: none; border: 0; border-radius: 999px; background: transparent; color: var(--muted); font: inherit; font-weight: 700; padding: 8px 14px; cursor: pointer; }
     .language-switch button.active { background: var(--mint); color: #08120f; }
     footer { margin-top: 34px; color: var(--soft); font-size: 14px; }
     [data-lang] { display: none; }
     [data-lang].active { display: block; }
-    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid { grid-template-columns: minmax(0, 1fr); } .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .showcase-figure img { height: 260px; } .card { padding: 18px; } }
+    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid, .store-actions { grid-template-columns: minmax(0, 1fr); } .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .showcase-figure img { height: 260px; } .card { padding: 18px; } }
 
   </style>
   <link rel="stylesheet" href="/app-pages.css?v=20260806-2">
@@ -84,6 +90,11 @@
         <p class="eyebrow">MigraineMaatje</p>
         <h1>Support en privacy</h1>
         <p class="lead">Een rustige plek om aanvallen, medicatie en persoonlijke signalen bij te houden. Je gegevens blijven op je eigen apparaat. Geen advertenties en geen verkoop van gezondheidsdata.</p>
+        <div class="store-actions" aria-label="MigraineMaatje downloaden">
+          <a class="store-button" href="https://apps.apple.com/app/id6779200491"><small>iPhone en iPad</small><strong>Download in de App Store</strong></a>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje"><small>Android</small><strong>Download via Google Play</strong></a>
+        </div>
+        <p class="store-note">Aanvallen vastleggen, dagboek, medicatie en het basisrapport blijven gratis.</p>
       </header>
       <div class="grid">
         <a class="card" href="privacy.html?lang=nl">
@@ -125,6 +136,11 @@
         <p class="eyebrow">MigraineMaatje</p>
         <h1>Support and Privacy</h1>
         <p class="lead">A calm place to keep track of attacks, medication, and personal signals. Your data stays on your own device. No ads and no sale of health data.</p>
+        <div class="store-actions" aria-label="Download MigraineMaatje">
+          <a class="store-button" href="https://apps.apple.com/app/id6779200491"><small>iPhone and iPad</small><strong>Download on the App Store</strong></a>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje"><small>Android</small><strong>Get it on Google Play</strong></a>
+        </div>
+        <p class="store-note">Attack logging, diary, medication, and the basic report remain free.</p>
       </header>
       <div class="grid">
         <a class="card" href="privacy.html?lang=en">
@@ -166,6 +182,11 @@
         <p class="eyebrow">MigraineMaatje</p>
         <h1>Support und Datenschutz</h1>
         <p class="lead">Ein ruhiger Ort, an dem du Attacken, Medikamente und persönliche Signale festhältst. Deine Daten bleiben auf deinem eigenen Gerät. Keine Werbung und kein Verkauf von Gesundheitsdaten.</p>
+        <div class="store-actions" aria-label="MigraineMaatje herunterladen">
+          <a class="store-button" href="https://apps.apple.com/app/id6779200491"><small>iPhone und iPad</small><strong>Im App Store laden</strong></a>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje"><small>Android</small><strong>Bei Google Play herunterladen</strong></a>
+        </div>
+        <p class="store-note">Attackenerfassung, Tagebuch, Medikamente und Basisbericht bleiben kostenlos.</p>
       </header>
       <div class="grid">
         <a class="card" href="privacy.html?lang=de">
@@ -207,6 +228,11 @@
         <p class="eyebrow">MigraineMaatje</p>
         <h1>Support et confidentialité</h1>
         <p class="lead">Un espace calme pour noter vos crises, vos médicaments et vos signaux personnels. Vos données restent sur votre appareil. Sans publicité et sans vente de données de santé.</p>
+        <div class="store-actions" aria-label="Télécharger MigraineMaatje">
+          <a class="store-button" href="https://apps.apple.com/app/id6779200491"><small>iPhone et iPad</small><strong>Télécharger dans l’App Store</strong></a>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje"><small>Android</small><strong>Disponible sur Google Play</strong></a>
+        </div>
+        <p class="store-note">La saisie des crises, le journal, les médicaments et le rapport de base restent gratuits.</p>
       </header>
       <div class="grid">
         <a class="card" href="privacy.html?lang=fr">
