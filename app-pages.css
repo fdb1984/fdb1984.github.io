@@ -784,13 +784,14 @@ body.app-page-home {
   }
 
   .app-page-home .app-page-visual {
-    min-height: 280px;
+    min-height: auto;
+    padding: 18px 12px 58px;
   }
 
   .app-page-home .app-page-visual img {
-    width: 148%;
-    max-width: none;
-    margin-left: 48%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
   }
 
   .app-page-visual figcaption {
