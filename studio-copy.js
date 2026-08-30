@@ -57,7 +57,7 @@ window.PRODUCT_TRANSLATIONS = (() => {
         twoTitle: "Geen verkoop van gegevens", twoText: "Je gegevens zijn geen verdienmodel.",
         threeTitle: "Direct contact met mij", threeText: "Je vraag komt terecht bij de maker."
       },
-      studio: { eyebrow: "de Bruin Studio", title: "Zelf gemaakt. Rechtstreeks contact.", description: "Ik ontwerp en bouw deze apps zelf in Nederland. Heb je een vraag of werkt iets niet prettig, dan komt je bericht rechtstreeks bij mij terecht.", contact: "Mail de studio" },
+      studio: { eyebrow: "de Bruin Studio", title: "Zelf gemaakt. Rechtstreeks contact.", description: "Ik ontwerp en bouw deze apps zelf in Nederland. Heb je een vraag of werkt iets niet prettig, dan komt je bericht rechtstreeks bij mij terecht.", contact: "Mail de Bruin Studio" },
       final: { title: "Kies de app die vandaag iets makkelijker maakt.", description: "Bekijk rustig hoe MigraineMaatje en HomeScreen werken.", action: "Naar de apps" },
       footer: { contact: "Contact" },
       links: { migraine: "migrainemaatje/?lang=nl", home: "homescreen/?lang=nl", migraineSupport: "migrainemaatje/support.html?lang=nl", homeSupport: "homescreen/support.html?lang=nl" },
