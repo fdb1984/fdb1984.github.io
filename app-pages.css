@@ -937,3 +937,174 @@ body.app-page-home {
     justify-content: space-between;
   }
 }
+
+/* Information pages favour reading over product decoration. */
+body.app-page-policy,
+body.app-page-support {
+  background: #090c0e;
+}
+
+.app-page-policy .app-site-nav,
+.app-page-support .app-site-nav {
+  min-height: 68px;
+}
+
+.app-page-policy main,
+.app-page-support main {
+  width: min(820px, calc(100% - 48px));
+  padding: 52px 0 88px;
+}
+
+.app-page-policy main > .language-switch,
+.app-page-policy main header .language-switcher,
+.app-page-support main > .language-switch,
+.app-page-support main header .language-switcher {
+  width: 100%;
+  display: flex;
+  gap: 7px;
+  margin: 0 0 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.app-page-policy main > .language-switch::-webkit-scrollbar,
+.app-page-policy main header .language-switcher::-webkit-scrollbar,
+.app-page-support main > .language-switch::-webkit-scrollbar,
+.app-page-support main header .language-switcher::-webkit-scrollbar {
+  display: none;
+}
+
+.app-page-policy main > .language-switch button,
+.app-page-policy main header .language-switcher button,
+.app-page-support main > .language-switch button,
+.app-page-support main header .language-switcher button {
+  min-width: auto;
+  min-height: 40px;
+  flex: 0 0 auto;
+  padding: 8px 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: #aeb7bc;
+}
+
+.app-page-policy main > .language-switch button.active,
+.app-page-policy main header .language-switcher button[aria-pressed="true"],
+.app-page-support main > .language-switch button.active,
+.app-page-support main header .language-switcher button[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--page-accent) 38%, var(--line));
+  background: color-mix(in srgb, var(--page-accent) 10%, var(--panel));
+  color: var(--text);
+}
+
+.app-page-policy main header,
+.app-page-support main header {
+  max-width: 780px;
+  margin: 0 0 28px;
+  padding-left: 0;
+}
+
+.app-page-policy main header::before,
+.app-page-support main header::before {
+  display: none;
+}
+
+.app-page-policy h1,
+.app-page-support h1 {
+  margin-bottom: 13px;
+  font-size: clamp(38px, 6vw, 54px);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.app-page-policy .lead,
+.app-page-policy main header > p:not(.eyebrow):not(.muted),
+.app-page-support .lead,
+.app-page-support main header > p:not(.eyebrow):not(.muted) {
+  font-size: 17px;
+  line-height: 1.62;
+}
+
+.app-page-policy .app-topic-index {
+  margin-bottom: 28px !important;
+  padding: 18px;
+}
+
+.app-page-policy .card:not(.important),
+.app-page-policy.app-page-home main section:not(.important) {
+  padding: 28px 0;
+}
+
+.app-page-support .app-disclosure {
+  margin-top: 0;
+  border-width: 1px 0 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.app-page-support .app-disclosure:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.app-page-support .app-faq-item {
+  border-width: 1px 0 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.app-page-support .app-faq-item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 720px) {
+  .app-page-policy main,
+  .app-page-support main {
+    width: min(100% - 32px, 820px);
+    padding: 34px 0 64px;
+  }
+
+  .app-page-policy main > .language-switch,
+  .app-page-policy main header .language-switcher,
+  .app-page-support main > .language-switch,
+  .app-page-support main header .language-switcher {
+    display: flex;
+    margin-bottom: 26px;
+  }
+
+  .app-page-policy main header,
+  .app-page-support main header {
+    margin-bottom: 22px;
+  }
+
+  .app-page-policy h1,
+  .app-page-support h1 {
+    font-size: 38px;
+  }
+
+  .app-page-policy .app-topic-index {
+    display: none;
+  }
+
+  .app-page-policy .card:not(.important),
+  .app-page-policy.app-page-home main section:not(.important) {
+    padding: 24px 0;
+  }
+
+  .app-page-policy .important {
+    padding: 20px;
+  }
+
+  .app-page-support .app-disclosure > summary {
+    padding-inline: 4px;
+  }
+
+  .app-page-support .app-disclosure-content {
+    margin-inline: 42px 4px;
+  }
+}

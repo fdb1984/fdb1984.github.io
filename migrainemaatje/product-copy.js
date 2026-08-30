@@ -21,8 +21,9 @@
       hero: {
         identity: "Voor iPhone, iPad, Apple Watch en Android",
         eyebrow: "Een rustig migraine-dagboek",
-        promise: "Migraine bijhouden zonder gedoe.",
-        description: "Leg een aanval in een paar tikken vast. Vul later aan wat hielp en zie pas daarna wat in jouw eigen gegevens opvalt.",
+        promise: "Snel vastleggen. Later zien wat hielp.",
+        description: "Leg een aanval in een paar tikken vast. Vul later medicatie en herstel aan en bewaar wat je met je arts wilt bespreken.",
+        trustLine: "Geen advertenties · geen verkoop van gezondheidsdata",
         factOne: "Snel vastleggen blijft gratis", factTwo: "Geen advertenties", factThree: "Geen verkoop van gezondheidsdata",
         noteOneTitle: "Aanval vastgelegd", noteOneText: "De rest kan wachten.", noteTwoTitle: "Later aanvullen", noteTwoText: "Medicatie, herstel en terugkeer."
       },
@@ -60,7 +61,7 @@
         careTitle: "Voorbereid naar je arts", careText: "Bewaar vragen, afspraken en wat je later wilt opvolgen."
       },
       value: {
-        eyebrow: "Eerlijk geprijsd", title: "Gratis bijhouden. Premium begrijpen.",
+        eyebrow: "Gratis en Premium", title: "Gratis bijhouden. Premium begrijpen.",
         description: "De basis blijft bruikbaar zonder abonnement. Premium is er voor terugkerende persoonlijke verdieping.",
         freeTitle: "Altijd gratis", freeText: "Alles wat je nodig hebt om een betrouwbaar migraine-dagboek bij te houden.",
         freeOne: "Aanvallen vastleggen en later afronden", freeTwo: "Dagboek, kalender en medicatiebeheer", freeThree: "Basisstatus en basisrapport voor je arts", freeFour: "Reservekopie en herstel op je eigen platform",
@@ -90,8 +91,9 @@
       nav: { how: "How it works", insight: "Insights", care: "For your doctor", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Download on the App Store", playStore: "Get it on Google Play" },
       hero: {
-        identity: "For iPhone, iPad, Apple Watch and Android", eyebrow: "A calmer migraine diary", promise: "Migraine tracking without the overload.",
-        description: "Log an attack in a few taps. Add what helped later, then see what stands out in your own data.",
+        identity: "For iPhone, iPad, Apple Watch and Android", eyebrow: "A calmer migraine diary", promise: "Log it quickly. See what helped later.",
+        description: "Log an attack in a few taps. Add medication and recovery later, and keep what you want to discuss with your doctor.",
+        trustLine: "No ads · no sale of health data",
         factOne: "Quick logging stays free", factTwo: "No advertising", factThree: "No sale of health data",
         noteOneTitle: "Attack saved", noteOneText: "Everything else can wait.", noteTwoTitle: "Add details later", noteTwoText: "Medication, recovery and recurrence."
       },
@@ -129,7 +131,7 @@
         careTitle: "Prepared for your doctor", careText: "Keep questions, agreements and follow-up points."
       },
       value: {
-        eyebrow: "Fairly priced", title: "Track for free. Understand with Premium.",
+        eyebrow: "Free and Premium", title: "Track for free. Understand with Premium.",
         description: "Essential care remains useful without a subscription. Premium adds recurring personal interpretation.",
         freeTitle: "Always free", freeText: "Everything you need for a dependable migraine diary.",
         freeOne: "Log attacks and finish them later", freeTwo: "Diary, calendar and medication management", freeThree: "Basic status and basic doctor report", freeFour: "Backup and restore on your own platform",
@@ -159,8 +161,9 @@
       nav: { how: "So funktioniert es", insight: "Einblicke", care: "Für deinen Arzt", privacy: "Datenschutz", download: "Laden" },
       actions: { appStore: "Im App Store laden", playStore: "Bei Google Play herunterladen" },
       hero: {
-        identity: "Für iPhone, iPad, Apple Watch und Android", eyebrow: "Ein ruhigeres Migränetagebuch", promise: "Migräne dokumentieren ohne zusätzlichen Stress.",
-        description: "Halte eine Attacke mit wenigen Fingertipps fest. Ergänze später, was geholfen hat, und sieh dann, was in deinen eigenen Daten auffällt.",
+        identity: "Für iPhone, iPad, Apple Watch und Android", eyebrow: "Ein ruhigeres Migränetagebuch", promise: "Schnell festhalten. Später sehen, was geholfen hat.",
+        description: "Halte eine Attacke mit wenigen Fingertipps fest. Ergänze später Medikamente und Erholung und bewahre auf, was du mit deinem Arzt besprechen möchtest.",
+        trustLine: "Keine Werbung · kein Verkauf von Gesundheitsdaten",
         factOne: "Schnelles Erfassen bleibt kostenlos", factTwo: "Keine Werbung", factThree: "Kein Verkauf von Gesundheitsdaten",
         noteOneTitle: "Attacke gespeichert", noteOneText: "Alles andere kann warten.", noteTwoTitle: "Später ergänzen", noteTwoText: "Medikamente, Erholung und Wiederkehr."
       },
@@ -198,7 +201,7 @@
         careTitle: "Vorbereitet zum Arzt", careText: "Fragen, Vereinbarungen und Punkte zur Nachverfolgung speichern."
       },
       value: {
-        eyebrow: "Fairer Preis", title: "Kostenlos dokumentieren. Mit Premium verstehen.",
+        eyebrow: "Kostenlos und Premium", title: "Kostenlos dokumentieren. Mit Premium verstehen.",
         description: "Die wichtige Basis bleibt ohne Abo nutzbar. Premium ergänzt wiederkehrende persönliche Einordnung.",
         freeTitle: "Immer kostenlos", freeText: "Alles für ein verlässliches Migränetagebuch.",
         freeOne: "Attacken erfassen und später abschließen", freeTwo: "Tagebuch, Kalender und Medikamentenverwaltung", freeThree: "Basisstatus und Basisbericht für den Arzt", freeFour: "Sicherung und Wiederherstellung auf deiner Plattform",
@@ -228,8 +231,9 @@
       nav: { how: "Fonctionnement", insight: "Analyses", care: "Pour votre médecin", privacy: "Confidentialité", download: "Télécharger" },
       actions: { appStore: "Télécharger dans l’App Store", playStore: "Disponible sur Google Play" },
       hero: {
-        identity: "Pour iPhone, iPad, Apple Watch et Android", eyebrow: "Un journal de migraine plus apaisé", promise: "Suivre vos migraines sans surcharge.",
-        description: "Enregistrez une crise en quelques gestes. Complétez plus tard ce qui vous a aidé, puis voyez ce qui ressort de vos propres données.",
+        identity: "Pour iPhone, iPad, Apple Watch et Android", eyebrow: "Un journal de migraine plus apaisé", promise: "Enregistrer vite. Voir ensuite ce qui a aidé.",
+        description: "Enregistrez une crise en quelques gestes. Ajoutez plus tard les médicaments et la récupération, puis gardez ce que vous souhaitez aborder avec votre médecin.",
+        trustLine: "Sans publicité · aucune vente de données de santé",
         factOne: "L’enregistrement rapide reste gratuit", factTwo: "Sans publicité", factThree: "Aucune vente de données de santé",
         noteOneTitle: "Crise enregistrée", noteOneText: "Le reste peut attendre.", noteTwoTitle: "Compléter plus tard", noteTwoText: "Médicaments, récupération et retour."
       },
@@ -267,7 +271,7 @@
         careTitle: "Préparé pour le médecin", careText: "Conservez vos questions, décisions et points à suivre."
       },
       value: {
-        eyebrow: "Un prix juste", title: "Suivre gratuitement. Comprendre avec Premium.",
+        eyebrow: "Gratuit et Premium", title: "Suivre gratuitement. Comprendre avec Premium.",
         description: "L’essentiel reste utile sans abonnement. Premium ajoute une interprétation personnelle régulière.",
         freeTitle: "Toujours gratuit", freeText: "Tout le nécessaire pour un journal de migraine fiable.",
         freeOne: "Enregistrer les crises et les terminer plus tard", freeTwo: "Journal, calendrier et gestion des médicaments", freeThree: "Statut de base et rapport de base pour le médecin", freeFour: "Sauvegarde et restauration sur votre plateforme",

@@ -17,7 +17,7 @@
   <meta name="twitter:description" content="Rustige apps voor gezondheid en thuis.">
   <link rel="canonical" href="https://debruinstudio.nl/">
   <link rel="icon" href="favicon.svg">
-  <link rel="stylesheet" href="product-site.css?v=20260830c">
+  <link rel="stylesheet" href="product-site.css?v=20260830e">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,7 +28,7 @@
   }
   </script>
 </head>
-<body class="studio-home" data-languages="nl,en,de,fr" data-default-language="nl">
+<body class="studio-home studio-home-v3" data-languages="nl,en,de,fr" data-default-language="nl">
   <a class="skip-link" href="#main" data-i18n="global.skip">Ga naar inhoud</a>
 
   <header class="site-nav">
@@ -40,7 +40,6 @@
       <div class="nav-cluster">
         <nav class="nav-links" data-i18n-aria="global.navigationLabel">
           <a href="#apps" data-i18n="nav.apps">Apps</a>
-          <a href="#principles" data-i18n="nav.approach">Aanpak</a>
           <a href="#studio" data-i18n="nav.studio">Studio</a>
         </nav>
         <div class="language-switch" data-i18n-aria="global.languageLabel">
@@ -55,98 +54,44 @@
   </header>
 
   <main id="main">
-    <section class="studio-hero">
-      <div class="shell studio-hero-grid">
-        <div class="studio-hero-copy" data-reveal>
-          <p class="eyebrow" data-i18n="hero.eyebrow">Onafhankelijke apps uit Nederland</p>
-          <h1 data-i18n="hero.title">Software die rust brengt in echte situaties.</h1>
-          <p class="studio-lead" data-i18n="hero.description">Bij migraine wil je snel kunnen vastleggen. Thuis wil je niet zoeken naar de juiste knop. Daarom maken we apps die eerst duidelijk zijn en daarna pas slim.</p>
-          <div class="hero-actions">
-            <a class="primary-action" href="#apps" data-i18n="hero.primary">Bekijk de apps</a>
-            <a class="secondary-action" href="mailto:info@debruinstudio.nl" data-i18n="hero.secondary">Neem contact op</a>
-          </div>
-          <ul class="hero-facts studio-facts"><li data-i18n="hero.factOne">Geen advertenties</li><li data-i18n="hero.factTwo">Privacy als uitgangspunt</li><li data-i18n="hero.factThree">Zelf ontworpen en gebouwd</li></ul>
-        </div>
-
-        <div class="studio-hero-media" aria-hidden="true" data-reveal data-reveal-delay="1">
-          <div class="studio-tablet-preview"><span class="studio-preview-label">HomeScreen</span><img data-image="homeDashboard" width="1800" height="828" loading="eager"></div>
-          <div class="studio-phone-preview"><span class="studio-preview-label">MigraineMaatje</span><img data-image="migraineHero" width="1320" height="2868" loading="eager"></div>
-          <div class="studio-product-tag tag-home"><img src="homescreen-icon.png" alt="" width="30" height="30"><span>HomeScreen</span></div>
-          <div class="studio-product-tag tag-migraine"><img src="migrainemaatje-icon.png" alt="" width="30" height="30"><span>MigraineMaatje</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-strip studio-trust">
-      <div class="shell trust-grid">
-        <div class="trust-item"><span class="trust-mark">01</span><div><strong data-i18n="trust.oneTitle">Klein en betrokken</strong><span data-i18n="trust.oneText">Direct contact met de maker</span></div></div>
-        <div class="trust-item"><span class="trust-mark">02</span><div><strong data-i18n="trust.twoTitle">Geen dataverkoop</strong><span data-i18n="trust.twoText">Je gegevens zijn geen verdienmodel</span></div></div>
-        <div class="trust-item"><span class="trust-mark">03</span><div><strong data-i18n="trust.threeTitle">Gemaakt voor dagelijks gebruik</strong><span data-i18n="trust.threeText">Duidelijk op telefoon, tablet en horloge</span></div></div>
-      </div>
-    </section>
-
-    <section class="section studio-apps" id="apps">
+    <section class="studio-v3-hero">
       <div class="shell">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow" data-i18n="apps.eyebrow">Onze apps</p>
-          <h2 data-i18n="apps.title">Twee apps met hetzelfde uitgangspunt: minder gedoe.</h2>
-          <p data-i18n="apps.description">Elke app wordt gebouwd rond het moment waarop je hem echt nodig hebt.</p>
+        <div class="studio-v3-intro" data-reveal>
+          <p class="eyebrow" data-i18n="hero.eyebrow">de Bruin Studio</p>
+          <h1 data-i18n="hero.title">Twee apps die meteen duidelijk zijn.</h1>
+          <p data-i18n="hero.description">Voor migraine en voor thuis. Gemaakt om snel te begrijpen, prettig te gebruiken en je gegevens te respecteren.</p>
+          <nav class="studio-v3-app-jump" aria-label="Apps"><a href="#migraine">MigraineMaatje</a><a href="#homekit">HomeScreen for HomeKit</a></nav>
         </div>
 
-        <article class="studio-product product-migraine">
-          <div class="studio-product-copy" data-reveal>
-            <div class="studio-app-title"><img src="migrainemaatje-icon.png" alt="" width="58" height="58"><div><p class="eyebrow">iPhone · iPad · Apple Watch · Android</p><h3>MigraineMaatje</h3></div></div>
-            <p class="studio-product-promise" data-i18n="migraine.promise">Migraine bijhouden zonder dat je hoofd er nog voller van wordt.</p>
-            <p data-i18n="migraine.description">Leg een aanval snel vast, vul later aan en ontdek welke veranderingen in je eigen dagboek, medicatie, gezondheid en weer echt opvallen.</p>
-            <ul class="studio-feature-list"><li data-i18n="migraine.one">Snel vastleggen tijdens een aanval</li><li data-i18n="migraine.two">Medicatie, dagboek en artsvoorbereiding bij elkaar</li><li data-i18n="migraine.three">Persoonlijke inzichten met voorzichtige uitleg</li></ul>
-            <div class="studio-product-actions">
-              <a class="primary-action" href="https://apps.apple.com/app/id6779200491" data-i18n="actions.appStore">Download voor Apple</a>
-              <a class="secondary-action" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" data-i18n="actions.googlePlay">Download voor Android</a>
-              <a class="text-action" href="migrainemaatje/" data-i18n-href="links.migraine" data-i18n="actions.more">Bekijk alles</a>
+        <div class="studio-v3-apps" id="apps">
+          <article class="studio-v3-card studio-v3-migraine" id="migraine" data-reveal>
+            <div class="studio-v3-card-copy">
+              <div class="studio-v3-app-name"><img src="migrainemaatje-icon.png" alt="" width="54" height="54"><div><span>iPhone · iPad · Watch · Android</span><strong>MigraineMaatje</strong></div></div>
+              <h2 data-i18n="migraine.promise">Je migraine-dagboek, zonder extra gedoe.</h2>
+              <p data-i18n="migraine.description">Leg een aanval snel vast en vind later terug wat medicatie, herstel en je eigen patronen laten zien.</p>
+              <div class="studio-v3-actions"><a class="primary-action" href="migrainemaatje/" data-i18n-href="links.migraine" data-i18n="actions.migraine">Zo werkt MigraineMaatje</a></div>
             </div>
-          </div>
-          <div class="studio-product-visual migraine-product-visual" aria-hidden="true" data-reveal data-reveal-delay="1"><div class="studio-phone-single"><img data-image="migraineInsights" width="1320" height="2868" loading="lazy"></div></div>
-        </article>
+            <div class="studio-v3-card-media"><img data-image="migraineHero" width="1320" height="2868" loading="eager"></div>
+          </article>
 
-        <article class="studio-product product-homekit">
-          <div class="studio-product-copy" data-reveal>
-            <div class="studio-app-title"><img src="homescreen-icon.png" alt="" width="58" height="58"><div><p class="eyebrow">iPhone · iPad</p><h3>HomeScreen for HomeKit</h3></div></div>
-            <p class="studio-product-promise" data-i18n="home.promise">Je woning op één rustig scherm.</p>
-            <p data-i18n="home.description">Maak van je iPad een vast dashboard en gebruik je iPhone voor snelle bediening. Tijd, lokaal weer, klimaat, lampen, schermen en camera's blijven overzichtelijk bij elkaar.</p>
-            <ul class="studio-feature-list"><li data-i18n="home.one">Leesbaar dashboard voor tafel of wand</li><li data-i18n="home.two">Favorieten, zoeken en bediening zonder omwegen</li><li data-i18n="home.three">30 dagen proberen, daarna één aankoop</li></ul>
-            <div class="studio-product-actions">
-              <a class="primary-action" href="https://apps.apple.com/app/id6771712686" data-i18n="actions.tryHome">Probeer 30 dagen</a>
-              <a class="text-action" href="homescreen/" data-i18n-href="links.home" data-i18n="actions.more">Bekijk alles</a>
+          <article class="studio-v3-card studio-v3-home" id="homekit" data-reveal data-reveal-delay="1">
+            <div class="studio-v3-card-copy">
+              <div class="studio-v3-app-name"><img src="homescreen-icon.png" alt="" width="54" height="54"><div><span>iPhone · iPad</span><strong>HomeScreen for HomeKit</strong></div></div>
+              <h2 data-i18n="home.promise">Je HomeKit-woning in één oogopslag.</h2>
+              <p data-i18n="home.description">Een vast dashboard op iPad en snelle bediening op iPhone, zonder door kamers en menu’s te zoeken.</p>
+              <div class="studio-v3-actions"><a class="primary-action" href="homescreen/" data-i18n-href="links.home" data-i18n="actions.home">Zo werkt HomeScreen</a></div>
             </div>
-          </div>
-          <div class="studio-product-visual home-product-visual" aria-hidden="true" data-reveal data-reveal-delay="1"><div class="studio-tablet-single"><img data-image="homeControls" width="1800" height="828" loading="lazy"></div></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="principles">
-      <div class="shell">
-        <div class="section-heading" data-reveal><p class="eyebrow" data-i18n="principles.eyebrow">Hoe we bouwen</p><h2 data-i18n="principles.title">Techniek hoort op de achtergrond te blijven.</h2><p data-i18n="principles.description">Een goede app vraagt zo min mogelijk aandacht en geeft precies genoeg terug.</p></div>
-        <div class="moment-grid studio-principles">
-          <article class="moment-card" data-reveal><span class="moment-number">01</span><h3 data-i18n="principles.oneTitle">Rust vóór functies</h3><p data-i18n="principles.oneText">Geen scherm vol opties als één duidelijke handeling genoeg is.</p></article>
-          <article class="moment-card" data-reveal data-reveal-delay="1"><span class="moment-number">02</span><h3 data-i18n="principles.twoTitle">Eerlijk over gegevens</h3><p data-i18n="principles.twoText">We leggen uit wat een app gebruikt, waar het staat en wat een conclusie nog niet zegt.</p></article>
-          <article class="moment-card" data-reveal data-reveal-delay="2"><span class="moment-number">03</span><h3 data-i18n="principles.threeTitle">Verbeterd met echte feedback</h3><p data-i18n="principles.threeText">De apps groeien vanuit dagelijks gebruik, niet vanuit een lijst marketingfuncties.</p></article>
+            <div class="studio-v3-card-media"><img data-image="homeDashboard" width="1800" height="828" loading="eager"></div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="studio-note" id="studio">
-      <div class="shell studio-note-grid">
-        <div data-reveal><p class="eyebrow" data-i18n="studio.eyebrow">de Bruin Studio</p><h2 data-i18n="studio.title">Onafhankelijk gemaakt, dichtbij gehouden.</h2></div>
-        <div data-reveal data-reveal-delay="1"><p data-i18n="studio.description">de Bruin Studio is een kleine Nederlandse softwarestudio. Dat betekent korte lijnen, duidelijke keuzes en aandacht voor de mensen die een app dagelijks gebruiken.</p><a class="text-action" href="mailto:info@debruinstudio.nl" data-i18n="studio.contact">Mail de studio</a></div>
+    <section class="studio-v3-about" id="studio">
+      <div class="shell studio-v3-about-inner">
+        <div><p class="eyebrow" data-i18n="studio.eyebrow">de Bruin Studio</p><h2 data-i18n="studio.title">Klein genoeg om te luisteren.</h2></div>
+        <div><p data-i18n="studio.description">Onafhankelijk ontworpen en gebouwd in Nederland, met directe aandacht voor de mensen die de apps gebruiken.</p><div class="studio-v3-maker-facts"><span data-i18n="principles.oneTitle">Geen advertenties</span><span data-i18n="principles.twoTitle">Geen verkoop van gegevens</span><span data-i18n="principles.threeTitle">Direct contact met mij</span></div><a class="primary-action" href="mailto:info@debruinstudio.nl" data-i18n="studio.contact">Mail de studio</a></div>
       </div>
-    </section>
-
-    <section class="final-cta studio-final">
-      <img class="studio-mark-large" src="de-bruin-studio-mark.svg" alt="de Bruin Studio" width="76" height="76" data-reveal>
-      <h2 data-i18n="final.title" data-reveal>Kies de app die vandaag iets makkelijker maakt.</h2>
-      <p data-i18n="final.description" data-reveal>Bekijk rustig hoe MigraineMaatje en HomeScreen werken.</p>
-      <div class="final-actions" data-reveal><a class="primary-action" href="#apps" data-i18n="final.action">Naar de apps</a></div>
     </section>
   </main>
 
@@ -161,7 +106,7 @@
     </div>
   </footer>
 
-  <script src="studio-copy.js?v=20260830c"></script>
-  <script src="product-site.js?v=20260830c"></script>
+  <script src="studio-copy.js?v=20260830e"></script>
+  <script src="product-site.js?v=20260830e"></script>
 </body>
 </html>

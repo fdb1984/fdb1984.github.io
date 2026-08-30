@@ -241,7 +241,17 @@
     });
   }
 
+  function normalizeSupportHeader() {
+    if (pageType !== "support" || !isHome) return;
+    const main = document.querySelector("main");
+    const switcher = main?.querySelector(":scope > header .language-switcher");
+    if (!main || !switcher) return;
+    switcher.classList.add("language-switch");
+    main.insertBefore(switcher, main.firstElementChild);
+  }
+
   function enhancePage() {
+    normalizeSupportHeader();
     addVisuals();
     addEmbeddedFaqs();
     addDisclosures();

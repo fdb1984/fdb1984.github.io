@@ -120,8 +120,8 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="/app-pages.css?v=20260830-3">
-  <script src="/app-pages.js?v=20260830-3" defer></script>
+  <link rel="stylesheet" href="/app-pages.css?v=20260830-6">
+  <script src="/app-pages.js?v=20260830-6" defer></script>
 </head>
 <body class="app-page app-page-home">
   <nav class="app-site-nav" aria-label="de Bruin Studio">
@@ -419,8 +419,7 @@
         switcher.append(button);
       });
 
-      header.append(switcher);
-      main.append(header);
+      main.append(switcher, header);
       content.sections.forEach((section) => main.append(renderSection(section)));
     }
 
