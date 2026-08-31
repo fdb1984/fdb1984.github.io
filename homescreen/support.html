@@ -179,7 +179,7 @@
           <div class="label">Nederlands</div>
           <h2>Support zonder scripts</h2>
           <p>HomeScreen geeft je HomeKit-woning een vast dashboard op iPad en een compacte bediening op iPhone.</p>
-          <p>Versie 1.11 voegt meer zichtbaarheidskeuzes, betere ondersteuning voor deuren, ramen en garages, een instelbare deurbelcamera en duidelijkere instellingen toe. Versie 1.11.1 verbetert de herkenning van wand- en radiatorthermostaten.</p>
+          <p>Versie 1.13 verbetert de herkenning van HomeKit-apparaten, favorieten, iCloud-synchronisatie, widgets en de algemene stabiliteit.</p>
           <p>Je kunt de app 30 dagen volledig proberen. Daarna ontgrendel je HomeScreen met een eenmalige aankoop via Apple. Er is geen abonnement.</p>
           <p>HomeKit-data blijft in HomeKit. Borden en gedeelde appinstellingen kunnen via iCloud worden bewaard; favorieten, schermgedrag en deurbelgedrag blijven per apparaat ingesteld.</p>
           <p>Weergegevens komen van Apple Weather waar beschikbaar. Bekijk de <a href="https://weatherkit.apple.com/legal-attribution.html">Apple Weather juridische bronvermelding</a>.</p>
@@ -189,7 +189,7 @@
           <div class="label">English</div>
           <h2>Support without scripts</h2>
           <p>HomeScreen gives your HomeKit home a fixed dashboard on iPad and compact controls on iPhone.</p>
-          <p>Version 1.11 adds more visibility controls, better door, window, and garage support, a per-device doorbell option, and clearer Settings. Version 1.11.1 improves wall and radiator thermostat detection.</p>
+          <p>Version 1.13 improves HomeKit device recognition, favorites, iCloud sync, widgets, and overall stability.</p>
           <p>You can use the full app for 30 days. After that, unlock HomeScreen with a one-time purchase through Apple. There is no subscription.</p>
           <p>HomeKit data stays in HomeKit. Boards and shared app settings can be stored in iCloud; favorites, idle-screen behavior, and doorbell behavior remain set per device.</p>
           <p>Weather data is provided by Apple Weather where available. See the <a href="https://weatherkit.apple.com/legal-attribution.html">Apple Weather legal attribution</a>.</p>
@@ -199,7 +199,7 @@
           <div class="label">Deutsch</div>
           <h2>Support ohne Scripts</h2>
           <p>HomeScreen zeigt dein HomeKit-Zuhause als festes Dashboard auf dem iPad und als kompakte Bedienung auf dem iPhone.</p>
-          <p>Version 1.11 ergänzt weitere Sichtbarkeitseinstellungen, bessere Unterstützung für Türen, Fenster und Garagentore, eine Türklingeloption pro Gerät und übersichtlichere Einstellungen. Version 1.11.1 verbessert die Erkennung von Wand- und Heizkörperthermostaten.</p>
+          <p>Version 1.13 verbessert die Erkennung von HomeKit-Geräten, Favoriten, iCloud-Synchronisierung, Widgets und die allgemeine Stabilität.</p>
           <p>Du kannst die App 30 Tage vollständig testen. Danach schaltest du HomeScreen mit einem einmaligen Kauf über Apple frei. Es gibt kein Abonnement.</p>
           <p>HomeKit-Daten bleiben in HomeKit. Boards und gemeinsame App-Einstellungen können in iCloud gespeichert werden; Favoriten, Ruhebildschirm und Türklingelverhalten bleiben pro Gerät eingestellt.</p>
           <p>Wetterdaten kommen, soweit verfügbar, von Apple Weather. Siehe die <a href="https://weatherkit.apple.com/legal-attribution.html">rechtliche Apple Weather Quellenangabe</a>.</p>
@@ -243,16 +243,13 @@
           ]
         },
         release: {
-          label: "Versie 1.11.1",
-          title: "Nieuw sinds 1.10",
+          label: "Versie 1.13",
+          title: "Nieuw in 1.13",
           bullets: [
-            "Camera's, sensoren, schermen en airco's zijn nu per item te tonen of te verbergen.",
-            "HomeKit-ramen, deuren, garagedeuren en contact-sensoren worden meegenomen bij Deuren en ramen.",
-            "Je kiest per apparaat of de deurbelcamera automatisch opent.",
-            "Het camera-overzicht past de tegelgrootte aan het aantal camera's en het scherm aan.",
-            "Instellingen zijn opnieuw gegroepeerd, tikvlakken zijn groter en de laatst gebruikte tab wordt onthouden.",
-            "Na een grotere update zie je een korte uitleg. HomeScreen kan ook melden dat er een nieuwere App Store-versie klaarstaat.",
-            "In 1.11.1 is de herkenning van wand- en radiatorthermostaten achter HomeKit-bridges verbeterd."
+            "Ramen, deuren, garagedeuren, thermostaten, sensoren en airco's worden betrouwbaarder herkend.",
+            "Zichtbaarheid en genegeerde meldingen blijven gescheiden per HomeKit-woning.",
+            "Niet meer beschikbare favorieten zijn herkenbaar en kunnen eenvoudig worden verwijderd.",
+            "iCloud-herstel, widgets, weerupdates, camera- en deurbelbeeld en de dashboardstatus zijn verbeterd."
           ]
         },
         bestFor: {
@@ -326,7 +323,7 @@
               "Tik op de sensorenkaart voor de volledige lijst en op de klimaatkaart voor gevonden thermostaten.",
               "De klimaatoverzichten zijn alleen-lezen. Bedien een thermostaat in Apple's Woning-app of met een HomeKit-scene.",
               "De tab Klimaatinstallatie is bedoeld voor airco's. Tik op de aircokaart om alleen actieve airco's te zien.",
-              "Vanaf 1.11.1 blijven wand- en radiatorthermostaten achter een bridge onder Klimaat, ook wanneer die bridge tegenstrijdige bedrijfsmodi meldt."
+              "Wand- en radiatorthermostaten achter een bridge blijven onder Klimaat, ook wanneer die bridge tegenstrijdige bedrijfsmodi meldt."
             ]
           },
           {
@@ -486,16 +483,13 @@
           ]
         },
         release: {
-          label: "Version 1.11.1",
-          title: "New since 1.10",
+          label: "Version 1.13",
+          title: "New in 1.13",
           bullets: [
-            "Cameras, sensors, shades, and air conditioners can now be shown or hidden individually.",
-            "HomeKit windows, doors, garage doors, and contact sensors are included under Doors and windows.",
-            "Automatic doorbell camera opening can be enabled or disabled per device.",
-            "The camera overview adjusts tile sizes to the screen and the number of cameras.",
-            "Settings are grouped more clearly, tap targets are larger, and the last tab is remembered.",
-            "After a major update, HomeScreen explains what changed and can notify you when a newer App Store version is available.",
-            "Version 1.11.1 improves wall and radiator thermostat detection for accessories exposed through HomeKit bridges."
+            "Windows, doors, garage doors, thermostats, sensors, and air conditioners are recognised more reliably.",
+            "Visibility and ignored alerts remain separate for each HomeKit home.",
+            "Unavailable favorites can now be identified and easily removed.",
+            "iCloud restore, widgets, weather updates, camera and doorbell video, and dashboard status have been improved."
           ]
         },
         bestFor: {
@@ -569,7 +563,7 @@
               "Tap the Sensors tile for the full list and the Climate tile for detected thermostats.",
               "Climate overviews are read-only. Control a thermostat in Apple's Home app or with a HomeKit scene.",
               "The Air conditioning tab is for air conditioners. Tap the dashboard tile to see active air conditioners only.",
-              "From 1.11.1, wall and radiator thermostats exposed by a bridge stay under Climate even when the bridge reports conflicting operating modes."
+              "Wall and radiator thermostats exposed by a bridge stay under Climate even when the bridge reports conflicting operating modes."
             ]
           },
           {
@@ -729,16 +723,13 @@
           ]
         },
         release: {
-          label: "Version 1.11.1",
-          title: "Neu seit 1.10",
+          label: "Version 1.13",
+          title: "Neu in 1.13",
           bullets: [
-            "Kameras, Sensoren, Beschattung und Klimaanlagen lassen sich jetzt einzeln ein- oder ausblenden.",
-            "HomeKit-Fenster, Türen, Garagentore und Kontaktsensoren werden unter Türen und Fenster berücksichtigt.",
-            "Das automatische Öffnen der Türklingelkamera kann pro Gerät ein- oder ausgeschaltet werden.",
-            "Die Kameraübersicht passt die Kachelgröße an Bildschirm und Kameraanzahl an.",
-            "Die Einstellungen sind klarer gruppiert, Tippflächen größer und der zuletzt verwendete Tab wird gespeichert.",
-            "Nach einem größeren Update erklärt HomeScreen die Änderungen und kann auf eine neuere App-Store-Version hinweisen.",
-            "Version 1.11.1 verbessert die Erkennung von Wand- und Heizkörperthermostaten hinter HomeKit-Bridges."
+            "Fenster, Türen, Garagentore, Thermostate, Sensoren und Klimaanlagen werden zuverlässiger erkannt.",
+            "Sichtbarkeit und ignorierte Meldungen bleiben für jedes HomeKit-Zuhause getrennt.",
+            "Nicht mehr verfügbare Favoriten sind erkennbar und können einfach entfernt werden.",
+            "iCloud-Wiederherstellung, Widgets, Wetteraktualisierungen, Kamera- und Türklingelvideo sowie der Dashboard-Status wurden verbessert."
           ]
         },
         bestFor: {
@@ -812,7 +803,7 @@
               "Die Sensorenkachel öffnet die vollständige Liste, die Klimakachel die erkannten Thermostate.",
               "Die Klimaübersichten sind schreibgeschützt. Bediene Thermostate in Apples Home-App oder über eine HomeKit-Szene.",
               "Der Tab Klimaanlage ist für Klimageräte gedacht. Die Dashboard-Kachel zeigt beim Antippen nur aktive Klimaanlagen.",
-              "Seit 1.11.1 bleiben Wand- und Heizkörperthermostate hinter einer Bridge unter Klima, auch wenn die Bridge widersprüchliche Betriebsmodi meldet."
+              "Wand- und Heizkörperthermostate hinter einer Bridge bleiben unter Klima, auch wenn die Bridge widersprüchliche Betriebsmodi meldet."
             ]
           },
           {
