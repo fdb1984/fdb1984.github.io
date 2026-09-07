@@ -8,13 +8,13 @@
 
   window.PRODUCT_TRANSLATIONS = {
     nl: {
-      meta: { title: "HomeScreen for HomeKit - je woning op één rustig scherm", description: "Maak van je iPad een helder HomeKit-dashboard en gebruik je iPhone als snelle bediening voor je woning.", locale: "nl_NL" },
+      meta: { title: "HomeScreen for HomeKit - je woning op één rustig scherm", description: "Een HomeKit-dashboard op iPad, snelle bediening op iPhone en je eigen favorieten in CarPlay.", locale: "nl_NL" },
       global: { skip: "Ga naar inhoud", byStudio: "door de Bruin Studio", navigationLabel: "Hoofdnavigatie", languageLabel: "Kies taal", footerLabel: "Voettekstlinks" },
       nav: { overview: "Overzicht", control: "Bediening", trial: "Proberen", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Probeer 30 dagen", discover: "Bekijk hoe het werkt", support: "Lees de handleiding" },
       hero: {
-        identity: "Voor iPhone en iPad", eyebrow: "HomeKit zonder zoeken", promise: "Je woning. Eén rustig scherm.",
-        description: "Maak van je iPad een vast woningdashboard en gebruik je iPhone als snelle bediening voor wat je vaak nodig hebt.",
+        identity: "Voor iPhone, iPad en CarPlay", eyebrow: "HomeKit zonder zoeken", promise: "Je woning. Eén rustig scherm.",
+        description: "Een vast dashboard op je iPad en snelle bediening op je iPhone. Vanaf versie 2.0 neem je je favoriete woningacties ook mee in CarPlay.",
         factOne: "30 dagen volledig proberen", factTwo: "Daarna één aankoop", factThree: "Geen abonnement",
         noteOneTitle: "Woning in beeld", noteOneText: "Weer, klimaat en favorieten.", noteTwoTitle: "Direct bedienen", noteTwoText: "Lampen, scenes en schermen."
       },
@@ -37,7 +37,7 @@
       },
       gallery: {
         eyebrow: "Kijken én bedienen", title: "Je woning binnen een paar tikken.", description: "Gebruik favorieten, Recent en zoeken om niet telkens door alle kamers en accessoires te hoeven gaan.",
-        controlsTitle: "Snelle bediening", controlsText: "Lampen, schakelaars, scenes en schermen.",
+        controlsTitle: "Snelle bediening", controlsText: "Lampen, scenes, schakelaars, schermen en ondersteunde thermostaten en airco's.",
         alertsTitle: "Aandacht zonder onrust", alertsText: "Zie open deuren, lage batterijen of een offline apparaat.",
         camerasTitle: "HomeKit-camera's", camerasText: "Open het beeld groot, zonder opname of upload door HomeScreen."
       },
@@ -61,13 +61,13 @@
     },
 
     en: {
-      meta: { title: "HomeScreen for HomeKit - your home on one calm screen", description: "Turn your iPad into a clear HomeKit dashboard and use your iPhone for quick home controls.", locale: "en_US" },
+      meta: { title: "HomeScreen for HomeKit - your home on one calm screen", description: "A HomeKit dashboard on iPad, quick controls on iPhone, and your own favourites in CarPlay.", locale: "en_US" },
       global: { skip: "Skip to content", byStudio: "by de Bruin Studio", navigationLabel: "Main navigation", languageLabel: "Choose language", footerLabel: "Footer links" },
       nav: { overview: "Overview", control: "Controls", trial: "Try it", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Try for 30 days", discover: "See how it works", support: "Read the guide" },
       hero: {
-        identity: "For iPhone and iPad", eyebrow: "HomeKit without the searching", promise: "Your home. One calm screen.",
-        description: "Turn your iPad into a fixed home dashboard and use your iPhone for quick access to what you use most.",
+        identity: "For iPhone, iPad and CarPlay", eyebrow: "HomeKit without the searching", promise: "Your home. One calm screen.",
+        description: "A fixed dashboard on your iPad and quick controls on your iPhone. From version 2.0, take your favourite home actions into CarPlay too.",
         factOne: "Try everything for 30 days", factTwo: "One purchase afterwards", factThree: "No subscription",
         noteOneTitle: "Your home at a glance", noteOneText: "Weather, climate and favourites.", noteTwoTitle: "Control it directly", noteTwoText: "Lights, scenes and shades."
       },
@@ -90,7 +90,7 @@
       },
       gallery: {
         eyebrow: "See and control", title: "Your home within a few taps.", description: "Use Favourites, Recent and search instead of navigating every room and accessory.",
-        controlsTitle: "Quick controls", controlsText: "Lights, switches, scenes and shades.",
+        controlsTitle: "Quick controls", controlsText: "Lights, scenes, switches, shades, and supported thermostats and air conditioners.",
         alertsTitle: "Attention without noise", alertsText: "See open doors, low batteries or an offline device.",
         camerasTitle: "HomeKit cameras", camerasText: "Open a large view without HomeScreen recording or uploading it."
       },
@@ -114,13 +114,13 @@
     },
 
     de: {
-      meta: { title: "HomeScreen for HomeKit - dein Zuhause auf einem ruhigen Bildschirm", description: "Mach dein iPad zum übersichtlichen HomeKit-Dashboard und nutze dein iPhone zur schnellen Bedienung.", locale: "de_DE" },
+      meta: { title: "HomeScreen for HomeKit - dein Zuhause auf einem ruhigen Bildschirm", description: "Ein HomeKit-Dashboard auf dem iPad, schnelle Bedienung auf dem iPhone und eigene Favoriten in CarPlay.", locale: "de_DE" },
       global: { skip: "Zum Inhalt springen", byStudio: "von de Bruin Studio", navigationLabel: "Hauptnavigation", languageLabel: "Sprache wählen", footerLabel: "Links im Seitenfuß" },
       nav: { overview: "Übersicht", control: "Bedienung", trial: "Ausprobieren", privacy: "Datenschutz", download: "Laden" },
       actions: { appStore: "30 Tage testen", discover: "So funktioniert es", support: "Anleitung lesen" },
       hero: {
-        identity: "Für iPhone und iPad", eyebrow: "HomeKit ohne Suchen", promise: "Dein Zuhause. Ein ruhiger Bildschirm.",
-        description: "Mach dein iPad zum festen Zuhause-Dashboard und nutze dein iPhone für den schnellen Zugriff auf häufig verwendete Dinge.",
+        identity: "Für iPhone, iPad und CarPlay", eyebrow: "HomeKit ohne Suchen", promise: "Dein Zuhause. Ein ruhiger Bildschirm.",
+        description: "Ein festes Dashboard auf deinem iPad und schnelle Bedienung auf deinem iPhone. Ab Version 2.0 nutzt du deine bevorzugten Zuhause-Aktionen auch in CarPlay.",
         factOne: "30 Tage alles testen", factTwo: "Danach ein Kauf", factThree: "Kein Abonnement",
         noteOneTitle: "Zuhause im Blick", noteOneText: "Wetter, Klima und Favoriten.", noteTwoTitle: "Direkt bedienen", noteTwoText: "Lichter, Szenen und Beschattung."
       },
@@ -143,7 +143,7 @@
       },
       gallery: {
         eyebrow: "Sehen und bedienen", title: "Dein Zuhause mit wenigen Fingertipps.", description: "Nutze Favoriten, Zuletzt und die Suche, statt jedes Zimmer und Zubehör zu durchlaufen.",
-        controlsTitle: "Schnelle Bedienung", controlsText: "Lichter, Schalter, Szenen und Beschattung.",
+        controlsTitle: "Schnelle Bedienung", controlsText: "Licht, Szenen, Schalter, Beschattung sowie unterstützte Thermostate und Klimaanlagen.",
         alertsTitle: "Aufmerksamkeit ohne Unruhe", alertsText: "Sieh offene Türen, niedrige Batterien oder ein Offline-Gerät.",
         camerasTitle: "HomeKit-Kameras", camerasText: "Öffne das Bild groß, ohne Aufnahme oder Upload durch HomeScreen."
       },

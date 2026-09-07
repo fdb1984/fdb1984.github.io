@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>HomeScreen for HomeKit - je woning op één rustig scherm</title>
-  <meta name="description" content="Maak van je iPad een helder HomeKit-dashboard en gebruik je iPhone als snelle bediening voor je woning.">
+  <meta name="description" content="Een HomeKit-dashboard op iPad, snelle bediening op iPhone en je eigen favorieten in CarPlay.">
   <meta name="theme-color" content="#07090b">
   <meta property="og:type" content="website">
   <meta property="og:title" content="HomeScreen for HomeKit - je woning op één rustig scherm">
-  <meta property="og:description" content="Een vast iPad-dashboard en snelle iPhone-bediening voor je HomeKit-woning.">
+  <meta property="og:description" content="Een HomeKit-dashboard op iPad, snelle bediening op iPhone en je eigen favorieten in CarPlay.">
   <meta property="og:url" content="https://debruinstudio.nl/homescreen/">
   <meta property="og:image" content="https://debruinstudio.nl/homescreen-icon.png">
   <meta property="og:locale" content="nl_NL">
@@ -18,6 +18,26 @@
   <link rel="canonical" href="https://debruinstudio.nl/homescreen/">
   <link rel="icon" href="../homescreen-icon.png">
   <link rel="stylesheet" href="../product-site.css?v=20260830e">
+  <style>
+    @media (min-width: 561px) and (max-width: 820px) {
+      .product-home .hero-media {
+        min-height: 0;
+        padding: 0 24px 32px;
+      }
+      .product-home .tablet-stage {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        transform: none;
+      }
+      .product-home .floating-note { display: none; }
+      .product-home .home-visual { min-height: 0; }
+      .product-home .visual-tablet {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -60,11 +80,11 @@
     <section class="product-hero">
       <div class="shell">
         <div class="hero-copy" data-reveal>
-          <div class="app-identity"><img src="../homescreen-icon.png" alt="" width="44" height="44"><span data-i18n="hero.identity">Voor iPhone en iPad</span></div>
+          <div class="app-identity"><img src="../homescreen-icon.png" alt="" width="44" height="44"><span data-i18n="hero.identity">Voor iPhone, iPad en CarPlay</span></div>
           <p class="eyebrow" data-i18n="hero.eyebrow">HomeKit zonder zoeken</p>
           <h1>HomeScreen<br>for HomeKit</h1>
           <p class="hero-promise" data-i18n="hero.promise">Je woning. Eén rustig scherm.</p>
-          <p class="hero-description" data-i18n="hero.description">Maak van je iPad een vast woningdashboard en gebruik je iPhone als snelle bediening voor wat je vaak nodig hebt.</p>
+          <p class="hero-description" data-i18n="hero.description">Een vast dashboard op je iPad en snelle bediening op je iPhone. Vanaf versie 2.0 neem je je favoriete woningacties ook mee in CarPlay.</p>
           <div class="hero-actions">
             <a class="primary-action" href="https://apps.apple.com/app/id6771712686" data-i18n="actions.appStore">Probeer 30 dagen</a>
             <a class="secondary-action" href="#overview" data-i18n="actions.discover">Bekijk hoe het werkt</a>
@@ -159,7 +179,7 @@
     </div>
   </footer>
 
-  <script src="product-copy.js?v=20260830e"></script>
+  <script src="product-copy.js?v=20260907a"></script>
   <script src="../product-site.js?v=20260830e"></script>
 </body>
 </html>

@@ -179,7 +179,7 @@
           <div class="label">Nederlands</div>
           <h2>Support zonder scripts</h2>
           <p>HomeScreen geeft je HomeKit-woning een vast dashboard op iPad en een compacte bediening op iPhone.</p>
-          <p>Versie 1.13 verbetert de herkenning van HomeKit-apparaten, favorieten, iCloud-synchronisatie, widgets en de algemene stabiliteit.</p>
+          <p>Versie 2.0 voegt CarPlay met eigen favorieten toe, plus bediening voor ondersteunde thermostaten en airco's. Cameraminiaturen verversen automatisch, minder vaak op batterij.</p>
           <p>Je kunt de app 30 dagen volledig proberen. Daarna ontgrendel je HomeScreen met een eenmalige aankoop via Apple. Er is geen abonnement.</p>
           <p>HomeKit-data blijft in HomeKit. Borden en gedeelde appinstellingen kunnen via iCloud worden bewaard; favorieten, schermgedrag en deurbelgedrag blijven per apparaat ingesteld.</p>
           <p>Weergegevens komen van Apple Weather waar beschikbaar. Bekijk de <a href="https://weatherkit.apple.com/legal-attribution.html">Apple Weather juridische bronvermelding</a>.</p>
@@ -189,7 +189,7 @@
           <div class="label">English</div>
           <h2>Support without scripts</h2>
           <p>HomeScreen gives your HomeKit home a fixed dashboard on iPad and compact controls on iPhone.</p>
-          <p>Version 1.13 improves HomeKit device recognition, favorites, iCloud sync, widgets, and overall stability.</p>
+          <p>Version 2.0 adds CarPlay with separate favorites and controls for supported thermostats and air conditioners. Camera thumbnails refresh automatically, less often on battery.</p>
           <p>You can use the full app for 30 days. After that, unlock HomeScreen with a one-time purchase through Apple. There is no subscription.</p>
           <p>HomeKit data stays in HomeKit. Boards and shared app settings can be stored in iCloud; favorites, idle-screen behavior, and doorbell behavior remain set per device.</p>
           <p>Weather data is provided by Apple Weather where available. See the <a href="https://weatherkit.apple.com/legal-attribution.html">Apple Weather legal attribution</a>.</p>
@@ -199,7 +199,7 @@
           <div class="label">Deutsch</div>
           <h2>Support ohne Scripts</h2>
           <p>HomeScreen zeigt dein HomeKit-Zuhause als festes Dashboard auf dem iPad und als kompakte Bedienung auf dem iPhone.</p>
-          <p>Version 1.13 verbessert die Erkennung von HomeKit-Geräten, Favoriten, iCloud-Synchronisierung, Widgets und die allgemeine Stabilität.</p>
+          <p>Version 2.0 ergänzt CarPlay mit eigenen Favoriten sowie die Steuerung unterstützter Thermostate und Klimaanlagen. Kameravorschauen werden automatisch aktualisiert, im Akkubetrieb seltener.</p>
           <p>Du kannst die App 30 Tage vollständig testen. Danach schaltest du HomeScreen mit einem einmaligen Kauf über Apple frei. Es gibt kein Abonnement.</p>
           <p>HomeKit-Daten bleiben in HomeKit. Boards und gemeinsame App-Einstellungen können in iCloud gespeichert werden; Favoriten, Ruhebildschirm und Türklingelverhalten bleiben pro Gerät eingestellt.</p>
           <p>Wetterdaten kommen, soweit verfügbar, von Apple Weather. Siehe die <a href="https://weatherkit.apple.com/legal-attribution.html">rechtliche Apple Weather Quellenangabe</a>.</p>
@@ -243,13 +243,26 @@
           ]
         },
         release: {
-          label: "Versie 1.13",
-          title: "Nieuw in 1.13",
+          label: "Versie 2.0",
+          title: "Nieuw in 2.0",
           bullets: [
-            "Ramen, deuren, garagedeuren, thermostaten, sensoren en airco's worden betrouwbaarder herkend.",
-            "Zichtbaarheid en genegeerde meldingen blijven gescheiden per HomeKit-woning.",
-            "Niet meer beschikbare favorieten zijn herkenbaar en kunnen eenvoudig worden verwijderd.",
-            "iCloud-herstel, widgets, weerupdates, camera- en deurbelbeeld en de dashboardstatus zijn verbeterd."
+            "HomeScreen werkt nu met CarPlay. Kies op je iPhone maximaal vier aparte favorieten voor in de auto.",
+            "Stel de temperatuur van thermostaten en airco's in wanneer HomeKit die bediening beschikbaar maakt.",
+            "Cameraminiaturen verversen automatisch, met langere tussenpozen op batterij. Open een camera voor een livestream, met geluid als je dat aanzet.",
+            "Houd het cameraoverzicht of een schermvullende camera open zonder automatisch terug te keren naar het dashboard."
+          ]
+        },
+        carplay: {
+          label: "CarPlay",
+          title: "Je favorieten in de auto",
+          body: "Stel CarPlay in op je iPhone voordat je gaat rijden. Je dashboardfavorieten blijven zoals ze zijn; voor CarPlay kies je een eigen set.",
+          bullets: [
+            "Open Instellingen > CarPlay op je iPhone en kies de HomeKit-woning.",
+            "Voeg maximaal vier favorieten toe. Met de pijlen wijzig je de volgorde; met min verwijder je een favoriet.",
+            "Verbind je iPhone met CarPlay en open HomeScreen op het autoscherm. Tik op een favoriet en bevestig de actie als daarom wordt gevraagd.",
+            "Sensorstatus huis opent de sensoren en meldingen van de gekozen woning. Verborgen items en genegeerde deurcontacten blijven ook daar buiten beeld.",
+            "CarPlay-favorieten worden per woning op deze iPhone bewaard. Ze worden niet via iCloud naar je andere apparaten overgenomen.",
+            "Voor bediening op afstand moet de woning via HomeKit bereikbaar zijn. CarPlay maakt geen eigen verbinding met je accessoires."
           ]
         },
         bestFor: {
@@ -321,7 +334,8 @@
             bullets: [
               "Gebruik het oog in Instellingen > Sensoren om een meting te tonen of te verbergen.",
               "Tik op de sensorenkaart voor de volledige lijst en op de klimaatkaart voor gevonden thermostaten.",
-              "De klimaatoverzichten zijn alleen-lezen. Bedien een thermostaat in Apple's Woning-app of met een HomeKit-scene.",
+              "Open een thermostaat of airco om de temperatuur of aan/uitstand te wijzigen, voor zover HomeKit die bediening aanbiedt. Een losse temperatuursensor blijft alleen-lezen.",
+              "HomeScreen kan vóór een wijziging waarschuwen voor HomeKit-automatiseringen die de instelling mogelijk weer aanpassen. Je kiest zelf of je doorgaat. HomeScreen pauzeert of wijzigt die automatiseringen niet.",
               "De tab Klimaatinstallatie is bedoeld voor airco's. Tik op de aircokaart om alleen actieve airco's te zien.",
               "Wand- en radiatorthermostaten achter een bridge blijven onder Klimaat, ook wanneer die bridge tegenstrijdige bedrijfsmodi meldt."
             ]
@@ -388,7 +402,7 @@
             body: "HomeScreen gebruikt iCloud voor instellingen die je op meerdere apparaten wilt terugzien. Een aantal keuzes blijft juist lokaal.",
             bullets: [
               "Via iCloud: borden, gekozen woning, zichtbaarheid, tegelvolgorde en -namen, kamer- en camera-inrichting, klimaatkeuze, schermgrenzen, Recent en genegeerde meldingen.",
-              "Per apparaat: favorieten, gedrag van het rustscherm en automatisch openen van de deurbelcamera.",
+              "Per apparaat: dashboard- en CarPlay-favorieten, gedrag van het rustscherm en automatisch openen van de deurbelcamera.",
               "Bij het handmatig herstellen van een bord kunnen de daarin opgeslagen favorieten één keer worden geladen.",
               "Bij een nieuwe installatie vraagt HomeScreen of je instellingen wilt herstellen en welk bord je wilt gebruiken.",
               "HomeKit-woningen, kamers, accessoires, scenes, camera's en hun namen worden niet door HomeScreen geback-upt; die blijven in HomeKit."
@@ -400,7 +414,7 @@
             body: "De tabs zijn verdeeld in Dashboard, Bediening en App en privacy. HomeScreen onthoudt welke tab je het laatst gebruikte.",
             bullets: [
               "Algemeen bevat dashboardtegels, tegeltitels, rustscherm, deurbelgedrag en de klimaatkeuze.",
-              "De bedieningstabs bevatten zichtbaarheid, volgorde, schermgrenzen en scene-indeling.",
+              "De bedieningstabs bevatten zichtbaarheid, volgorde, schermgrenzen en scene-indeling. In CarPlay kies je de aparte favorieten voor de auto.",
               "App bevat aankoopherstel, hulp, widgets, beveiliging en Reset naar standaard.",
               "Instellingen opent met Face ID, Touch ID of de toegangscode van het apparaat.",
               "Reset naar standaard wist HomeScreen-voorkeuren, maar niet je aankoop of HomeKit-woning."
@@ -432,7 +446,10 @@
           label: "Camera's",
           title: "Camera en deurbel",
           bullets: [
-            "Tik een camera om hem schermvullend te openen.",
+            "Miniaturen zijn regelmatig vernieuwde momentopnamen. De tijd bij het beeld geeft aan hoe recent de opname is; dit is geen doorlopende livestream.",
+            "Zolang het overzicht actief in beeld staat, vraagt HomeScreen ongeveer elke 30 seconden een nieuwe opname aan met de oplader aangesloten, elke 60 seconden op batterij en elke 120 seconden in energiebesparingsmodus. HomeKit en je verbinding bepalen wanneer een nieuw beeld beschikbaar komt.",
+            "Tik op een camera voor een schermvullende livestream wanneer HomeKit die beschikbaar maakt. Geluid staat standaard uit; je kunt het zelf aanzetten.",
+            "Met Open houden blijft het cameraoverzicht of de schermvullende camera staan. Als de app naar de achtergrond gaat, stopt het verversen.",
             "Het overzicht schaalt de camera's op basis van de beschikbare ruimte en het aantal camera's.",
             "In Instellingen > Camera's kies je de zichtbaarheid, volgorde en eventuele PTZ-bediening per camera.",
             "Automatisch openen van de deurbelcamera geldt per apparaat en staat onder Instellingen > Algemeen. Na ongeveer 60 seconden keert HomeScreen terug.",
@@ -483,13 +500,26 @@
           ]
         },
         release: {
-          label: "Version 1.13",
-          title: "New in 1.13",
+          label: "Version 2.0",
+          title: "New in 2.0",
           bullets: [
-            "Windows, doors, garage doors, thermostats, sensors, and air conditioners are recognised more reliably.",
-            "Visibility and ignored alerts remain separate for each HomeKit home.",
-            "Unavailable favorites can now be identified and easily removed.",
-            "iCloud restore, widgets, weather updates, camera and doorbell video, and dashboard status have been improved."
+            "HomeScreen now works with CarPlay. Choose up to four separate favorites on your iPhone for use in the car.",
+            "Adjust thermostat and air conditioner temperatures when HomeKit makes those controls available.",
+            "Camera thumbnails refresh automatically, less often on battery. Open a camera for a livestream and turn on audio when needed.",
+            "Keep the camera overview or a fullscreen camera open without automatically returning to the dashboard."
+          ]
+        },
+        carplay: {
+          label: "CarPlay",
+          title: "Your favorites in the car",
+          body: "Set up CarPlay on your iPhone before driving. Your dashboard favorites stay unchanged; CarPlay has its own selection.",
+          bullets: [
+            "Open Settings > CarPlay on your iPhone and choose the HomeKit home.",
+            "Add up to four favorites. Use the arrows to reorder them and minus to remove one.",
+            "Connect your iPhone to CarPlay and open HomeScreen on the car display. Tap a favorite and confirm the action when asked.",
+            "Home sensors opens sensors and alerts for the selected home. Hidden items and ignored door contacts stay out of this overview too.",
+            "CarPlay favorites are stored per home on this iPhone. They are not synced to your other devices through iCloud.",
+            "Remote control requires your home to be reachable through HomeKit. CarPlay does not connect directly to your accessories."
           ]
         },
         bestFor: {
@@ -561,7 +591,8 @@
             bullets: [
               "Use the eye in Settings > Sensors to show or hide a reading.",
               "Tap the Sensors tile for the full list and the Climate tile for detected thermostats.",
-              "Climate overviews are read-only. Control a thermostat in Apple's Home app or with a HomeKit scene.",
+              "Open a thermostat or air conditioner to change its temperature or power state, where HomeKit exposes those controls. A standalone temperature sensor remains read-only.",
+              "Before a change, HomeScreen can warn about HomeKit automations that may override the setting. You decide whether to continue. HomeScreen does not pause or change those automations.",
               "The Air conditioning tab is for air conditioners. Tap the dashboard tile to see active air conditioners only.",
               "Wall and radiator thermostats exposed by a bridge stay under Climate even when the bridge reports conflicting operating modes."
             ]
@@ -628,7 +659,7 @@
             body: "HomeScreen uses iCloud for settings you may want on several devices. Some choices deliberately remain local.",
             bullets: [
               "In iCloud: boards, selected home, visibility, tile order and names, room and camera setup, climate selection, shade thresholds, Recent, and ignored alerts.",
-              "Per device: favorites, idle-screen behavior, and automatic doorbell camera opening.",
+              "Per device: dashboard and CarPlay favorites, idle-screen behavior, and automatic doorbell camera opening.",
               "When you manually restore a board, its stored favorites can be loaded once.",
               "On a new installation, HomeScreen asks whether to restore settings and which board to use.",
               "HomeKit homes, rooms, accessories, scenes, cameras, and their names are not backed up by HomeScreen; they remain in HomeKit."
@@ -640,7 +671,7 @@
             body: "The tabs are grouped under Dashboard, Controls, and App and privacy. HomeScreen remembers the tab you last used.",
             bullets: [
               "General contains dashboard tiles and titles, idle-screen behavior, the doorbell option, and climate selection.",
-              "The control tabs contain visibility, order, shade thresholds, and scene room assignment.",
+              "The control tabs contain visibility, order, shade thresholds, and scene room assignment. CarPlay holds the separate favorites for your car.",
               "App contains purchase restore, help, widget information, security, and Reset to defaults.",
               "Settings opens with Face ID, Touch ID, or the device passcode.",
               "Reset to defaults clears HomeScreen preferences, not your purchase or HomeKit home."
@@ -672,7 +703,10 @@
           label: "Cameras",
           title: "Camera and doorbell",
           bullets: [
-            "Tap a camera to open it fullscreen.",
+            "Thumbnails are periodically refreshed snapshots. The time next to the image shows how recent it is; this is not a continuous livestream.",
+            "While the overview is active and visible, HomeScreen requests a new snapshot about every 30 seconds on external power, every 60 seconds on battery, and every 120 seconds in Low Power Mode. HomeKit and your connection determine when a fresh image is available.",
+            "Tap a camera for a fullscreen livestream when HomeKit provides one. Audio starts muted; you can turn it on yourself.",
+            "Keep open leaves the camera overview or fullscreen camera on screen. Refreshing stops when the app goes into the background.",
             "The overview sizes cameras for the available space and the number of cameras.",
             "In Settings > Cameras, choose visibility, order, and optional PTZ controls per camera.",
             "Automatic doorbell camera opening is a per-device option in Settings > General. HomeScreen returns after about 60 seconds.",
@@ -723,13 +757,26 @@
           ]
         },
         release: {
-          label: "Version 1.13",
-          title: "Neu in 1.13",
+          label: "Version 2.0",
+          title: "Neu in 2.0",
           bullets: [
-            "Fenster, Türen, Garagentore, Thermostate, Sensoren und Klimaanlagen werden zuverlässiger erkannt.",
-            "Sichtbarkeit und ignorierte Meldungen bleiben für jedes HomeKit-Zuhause getrennt.",
-            "Nicht mehr verfügbare Favoriten sind erkennbar und können einfach entfernt werden.",
-            "iCloud-Wiederherstellung, Widgets, Wetteraktualisierungen, Kamera- und Türklingelvideo sowie der Dashboard-Status wurden verbessert."
+            "HomeScreen unterstützt jetzt CarPlay. Wähle auf deinem iPhone bis zu vier eigene Favoriten fürs Auto.",
+            "Stelle die Temperatur von Thermostaten und Klimaanlagen ein, sofern HomeKit diese Steuerung bereitstellt.",
+            "Kameravorschauen werden automatisch aktualisiert, im Akkubetrieb seltener. Öffne eine Kamera für einen Livestream und schalte bei Bedarf den Ton ein.",
+            "Lass die Kameraübersicht oder eine Vollbildkamera geöffnet, ohne automatisch zum Dashboard zurückzukehren."
+          ]
+        },
+        carplay: {
+          label: "CarPlay",
+          title: "Deine Favoriten im Auto",
+          body: "Richte CarPlay vor der Fahrt auf deinem iPhone ein. Deine Dashboard-Favoriten bleiben unverändert; für CarPlay wählst du eigene Favoriten.",
+          bullets: [
+            "Öffne Einstellungen > CarPlay auf deinem iPhone und wähle das HomeKit-Zuhause.",
+            "Füge bis zu vier Favoriten hinzu. Mit den Pfeilen änderst du die Reihenfolge, mit Minus entfernst du einen Favoriten.",
+            "Verbinde dein iPhone mit CarPlay und öffne HomeScreen auf dem Autodisplay. Tippe auf einen Favoriten und bestätige die Aktion, wenn du dazu aufgefordert wirst.",
+            "Sensorstatus Haus öffnet Sensoren und Meldungen des gewählten Zuhauses. Ausgeblendete Geräte und ignorierte Türkontakte bleiben auch hier verborgen.",
+            "CarPlay-Favoriten werden pro Zuhause auf diesem iPhone gespeichert und nicht über iCloud auf andere Geräte übertragen.",
+            "Für die Fernsteuerung muss dein Zuhause über HomeKit erreichbar sein. CarPlay verbindet sich nicht direkt mit deinem Zubehör."
           ]
         },
         bestFor: {
@@ -801,7 +848,8 @@
             bullets: [
               "Mit dem Auge unter Einstellungen > Sensoren blendest du einen Messwert ein oder aus.",
               "Die Sensorenkachel öffnet die vollständige Liste, die Klimakachel die erkannten Thermostate.",
-              "Die Klimaübersichten sind schreibgeschützt. Bediene Thermostate in Apples Home-App oder über eine HomeKit-Szene.",
+              "Öffne einen Thermostat oder eine Klimaanlage, um Temperatur oder Ein/Aus-Zustand zu ändern, sofern HomeKit diese Steuerung bereitstellt. Ein einzelner Temperatursensor bleibt schreibgeschützt.",
+              "Vor einer Änderung kann HomeScreen auf HomeKit-Automationen hinweisen, die die Einstellung möglicherweise überschreiben. Du entscheidest, ob du fortfährst. HomeScreen pausiert oder verändert diese Automationen nicht.",
               "Der Tab Klimaanlage ist für Klimageräte gedacht. Die Dashboard-Kachel zeigt beim Antippen nur aktive Klimaanlagen.",
               "Wand- und Heizkörperthermostate hinter einer Bridge bleiben unter Klima, auch wenn die Bridge widersprüchliche Betriebsmodi meldet."
             ]
@@ -868,7 +916,7 @@
             body: "HomeScreen nutzt iCloud für Einstellungen, die auf mehreren Geräten verfügbar sein sollen. Einige Entscheidungen bleiben bewusst lokal.",
             bullets: [
               "In iCloud: Boards, gewähltes Zuhause, Sichtbarkeit, Kachelreihenfolge und -namen, Raum- und Kameraeinrichtung, Klimaauswahl, Offen-Grenzen, Zuletzt und ignorierte Hinweise.",
-              "Pro Gerät: Favoriten, Verhalten des Ruhebildschirms und automatisches Öffnen der Türklingelkamera.",
+              "Pro Gerät: Dashboard- und CarPlay-Favoriten, Verhalten des Ruhebildschirms und automatisches Öffnen der Türklingelkamera.",
               "Beim manuellen Wiederherstellen eines Boards können dessen gespeicherte Favoriten einmalig geladen werden.",
               "Bei einer Neuinstallation fragt HomeScreen, ob Einstellungen wiederhergestellt werden sollen und welches Board verwendet werden soll.",
               "HomeKit-Zuhause, Räume, Zubehör, Szenen, Kameras und deren Namen werden nicht von HomeScreen gesichert; sie bleiben in HomeKit."
@@ -880,7 +928,7 @@
             body: "Die Tabs sind in Dashboard, Bedienung sowie App und Datenschutz gruppiert. HomeScreen merkt sich den zuletzt verwendeten Tab.",
             bullets: [
               "Allgemein enthält Dashboard-Kacheln und -namen, Ruhebildschirm, Türklingeloption und Klimaauswahl.",
-              "Die Bedienungstabs enthalten Sichtbarkeit, Reihenfolge, Offen-Grenzen und die Raumzuordnung von Szenen.",
+              "Die Bedienungstabs enthalten Sichtbarkeit, Reihenfolge, Offen-Grenzen und die Raumzuordnung von Szenen. Unter CarPlay wählst du die eigenen Favoriten fürs Auto.",
               "App enthält Kauf wiederherstellen, Hilfe, Widget-Informationen, Sicherheit und Auf Standard zurücksetzen.",
               "Einstellungen öffnen mit Face ID, Touch ID oder dem Gerätecode.",
               "Auf Standard zurücksetzen löscht HomeScreen-Einstellungen, aber nicht deinen Kauf oder dein HomeKit-Zuhause."
@@ -912,7 +960,10 @@
           label: "Kameras",
           title: "Kamera und Türklingel",
           bullets: [
-            "Tippe auf eine Kamera, um sie im Vollbild zu öffnen.",
+            "Kameravorschauen sind regelmäßig aktualisierte Momentaufnahmen. Die Zeit am Bild zeigt, wie aktuell es ist; es handelt sich nicht um einen durchgehenden Livestream.",
+            "Solange die Übersicht aktiv sichtbar ist, fordert HomeScreen etwa alle 30 Sekunden am Strom, alle 60 Sekunden im Akkubetrieb und alle 120 Sekunden im Stromsparmodus ein neues Bild an. HomeKit und die Verbindung bestimmen, wann ein aktuelles Bild verfügbar ist.",
+            "Tippe auf eine Kamera für einen Vollbild-Livestream, sofern HomeKit ihn bereitstellt. Der Ton ist zunächst aus; du kannst ihn selbst einschalten.",
+            "Mit Geöffnet lassen bleibt die Kameraübersicht oder Vollbildkamera geöffnet. Im Hintergrund wird die Aktualisierung gestoppt.",
             "Die Übersicht passt die Kameragröße an den verfügbaren Platz und die Anzahl der Kameras an.",
             "Unter Einstellungen > Kameras legst du Sichtbarkeit, Reihenfolge und optionale PTZ-Steuerung pro Kamera fest.",
             "Das automatische Öffnen der Türklingelkamera wird pro Gerät unter Einstellungen > Allgemein eingestellt. Nach etwa 60 Sekunden kehrt HomeScreen zurück.",
@@ -1044,6 +1095,7 @@
 
       main.append(section(content.quickStart, "note"));
       main.append(section(content.release, "note"));
+      main.append(section(content.carplay));
       main.append(section(content.bestFor, "note"));
 
       const grid = element("div", "grid");
