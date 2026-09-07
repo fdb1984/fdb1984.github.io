@@ -47,8 +47,8 @@ window.PRODUCT_TRANSLATIONS = (() => {
       },
       home: {
         promise: "Je HomeKit-woning in één oogopslag.",
-        description: "Een vast dashboard op iPad en snelle bediening op iPhone, zonder door kamers en menu's te zoeken.",
-        one: "Leesbaar dashboard voor tafel of wand", two: "Favorieten, zoeken en bediening zonder omwegen", three: "30 dagen proberen, daarna één aankoop"
+        description: "Je woning in beeld op iPad, dagelijkse bediening op iPhone en je eigen favorieten in CarPlay.",
+        one: "Persoonlijk dashboard voor tafel of wand", two: "Lampen, scènes, klimaat en widgets binnen bereik", three: "30 dagen proberen, daarna één aankoop"
       },
       actions: { appStore: "Download voor Apple", googlePlay: "Download voor Android", tryHome: "Probeer 30 dagen", more: "Bekijk alles", migraine: "Zo werkt MigraineMaatje", home: "Zo werkt HomeScreen" },
       principles: {
@@ -92,8 +92,8 @@ window.PRODUCT_TRANSLATIONS = (() => {
       },
       home: {
         promise: "Your HomeKit home at a glance.",
-        description: "A fixed dashboard on iPad and quick control on iPhone, without searching through rooms and menus.",
-        one: "Readable dashboard for a table or wall", two: "Favourites, search and controls without detours", three: "Try everything for 30 days, then one purchase"
+        description: "Your home at a glance on iPad, everyday controls on iPhone and your own favourites in CarPlay.",
+        one: "A personal dashboard for a table or wall", two: "Lights, scenes, climate and widgets within reach", three: "Try everything for 30 days, then one purchase"
       },
       actions: { appStore: "Download for Apple", googlePlay: "Download for Android", tryHome: "Try for 30 days", more: "See everything", migraine: "How MigraineMaatje works", home: "How HomeScreen works" },
       principles: {
@@ -137,8 +137,8 @@ window.PRODUCT_TRANSLATIONS = (() => {
       },
       home: {
         promise: "Dein HomeKit-Zuhause auf einen Blick.",
-        description: "Ein festes Dashboard auf dem iPad und schnelle Bedienung auf dem iPhone, ohne durch Räume und Menüs zu suchen.",
-        one: "Gut lesbares Dashboard für Tisch oder Wand", two: "Favoriten, Suche und Bedienung ohne Umwege", three: "30 Tage testen, danach einmal kaufen"
+        description: "Dein Zuhause im Blick auf dem iPad, tägliche Bedienung auf dem iPhone und eigene Favoriten in CarPlay.",
+        one: "Ein persönliches Dashboard für Tisch oder Wand", two: "Licht, Szenen, Klima und Widgets griffbereit", three: "30 Tage testen, danach einmal kaufen"
       },
       actions: { appStore: "Für Apple laden", googlePlay: "Für Android laden", tryHome: "30 Tage testen", more: "Alles ansehen", migraine: "So funktioniert MigraineMaatje", home: "So funktioniert HomeScreen" },
       principles: {
@@ -182,8 +182,8 @@ window.PRODUCT_TRANSLATIONS = (() => {
       },
       home: {
         promise: "Votre maison HomeKit en un coup d'œil.",
-        description: "Un tableau de bord fixe sur iPad et des commandes rapides sur iPhone, sans chercher dans les pièces et les menus.",
-        one: "Tableau de bord lisible sur table ou au mur", two: "Favoris, recherche et commandes sans détour", three: "Essai complet de 30 jours, puis un achat unique"
+        description: "Votre maison en un coup d'œil sur iPad, les commandes du quotidien sur iPhone et vos propres favoris dans CarPlay.",
+        one: "Un tableau de bord personnel sur table ou au mur", two: "Éclairage, scènes, climat et widgets à portée de main", three: "Essai complet de 30 jours, puis un achat unique"
       },
       actions: { appStore: "Télécharger pour Apple", googlePlay: "Télécharger pour Android", tryHome: "Essayer 30 jours", more: "Tout découvrir", migraine: "Comment fonctionne MigraineMaatje", home: "Comment fonctionne HomeScreen" },
       principles: {
