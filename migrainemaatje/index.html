@@ -3,267 +3,218 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/migrainemaatje-icon.png">
-  <title>MigraineMaatje - Leg een aanval snel vast</title>
-  <meta name="description" content="Leg een migraineaanval snel vast, vul later aan en ga voorbereid naar je arts. MigraineMaatje voor iOS en Android.">
-  <link rel="stylesheet" href="/app-pages.css?v=20260802-2">
+  <title>MigraineMaatje - Support en privacy</title>
+  <meta name="description" content="Support-, privacy- en versieinformatie voor MigraineMaatje.">
   <style>
-    .product-page main { padding-top: 38px; }
-    .product-page main > .language-switch { margin-bottom: 38px; }
-    .product-page main > [data-lang] > header { max-width: none; margin-bottom: 34px; }
-    .product-page h1 { max-width: none; margin-bottom: 14px; font-size: clamp(32px, 6vw, 68px); line-height: 1.05; letter-spacing: 0; overflow-wrap: anywhere; }
-    .product-page .product-promise { max-width: 720px; margin-bottom: 12px; color: var(--text); font-size: clamp(21px, 2.5vw, 28px); line-height: 1.36; font-weight: 600; }
-    .product-page .product-intro { max-width: 690px; }
-    .product-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-    .product-page .store-button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; border: 1px solid var(--page-accent); border-radius: 7px; background: var(--page-accent); color: #07130f; font-size: 14px; font-weight: 760; line-height: 1.3; text-decoration: none; }
-    .product-page .store-button.secondary { border-color: var(--line); background: rgba(255, 255, 255, 0.04); color: var(--text); }
-    .product-page .store-button:hover { background: #a0f2d9; }
-    .product-page .store-button.secondary:hover { background: rgba(255, 255, 255, 0.1); }
-    .product-page .product-visual { min-height: 390px; margin: 0 0 56px; border-radius: 8px; background: #10171a; }
-    .product-page .product-visual::before, .product-page .product-visual::after { display: none; }
-    .product-page .product-visual img { width: min(270px, 58vw); }
-    .product-page .product-section { padding: 34px 0 38px; border-top: 1px solid var(--line); }
-    .product-page .product-section h2 { margin-bottom: 16px; font-size: clamp(23px, 3vw, 31px); letter-spacing: 0; }
-    .product-page .product-section > p { max-width: 760px; }
-    .product-steps, .product-plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 24px; }
-    .product-steps > div, .product-plans > div { min-width: 0; padding-top: 17px; border-top: 1px solid var(--line); }
-    .product-steps span { display: block; margin-bottom: 12px; color: var(--page-accent); font-size: 12px; font-weight: 800; }
-    .product-page h3 { margin: 0 0 9px; color: var(--text); font-size: 18px; line-height: 1.3; }
-    .product-plans { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
-    .product-plans > div:last-child { border-top-color: var(--blue); }
-    .product-plans > div:last-child h3 { color: var(--blue); }
-    .product-page .small-print { color: var(--soft); font-size: 14px; }
-    .product-links { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 20px; }
-    .product-page footer { margin-top: 8px; }
-    .product-page [data-lang] { display: none; }
-    .product-page [data-lang].active { display: block; }
-    @media (max-width: 720px) {
-      .product-page main { padding-top: 28px; }
-      .product-page main > .language-switch { margin-bottom: 30px; }
-      .product-page main > [data-lang] > header { margin-bottom: 28px; }
-      .product-page h1 { font-size: clamp(31px, 8vw, 48px); }
-      .product-page .product-visual { min-height: 315px; margin-bottom: 36px; }
-      .product-page .product-visual img { width: min(225px, 62vw); }
-      .product-actions { display: grid; grid-template-columns: minmax(0, 1fr); }
-      .product-steps, .product-plans { grid-template-columns: minmax(0, 1fr); gap: 16px; }
-      .product-page .product-section { padding: 28px 0 30px; }
+    :root {
+      color-scheme: dark;
+      --bg: #07090b;
+      --panel: #161a1f;
+      --panel-soft: #101418;
+      --line: #2a3038;
+      --text: #f7f8fa;
+      --muted: #b9c0c8;
+      --soft: #8f98a3;
+      --mint: #64e6bd;
+      --amber: #f2c45c;
     }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 50% -10%, rgba(100, 230, 189, 0.14), transparent 35%), var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    main { width: 100%; max-width: 920px; min-width: 0; margin: 0 auto; padding: 46px 22px 72px; }
+    nav { margin-bottom: 22px; }
+    nav a { color: var(--mint); font-weight: 800; text-decoration: none; }
+    h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.05; margin: 0 0 12px; letter-spacing: 0; }
+    h2 { font-size: 22px; line-height: 1.2; margin: 0 0 12px; }
+    p, li { color: var(--muted); font-size: 17px; }
+    p { margin: 0 0 12px; }
+    a { color: var(--mint); font-weight: 700; }
+    ul { margin: 10px 0 0; padding-left: 22px; }
+    li + li { margin-top: 8px; }
+    header { margin-bottom: 24px; }
+    .eyebrow { color: var(--mint); font-weight: 800; letter-spacing: .02em; text-transform: uppercase; font-size: 13px; }
+    .lead { font-size: 20px; color: #dfe5ea; max-width: 720px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
+    .card { display: block; min-width: 0; padding: 22px; margin-top: 16px; border-radius: 12px; border: 1px solid var(--line); background: linear-gradient(160deg, var(--panel), var(--panel-soft)); overflow-wrap: anywhere; text-decoration: none; }
+    .card h2 { color: var(--text); }
+    .card p:last-child { margin-bottom: 0; }
+    .note { margin-top: 18px; padding: 18px; border-radius: 12px; border: 1px solid rgba(242, 196, 92, 0.32); background: rgba(242, 196, 92, 0.08); }
+    .note strong, .important strong { color: var(--amber); }
+    .muted { color: var(--soft); }
+    .important { border-color: rgba(242, 196, 92, 0.36); background: rgba(242, 196, 92, 0.08); }
+    .language-switch { display: inline-flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; padding: 6px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.03); }
+    .language-switch button { appearance: none; border: 0; border-radius: 999px; background: transparent; color: var(--muted); font: inherit; font-weight: 700; padding: 8px 14px; cursor: pointer; }
+    .language-switch button.active { background: var(--mint); color: #08120f; }
+    footer { margin-top: 34px; color: var(--soft); font-size: 14px; }
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+    @media (max-width: 720px) { main { padding: 32px 16px 56px; } .language-switch { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); width: 100%; border-radius: 18px; } .language-switch button { min-width: 0; padding: 8px 10px; } .grid { grid-template-columns: minmax(0, 1fr); } .card { padding: 18px; } }
+
   </style>
+  <link rel="stylesheet" href="/app-pages.css?v=20260802-2">
   <script src="/app-pages.js?v=20260802-2" defer></script>
 </head>
-<body class="app-page app-page-migraine product-page">
+<body class="app-page app-page-migraine">
   <nav class="app-site-nav" aria-label="de Bruin Studio">
     <a class="app-wordmark" href="/">de Bruin <strong>Studio</strong></a>
     <a class="app-site-link" href="/">debruinstudio.nl <span aria-hidden="true">↗</span></a>
   </nav>
   <main>
-    <div class="language-switch" role="group" aria-label="Language / Taal / Sprache / Langue">
+    <div class="language-switch" aria-label="Language switch">
       <button type="button" data-language-button="nl">Nederlands</button>
       <button type="button" data-language-button="en">English</button>
       <button type="button" data-language-button="de">Deutsch</button>
       <button type="button" data-language-button="fr">Français</button>
     </div>
 
-    <section data-lang="nl" class="active">
+    <section data-lang="nl">
       <header>
-        <p class="eyebrow">Migraine- en hoofdpijndagboek</p>
-        <h1>MigraineMaatje</h1>
-        <p class="product-promise">Leg een aanval snel vast. Vul later aan. Ga voorbereid naar je arts.</p>
-        <p class="product-intro">Tijdens een aanval noteer je alleen het belangrijkste. Wanneer het beter gaat, voeg je klachten, medicatie en het verloop toe. Je dagboek en basisrapport helpen je jouw verhaal mee te nemen naar een afspraak.</p>
-        <div class="product-actions">
-          <a class="store-button" href="https://apps.apple.com/app/id6779200491" target="_blank" rel="noopener noreferrer">Download in de App Store <span aria-hidden="true">↗</span></a>
-          <a class="store-button secondary" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" target="_blank" rel="noopener noreferrer">Download via Google Play <span aria-hidden="true">↗</span></a>
-        </div>
+        <p class="eyebrow">MigraineMaatje</p>
+        <h1>Support en privacy</h1>
+        <p class="lead">MigraineMaatje helpt je migraine rustig vastleggen en persoonlijke signalen beter begrijpen. Gezondheidsgegevens worden beveiligd op je apparaat bewaard, zonder advertenties en zonder verkoop van gezondheidsdata.</p>
       </header>
-      <figure class="app-page-visual product-visual">
-        <img src="product-attack-nl.png" alt="Open migraineaanval in MigraineMaatje, met knoppen voor aanpassen en afronden" width="1320" height="2868" decoding="async">
-        <figcaption>Een aanval vastleggen zonder haast</figcaption>
-      </figure>
-      <section class="product-section" aria-labelledby="how-nl">
-        <h2 id="how-nl">Rust in drie stappen</h2>
-        <div class="product-steps">
-          <div><span>01</span><h3>Snel beginnen</h3><p>Leg een aanval met een paar tikken vast, ook als je weinig energie hebt.</p></div>
-          <div><span>02</span><h3>Later aanvullen</h3><p>Werk je dagboek bij met klachten, medicatie en herstel zodra dat past.</p></div>
-          <div><span>03</span><h3>Gesprek voorbereiden</h3><p>Neem een overzicht mee naar je arts. Met Premium kun je ook een afspraak voorbereiden en afspraken bewaren.</p></div>
-        </div>
+      <div class="grid">
+        <a class="card" href="privacy.html?lang=nl">
+          <h2>Privacybeleid</h2>
+          <p>Welke gegevens MigraineMaatje gebruikt, waar die blijven en hoe Apple Gezondheid, Health Connect, weerdata en lokale opslag worden gebruikt.</p>
+        </a>
+        <a class="card" href="support.html?lang=nl">
+          <h2>Hulp en support</h2>
+          <p>Hulp bij starten op Apple en Android, gezondheidsdata, weer, horloge, meldingen, Premium en contact.</p>
+        </a>
+        <a class="card" href="terms.html?lang=nl">
+          <h2>Gebruiksvoorwaarden</h2>
+          <p>Voorwaarden voor gratis gebruik, Premium, abonnementen en verantwoord gebruik van MigraineMaatje.</p>
+        </a>
+      </div>
+      <section class="note">
+        <p><strong>Nieuw in 1.3.5:</strong> bereid afspraken met je arts voor, gebruik tijdens het gesprek je persoonlijke afvinklijst en bewaar daarna wat is afgesproken. Medicatie, bijwerkingen en persoonlijke Premium-inzichten zijn ook duidelijker geworden.</p>
+        <p><a href="support.html?lang=nl#arts-afspraken">Lees wat er nieuw is en hoe Arts &amp; afspraken werkt</a>.</p>
       </section>
-      <section class="product-section" aria-labelledby="plans-nl">
-        <h2 id="plans-nl">Gratis en Premium, duidelijk gescheiden</h2>
-        <div class="product-plans">
-          <div><h3>Altijd gratis</h3><p>Aanvallen vastleggen en later afronden, dagboek, kalender, medicatie en een basisrapport. Geen abonnement nodig voor deze basis.</p></div>
-          <div><h3>Premium</h3><p>Extra persoonlijke inzichten en Arts &amp; afspraken: voorbereiding, afvinklijst en notities na het gesprek. Dit vraagt een abonnement.</p></div>
-        </div>
-        <p class="small-print">Prijs, looptijd, automatische verlenging en een eventuele proefperiode staan vóór aankoop in de App Store of Google Play.</p>
-      </section>
-      <section class="product-section" aria-labelledby="privacy-nl">
-        <h2 id="privacy-nl">Jouw gegevens blijven van jou</h2>
-        <p>Geen advertenties en geen verkoop van gezondheidsdata. Je dagboek staat in de privéopslag van de app; gezondheids- en locatiegegevens worden alleen met jouw toestemming gebruikt. Lees in het privacybeleid hoe opslag, koppelingen en back-ups werken.</p>
-        <p class="small-print">MigraineMaatje geeft geen diagnose of medisch advies. Bespreek medische vragen, medicatie en aanhoudende klachten met je arts.</p>
-        <div class="product-links"><a href="privacy.html?lang=nl">Privacybeleid</a><a href="support.html?lang=nl">Hulp en support</a><a href="terms.html?lang=nl">Gebruiksvoorwaarden</a></div>
-      </section>
-      <footer><p>Vragen? <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
+      <section class="note"><p><strong>Belangrijk:</strong> MigraineMaatje geeft geen diagnose of medisch advies. Bespreek medische vragen, medicatie en aanhoudende klachten altijd met je arts.</p></section>
+      <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
     </section>
 
     <section data-lang="en">
       <header>
-        <p class="eyebrow">Migraine and headache diary</p>
-        <h1>MigraineMaatje</h1>
-        <p class="product-promise">Log an attack quickly. Add details later. Arrive prepared for your doctor.</p>
-        <p class="product-intro">During an attack, record only the essentials. When you feel better, add symptoms, medication and how it developed. Your diary and basic report help you bring your story to an appointment.</p>
-        <div class="product-actions">
-          <a class="store-button" href="https://apps.apple.com/app/id6779200491" target="_blank" rel="noopener noreferrer">Download on the App Store <span aria-hidden="true">↗</span></a>
-          <a class="store-button secondary" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" target="_blank" rel="noopener noreferrer">Get it on Google Play <span aria-hidden="true">↗</span></a>
-        </div>
+        <p class="eyebrow">MigraineMaatje</p>
+        <h1>Support and Privacy</h1>
+        <p class="lead">MigraineMaatje helps you log migraine calmly and better understand personal signals. Health data is stored securely on your device, with no ads and no sale of health data.</p>
       </header>
-      <figure class="app-page-visual product-visual">
-        <img src="product-attack-en.png" alt="Open migraine attack in MigraineMaatje, with buttons to edit and finish" width="1320" height="2868" loading="lazy" decoding="async">
-        <figcaption>Record an attack without rushing</figcaption>
-      </figure>
-      <section class="product-section" aria-labelledby="how-en">
-        <h2 id="how-en">A calmer way to keep track</h2>
-        <div class="product-steps">
-          <div><span>01</span><h3>Start quickly</h3><p>Log an attack in a few taps, even when you have little energy.</p></div>
-          <div><span>02</span><h3>Finish later</h3><p>Add symptoms, medication and recovery to your diary when it suits you.</p></div>
-          <div><span>03</span><h3>Prepare for a visit</h3><p>Bring a summary to your doctor. Premium also lets you prepare for a visit and save what was agreed.</p></div>
-        </div>
+      <div class="grid">
+        <a class="card" href="privacy.html?lang=en">
+          <h2>Privacy Policy</h2>
+          <p>What data MigraineMaatje uses, where it stays, and how Apple Health, Health Connect, weather data, and local storage are used.</p>
+        </a>
+        <a class="card" href="support.html?lang=en">
+          <h2>Help and Support</h2>
+          <p>Help with getting started on Apple and Android, health data, weather, watches, notifications, Premium, and contact.</p>
+        </a>
+        <a class="card" href="terms.html?lang=en">
+          <h2>Terms of Use</h2>
+          <p>Terms for free use, Premium, subscriptions, and responsible use of MigraineMaatje.</p>
+        </a>
+      </div>
+      <section class="note">
+        <p><strong>New in 1.3.5:</strong> prepare appointments with your doctor, use your personal checklist during the conversation, and save what was agreed afterwards. Medication, side effects, and personal Premium insights are clearer too.</p>
+        <p><a href="support.html?lang=en#doctor-appointments">See what is new and how Doctors &amp; appointments works</a>.</p>
       </section>
-      <section class="product-section" aria-labelledby="plans-en">
-        <h2 id="plans-en">Free and Premium, clearly separated</h2>
-        <div class="product-plans">
-          <div><h3>Always free</h3><p>Log and complete attacks, diary, calendar, medication and a basic report. No subscription needed for these essentials.</p></div>
-          <div><h3>Premium</h3><p>Additional personal insights and Doctors &amp; appointments: preparation, a checklist and notes after the visit. This requires a subscription.</p></div>
-        </div>
-        <p class="small-print">The App Store or Google Play shows the price, duration, automatic renewal and any trial before you buy.</p>
-      </section>
-      <section class="product-section" aria-labelledby="privacy-en">
-        <h2 id="privacy-en">Your data stays yours</h2>
-        <p>No ads and no sale of health data. Your diary is stored in the app's private storage; health and location data are used only with your permission. Read the privacy policy for details about storage, connections and backups.</p>
-        <p class="small-print">MigraineMaatje does not diagnose or provide medical advice. Discuss medical questions, medication and ongoing symptoms with your doctor.</p>
-        <div class="product-links"><a href="privacy.html?lang=en">Privacy policy</a><a href="support.html?lang=en">Help and support</a><a href="terms.html?lang=en">Terms of use</a></div>
-      </section>
-      <footer><p>Questions? <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
+      <section class="note"><p><strong>Important:</strong> MigraineMaatje does not provide diagnosis or medical advice. Discuss medical questions, medication, and ongoing symptoms with your doctor.</p></section>
+      <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
     </section>
 
     <section data-lang="de">
       <header>
-        <p class="eyebrow">Migräne- und Kopfschmerztagebuch</p>
-        <h1>MigraineMaatje</h1>
-        <p class="product-promise">Erfasse eine Attacke schnell. Ergänze Details später. Geh vorbereitet zum Arztgespräch.</p>
-        <p class="product-intro">Während einer Attacke hältst du nur das Wichtigste fest. Wenn es dir besser geht, ergänzt du Beschwerden, Medikamente und den Verlauf. Tagebuch und Basisbericht helfen dir, deine Erfahrungen zum Termin mitzunehmen.</p>
-        <div class="product-actions">
-          <a class="store-button" href="https://apps.apple.com/app/id6779200491" target="_blank" rel="noopener noreferrer">Im App Store laden <span aria-hidden="true">↗</span></a>
-          <a class="store-button secondary" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" target="_blank" rel="noopener noreferrer">Bei Google Play laden <span aria-hidden="true">↗</span></a>
-        </div>
+        <p class="eyebrow">MigraineMaatje</p>
+        <h1>Support und Datenschutz</h1>
+        <p class="lead">MigraineMaatje hilft dir, Migräne ruhig festzuhalten und persönliche Signale besser zu verstehen. Gesundheitsdaten werden sicher auf deinem Gerät gespeichert, ohne Werbung und ohne Verkauf von Gesundheitsdaten.</p>
       </header>
-      <figure class="app-page-visual product-visual">
-        <img src="product-attack-de.png" alt="Offene Migräneattacke in MigraineMaatje mit Schaltflächen zum Bearbeiten und Abschließen" width="1320" height="2868" loading="lazy" decoding="async">
-        <figcaption>Eine Attacke ohne Eile erfassen</figcaption>
-      </figure>
-      <section class="product-section" aria-labelledby="how-de">
-        <h2 id="how-de">In drei ruhigen Schritten</h2>
-        <div class="product-steps">
-          <div><span>01</span><h3>Schnell beginnen</h3><p>Erfasse eine Attacke mit wenigen Fingertipps, auch wenn dir die Kraft fehlt.</p></div>
-          <div><span>02</span><h3>Später ergänzen</h3><p>Trage Beschwerden, Medikamente und Erholung ins Tagebuch ein, wenn es für dich passt.</p></div>
-          <div><span>03</span><h3>Gespräch vorbereiten</h3><p>Nimm eine Übersicht zum Arzt mit. Mit Premium kannst du auch einen Termin vorbereiten und Absprachen festhalten.</p></div>
-        </div>
+      <div class="grid">
+        <a class="card" href="privacy.html?lang=de">
+          <h2>Datenschutzerklärung</h2>
+          <p>Welche Daten MigraineMaatje nutzt, wo sie bleiben und wie Apple Health, Health Connect, Wetterdaten und lokale Speicherung verwendet werden.</p>
+        </a>
+        <a class="card" href="support.html?lang=de">
+          <h2>Hilfe und Support</h2>
+          <p>Hilfe beim Start auf Apple und Android, Gesundheitsdaten, Wetter, Uhren, Mitteilungen, Premium und Kontakt.</p>
+        </a>
+        <a class="card" href="terms.html?lang=de">
+          <h2>Nutzungsbedingungen</h2>
+          <p>Bedingungen für kostenlose Nutzung, Premium, Abonnements und verantwortungsvolle Nutzung von MigraineMaatje.</p>
+        </a>
+      </div>
+      <section class="note">
+        <p><strong>Neu in 1.3.5:</strong> Bereite Arzttermine vor, nutze während des Gesprächs deine persönliche Checkliste und halte anschließend Absprachen fest. Auch Medikamente, Nebenwirkungen und persönliche Premium-Erkenntnisse sind jetzt verständlicher.</p>
+        <p><a href="support.html?lang=de#arzt-termine">Erfahre, was neu ist und wie Ärzte &amp; Termine funktioniert</a>.</p>
       </section>
-      <section class="product-section" aria-labelledby="plans-de">
-        <h2 id="plans-de">Kostenlos und Premium, klar getrennt</h2>
-        <div class="product-plans">
-          <div><h3>Immer kostenlos</h3><p>Attacken erfassen und später abschließen, Tagebuch, Kalender, Medikamente und ein Basisbericht. Dafür brauchst du kein Abo.</p></div>
-          <div><h3>Premium</h3><p>Zusätzliche persönliche Erkenntnisse und Ärzte &amp; Termine: Vorbereitung, Checkliste und Notizen nach dem Gespräch. Dafür ist ein Abo nötig.</p></div>
-        </div>
-        <p class="small-print">Preis, Laufzeit, automatische Verlängerung und eine mögliche Probephase werden vor dem Kauf im App Store oder bei Google Play angezeigt.</p>
-      </section>
-      <section class="product-section" aria-labelledby="privacy-de">
-        <h2 id="privacy-de">Deine Daten bleiben deine</h2>
-        <p>Keine Werbung und kein Verkauf von Gesundheitsdaten. Dein Tagebuch liegt im privaten App-Speicher; Gesundheits- und Standortdaten werden nur mit deiner Erlaubnis verwendet. In der Datenschutzerklärung findest du Einzelheiten zu Speicherung, Verbindungen und Back-ups.</p>
-        <p class="small-print">MigraineMaatje stellt keine Diagnose und gibt keinen medizinischen Rat. Besprich medizinische Fragen, Medikamente und anhaltende Beschwerden mit deinem Arzt.</p>
-        <div class="product-links"><a href="privacy.html?lang=de">Datenschutzerklärung</a><a href="support.html?lang=de">Hilfe und Support</a><a href="terms.html?lang=de">Nutzungsbedingungen</a></div>
-      </section>
-      <footer><p>Fragen? <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
+      <section class="note"><p><strong>Wichtig:</strong> MigraineMaatje stellt keine Diagnose und gibt keinen medizinischen Rat. Besprich medizinische Fragen, Medikamente und anhaltende Beschwerden immer mit deinem Arzt.</p></section>
+      <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
     </section>
 
     <section data-lang="fr">
       <header>
-        <p class="eyebrow">Journal des migraines et maux de tête</p>
-        <h1>MigraineMaatje</h1>
-        <p class="product-promise">Notez vite une crise. Complétez plus tard. Préparez votre rendez-vous médical.</p>
-        <p class="product-intro">Pendant une crise, notez seulement l'essentiel. Quand vous allez mieux, ajoutez les symptômes, les médicaments et l'évolution. Votre journal et le rapport de base vous aident à présenter votre vécu en consultation.</p>
-        <div class="product-actions">
-          <a class="store-button" href="https://apps.apple.com/app/id6779200491" target="_blank" rel="noopener noreferrer">Télécharger dans l'App Store <span aria-hidden="true">↗</span></a>
-          <a class="store-button secondary" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" target="_blank" rel="noopener noreferrer">Télécharger sur Google Play <span aria-hidden="true">↗</span></a>
-        </div>
+        <p class="eyebrow">MigraineMaatje</p>
+        <h1>Support et confidentialité</h1>
+        <p class="lead">MigraineMaatje vous aide à enregistrer vos migraines calmement et à mieux comprendre vos signaux personnels. Les données de santé sont conservées de façon sécurisée sur votre appareil, sans publicité ni vente de données de santé.</p>
       </header>
-      <figure class="app-page-visual product-visual">
-        <img src="product-attack-fr.png" alt="Crise de migraine en cours dans MigraineMaatje, avec boutons pour modifier et terminer" width="1320" height="2868" loading="lazy" decoding="async">
-        <figcaption>Noter une crise sans se presser</figcaption>
-      </figure>
-      <section class="product-section" aria-labelledby="how-fr">
-        <h2 id="how-fr">Trois étapes simples</h2>
-        <div class="product-steps">
-          <div><span>01</span><h3>Commencer vite</h3><p>Notez une crise en quelques gestes, même lorsque vous avez peu d'énergie.</p></div>
-          <div><span>02</span><h3>Compléter plus tard</h3><p>Ajoutez symptômes, médicaments et récupération au journal quand cela vous convient.</p></div>
-          <div><span>03</span><h3>Préparer la consultation</h3><p>Apportez un résumé à votre médecin. Premium permet aussi de préparer un rendez-vous et de conserver les décisions prises.</p></div>
-        </div>
+      <div class="grid">
+        <a class="card" href="privacy.html?lang=fr">
+          <h2>Politique de confidentialité</h2>
+          <p>Les données utilisées par MigraineMaatje, où elles restent, et comment Apple Santé, Health Connect, la météo et le stockage local sont utilisés.</p>
+        </a>
+        <a class="card" href="support.html?lang=fr">
+          <h2>Aide et support</h2>
+          <p>Aide pour démarrer sur Apple et Android, données de santé, météo, montres, notifications, Premium et contact.</p>
+        </a>
+        <a class="card" href="terms.html?lang=fr">
+          <h2>Conditions d’utilisation</h2>
+          <p>Conditions de l’utilisation gratuite, de Premium, des abonnements et de l’usage responsable de MigraineMaatje.</p>
+        </a>
+      </div>
+      <section class="note">
+        <p><strong>Nouveau dans la version 1.3.5 :</strong> préparez vos rendez-vous médicaux, utilisez votre liste personnelle pendant la consultation et conservez ensuite ce qui a été convenu. Les médicaments, les effets indésirables et les analyses Premium personnelles sont également plus clairs.</p>
+        <p><a href="support.html?lang=fr#medecin-rendez-vous">Découvrez les nouveautés et le fonctionnement de Médecins et rendez-vous</a>.</p>
       </section>
-      <section class="product-section" aria-labelledby="plans-fr">
-        <h2 id="plans-fr">Gratuit et Premium, en toute clarté</h2>
-        <div class="product-plans">
-          <div><h3>Toujours gratuit</h3><p>Noter et compléter les crises, journal, calendrier, médicaments et rapport de base. Aucun abonnement requis pour l'essentiel.</p></div>
-          <div><h3>Premium</h3><p>Des analyses personnelles supplémentaires et Médecins et rendez-vous : préparation, liste à cocher et notes après la consultation. Un abonnement est nécessaire.</p></div>
-        </div>
-        <p class="small-print">L'App Store ou Google Play affiche le prix, la durée, le renouvellement automatique et tout essai avant l'achat.</p>
-      </section>
-      <section class="product-section" aria-labelledby="privacy-fr">
-        <h2 id="privacy-fr">Vos données restent les vôtres</h2>
-        <p>Pas de publicité ni de vente de données de santé. Votre journal reste dans l'espace privé de l'app ; les données de santé et de localisation ne sont utilisées qu'avec votre autorisation. Consultez la politique de confidentialité pour les détails sur le stockage, les connexions et les sauvegardes.</p>
-        <p class="small-print">MigraineMaatje ne pose pas de diagnostic et ne fournit pas de conseil médical. Parlez de vos questions médicales, médicaments et symptômes persistants avec votre médecin.</p>
-        <div class="product-links"><a href="privacy.html?lang=fr">Confidentialité</a><a href="support.html?lang=fr">Aide et support</a><a href="terms.html?lang=fr">Conditions d'utilisation</a></div>
-      </section>
-      <footer><p>Des questions ? <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
+      <section class="note"><p><strong>Important :</strong> MigraineMaatje ne fournit pas de diagnostic ni de conseil médical. Discutez toujours de vos questions médicales, médicaments et symptômes persistants avec votre médecin.</p></section>
+      <footer><p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p></footer>
     </section>
   </main>
 
   <script>
     (function () {
-      const supported = ["nl", "en", "de", "fr"];
       const preferred = new URLSearchParams(window.location.search).get("lang");
-      const browserLanguage = (navigator.language || "nl").slice(0, 2).toLowerCase();
-      const titles = {
-        nl: "MigraineMaatje - Leg een aanval snel vast",
-        en: "MigraineMaatje - Log an attack quickly",
-        de: "MigraineMaatje - Attacken schnell erfassen",
-        fr: "MigraineMaatje - Notez vite une crise"
-      };
-      const descriptions = {
-        nl: "Leg een migraineaanval snel vast, vul later aan en ga voorbereid naar je arts. MigraineMaatje voor iOS en Android.",
-        en: "Log a migraine attack quickly, add details later and arrive prepared for your doctor. MigraineMaatje for iOS and Android.",
-        de: "Erfasse eine Migräneattacke schnell, ergänze Details später und geh vorbereitet zum Arzt. MigraineMaatje für iOS und Android.",
-        fr: "Notez vite une crise de migraine, complétez plus tard et préparez votre consultation. MigraineMaatje pour iOS et Android."
-      };
+      const browserLanguage = (navigator.language || "nl").toLowerCase();
+      const supported = ["nl", "en", "de", "fr"];
+      const initialLanguage = supported.includes(preferred)
+        ? preferred
+        : (browserLanguage.startsWith("de") ? "de" : browserLanguage.startsWith("fr") ? "fr" : browserLanguage.startsWith("en") ? "en" : "nl");
+      const descriptions = {"nl": "Support-, privacy- en versieinformatie voor MigraineMaatje.", "en": "Support, privacy, and version information for MigraineMaatje.", "de": "Support-, Datenschutz- und Versionsinformationen für MigraineMaatje.", "fr": "Support, confidentialité et informations de version pour MigraineMaatje."};
+      const titles = {"nl": "MigraineMaatje - Support en privacy", "en": "MigraineMaatje - Support and Privacy", "de": "MigraineMaatje - Support und Datenschutz", "fr": "MigraineMaatje - Support et confidentialité"};
       const sections = document.querySelectorAll("[data-lang]");
       const buttons = document.querySelectorAll("[data-language-button]");
       const metaDescription = document.querySelector('meta[name="description"]');
       function setLanguage(language) {
         document.documentElement.lang = language;
-        document.title = titles[language];
-        metaDescription.setAttribute("content", descriptions[language]);
-        sections.forEach((section) => section.classList.toggle("active", section.dataset.lang === language));
-        buttons.forEach((button) => {
-          const active = button.dataset.languageButton === language;
-          button.classList.toggle("active", active);
-          button.setAttribute("aria-pressed", String(active));
-        });
+        document.title = titles[language] || titles.nl;
+        if (metaDescription) metaDescription.setAttribute("content", descriptions[language] || descriptions.nl);
+        sections.forEach((section) => section.classList.toggle("active", section.getAttribute("data-lang") === language));
+        buttons.forEach((button) => button.classList.toggle("active", button.getAttribute("data-language-button") === language));
       }
-      buttons.forEach((button) => button.addEventListener("click", function () {
-        const language = button.dataset.languageButton;
-        setLanguage(language);
-        const url = new URL(window.location.href);
-        url.searchParams.set("lang", language);
-        window.history.replaceState({}, "", url);
-      }));
-      setLanguage(supported.includes(preferred) ? preferred : (supported.includes(browserLanguage) ? browserLanguage : "nl"));
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const language = button.getAttribute("data-language-button");
+          setLanguage(language);
+          const url = new URL(window.location.href);
+          url.searchParams.set("lang", language);
+          window.history.replaceState({}, "", url);
+        });
+      });
+      setLanguage(initialLanguage);
     })();
   </script>
 </body>
