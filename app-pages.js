@@ -23,6 +23,7 @@
     de: isHome ? "HomeScreen auf dem iPad" : "Ein Blick in MigraineMaatje",
     fr: isHome ? "HomeScreen sur iPad" : "Un aperçu de MigraineMaatje",
   };
+  const screenshotVersion = "2026-08-30";
 
   function languageFor(element) {
     return element.closest("[data-lang]")?.getAttribute("data-lang")
@@ -49,9 +50,8 @@
   }
 
   function addVisuals() {
-    // The main product page already introduces the app with this screenshot.
-    // Repeating that same image on support pages adds no useful context.
-    if (pageType === "support") return;
+    // Legal and support pages should stay focused on the information people came for.
+    if (pageType !== "hub") return;
 
     const headers = isHome
       ? document.querySelectorAll("main > header")
@@ -66,8 +66,8 @@
 
       const image = document.createElement("img");
       image.src = isHome
-        ? `/homescreen-screen-${screenshotLanguage}.png`
-        : `/migrainemaatje-screen-${screenshotLanguage}.png`;
+        ? `/homescreen/assets/web-${screenshotVersion}/${screenshotLanguage}/dashboard.png`
+        : `/migrainemaatje/assets/web-${screenshotVersion}/${screenshotLanguage}/hero.png`;
       image.alt = visualLabels[language] || visualLabels.nl;
       image.loading = "lazy";
       image.decoding = "async";
@@ -241,7 +241,17 @@
     });
   }
 
+  function normalizeSupportHeader() {
+    if (pageType !== "support" || !isHome) return;
+    const main = document.querySelector("main");
+    const switcher = main?.querySelector(":scope > header .language-switcher");
+    if (!main || !switcher) return;
+    switcher.classList.add("language-switch");
+    main.insertBefore(switcher, main.firstElementChild);
+  }
+
   function enhancePage() {
+    normalizeSupportHeader();
     addVisuals();
     addEmbeddedFaqs();
     addDisclosures();

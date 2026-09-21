@@ -120,8 +120,8 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="/app-pages.css?v=20260802-2">
-  <script src="/app-pages.js?v=20260802-2" defer></script>
+  <link rel="stylesheet" href="/app-pages.css?v=20260830-6">
+  <script src="/app-pages.js?v=20260830-6" defer></script>
 </head>
 <body class="app-page app-page-home">
   <nav class="app-site-nav" aria-label="de Bruin Studio">
@@ -138,7 +138,8 @@
           <h2>Nederlands</h2>
           <p>HomeScreen for HomeKit is een dashboard en bedieningsscherm voor Apple HomeKit. De app gebruikt HomeKit-gegevens uit je woning, locatie voor lokaal weer, app-instellingen via iCloud key-value storage en aankoopstatus via Apple StoreKit.</p>
           <p>HomeKit-data blijft in Apple HomeKit. HomeScreen stuurt HomeKit-data niet naar een eigen server, verkoopt geen gegevens, bevat geen advertenties en gebruikt geen tracking.</p>
-          <p>Camera's worden alleen getoond via HomeKit. HomeScreen neemt geen camerabeelden op, bewaart geen camerabeelden en uploadt geen beelden naar een eigen server.</p>
+          <p>Camera's worden via HomeKit getoond. Momentopnamen kunnen tijdelijk op het apparaat worden vastgehouden voor de weergave. HomeScreen maakt geen opnamearchief en uploadt geen beelden naar een eigen server.</p>
+          <p>CarPlay gebruikt de HomeKit-verbinding van je iPhone. De aparte CarPlay-favorieten blijven op die iPhone.</p>
           <p>Weergegevens kunnen worden opgehaald bij Apple Weather op basis van locatiecoordinaten. Aankopen worden verwerkt door Apple.</p>
           <p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p>
         </section>
@@ -146,7 +147,8 @@
           <h2>English</h2>
           <p>HomeScreen for HomeKit is a dashboard and control panel for Apple HomeKit. The app uses HomeKit data from your home, location for local weather, app settings through iCloud key-value storage, and purchase status through Apple StoreKit.</p>
           <p>HomeKit data stays in Apple HomeKit. HomeScreen does not send HomeKit data to its own server, does not sell data, does not contain ads, and does not use tracking.</p>
-          <p>Cameras are only shown through HomeKit. HomeScreen does not record camera video, does not store camera video, and does not upload images to its own server.</p>
+          <p>Cameras are shown through HomeKit. Snapshots may be held temporarily on the device for display. HomeScreen does not create a recording archive or upload images to its own server.</p>
+          <p>CarPlay uses your iPhone's HomeKit connection. Separate CarPlay favorites stay on that iPhone.</p>
           <p>Weather data may be fetched from Apple Weather based on location coordinates. Purchases are processed by Apple.</p>
           <p>Contact: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p>
         </section>
@@ -154,13 +156,21 @@
           <h2>Deutsch</h2>
           <p>HomeScreen for HomeKit ist ein Dashboard und Bedienfeld für Apple HomeKit. Die App verwendet HomeKit-Daten aus deinem Zuhause, Standort für lokales Wetter, App-Einstellungen über iCloud Key-Value Storage und Kaufstatus über Apple StoreKit.</p>
           <p>HomeKit-Daten bleiben in Apple HomeKit. HomeScreen sendet HomeKit-Daten nicht an einen eigenen Server, verkauft keine Daten, enthält keine Werbung und nutzt kein Tracking.</p>
-          <p>Kameras werden nur über HomeKit angezeigt. HomeScreen zeichnet keine Kamerabilder auf, speichert keine Kamerabilder und lädt keine Bilder auf einen eigenen Server hoch.</p>
+          <p>Kameras werden über HomeKit angezeigt. Momentaufnahmen können vorübergehend zur Anzeige auf dem Gerät gehalten werden. HomeScreen erstellt kein Aufnahme-Archiv und lädt keine Bilder auf einen eigenen Server hoch.</p>
+          <p>CarPlay nutzt die HomeKit-Verbindung deines iPhones. Die eigenen CarPlay-Favoriten bleiben auf diesem iPhone.</p>
           <p>Wetterdaten können anhand von Standortkoordinaten von Apple Weather abgerufen werden. Käufe werden von Apple verarbeitet.</p>
           <p>Kontakt: <a href="mailto:support@debruinstudio.nl">support@debruinstudio.nl</a></p>
         </section>
       </noscript>
     </header>
   </main>
+  <footer class="app-brand-footer">
+    <div class="app-brand-footer-identity">
+      <a class="app-wordmark" href="/" aria-label="de Bruin Studio">de Bruin <strong>Studio</strong></a>
+      <span>© 2026</span>
+    </div>
+    <a href="/">debruinstudio.nl <span aria-hidden="true">↗</span></a>
+  </footer>
 
   <script>
     const supportEmail = "support@debruinstudio.nl";
@@ -175,7 +185,7 @@
           de: "Deutsch"
         },
         heading: "Privacybeleid",
-        updated: "HomeScreen for HomeKit - laatst bijgewerkt op 28 juli 2026",
+        updated: "HomeScreen for HomeKit - laatst bijgewerkt op 7 september 2026",
         intro: "HomeScreen for HomeKit is een dashboard en bedieningsscherm voor het tonen en bedienen van woningfuncties via Apple HomeKit.",
         sections: [
           {
@@ -183,7 +193,7 @@
             bullets: [
               "HomeKit-gegevens die beschikbaar zijn in de woning van de gebruiker, zoals woningen, kamers, scenes, lampen, schakelaars, sensoren, thermostaten, camera's, deuren, schermen en accessoirestatussen.",
               "Locatiegegevens om lokaal weer en regenverwachting te tonen via Apple Weather.",
-              "App-instellingen, zoals dashboards, indelingen, zichtbaarheid van onderdelen, volgorde van kamers en camera's, aangepaste namen, tegelnamen, gekozen kamericonen, favoriete sensoren, genegeerde meldingen, schermrust, klimaatkeuze, open-grenzen voor schermen en voorkeuren voor het beginscherm.",
+              "App-instellingen, zoals dashboards, indelingen, zichtbaarheid van onderdelen, volgorde van kamers en camera's, aangepaste namen, tegelnamen, gekozen kamericonen, dashboard- en CarPlay-favorieten, genegeerde meldingen, schermrust, klimaatkeuze, open-grenzen voor schermen en voorkeuren voor het beginscherm.",
               "Aankoopstatus via Apple StoreKit, zodat de app kan controleren of de proefperiode actief is of de eenmalige aankoop is gedaan."
             ]
           },
@@ -192,7 +202,16 @@
             paragraphs: [
               "HomeKit-data blijft in Apple HomeKit. HomeScreen stuurt HomeKit-data niet naar een eigen server.",
               "App-instellingen kunnen via iCloud key-value storage worden gesynchroniseerd binnen het Apple account van de gebruiker. Hieronder vallen ook genegeerde meldingen, zodat verbergen en herstellen op de apparaten van de gebruiker gelijk blijft. Bij een nieuwe installatie kan de gebruiker kiezen of iCloud-instellingen worden hersteld.",
-              "Wanneer je in HomeScreen een accessoire bedient, een scene start, een naam wijzigt of een item probeert te verwijderen, wordt die actie via HomeKit uitgevoerd. HomeScreen bewaart geen kopie van camerabeelden en uploadt geen livestreams."
+              "Dashboard- en CarPlay-favorieten blijven tijdens normaal gebruik per apparaat bewaard. CarPlay-favorieten worden per woning op de iPhone opgeslagen en niet via iCloud gesynchroniseerd. Bij expliciet herstel van een bord kunnen de opgeslagen dashboardfavorieten één keer worden geladen.",
+              "Wanneer je een accessoire bedient, een temperatuur instelt, een scene start, een naam wijzigt of een item probeert te verwijderen, wordt die actie via HomeKit uitgevoerd.",
+              "Cameraminiaturen en livestreams komen via HomeKit. Momentopnamen kunnen tijdelijk op het apparaat worden vastgehouden voor de weergave. HomeScreen maakt geen opnamearchief en uploadt geen camerabeelden naar een eigen server."
+            ]
+          },
+          {
+            title: "CarPlay en klimaatbediening",
+            paragraphs: [
+              "CarPlay toont de gekozen favorieten, sensoren en meldingen via de HomeKit-verbinding van je iPhone. Hiervoor gebruikt HomeScreen geen aparte server of account.",
+              "Voor klimaatbediening kan HomeScreen HomeKit-automatiseringen bekijken om voor mogelijke conflicten te waarschuwen. De app pauzeert of wijzigt die automatiseringen niet."
             ]
           },
           {
@@ -224,7 +243,7 @@
           de: "Deutsch"
         },
         heading: "Privacy Policy",
-        updated: "HomeScreen for HomeKit - last updated on July 28, 2026",
+        updated: "HomeScreen for HomeKit - last updated on September 7, 2026",
         intro: "HomeScreen for HomeKit is a dashboard and control panel for viewing and controlling home features through Apple HomeKit.",
         sections: [
           {
@@ -232,7 +251,7 @@
             bullets: [
               "HomeKit data available in the user's home, such as homes, rooms, scenes, lights, switches, sensors, thermostats, cameras, doors, shades, and accessory status.",
               "Location data to show local weather and rain forecast through Apple Weather.",
-              "App settings, such as dashboards, layouts, item visibility, room and camera order, custom names, tile names, selected room icons, favorite sensors, ignored alerts, idle screen behavior, climate choice, shade open thresholds, and home screen preferences.",
+              "App settings, such as dashboards, layouts, item visibility, room and camera order, custom names, tile names, selected room icons, dashboard and CarPlay favorites, ignored alerts, idle screen behavior, climate choice, shade open thresholds, and home screen preferences.",
               "Purchase status through Apple StoreKit, so the app can check whether the trial is active or the one-time purchase has been made."
             ]
           },
@@ -241,7 +260,16 @@
             paragraphs: [
               "HomeKit data stays in Apple HomeKit. HomeScreen does not send HomeKit data to its own server.",
               "App settings can be synced with iCloud key-value storage within the user's Apple account. This includes ignored alerts, so hiding and restoring them stays consistent across the user's devices. On a new installation, the user can choose whether iCloud settings are restored.",
-              "When you control an accessory, start a scene, rename an item, or try to remove an item in HomeScreen, that action is performed through HomeKit. HomeScreen does not store camera recordings and does not upload livestreams."
+              "During normal use, dashboard and CarPlay favorites remain stored per device. CarPlay favorites are saved per home on the iPhone and are not synced through iCloud. Explicitly restoring a board can load its saved dashboard favorites once.",
+              "When you control an accessory, set a temperature, start a scene, rename an item, or try to remove one, the action is performed through HomeKit.",
+              "Camera thumbnails and livestreams come through HomeKit. Snapshots may be held temporarily on the device for display. HomeScreen does not create a recording archive or upload camera images to its own server."
+            ]
+          },
+          {
+            title: "CarPlay and climate controls",
+            paragraphs: [
+              "CarPlay displays your chosen favorites, sensors, and alerts through your iPhone's HomeKit connection. HomeScreen does not use a separate server or account for this.",
+              "When you use climate controls, HomeScreen can inspect HomeKit automations to warn about possible conflicts. The app does not pause or change those automations."
             ]
           },
           {
@@ -273,7 +301,7 @@
           de: "Deutsch"
         },
         heading: "Datenschutzerklärung",
-        updated: "HomeScreen for HomeKit - zuletzt aktualisiert am 28. Juli 2026",
+        updated: "HomeScreen for HomeKit - zuletzt aktualisiert am 7. September 2026",
         intro: "HomeScreen for HomeKit ist ein Dashboard und Bedienfeld zum Anzeigen und Steuern von Zuhause-Funktionen über Apple HomeKit.",
         sections: [
           {
@@ -281,7 +309,7 @@
             bullets: [
               "HomeKit-Daten, die im Zuhause des Nutzers verfügbar sind, zum Beispiel Zuhause, Räume, Szenen, Lampen, Schalter, Sensoren, Thermostate, Kameras, Türen, Beschattung und Zubehörstatus.",
               "Standortdaten, um lokales Wetter und Regenvorhersage über Apple Weather anzuzeigen.",
-              "App-Einstellungen, wie Dashboards, Layouts, Sichtbarkeit von Elementen, Reihenfolge von Räumen und Kameras, eigene Namen, Kachelnamen, gewählte Raum-Icons, Lieblingssensoren, ignorierte Hinweise, Bildschirmruhe, Klimaauswahl, Offen-Grenzen für Beschattung und Einstellungen für den Startbildschirm.",
+              "App-Einstellungen, wie Dashboards, Layouts, Sichtbarkeit von Elementen, Reihenfolge von Räumen und Kameras, eigene Namen, Kachelnamen, gewählte Raum-Icons, Dashboard- und CarPlay-Favoriten, ignorierte Hinweise, Bildschirmruhe, Klimaauswahl, Offen-Grenzen für Beschattung und Einstellungen für den Startbildschirm.",
               "Kaufstatus über Apple StoreKit, damit die App prüfen kann, ob der Testzeitraum aktiv ist oder der einmalige Kauf getätigt wurde."
             ]
           },
@@ -290,7 +318,16 @@
             paragraphs: [
               "HomeKit-Daten bleiben in Apple HomeKit. HomeScreen sendet HomeKit-Daten nicht an einen eigenen Server.",
               "App-Einstellungen können über iCloud Key-Value Storage innerhalb des Apple Accounts des Nutzers synchronisiert werden. Dazu gehören auch ignorierte Hinweise, damit Ausblenden und Wiederherstellen auf den Geräten des Nutzers einheitlich bleiben. Bei einer neuen Installation kann der Nutzer wählen, ob iCloud-Einstellungen wiederhergestellt werden.",
-              "Wenn du in HomeScreen ein Zubehör steuerst, eine Szene startest, einen Namen änderst oder ein Element entfernen möchtest, wird diese Aktion über HomeKit ausgeführt. HomeScreen speichert keine Kameraaufnahmen und lädt keine Livestreams hoch."
+              "Dashboard- und CarPlay-Favoriten bleiben im normalen Gebrauch pro Gerät gespeichert. CarPlay-Favoriten werden pro Zuhause auf dem iPhone gespeichert und nicht über iCloud synchronisiert. Beim ausdrücklichen Wiederherstellen eines Boards können dessen gespeicherte Dashboard-Favoriten einmalig geladen werden.",
+              "Wenn du Zubehör steuerst, eine Temperatur einstellst, eine Szene startest, einen Namen änderst oder ein Element entfernen möchtest, erfolgt die Aktion über HomeKit.",
+              "Kameravorschauen und Livestreams kommen über HomeKit. Momentaufnahmen können vorübergehend zur Anzeige auf dem Gerät gehalten werden. HomeScreen erstellt kein Aufnahme-Archiv und lädt keine Kamerabilder auf einen eigenen Server hoch."
+            ]
+          },
+          {
+            title: "CarPlay und Klimasteuerung",
+            paragraphs: [
+              "CarPlay zeigt deine gewählten Favoriten, Sensoren und Meldungen über die HomeKit-Verbindung deines iPhones. HomeScreen nutzt dafür keinen eigenen Server und kein separates Konto.",
+              "Bei der Klimasteuerung kann HomeScreen HomeKit-Automationen prüfen, um auf mögliche Konflikte hinzuweisen. Die App pausiert oder verändert diese Automationen nicht."
             ]
           },
           {
@@ -412,8 +449,7 @@
         switcher.append(button);
       });
 
-      header.append(switcher);
-      main.append(header);
+      main.append(switcher, header);
       content.sections.forEach((section) => main.append(renderSection(section)));
     }
 
