@@ -1,9 +1,12 @@
 (() => {
   const images = (language, labels) => ({
-    dashboard: { src: `assets/web-2026-08-30/${language}/dashboard.png`, alt: labels.dashboard },
-    controls: { src: `assets/web-2026-08-30/${language}/controls.png`, alt: labels.controls },
-    alerts: { src: `assets/web-2026-08-30/${language}/alerts.png`, alt: labels.alerts },
-    cameras: { src: `assets/web-2026-08-30/${language}/cameras.png`, alt: labels.cameras }
+    dashboard: { src: `assets/web-2026-10-07/${language}/iPad-13/01-dashboard.png`, alt: labels.dashboard },
+    controls: { src: `assets/web-2026-10-07/${language}/iPad-13/09-light-controls.png`, alt: labels.controls },
+    alerts: { src: `assets/web-2026-10-07/${language}/iPad-13/08-alerts.png`, alt: labels.alerts },
+    settings: { src: `assets/web-2026-10-07/${language}/iPad-13/10-settings.png`, alt: labels.settings },
+    phoneDashboard: { src: `assets/web-2026-10-07/${language}/iPhone-6.9/01-dashboard.png`, alt: labels.phoneDashboard },
+    phoneControls: { src: `assets/web-2026-10-07/${language}/iPhone-6.9/09-light-controls.png`, alt: labels.phoneControls },
+    phoneScenes: { src: `assets/web-2026-10-07/${language}/iPhone-6.9/03-scenes.png`, alt: labels.phoneScenes }
   });
 
   window.PRODUCT_TRANSLATIONS = {
@@ -12,6 +15,8 @@
       global: { skip: "Ga naar inhoud", byStudio: "door de Bruin Studio", navigationLabel: "Hoofdnavigatie", languageLabel: "Kies taal", footerLabel: "Voettekstlinks" },
       nav: { overview: "Overzicht", control: "Bediening", trial: "Proberen", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Probeer 30 dagen", discover: "Bekijk hoe het werkt", support: "Lees de handleiding" },
+      release: { title: "Binnenkort: HomeScreen 2.1.4", text: "Een vernieuwd dashboard, duidelijkere menu's en instellingen, en hulp bij aankoop of herstel. Deze update wacht op beoordeling door Apple; de beelden hieronder tonen 2.1.4." },
+      phone: { eyebrow: "Op je iPhone", title: "Je huis bedienen, waar je ook bent.", description: "Bekijk je woning, start een scène of stel een lamp in. De staande weergave houdt de bediening binnen bereik.", dashboardTitle: "Jouw overzicht", dashboardText: "Woningstatus en favorieten op het dashboard.", scenesTitle: "Scènes per ruimte", scenesText: "Vind de juiste scène en voer hem uit.", controlsTitle: "De juiste lichtsterkte", controlsText: "Kies uit, de laatste aan-stand of een eigen percentage." },
       hero: {
         identity: "Voor iPhone, iPad en CarPlay", eyebrow: "Dashboard en bediening", promise: "Je huis in één oogopslag. Thuis én onderweg.",
         description: "Een persoonlijk dashboard op je iPad, je favoriete bediening op je iPhone en eigen favorieten in CarPlay. Bekijk wat belangrijk is en houd de bediening die je nodig hebt binnen bereik.",
@@ -39,14 +44,14 @@
         eyebrow: "Kijken én bedienen", title: "Je woning binnen een paar tikken.", description: "Gebruik favorieten, Recent en zoeken om niet telkens door alle kamers en accessoires te hoeven gaan.",
         controlsTitle: "Snelle bediening", controlsText: "Lampen, scenes, schakelaars, schermen en ondersteunde thermostaten en airco's.",
         alertsTitle: "Aandacht zonder onrust", alertsText: "Zie open deuren, lage batterijen of een offline apparaat.",
-        camerasTitle: "HomeKit-camera's", camerasText: "Open het beeld groot, zonder opname of upload door HomeScreen."
+        settingsTitle: "Jouw instellingen", settingsText: "Een vaste zijbalk op iPad; een compacte categoriekeuze op iPhone."
       },
       value: {
         eyebrow: "Eerst thuis proberen", title: "30 dagen alles gebruiken. Daarna één keer kiezen.", description: "Geen abonnement en geen uitgeklede demo. Kijk rustig of HomeScreen bij jouw woning en scherm past.",
         trialTitle: "De eerste 30 dagen", trialText: "Probeer alle functies met je eigen woning, inclusief CarPlay, klimaatbediening en widgets.",
         trialOne: "Dashboard op iPad en bediening op iPhone", trialTwo: "Eigen favorieten in CarPlay en widgets", trialThree: "Camera's, klimaat en woningmeldingen",
         afterEyebrow: "Daarna", afterTitle: "Eenmalig ontgrendelen", afterText: "Je kiest zelf of je HomeScreen koopt. Geen automatische afschrijving na de proefperiode en geen maandelijkse kosten.",
-        afterOne: "Geen abonnement", afterTwo: "Aankoop herstellen via Apple", afterThree: "Geen advertenties of apart account"
+        afterOne: "Inclusief Delen met gezin via Apple", afterTwo: "Aankoop herstellen via Apple", afterThree: "Hulp bij aankoop en herstel via support"
       },
       privacy: {
         eyebrow: "Je woning is privé", title: "HomeKit blijft bij Apple.", description: "HomeScreen heeft geen eigen account, advertenties of tracking. Woningdata wordt niet naar een server van de Bruin Studio gestuurd.",
@@ -63,7 +68,7 @@
       },
       final: { title: "Probeer het met jouw woning.", description: "30 dagen alle functies op iPhone en iPad, inclusief CarPlay en widgets. Daarna één aankoop, geen abonnement." },
       footer: { support: "Support", privacy: "Privacy", terms: "Voorwaarden", studio: "Alle apps" },
-      images: images("nl", { dashboard: "HomeScreen-dashboard op iPad", controls: "Bediening in HomeScreen", alerts: "Aandachtspunten in HomeScreen", cameras: "HomeKit-camera's in HomeScreen" })
+      images: images("nl", { dashboard: "HomeScreen 2.1.4-dashboard op iPad met voorbeeldwoning", controls: "Lichtsterkte instellen in HomeScreen op iPad", alerts: "Woningmeldingen in HomeScreen op iPad", settings: "Instellingen met zijbalk op iPad", phoneDashboard: "HomeScreen-dashboard op iPhone in staande weergave", phoneControls: "Een lamp dimmen op iPhone", phoneScenes: "Scènes per ruimte op iPhone" })
     },
 
     en: {
@@ -71,6 +76,8 @@
       global: { skip: "Skip to content", byStudio: "by de Bruin Studio", navigationLabel: "Main navigation", languageLabel: "Choose language", footerLabel: "Footer links" },
       nav: { overview: "Overview", control: "Controls", trial: "Try it", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Try for 30 days", discover: "See how it works", support: "Read the guide" },
+      release: { title: "Coming soon: HomeScreen 2.1.4", text: "A refreshed dashboard, clearer menus and settings, and help with purchases or restoring access. This update is awaiting Apple review; the images below show 2.1.4." },
+      phone: { eyebrow: "On your iPhone", title: "Control your home, wherever you are.", description: "Check your home, run a scene or adjust a light. Portrait mode keeps the controls within reach.", dashboardTitle: "Your overview", dashboardText: "Home status and favourites on the dashboard.", scenesTitle: "Scenes by room", scenesText: "Find the right scene and run it.", controlsTitle: "The right brightness", controlsText: "Choose off, the last on-state or your own percentage." },
       hero: {
         identity: "For iPhone, iPad and CarPlay", eyebrow: "Dashboard and controls", promise: "Your home at a glance. At home and on the go.",
         description: "A personal dashboard on your iPad, favourite controls on your iPhone and your own favourites in CarPlay. See what matters and keep the controls you need within reach.",
@@ -98,14 +105,14 @@
         eyebrow: "See and control", title: "Your home within a few taps.", description: "Use Favourites, Recent and search instead of navigating every room and accessory.",
         controlsTitle: "Quick controls", controlsText: "Lights, scenes, switches, shades, and supported thermostats and air conditioners.",
         alertsTitle: "Attention without noise", alertsText: "See open doors, low batteries or an offline device.",
-        camerasTitle: "HomeKit cameras", camerasText: "Open a large view without HomeScreen recording or uploading it."
+        settingsTitle: "Your settings", settingsText: "A fixed sidebar on iPad; a compact category picker on iPhone."
       },
       value: {
         eyebrow: "Try it at home first", title: "Use everything for 30 days. Decide once afterwards.", description: "No subscription and no stripped-down demo. See whether HomeScreen fits your home and display.",
         trialTitle: "The first 30 days", trialText: "Try every feature with your own home, including CarPlay, climate controls and widgets.",
         trialOne: "iPad dashboard and iPhone controls", trialTwo: "Your own favourites in CarPlay and widgets", trialThree: "Cameras, climate and home alerts",
         afterEyebrow: "Afterwards", afterTitle: "Unlock once", afterText: "You decide whether to buy HomeScreen. No automatic charge when the trial ends and no monthly cost.",
-        afterOne: "No subscription", afterTwo: "Restore purchase through Apple", afterThree: "No ads or separate account"
+        afterOne: "Includes Family Sharing through Apple", afterTwo: "Restore purchase through Apple", afterThree: "Help with purchases and restoring access"
       },
       privacy: {
         eyebrow: "Your home is private", title: "HomeKit stays with Apple.", description: "HomeScreen has no separate account, advertising or tracking. Home data is not sent to a de Bruin Studio server.",
@@ -122,7 +129,7 @@
       },
       final: { title: "Try it with your own home.", description: "30 days with all features on iPhone and iPad, including CarPlay and widgets. Then one purchase, no subscription." },
       footer: { support: "Support", privacy: "Privacy", terms: "Terms", studio: "All apps" },
-      images: images("en", { dashboard: "HomeScreen dashboard on iPad", controls: "Controls in HomeScreen", alerts: "Attention points in HomeScreen", cameras: "HomeKit cameras in HomeScreen" })
+      images: images("en", { dashboard: "HomeScreen 2.1.4 dashboard on iPad with a sample home", controls: "Adjusting light brightness on iPad", alerts: "Home alerts on iPad", settings: "Settings sidebar on iPad", phoneDashboard: "HomeScreen dashboard on iPhone in portrait mode", phoneControls: "Dimming a light on iPhone", phoneScenes: "Scenes by room on iPhone" })
     },
 
     de: {
@@ -130,6 +137,8 @@
       global: { skip: "Zum Inhalt springen", byStudio: "von de Bruin Studio", navigationLabel: "Hauptnavigation", languageLabel: "Sprache wählen", footerLabel: "Links im Seitenfuß" },
       nav: { overview: "Übersicht", control: "Bedienung", trial: "Ausprobieren", privacy: "Datenschutz", download: "Laden" },
       actions: { appStore: "30 Tage testen", discover: "So funktioniert es", support: "Anleitung lesen" },
+      release: { title: "Demnächst: HomeScreen 2.1.4", text: "Ein überarbeitetes Dashboard, klarere Menüs und Einstellungen sowie Hilfe beim Kauf und Wiederherstellen. Dieses Update wartet auf die Prüfung durch Apple; die Bilder unten zeigen 2.1.4." },
+      phone: { eyebrow: "Auf deinem iPhone", title: "Dein Zuhause bedienen, auch unterwegs.", description: "Prüfe dein Zuhause, starte eine Szene oder stelle eine Lampe ein. Im Hochformat bleibt die Bedienung griffbereit.", dashboardTitle: "Deine Übersicht", dashboardText: "Hausstatus und Favoriten auf dem Dashboard.", scenesTitle: "Szenen nach Raum", scenesText: "Finde die passende Szene und führe sie aus.", controlsTitle: "Die passende Helligkeit", controlsText: "Wähle aus, den letzten Ein-Zustand oder einen eigenen Prozentwert." },
       hero: {
         identity: "Für iPhone, iPad und CarPlay", eyebrow: "Dashboard und Bedienung", promise: "Dein Zuhause auf einen Blick. Zu Hause und unterwegs.",
         description: "Ein persönliches Dashboard auf dem iPad, deine bevorzugten Bedienelemente auf dem iPhone und eigene Favoriten in CarPlay. Sieh, was wichtig ist, und halte die passende Bedienung griffbereit.",
@@ -157,14 +166,14 @@
         eyebrow: "Sehen und bedienen", title: "Dein Zuhause mit wenigen Fingertipps.", description: "Nutze Favoriten, Zuletzt und die Suche, statt jedes Zimmer und Zubehör zu durchlaufen.",
         controlsTitle: "Schnelle Bedienung", controlsText: "Licht, Szenen, Schalter, Beschattung sowie unterstützte Thermostate und Klimaanlagen.",
         alertsTitle: "Aufmerksamkeit ohne Unruhe", alertsText: "Sieh offene Türen, niedrige Batterien oder ein Offline-Gerät.",
-        camerasTitle: "HomeKit-Kameras", camerasText: "Öffne das Bild groß, ohne Aufnahme oder Upload durch HomeScreen."
+        settingsTitle: "Deine Einstellungen", settingsText: "Eine feste Seitenleiste auf dem iPad; eine kompakte Kategorieauswahl auf dem iPhone."
       },
       value: {
         eyebrow: "Erst zu Hause testen", title: "30 Tage alles nutzen. Danach einmal entscheiden.", description: "Kein Abonnement und keine eingeschränkte Demo. Prüfe in Ruhe, ob HomeScreen zu deinem Zuhause passt.",
         trialTitle: "Die ersten 30 Tage", trialText: "Teste alle Funktionen mit deinem Zuhause, einschließlich CarPlay, Klimasteuerung und Widgets.",
         trialOne: "iPad-Dashboard und iPhone-Bedienung", trialTwo: "Eigene Favoriten in CarPlay und Widgets", trialThree: "Kameras, Klima und Meldungen",
         afterEyebrow: "Danach", afterTitle: "Einmal freischalten", afterText: "Du entscheidest, ob du HomeScreen kaufst. Keine automatische Abbuchung nach dem Testzeitraum und keine monatlichen Kosten.",
-        afterOne: "Kein Abonnement", afterTwo: "Kauf über Apple wiederherstellen", afterThree: "Keine Werbung und kein separates Konto"
+        afterOne: "Mit Familienfreigabe über Apple", afterTwo: "Kauf über Apple wiederherstellen", afterThree: "Hilfe beim Kauf und Wiederherstellen"
       },
       privacy: {
         eyebrow: "Dein Zuhause ist privat", title: "HomeKit bleibt bei Apple.", description: "HomeScreen hat kein eigenes Konto, keine Werbung und kein Tracking. Zuhause-Daten werden nicht an einen Server von de Bruin Studio gesendet.",
@@ -181,7 +190,7 @@
       },
       final: { title: "Teste es mit deinem Zuhause.", description: "30 Tage alle Funktionen auf iPhone und iPad, einschließlich CarPlay und Widgets. Danach ein Kauf, kein Abonnement." },
       footer: { support: "Support", privacy: "Datenschutz", terms: "Bedingungen", studio: "Alle Apps" },
-      images: images("de", { dashboard: "HomeScreen-Dashboard auf dem iPad", controls: "Bedienung in HomeScreen", alerts: "Hinweise in HomeScreen", cameras: "HomeKit-Kameras in HomeScreen" })
+      images: images("de", { dashboard: "HomeScreen 2.1.4-Dashboard auf dem iPad mit einem Beispiel-Zuhause", controls: "Lichthelligkeit auf dem iPad einstellen", alerts: "Hausmeldungen auf dem iPad", settings: "Einstellungen mit Seitenleiste auf dem iPad", phoneDashboard: "HomeScreen-Dashboard auf dem iPhone im Hochformat", phoneControls: "Eine Lampe auf dem iPhone dimmen", phoneScenes: "Szenen nach Raum auf dem iPhone" })
     }
   };
 })();

@@ -1,0 +1,74 @@
+.product-home .release-preview {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+  background: #101416;
+}
+
+.product-home .release-preview h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.product-home .release-preview p {
+  max-width: 880px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.product-home .landscape-gallery .screen-frame {
+  aspect-ratio: 4 / 3;
+}
+
+.product-home .screen-frame img {
+  object-fit: contain;
+}
+
+.product-home .screen-shot:hover img {
+  transform: none;
+}
+
+.product-home .phone-gallery {
+  max-width: 960px;
+  margin-inline: auto;
+  gap: 24px;
+}
+
+.product-home .phone-gallery .screen-frame {
+  aspect-ratio: 1320 / 2868;
+}
+
+@media (min-width: 821px) {
+  .product-home .hero-media {
+    inset: 160px max(32px, calc((100vw - var(--content)) / 2)) auto auto;
+    width: min(47vw, 780px);
+    min-height: 0;
+  }
+
+  .product-home .tablet-stage {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    transform: none;
+  }
+
+  .product-home .floating-note {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .product-home .phone-gallery {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 16px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .product-home .phone-gallery .screen-shot {
+    flex: 0 0 min(78vw, 300px);
+    scroll-snap-align: start;
+  }
+}
