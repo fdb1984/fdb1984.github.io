@@ -74,7 +74,7 @@
         oneTitle: "Geen advertentieprofiel", oneText: "Geen trackers om gezondheidsinformatie te gelde te maken.",
         twoTitle: "Koppelingen zijn optioneel", twoText: "De app blijft bruikbaar zonder Apple Gezondheid of Health Connect.",
         threeTitle: "Voorzichtige uitleg", threeText: "Geen diagnose, voorspelling of medisch advies.",
-        fourTitle: "Jouw eigen opslag", fourText: "Reservekopieën blijven in je eigen iCloud of Google Drive."
+        fourTitle: "Jouw eigen opslag", fourText: "Op iPhone kies je zelf waar je een export bewaart. Op Android is synchronisatie met je eigen Google Drive optioneel."
       },
       final: { title: "Minder invullen. Meer terugvinden.", description: "Begin gratis met vastleggen. Persoonlijke inzichten groeien mee wanneer er genoeg van jouw eigen gegevens zijn." },
       footer: { support: "Support", privacy: "Privacy", terms: "Voorwaarden", studio: "Alle apps" },
@@ -83,7 +83,7 @@
 
     en: {
       meta: {
-        title: "MigraineMaatje - migraine tracking without the overload",
+        title: "MigraineMaatje - Migraine and Headache Diary",
         description: "Log a migraine attack quickly, add details later and see what stands out in your own diary, medication and recovery.",
         locale: "en_US"
       },
@@ -144,7 +144,7 @@
         oneTitle: "No advertising profile", oneText: "No trackers that monetise health information.",
         twoTitle: "Connections are optional", twoText: "The app remains useful without Apple Health or Health Connect.",
         threeTitle: "Careful interpretation", threeText: "No diagnosis, prediction or medical advice.",
-        fourTitle: "Your own storage", fourText: "Backups remain in your own iCloud or Google Drive."
+        fourTitle: "Your own storage", fourText: "On iPhone, you choose where to save an export. On Android, sync with your own Google Drive is optional."
       },
       final: { title: "Record less. Remember more.", description: "Start tracking for free. Personal insights grow once there is enough of your own data." },
       footer: { support: "Support", privacy: "Privacy", terms: "Terms", studio: "All apps" },
@@ -214,7 +214,7 @@
         oneTitle: "Kein Werbeprofil", oneText: "Keine Tracker zur Vermarktung von Gesundheitsinformationen.",
         twoTitle: "Verknüpfungen sind freiwillig", twoText: "Die App bleibt ohne Apple Health oder Health Connect nutzbar.",
         threeTitle: "Vorsichtige Einordnung", threeText: "Keine Diagnose, Vorhersage oder medizinische Beratung.",
-        fourTitle: "Dein eigener Speicher", fourText: "Sicherungen bleiben in deinem eigenen iCloud- oder Google-Drive-Konto."
+        fourTitle: "Dein eigener Speicher", fourText: "Auf dem iPhone wählst du den Speicherort eines Exports selbst. Unter Android ist die Synchronisierung mit deinem Google Drive freiwillig."
       },
       final: { title: "Weniger eintragen. Mehr wiederfinden.", description: "Starte kostenlos. Persönliche Einblicke wachsen, sobald genug eigene Daten vorhanden sind." },
       footer: { support: "Support", privacy: "Datenschutz", terms: "Bedingungen", studio: "Alle Apps" },
@@ -284,7 +284,7 @@
         oneTitle: "Aucun profil publicitaire", oneText: "Aucun traqueur pour monétiser vos informations de santé.",
         twoTitle: "Connexions facultatives", twoText: "L’app reste utile sans Apple Santé ni Health Connect.",
         threeTitle: "Interprétation prudente", threeText: "Aucun diagnostic, prédiction ou conseil médical.",
-        fourTitle: "Votre propre stockage", fourText: "Les sauvegardes restent dans votre compte iCloud ou Google Drive."
+        fourTitle: "Votre propre stockage", fourText: "Sur iPhone, vous choisissez où enregistrer un export. Sur Android, la synchronisation avec votre Google Drive est facultative."
       },
       final: { title: "Moins de saisie. Plus de repères.", description: "Commencez gratuitement. Les analyses personnelles évoluent lorsqu’il y a assez de vos propres données." },
       footer: { support: "Assistance", privacy: "Confidentialité", terms: "Conditions", studio: "Toutes les apps" },
