@@ -1,11 +1,11 @@
 window.PRODUCT_TRANSLATIONS = (() => {
   const images = (migraineLanguage, homeLanguage, labels) => ({
     migraineHero: {
-      src: `migrainemaatje/assets/web-2026-08-30/${migraineLanguage}/hero.png`,
+      src: `migrainemaatje/assets/web-2026-10-07/${migraineLanguage}/hero.png`,
       alt: labels.migraineHero
     },
     migraineInsights: {
-      src: `migrainemaatje/assets/web-2026-08-30/${migraineLanguage}/insights.png`,
+      src: `migrainemaatje/assets/web-2026-10-07/${migraineLanguage}/insights.png`,
       alt: labels.migraineInsights
     },
     homeDashboard: {

@@ -1,11 +1,11 @@
 (() => {
   const images = (language, labels) => ({
-    hero: { src: `assets/web-2026-08-30/${language}/hero.png`, alt: labels.hero },
-    log: { src: `assets/web-2026-08-30/${language}/log.png`, alt: labels.log },
-    diary: { src: `assets/web-2026-08-30/${language}/diary.png`, alt: labels.diary },
-    insights: { src: `assets/web-2026-08-30/${language}/insights.png`, alt: labels.insights },
-    medication: { src: `assets/web-2026-08-30/${language}/medication.png`, alt: labels.medication },
-    care: { src: `assets/web-2026-08-30/${language}/care.png`, alt: labels.care }
+    hero: { src: `assets/web-2026-10-07/${language}/hero.png`, alt: labels.hero },
+    log: { src: `assets/web-2026-10-07/${language}/log.png`, alt: labels.log },
+    diary: { src: `assets/web-2026-10-07/${language}/diary.png`, alt: labels.diary },
+    insights: { src: `assets/web-2026-10-07/${language}/insights.png`, alt: labels.insights },
+    medication: { src: `assets/web-2026-10-07/${language}/medication.png`, alt: labels.medication },
+    care: { src: `assets/web-2026-10-07/${language}/care.png`, alt: labels.care }
   });
 
   window.PRODUCT_TRANSLATIONS = {
@@ -78,7 +78,7 @@
       },
       final: { title: "Minder invullen. Meer terugvinden.", description: "Begin gratis met vastleggen. Persoonlijke inzichten groeien mee wanneer er genoeg van jouw eigen gegevens zijn." },
       footer: { support: "Support", privacy: "Privacy", terms: "Voorwaarden", studio: "Alle apps" },
-      images: images("nl", { hero: "Een open migraineaanval in MigraineMaatje", log: "Snel een aanvalstype kiezen", diary: "Het dagboek van MigraineMaatje", insights: "Persoonlijke inzichten in MigraineMaatje", medication: "Medicatie beheren in MigraineMaatje", care: "Arts en afspraken in MigraineMaatje" })
+      images: images("nl", { hero: "Mijn dag in MigraineMaatje", log: "Snel een aanvalstype kiezen", diary: "Het dagboek van MigraineMaatje", insights: "Persoonlijke inzichten in MigraineMaatje", medication: "Medicatie beheren in MigraineMaatje", care: "Zorg en afspraken in MigraineMaatje" })
     },
 
     en: {
@@ -148,7 +148,7 @@
       },
       final: { title: "Record less. Remember more.", description: "Start tracking for free. Personal insights grow once there is enough of your own data." },
       footer: { support: "Support", privacy: "Privacy", terms: "Terms", studio: "All apps" },
-      images: images("en", { hero: "An open migraine attack in MigraineMaatje", log: "Quickly choosing an attack type", diary: "The MigraineMaatje diary", insights: "Personal insights in MigraineMaatje", medication: "Recording acute medication", care: "Care and appointments in MigraineMaatje" })
+      images: images("en", { hero: "My day in MigraineMaatje", log: "Quickly choosing an attack type", diary: "The MigraineMaatje diary", insights: "Personal insights in MigraineMaatje", medication: "Managing medication in MigraineMaatje", care: "Care and appointments in MigraineMaatje" })
     },
 
     de: {
@@ -218,7 +218,7 @@
       },
       final: { title: "Weniger eintragen. Mehr wiederfinden.", description: "Starte kostenlos. Persönliche Einblicke wachsen, sobald genug eigene Daten vorhanden sind." },
       footer: { support: "Support", privacy: "Datenschutz", terms: "Bedingungen", studio: "Alle Apps" },
-      images: images("de", { hero: "Eine offene Migräneattacke in MigraineMaatje", log: "Schnelle Wahl des Attackentyps", diary: "Das MigraineMaatje-Tagebuch", insights: "Persönliche Einblicke in MigraineMaatje", medication: "Akutmedikation erfassen", care: "Behandlung und Termine in MigraineMaatje" })
+      images: images("de", { hero: "Mein Tag in MigraineMaatje", log: "Schnelle Wahl des Attackentyps", diary: "Das MigraineMaatje-Tagebuch", insights: "Persönliche Einblicke in MigraineMaatje", medication: "Medikamente verwalten in MigraineMaatje", care: "Versorgung und Termine in MigraineMaatje" })
     },
 
     fr: {
@@ -288,7 +288,7 @@
       },
       final: { title: "Moins de saisie. Plus de repères.", description: "Commencez gratuitement. Les analyses personnelles évoluent lorsqu’il y a assez de vos propres données." },
       footer: { support: "Assistance", privacy: "Confidentialité", terms: "Conditions", studio: "Toutes les apps" },
-      images: images("fr", { hero: "Une crise de migraine ouverte dans MigraineMaatje", log: "Choix rapide du type de crise", diary: "Le journal MigraineMaatje", insights: "Analyses personnelles dans MigraineMaatje", medication: "Enregistrement du traitement de crise", care: "Soins et rendez-vous dans MigraineMaatje" })
+      images: images("fr", { hero: "Ma journée dans MigraineMaatje", log: "Choix rapide du type de crise", diary: "Le journal MigraineMaatje", insights: "Analyses personnelles dans MigraineMaatje", medication: "Gestion des médicaments dans MigraineMaatje", care: "Soins et rendez-vous dans MigraineMaatje" })
     }
   };
 })();
