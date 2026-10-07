@@ -74,6 +74,7 @@
   .product-home .phone-gallery {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     padding-bottom: 16px;
     scroll-snap-type: x mandatory;
   }
@@ -81,5 +82,7 @@
   .product-home .phone-gallery .screen-shot {
     flex: 0 0 min(78vw, 300px);
     scroll-snap-align: start;
+    opacity: 1;
+    transform: none;
   }
 }
