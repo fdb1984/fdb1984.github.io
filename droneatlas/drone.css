@@ -104,3 +104,21 @@ body.product-drone { --accent: #91b3ff; --accent-2: #c5d7ff; --accent-ink: #0a17
   .drone-legal p, .drone-legal li { font-size: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { .product-drone * { scroll-behavior: auto !important; } }
+
+.drone-faq-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 90px; align-items: start; }
+.product-drone .drone-faq-grid .section-heading { margin-bottom: 0; }
+.drone-faq-list details { border-bottom: 1px solid var(--line); padding: 22px 0; }
+.drone-faq-list details:first-child { border-top: 1px solid var(--line); }
+.drone-faq-list summary { cursor: pointer; font-size: 16px; font-weight: 650; line-height: 1.6; }
+.drone-faq-list p { color: var(--muted); font-size: 14px; line-height: 1.85; margin: 17px 0 0; }
+.drone-faq-list a { color: var(--accent); text-underline-offset: 4px; }
+.drone-faq-topics { display: flex; flex-wrap: wrap; gap: 10px; margin: 30px 0 40px; }
+.drone-faq-topics a { padding: 10px 15px; border: 1px solid var(--line-strong); border-radius: 100px; font-size: 12px; text-decoration: none; }
+.drone-faq-page section, .drone-faq-page details { scroll-margin-top: 90px; }
+.drone-faq-page section > h2 { margin-top: 25px; }
+.drone-faq-answer p:last-child { margin-bottom: 3px; }
+.drone-faq-contact { margin-top: 45px; padding: 30px; border: 1px solid #2b3b51; border-radius: 14px; background: #121b29; }
+.drone-faq-contact h2 { margin-top: 0; }
+@media (max-width: 820px) { .drone-faq-grid { grid-template-columns: 1fr; gap: 30px; } }
+
+.product-drone .drone-legal a.primary-action { color: var(--accent-ink); }
