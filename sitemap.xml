@@ -71,4 +71,8 @@
 <changefreq>yearly</changefreq>
 <priority>0.4</priority>
 </url>
+  <url><loc>https://debruinstudio.nl/droneatlas/</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/privacy.html</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/support.html</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/terms.html</loc><lastmod>2026-10-08</lastmod></url>
 </urlset>

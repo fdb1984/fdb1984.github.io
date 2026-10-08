@@ -200,3 +200,21 @@ window.PRODUCT_TRANSLATIONS = (() => {
     }
   };
 })();
+
+// Drone Atlas is a Dutch-language preview, with no active store offer.
+(() => {
+  const additions = {
+    nl: { status: "Voor iPhone · in voorbereiding", promise: "Je wilt vliegen. Kijk eerst hier.", description: "Je plek, de beschikbare kaartvoorwaarden en het weer bij elkaar. Zie welke check nog nodig is voordat je opstijgt.", action: "Ontdek Drone Atlas", hero: "Duidelijkheid voor echte momenten.", intro: "Voor migraine, voor thuis en binnenkort vóór je dronevlucht. Gemaakt om snel te begrijpen en prettig te gebruiken.", meta: "MigraineMaatje, HomeScreen for HomeKit en Drone Atlas in voorbereiding. Duidelijke apps van de Bruin Studio." },
+    en: { status: "For iPhone · in development", promise: "Ready to fly? Check here first.", description: "Your location, available drone-zone conditions and the weather together. See what still needs checking before take-off.", action: "Explore Drone Atlas · Dutch preview", hero: "Clarity for everyday moments.", intro: "For migraine, for home, and soon for your drone flight. Built to be easy to understand and pleasant to use.", meta: "MigraineMaatje, HomeScreen for HomeKit and Drone Atlas in development. Clear apps by de Bruin Studio." },
+    de: { status: "Für iPhone · in Entwicklung", promise: "Bereit zum Fliegen? Schau zuerst hier.", description: "Dein Standort, verfügbare Drohnenzonen und das Wetter an einem Ort. Sieh, was du vor dem Start noch prüfen musst.", action: "Drone Atlas entdecken · niederländische Vorschau", hero: "Klarheit für echte Momente.", intro: "Bei Migräne, zu Hause und bald vor deinem Drohnenflug. Leicht zu verstehen und angenehm zu nutzen.", meta: "MigraineMaatje, HomeScreen for HomeKit und Drone Atlas in Entwicklung. Klare Apps von de Bruin Studio." },
+    fr: { status: "Pour iPhone · en développement", promise: "Prêt à voler ? Vérifiez ici d’abord.", description: "Votre position, les conditions des zones disponibles et la météo réunies. Voyez ce qu’il reste à vérifier avant de décoller.", action: "Découvrir Drone Atlas · aperçu en néerlandais", hero: "De la clarté au quotidien.", intro: "Pour la migraine, la maison, et bientôt vos vols de drone. Des apps simples à comprendre et agréables à utiliser.", meta: "MigraineMaatje, HomeScreen for HomeKit et Drone Atlas en développement. Des apps claires par de Bruin Studio." }
+  };
+  for (const [language, text] of Object.entries(additions)) {
+    const copy = window.PRODUCT_TRANSLATIONS[language];
+    copy.drone = text;
+    copy.hero.title = text.hero;
+    copy.hero.description = text.intro;
+    copy.meta.description = text.meta;
+    copy.apps.title = text.hero;
+  }
+})();
