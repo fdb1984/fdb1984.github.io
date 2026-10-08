@@ -28,7 +28,7 @@ body.product-drone { --accent: #91b3ff; --accent-2: #c5d7ff; --accent-ink: #0a17
 .step-number { display: block; font-size: 11px; color: var(--accent); letter-spacing: .12em; margin-bottom: 29px; }
 .drone-steps h3 { font-size: 22px; margin: 0 0 12px; }
 .drone-steps p { font-size: 14px; line-height: 1.8; color: var(--muted); margin: 0; }
-.drone-screen-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; max-width: 1010px; margin: 0 auto; }
+.drone-screen-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; max-width: 660px; margin: 0 auto; }
 .drone-screen-grid figure { margin: 0; min-width: 0; }
 .drone-phone { border: 5px solid #243041; border-radius: 31px; overflow: hidden; box-shadow: 0 20px 50px #0006; background: #fff; }
 .drone-phone img { width: 100%; height: auto; }
