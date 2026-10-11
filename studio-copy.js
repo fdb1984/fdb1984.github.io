@@ -201,14 +201,50 @@ window.PRODUCT_TRANSLATIONS = (() => {
   };
 })();
 
-// DroneGlance is preparing its Dutch-language first release for the Netherlands and Belgium; no active store offer.
+// DroneGlance for iPhone is publicly available in NL/BE; Android remains in preparation.
 (() => {
   const additions = {
-    nl: { status: "Voor iPhone · in voorbereiding", promise: "Je wilt vliegen. Kijk eerst hier.", description: "Je plek, de beschikbare kaartvoorwaarden en het weer bij elkaar. Zie welke check nog nodig is voordat je opstijgt. Eerste uitgave: Nederland en België, in het Nederlands.", action: "Ontdek DroneGlance", hero: "Duidelijkheid voor echte momenten.", intro: "Voor migraine, voor thuis en binnenkort vóór je dronevlucht. Gemaakt om snel te begrijpen en prettig te gebruiken.", meta: "MigraineMaatje, HomeScreen for HomeKit en DroneGlance in voorbereiding. Duidelijke apps van de Bruin Studio." },
-    en: { status: "For iPhone · in development", promise: "Ready to fly? Check here first.", description: "Your location, available drone-zone conditions and the weather together. See what still needs checking before take-off. First release planned for the Netherlands and Belgium, with a Dutch interface.", action: "Explore DroneGlance · Dutch preview", hero: "Clarity for everyday moments.", intro: "For migraine, for home, and soon for your drone flight. Built to be easy to understand and pleasant to use.", meta: "MigraineMaatje, HomeScreen for HomeKit and DroneGlance in development. Clear apps by de Bruin Studio." },
-    de: { status: "Für iPhone · in Entwicklung", promise: "Bereit zum Fliegen? Schau zuerst hier.", description: "Dein Standort, verfügbare Drohnenzonen und das Wetter an einem Ort. Sieh, was du vor dem Start noch prüfen musst. Die erste Veröffentlichung ist für die Niederlande und Belgien geplant, mit niederländischer Oberfläche.", action: "DroneGlance entdecken · niederländische Vorschau", hero: "Klarheit für echte Momente.", intro: "Bei Migräne, zu Hause und bald vor deinem Drohnenflug. Leicht zu verstehen und angenehm zu nutzen.", meta: "MigraineMaatje, HomeScreen for HomeKit und DroneGlance in Entwicklung. Klare Apps von de Bruin Studio." },
-    fr: { status: "Pour iPhone · en développement", promise: "Prêt à voler ? Vérifiez ici d’abord.", description: "Votre position, les conditions des zones disponibles et la météo réunies. Voyez ce qu’il reste à vérifier avant de décoller. Première sortie prévue aux Pays-Bas et en Belgique, avec une interface en néerlandais.", action: "Découvrir DroneGlance · aperçu en néerlandais", hero: "De la clarté au quotidien.", intro: "Pour la migraine, la maison, et bientôt vos vols de drone. Des apps simples à comprendre et agréables à utiliser.", meta: "MigraineMaatje, HomeScreen for HomeKit et DroneGlance en développement. Des apps claires par de Bruin Studio." }
-  };
+    "nl": {
+        "status": "iPhone · App Store in NL en BE",
+        "promise": "Je wilt vliegen. Kijk eerst hier.",
+        "description": "Je plek, de beschikbare kaartvoorwaarden en het weer bij elkaar. Nu voor iPhone in Nederland en België, met een Nederlandse interface. Android is in voorbereiding.",
+        "action": "Download voor iPhone",
+        "details": "Ontdek DroneGlance",
+        "hero": "Duidelijkheid voor echte momenten.",
+        "intro": "Voor migraine, voor thuis en vóór je dronevlucht. Gemaakt om snel te begrijpen en prettig te gebruiken.",
+        "meta": "MigraineMaatje, HomeScreen for HomeKit en DroneGlance voor iPhone. Duidelijke apps van de Bruin Studio."
+    },
+    "en": {
+        "status": "iPhone · App Store in NL and BE",
+        "promise": "Ready to fly? Check here first.",
+        "description": "Your location, available drone-zone conditions and the weather together. Now on iPhone in the Netherlands and Belgium, with a Dutch interface. Android is in preparation.",
+        "action": "Download for iPhone",
+        "details": "Explore DroneGlance · in Dutch",
+        "hero": "Clarity for everyday moments.",
+        "intro": "For migraine, for home, and for your drone flight. Built to be easy to understand and pleasant to use.",
+        "meta": "MigraineMaatje, HomeScreen for HomeKit and DroneGlance for iPhone. Clear apps by de Bruin Studio."
+    },
+    "de": {
+        "status": "iPhone · App Store in NL und BE",
+        "promise": "Bereit zum Fliegen? Schau zuerst hier.",
+        "description": "Dein Standort, verfügbare Drohnenzonen und das Wetter an einem Ort. Jetzt für iPhone in den Niederlanden und Belgien, mit niederländischer Oberfläche. Android ist in Vorbereitung.",
+        "action": "Für iPhone laden",
+        "details": "DroneGlance entdecken · auf Niederländisch",
+        "hero": "Klarheit für echte Momente.",
+        "intro": "Bei Migräne, zu Hause und vor deinem Drohnenflug. Leicht zu verstehen und angenehm zu nutzen.",
+        "meta": "MigraineMaatje, HomeScreen for HomeKit und DroneGlance für iPhone. Klare Apps von de Bruin Studio."
+    },
+    "fr": {
+        "status": "iPhone · App Store aux Pays-Bas et en Belgique",
+        "promise": "Prêt à voler ? Vérifiez ici d’abord.",
+        "description": "Votre position, les conditions des zones disponibles et la météo réunies. Maintenant sur iPhone aux Pays-Bas et en Belgique, avec une interface en néerlandais. La version Android est en préparation.",
+        "action": "Télécharger pour iPhone",
+        "details": "Découvrir DroneGlance · en néerlandais",
+        "hero": "De la clarté au quotidien.",
+        "intro": "Pour la migraine, la maison et vos vols de drone. Des apps simples à comprendre et agréables à utiliser.",
+        "meta": "MigraineMaatje, HomeScreen for HomeKit et DroneGlance pour iPhone. Des apps claires par de Bruin Studio."
+    }
+};
   for (const [language, text] of Object.entries(additions)) {
     const copy = window.PRODUCT_TRANSLATIONS[language];
     copy.drone = text;
