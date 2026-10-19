@@ -164,3 +164,9 @@ body.product-drone { --accent: #91b3ff; --accent-2: #c5d7ff; --accent-ink: #0a17
   .drone-demo-verdict p { font-size: 23px; }
   .drone-demo-temperature svg { display: none; }
 }
+
+/* Keep help directly reachable when the full navigation is hidden. */
+.product-drone .drone-mobile-help { display: none; }
+@media (max-width: 820px) {
+  .product-drone .drone-mobile-help { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; margin-left: auto; padding-inline: 10px; color: var(--accent); font-size: 13px; font-weight: 650; text-decoration: none; }
+}
