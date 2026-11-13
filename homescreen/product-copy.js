@@ -15,11 +15,11 @@
       global: { skip: "Ga naar inhoud", byStudio: "door de Bruin Studio", navigationLabel: "Hoofdnavigatie", languageLabel: "Kies taal", footerLabel: "Voettekstlinks" },
       nav: { overview: "Overzicht", control: "Bediening", trial: "Proberen", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Probeer 30 dagen", discover: "Bekijk hoe het werkt", support: "Lees de handleiding" },
-      release: { title: "Binnenkort: HomeScreen 2.1.4", text: "Een vernieuwd dashboard, duidelijkere menu's en instellingen, en hulp bij aankoop of herstel. Deze update wacht op beoordeling door Apple; de beelden hieronder tonen 2.1.4." },
+      requirements: { title: "Voor je bestaande HomeKit-woning", text: "HomeScreen gebruikt de woning die je al in Apple Woning hebt ingericht. Je kiest zelf welke onderdelen zichtbaar zijn. Beschikbare informatie en bediening hangen af van je HomeKit-apparaten." },
       phone: { eyebrow: "Op je iPhone", title: "Je huis bedienen, waar je ook bent.", description: "Bekijk je woning, start een scène of stel een lamp in. De staande weergave houdt de bediening binnen bereik.", dashboardTitle: "Jouw overzicht", dashboardText: "Woningstatus en favorieten op het dashboard.", scenesTitle: "Scènes per ruimte", scenesText: "Vind de juiste scène en voer hem uit.", controlsTitle: "De juiste lichtsterkte", controlsText: "Kies uit, de laatste aan-stand of een eigen percentage." },
       hero: {
-        identity: "Voor iPhone, iPad en CarPlay", eyebrow: "Dashboard en bediening", promise: "Je huis in één oogopslag. Thuis én onderweg.",
-        description: "Een persoonlijk dashboard op je iPad, je favoriete bediening op je iPhone en eigen favorieten in CarPlay. Bekijk wat belangrijk is en houd de bediening die je nodig hebt binnen bereik.",
+        identity: "Voor je bestaande HomeKit-woning", eyebrow: "Dashboard en bediening", promise: "Een bedienpaneel voor het hele huishouden.",
+        description: "Nog lampen aan? Een raam open? Maak van je iPad een vaste plek voor je woningstatus en dagelijkse scènes. Kies wat zichtbaar is, zodat huisgenoten niet door alle apparaten hoeven te zoeken.",
         factOne: "30 dagen volledig proberen", factTwo: "Daarna één aankoop", factThree: "Geen abonnement",
         noteOneTitle: "Woning in beeld", noteOneText: "Weer, klimaat en favorieten.", noteTwoTitle: "Direct bedienen", noteTwoText: "Lampen, scènes en klimaat."
       },
@@ -35,7 +35,7 @@
         cardThreeTitle: "Een bord per plek", cardThreeText: "Maak een eigen selectie voor woonkamer, keuken, hal of een compacte iPhone-weergave."
       },
       dashboard: {
-        eyebrow: "Het iPad-dashboard", title: "Leesbaar vanaf de andere kant van de kamer.", description: "Het dashboard is gemaakt voor een iPad op tafel of aan de muur. Grote informatie, vaste posities en een rustige donkere basis.",
+        eyebrow: "Het iPad-dashboard", title: "De bediening die je thuis nodig hebt.", description: "Geef je iPad een vaste plek op tafel of aan de muur. Zet veelgebruikte scènes en apparaten als favoriet klaar, naast het weer en de status van je woning. De inrichting bepaal jij; huisgenoten vinden de gekozen bediening op het dashboard.",
         pointOneTitle: "Lokaal weer", pointOneText: "Apple Weather naast de status van je woning.",
         pointTwoTitle: "Favorieten vooraan", pointTwoText: "Wat je vaak gebruikt blijft direct bereikbaar.",
         pointThreeTitle: "Camera's op verzoek", pointThreeText: "Bekijk een HomeKit-camera schermvullend wanneer je die nodig hebt."
@@ -76,11 +76,11 @@
       global: { skip: "Skip to content", byStudio: "by de Bruin Studio", navigationLabel: "Main navigation", languageLabel: "Choose language", footerLabel: "Footer links" },
       nav: { overview: "Overview", control: "Controls", trial: "Try it", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Try for 30 days", discover: "See how it works", support: "Read the guide" },
-      release: { title: "Coming soon: HomeScreen 2.1.4", text: "A refreshed dashboard, clearer menus and settings, and help with purchases or restoring access. This update is awaiting Apple review; the images below show 2.1.4." },
+      requirements: { title: "For your existing HomeKit home", text: "HomeScreen uses the home you have already set up in Apple's Home app. You choose which items appear. Available information and controls depend on your HomeKit devices." },
       phone: { eyebrow: "On your iPhone", title: "Control your home, wherever you are.", description: "Check your home, run a scene or adjust a light. Portrait mode keeps the controls within reach.", dashboardTitle: "Your overview", dashboardText: "Home status and favourites on the dashboard.", scenesTitle: "Scenes by room", scenesText: "Find the right scene and run it.", controlsTitle: "The right brightness", controlsText: "Choose off, the last on-state or your own percentage." },
       hero: {
-        identity: "For iPhone, iPad and CarPlay", eyebrow: "Dashboard and controls", promise: "Your home at a glance. At home and on the go.",
-        description: "A personal dashboard on your iPad, favourite controls on your iPhone and your own favourites in CarPlay. See what matters and keep the controls you need within reach.",
+        identity: "For your existing HomeKit home", eyebrow: "Dashboard and controls", promise: "A home control panel for your household.",
+        description: "Lights still on? A window open? Give your iPad a fixed place for home status and everyday scenes. Choose what appears, so your household does not have to search through every device.",
         factOne: "Try everything for 30 days", factTwo: "One purchase afterwards", factThree: "No subscription",
         noteOneTitle: "Your home at a glance", noteOneText: "Weather, climate and favourites.", noteTwoTitle: "Control it directly", noteTwoText: "Lights, scenes and climate."
       },
@@ -96,7 +96,7 @@
         cardThreeTitle: "A board for every place", cardThreeText: "Create a selection for the living room, kitchen, hallway or a compact iPhone view."
       },
       dashboard: {
-        eyebrow: "The iPad dashboard", title: "Readable from across the room.", description: "The dashboard is made for an iPad on a table or wall. Large information, stable positions and a calm dark base.",
+        eyebrow: "The iPad dashboard", title: "The controls you need at home.", description: "Give your iPad a place on a table or wall. Add frequently used scenes and devices as favourites, alongside weather and home status. You choose the setup; your household finds the selected controls on the dashboard.",
         pointOneTitle: "Local weather", pointOneText: "Apple Weather alongside the state of your home.",
         pointTwoTitle: "Favourites first", pointTwoText: "What you use often remains immediately available.",
         pointThreeTitle: "Cameras on demand", pointThreeText: "Open a HomeKit camera full screen when you need it."
@@ -137,11 +137,11 @@
       global: { skip: "Zum Inhalt springen", byStudio: "von de Bruin Studio", navigationLabel: "Hauptnavigation", languageLabel: "Sprache wählen", footerLabel: "Links im Seitenfuß" },
       nav: { overview: "Übersicht", control: "Bedienung", trial: "Ausprobieren", privacy: "Datenschutz", download: "Laden" },
       actions: { appStore: "30 Tage testen", discover: "So funktioniert es", support: "Anleitung lesen" },
-      release: { title: "Demnächst: HomeScreen 2.1.4", text: "Ein überarbeitetes Dashboard, klarere Menüs und Einstellungen sowie Hilfe beim Kauf und Wiederherstellen. Dieses Update wartet auf die Prüfung durch Apple; die Bilder unten zeigen 2.1.4." },
+      requirements: { title: "Für dein vorhandenes HomeKit-Zuhause", text: "HomeScreen nutzt das Zuhause, das du bereits in Apples Home-App eingerichtet hast. Du wählst aus, welche Elemente angezeigt werden. Verfügbare Informationen und Bedienelemente hängen von deinen HomeKit-Geräten ab." },
       phone: { eyebrow: "Auf deinem iPhone", title: "Dein Zuhause bedienen, auch unterwegs.", description: "Prüfe dein Zuhause, starte eine Szene oder stelle eine Lampe ein. Im Hochformat bleibt die Bedienung griffbereit.", dashboardTitle: "Deine Übersicht", dashboardText: "Hausstatus und Favoriten auf dem Dashboard.", scenesTitle: "Szenen nach Raum", scenesText: "Finde die passende Szene und führe sie aus.", controlsTitle: "Die passende Helligkeit", controlsText: "Wähle aus, den letzten Ein-Zustand oder einen eigenen Prozentwert." },
       hero: {
-        identity: "Für iPhone, iPad und CarPlay", eyebrow: "Dashboard und Bedienung", promise: "Dein Zuhause auf einen Blick. Zu Hause und unterwegs.",
-        description: "Ein persönliches Dashboard auf dem iPad, deine bevorzugten Bedienelemente auf dem iPhone und eigene Favoriten in CarPlay. Sieh, was wichtig ist, und halte die passende Bedienung griffbereit.",
+        identity: "Für dein vorhandenes HomeKit-Zuhause", eyebrow: "Dashboard und Bedienung", promise: "Ein Bedienpanel für deinen Haushalt.",
+        description: "Noch Licht an? Ein Fenster offen? Gib deinem iPad einen festen Platz für den Hausstatus und alltägliche Szenen. Du wählst, was angezeigt wird, damit dein Haushalt nicht alle Geräte durchsuchen muss.",
         factOne: "30 Tage alles testen", factTwo: "Danach ein Kauf", factThree: "Kein Abonnement",
         noteOneTitle: "Zuhause im Blick", noteOneText: "Wetter, Klima und Favoriten.", noteTwoTitle: "Direkt bedienen", noteTwoText: "Licht, Szenen und Klima."
       },
@@ -157,7 +157,7 @@
         cardThreeTitle: "Ein Board für jeden Ort", cardThreeText: "Erstelle eine Auswahl für Wohnzimmer, Küche, Flur oder eine kompakte iPhone-Ansicht."
       },
       dashboard: {
-        eyebrow: "Das iPad-Dashboard", title: "Vom anderen Ende des Raumes lesbar.", description: "Das Dashboard ist für ein iPad auf dem Tisch oder an der Wand gemacht: große Informationen, feste Positionen und eine ruhige dunkle Basis.",
+        eyebrow: "Das iPad-Dashboard", title: "Die Bedienung, die du zu Hause brauchst.", description: "Gib deinem iPad einen Platz auf dem Tisch oder an der Wand. Lege häufig genutzte Szenen und Geräte als Favoriten neben Wetter und Hausstatus ab. Du bestimmst die Einrichtung; dein Haushalt findet die ausgewählten Bedienelemente auf dem Dashboard.",
         pointOneTitle: "Lokales Wetter", pointOneText: "Apple Weather neben dem Status deines Zuhauses.",
         pointTwoTitle: "Favoriten zuerst", pointTwoText: "Häufig Genutztes bleibt direkt erreichbar.",
         pointThreeTitle: "Kameras bei Bedarf", pointThreeText: "Öffne eine HomeKit-Kamera bei Bedarf bildschirmfüllend."

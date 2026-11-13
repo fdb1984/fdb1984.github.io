@@ -29,9 +29,11 @@ for (const language of ['nl', 'en', 'de']) {
     }
   });
 
-  test(`${language}: upcoming release, purchase sharing and phone explanations are localized`, () => {
-    assert.ok(copy[language].release.title.includes('2.1.4'));
-    assert.ok(copy[language].release.text.includes('Apple'));
+  test(`${language}: existing-home requirements, purchase sharing and phone explanations are localized`, () => {
+    assert.ok(copy[language].requirements.title.includes('HomeKit'));
+    assert.ok(copy[language].requirements.text.includes('HomeKit'));
+    assert.ok(copy[language].requirements.text.includes('Apple'));
+    assert.equal(copy[language].release, undefined);
     assert.equal(Object.keys(copy[language].phone).length, 9);
     assert.ok(copy[language].value.afterOne.length > 15);
     assert.ok(copy[language].gallery.settingsText.length > 20);
@@ -58,7 +60,15 @@ test('support guide documents purchase help in all three languages', () => {
   for (const title of ['Hulp bij aankoop', 'Purchase support', 'Hilfe beim Kauf']) {
     assert.ok(support.includes(title));
   }
-  for (const pending of ['wacht op Apple-review', 'awaiting Apple review', 'wartet auf die Prüfung durch Apple']) {
-    assert.ok(support.includes(pending));
+  for (const pending of ['wacht op Apple-review', 'awaiting Apple review', 'wartet auf die Prüfung durch Apple', 'Upcoming update', 'Kommendes Update']) {
+    assert.equal(support.includes(pending), false);
   }
+});
+
+test('product page explains the household use case without a stale review announcement', () => {
+  const html = fs.readFileSync(path.join(root, 'homescreen/index.html'), 'utf8');
+  assert.ok(html.includes('Een bedienpaneel voor het hele huishouden.'));
+  assert.ok(html.includes('data-i18n="requirements.title"'));
+  assert.equal(html.includes('data-i18n="release.title"'), false);
+  assert.equal(html.includes('wacht op beoordeling'), false);
 });
