@@ -22,6 +22,14 @@ for (const lang of ['nl', 'en', 'de', 'fr']) {
     assert.ok(html.includes(`data-static-language="${lang}"`));
     assert.ok(html.includes(copy[lang].meta.title));
     assert.ok(html.includes(copy[lang].hero.description));
+    assert.ok(html.includes(copy[lang].facts.summary));
+    assert.ok(html.includes(copy[lang].facts.free));
+    assert.ok(html.includes(copy[lang].facts.premium));
+    const app = JSON.parse([...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)][0][1]);
+    assert.equal(app.offers.price, '0');
+    assert.ok(app.offers.description.includes(copy[lang].facts.premium));
+    assert.equal(app.url, `https://debruinstudio.nl/${route(lang)}`);
+    assert.ok(app.sameAs.includes('https://apps.apple.com/app/id6779200491'));
     for (const guide of ['migraine-dagboek', 'pppd-en-migraine']) assert.ok(html.includes(`/migrainemaatje/${guide}/`));
     for (const image of Object.values(copy[lang].images)) {
       assert.ok(html.includes(image.src));

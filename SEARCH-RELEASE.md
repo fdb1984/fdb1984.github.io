@@ -77,3 +77,50 @@ SCREENSHOT_DIR or `/tmp/MigraineMaatje-website-search`.
 Access and indexing do not guarantee selection as an AI citation or any fixed
 position. Broad medical queries and app-selection queries have different intent;
 the website should not pretend to replace a hospital or physician's information.
+
+## Follow-up: broad diary discovery and search notifications
+
+The first observed baseline was mixed: Google's AI Overview mentioned the app
+for a Dutch-language migraine-and-PPPD app query without the brand name, citing
+the real Google Play listing. The user's broader Claude diary request did not
+mention the app. This does not establish an effect caused by the site changes.
+Do not call a narrowly positive query a general ranking improvement.
+
+The next patch adds a visible factual product summary in all four languages:
+diary category, supported devices and languages, free functions, optional
+Premium, use without a smartwatch, and privacy. SoftwareApplication metadata
+matches those visible facts and links to the actual store identities. The Dutch
+diary guide now also answers the ordinary diary-selection question, clearly
+labelled as the maker's own explanation rather than an independent ranking.
+
+The public root text file ending in `812d6ef9318a1086dd6c06a405cce3ba.txt`
+is IndexNow's intentionally public domain-ownership proof, not a password or an
+account access token. The publisher script sends only an allowlist of public
+MigraineMaatje page URLs. It does not transmit visitor, diary or health data.
+It first verifies the live ownership file. HTTP 200 means received; HTTP 202
+means received with ownership validation pending. Neither establishes indexing
+or inclusion in ChatGPT, Claude, Gemini or another AI answer.
+
+```sh
+node scripts/notify-search-engines.cjs --all-current --dry-run
+node scripts/notify-search-engines.cjs --all-current --receipt=/tmp/indexnow-receipt.json
+```
+
+The second command performs a real notification; use the dry run for testing.
+The Pages workflow tests static content before deployment and notifies changed
+maintained MigraineMaatje HTML routes afterward. Notification failure warns
+without taking the already-published website offline. Other products are not
+submitted by this MigraineMaatje-specific script.
+
+Sources for search controls and notification semantics:
+
+- https://developers.openai.com/api/docs/bots
+- https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
+- https://www.indexnow.org/documentation
+- https://www.bing.com/indexnow/getstarted
+
+Next evaluation: use the same ordinary unbranded diary question in independent
+fresh conversations. Record whether web search was actually used when visible,
+the app mention, cited URL, date and model if shown. Keep negative results.
+Do not silently change the question, feed the app name to the model or turn
+web search on only for a positive retest and present it as the same baseline.

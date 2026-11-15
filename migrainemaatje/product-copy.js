@@ -20,7 +20,7 @@
       actions: { appStore: "Download in de App Store", playStore: "Download via Google Play" },
       hero: {
         identity: "Voor iPhone, iPad, Apple Watch en Android",
-        eyebrow: "Een rustig migraine-dagboek",
+        eyebrow: "Gratis migraine- en hoofdpijndagboek",
         promise: "Snel vastleggen. Later zien wat hielp.",
         description: "Leg een aanval in een paar tikken vast. Vul later medicatie en herstel aan en bewaar wat je met je arts wilt bespreken.",
         trustLine: "Geen advertenties · geen verkoop van gezondheidsdata",
@@ -31,6 +31,16 @@
         oneTitle: "Rust tijdens migraine", oneText: "Alleen vastleggen wat nu nodig is",
         twoTitle: "Inzicht uit je eigen gegevens", twoText: "Geen algemene conclusie vermomd als zekerheid",
         threeTitle: "Gebouwd voor vertrouwen", threeText: "Jij kiest welke koppelingen je gebruikt"
+      },
+      facts: {
+        title: "Een migrainedagboek voor iPhone en Android",
+        summary: "MigraineMaatje is een Nederlandstalige app om migraine, hoofdpijn, medicatie en herstel bij te houden. Je kunt gratis beginnen en een basisrapport maken voor je huisarts of neuroloog.",
+        platformsLabel: "Apparaten", platforms: "iPhone, iPad en Android. Met een aanvullende Apple Watch-app.",
+        languagesLabel: "Talen", languages: "Nederlands, Engels, Duits en Frans.",
+        freeLabel: "Gratis basis", free: "Aanvallen vastleggen en afronden, dagboek, kalender, medicatie, basisstatus, medicatiedagen en basisrapport.",
+        premiumLabel: "Optioneel Premium", premium: "Persoonlijke uitleg, medicatie-effect, maandanalyse en consultvoorbereiding. Een abonnement is niet nodig om je dagboek bij te houden.",
+        watchLabel: "Zonder smartwatch", watch: "Ja. Je kunt zelf aanvallen en medicatie vastleggen. Apple Gezondheid en Health Connect zijn optioneel.",
+        privacyLabel: "Privacy", privacy: "Geen advertenties en geen verkoop van gezondheidsdata. Je kiest zelf welke koppelingen en reservekopie je gebruikt."
       },
       moments: {
         eyebrow: "Op het juiste moment", title: "De app vraagt nooit meer dan nodig.",
@@ -97,7 +107,7 @@
       nav: { how: "How it works", insight: "Insights", care: "For your doctor", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Download on the App Store", playStore: "Get it on Google Play" },
       hero: {
-        identity: "For iPhone, iPad, Apple Watch and Android", eyebrow: "A calmer migraine diary", promise: "Log it quickly. See what helped later.",
+        identity: "For iPhone, iPad, Apple Watch and Android", eyebrow: "Free migraine and headache diary", promise: "Log it quickly. See what helped later.",
         description: "Log an attack in a few taps. Add medication and recovery later, and keep what you want to discuss with your doctor.",
         trustLine: "No ads · no sale of health data",
         factOne: "Quick logging stays free", factTwo: "No advertising", factThree: "No sale of health data",
@@ -107,6 +117,16 @@
         oneTitle: "Calm during migraine", oneText: "Only record what matters right now",
         twoTitle: "Insight from your own data", twoText: "No generic conclusion presented as certainty",
         threeTitle: "Built for trust", threeText: "You choose which connections to use"
+      },
+      facts: {
+        title: "A migraine diary for iPhone and Android",
+        summary: "MigraineMaatje is a migraine and headache diary app for recording attacks, medication and recovery. Start for free and create a basic report for your doctor or neurologist.",
+        platformsLabel: "Devices", platforms: "iPhone, iPad and Android, with a companion Apple Watch app.",
+        languagesLabel: "Languages", languages: "Dutch, English, German and French.",
+        freeLabel: "Free basics", free: "Recording and finishing attacks, diary, calendar, medication, basic status, medication days and a basic report.",
+        premiumLabel: "Optional Premium", premium: "Personal explanations, medication effect, monthly analysis and appointment preparation. No subscription is needed to keep your diary.",
+        watchLabel: "Without a smartwatch", watch: "Yes. Record attacks and medication manually. Apple Health and Health Connect are optional.",
+        privacyLabel: "Privacy", privacy: "No ads and no sale of health data. You choose which connections and backup options to use."
       },
       moments: {
         eyebrow: "At the right moment", title: "The app never asks for more than necessary.",
@@ -173,7 +193,7 @@
       nav: { how: "So funktioniert es", insight: "Einblicke", care: "Für deinen Arzt", privacy: "Datenschutz", download: "Laden" },
       actions: { appStore: "Im App Store laden", playStore: "Bei Google Play herunterladen" },
       hero: {
-        identity: "Für iPhone, iPad, Apple Watch und Android", eyebrow: "Ein ruhigeres Migränetagebuch", promise: "Schnell festhalten. Später sehen, was geholfen hat.",
+        identity: "Für iPhone, iPad, Apple Watch und Android", eyebrow: "Kostenloses Migräne- und Kopfschmerztagebuch", promise: "Schnell festhalten. Später sehen, was geholfen hat.",
         description: "Halte eine Attacke mit wenigen Fingertipps fest. Ergänze später Medikamente und Erholung und bewahre auf, was du mit deinem Arzt besprechen möchtest.",
         trustLine: "Keine Werbung · kein Verkauf von Gesundheitsdaten",
         factOne: "Schnelles Erfassen bleibt kostenlos", factTwo: "Keine Werbung", factThree: "Kein Verkauf von Gesundheitsdaten",
@@ -183,6 +203,16 @@
         oneTitle: "Ruhe während der Migräne", oneText: "Nur festhalten, was gerade nötig ist",
         twoTitle: "Einblicke aus deinen eigenen Daten", twoText: "Keine allgemeine Aussage als Gewissheit",
         threeTitle: "Auf Vertrauen ausgelegt", threeText: "Du entscheidest, welche Verknüpfungen du nutzt"
+      },
+      facts: {
+        title: "Ein Migränetagebuch für iPhone und Android",
+        summary: "MigraineMaatje ist eine App, um Migräne, Kopfschmerzen, Medikamente und Erholung festzuhalten. Du kannst kostenlos beginnen und einen Basisbericht für deine Arztpraxis erstellen.",
+        platformsLabel: "Geräte", platforms: "iPhone, iPad und Android, mit einer ergänzenden Apple-Watch-App.",
+        languagesLabel: "Sprachen", languages: "Niederländisch, Englisch, Deutsch und Französisch.",
+        freeLabel: "Kostenlose Basis", free: "Attacken erfassen und abschließen, Tagebuch, Kalender, Medikamente, Basisstatus, Medikamententage und Basisbericht.",
+        premiumLabel: "Optionales Premium", premium: "Persönliche Erklärungen, Medikamentenwirkung, Monatsanalyse und Gesprächsvorbereitung. Für dein Tagebuch brauchst du kein Abonnement.",
+        watchLabel: "Ohne Smartwatch", watch: "Ja. Du kannst Attacken und Medikamente selbst erfassen. Apple Health und Health Connect sind optional.",
+        privacyLabel: "Datenschutz", privacy: "Keine Werbung und kein Verkauf von Gesundheitsdaten. Du entscheidest über Verbindungen und Sicherungen."
       },
       moments: {
         eyebrow: "Im richtigen Moment", title: "Die App fragt nie mehr als nötig.",
@@ -249,7 +279,7 @@
       nav: { how: "Fonctionnement", insight: "Analyses", care: "Pour votre médecin", privacy: "Confidentialité", download: "Télécharger" },
       actions: { appStore: "Télécharger dans l’App Store", playStore: "Disponible sur Google Play" },
       hero: {
-        identity: "Pour iPhone, iPad, Apple Watch et Android", eyebrow: "Un journal de migraine plus apaisé", promise: "Enregistrer vite. Voir ensuite ce qui a aidé.",
+        identity: "Pour iPhone, iPad, Apple Watch et Android", eyebrow: "Journal gratuit de migraine et de maux de tête", promise: "Enregistrer vite. Voir ensuite ce qui a aidé.",
         description: "Enregistrez une crise en quelques gestes. Ajoutez plus tard les médicaments et la récupération, puis gardez ce que vous souhaitez aborder avec votre médecin.",
         trustLine: "Sans publicité · aucune vente de données de santé",
         factOne: "L’enregistrement rapide reste gratuit", factTwo: "Sans publicité", factThree: "Aucune vente de données de santé",
@@ -259,6 +289,16 @@
         oneTitle: "Du calme pendant la migraine", oneText: "Notez seulement ce qui compte maintenant",
         twoTitle: "Des éclairages issus de vos données", twoText: "Aucune généralité présentée comme une certitude",
         threeTitle: "Conçu pour la confiance", threeText: "Vous choisissez les connexions utilisées"
+      },
+      facts: {
+        title: "Un journal de migraine pour iPhone et Android",
+        summary: "MigraineMaatje est une application pour noter les migraines, les maux de tête, les médicaments et la récupération. Commencez gratuitement et créez un rapport de base pour votre médecin ou neurologue.",
+        platformsLabel: "Appareils", platforms: "iPhone, iPad et Android, avec une application complémentaire pour Apple Watch.",
+        languagesLabel: "Langues", languages: "Néerlandais, anglais, allemand et français.",
+        freeLabel: "Base gratuite", free: "Enregistrer et terminer les crises, journal, calendrier, médicaments, état de base, jours de prise et rapport de base.",
+        premiumLabel: "Premium facultatif", premium: "Explications personnelles, effet des médicaments, analyse mensuelle et préparation des consultations. Aucun abonnement n’est nécessaire pour tenir votre journal.",
+        watchLabel: "Sans montre connectée", watch: "Oui. Notez vous-même les crises et les médicaments. Apple Santé et Health Connect sont facultatifs.",
+        privacyLabel: "Confidentialité", privacy: "Aucune publicité ni vente de données de santé. Vous choisissez les connexions et les options de sauvegarde."
       },
       moments: {
         eyebrow: "Au bon moment", title: "L’app ne demande jamais plus que nécessaire.",

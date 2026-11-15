@@ -67,9 +67,19 @@ const route = language => `/migrainemaatje/${language === 'nl' ? '' : `${languag
           const schema = JSON.parse(node.textContent);
           schema.inLanguage = language;
           schema.description = copy.meta.description;
+          if (schema['@type'] === 'SoftwareApplication') {
+            schema.url = `https://debruinstudio.nl${routes[language]}`;
+            schema.sameAs = schema.downloadUrl;
+            schema.isAccessibleForFree = true;
+            schema.featureList = [copy.value.freeOne, copy.value.freeTwo, copy.value.freeThree, copy.value.freeFour];
+            schema.offers = {
+              '@type': 'Offer', price: '0', priceCurrency: 'EUR',
+              description: `${copy.facts.freeLabel}: ${copy.facts.free} ${copy.facts.premiumLabel}: ${copy.facts.premium}`
+            };
+          }
           node.textContent = `\n${JSON.stringify(schema, null, 2)}\n`;
         }
-        for (const src of ['/migrainemaatje/product-copy.js?v=20261115-search', '/product-site.js?v=20261115-search']) {
+        for (const src of ['/migrainemaatje/product-copy.js?v=20261115-discovery', '/product-site.js?v=20261115-search']) {
           const script = document.createElement('script'); script.src = src; document.body.append(script);
         }
         return '<!doctype html>\n' + document.documentElement.outerHTML + '\n';

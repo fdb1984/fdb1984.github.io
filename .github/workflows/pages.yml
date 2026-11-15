@@ -23,6 +23,10 @@ jobs:
     steps:
       - name: Check out website
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
+      - name: Check website content
+        run: node --test tests/*.test.cjs
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload website
@@ -32,3 +36,6 @@ jobs:
       - name: Publish website
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Notify search engines about changed MigraineMaatje pages
+        continue-on-error: true
+        run: node scripts/notify-search-engines.cjs

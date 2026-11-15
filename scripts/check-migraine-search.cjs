@@ -74,6 +74,9 @@ const types = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 
           if (javaScriptEnabled) {
             const name = route.split('/').filter(Boolean).slice(1).join('-') || 'nl';
             await page.screenshot({ path: path.join(output, `${name}-${viewport.width}.png`) });
+            if (viewport.width >= 820 && await page.locator('.product-facts').count()) {
+              await page.locator('.product-facts').screenshot({ path: path.join(output, `${name}-product-facts-${viewport.width}.png`) });
+            }
           }
           assert.deepEqual(errors, [], `${route}: browser errors`);
           passed++;
