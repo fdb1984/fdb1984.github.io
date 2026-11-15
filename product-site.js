@@ -19,8 +19,20 @@
     .filter(Boolean);
   const fallback = document.body.dataset.defaultLanguage || supported[0] || "nl";
   const requested = new URLSearchParams(window.location.search).get("lang");
+  const staticLanguage = document.body.dataset.staticLanguage;
+  const localeRoot = document.body.dataset.localeRoot;
+  const localePath = (value) => `${localeRoot}${value === "nl" ? "" : `${value}/`}`;
+  if (localeRoot && supported.includes(requested)) {
+    const next = new URL(window.location.href);
+    next.pathname = localePath(requested);
+    next.searchParams.delete("lang");
+    window.location.replace(next);
+    return;
+  }
   const browserLanguage = (navigator.language || fallback).slice(0, 2).toLowerCase();
-  const language = supported.includes(requested)
+  const language = supported.includes(staticLanguage)
+    ? staticLanguage
+    : supported.includes(requested)
     ? requested
     : supported.includes(browserLanguage)
       ? browserLanguage
@@ -69,6 +81,12 @@
 
   document.querySelectorAll("[data-lang]").forEach((button) => {
     const selected = button.dataset.lang === language;
+    if (localeRoot && button.tagName === "A") {
+      button.href = localePath(button.dataset.lang);
+      if (selected) button.setAttribute("aria-current", "page");
+      else button.removeAttribute("aria-current");
+      return;
+    }
     button.setAttribute("aria-pressed", selected ? "true" : "false");
     button.addEventListener("click", () => {
       const next = new URL(window.location.href);

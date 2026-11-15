@@ -38,6 +38,10 @@
 </url>
 <url>
 <loc>https://debruinstudio.nl/migrainemaatje/</loc>
+<xhtml:link rel="alternate" hreflang="nl" href="https://debruinstudio.nl/migrainemaatje/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://debruinstudio.nl/migrainemaatje/en/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://debruinstudio.nl/migrainemaatje/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://debruinstudio.nl/migrainemaatje/fr/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -45,6 +49,35 @@
 <loc>https://debruinstudio.nl/migrainemaatje/support.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
+</url>
+<url>
+<loc>https://debruinstudio.nl/migrainemaatje/en/</loc>
+<xhtml:link rel="alternate" hreflang="nl" href="https://debruinstudio.nl/migrainemaatje/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://debruinstudio.nl/migrainemaatje/en/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://debruinstudio.nl/migrainemaatje/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://debruinstudio.nl/migrainemaatje/fr/" />
+</url>
+<url>
+<loc>https://debruinstudio.nl/migrainemaatje/de/</loc>
+<xhtml:link rel="alternate" hreflang="nl" href="https://debruinstudio.nl/migrainemaatje/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://debruinstudio.nl/migrainemaatje/en/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://debruinstudio.nl/migrainemaatje/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://debruinstudio.nl/migrainemaatje/fr/" />
+</url>
+<url>
+<loc>https://debruinstudio.nl/migrainemaatje/fr/</loc>
+<xhtml:link rel="alternate" hreflang="nl" href="https://debruinstudio.nl/migrainemaatje/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://debruinstudio.nl/migrainemaatje/en/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://debruinstudio.nl/migrainemaatje/de/" />
+<xhtml:link rel="alternate" hreflang="fr" href="https://debruinstudio.nl/migrainemaatje/fr/" />
+</url>
+<url>
+<loc>https://debruinstudio.nl/migrainemaatje/migraine-dagboek/</loc>
+<lastmod>2026-11-15</lastmod>
+</url>
+<url>
+<loc>https://debruinstudio.nl/migrainemaatje/pppd-en-migraine/</loc>
+<lastmod>2026-11-15</lastmod>
 </url>
 <url>
 <loc>https://debruinstudio.nl/migrainemaatje/privacy.html</loc>

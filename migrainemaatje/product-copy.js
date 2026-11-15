@@ -1,18 +1,18 @@
 (() => {
   const images = (language, labels) => ({
-    hero: { src: `assets/web-2026-10-07/${language}/hero.png`, alt: labels.hero },
-    log: { src: `assets/web-2026-10-07/${language}/log.png`, alt: labels.log },
-    diary: { src: `assets/web-2026-10-07/${language}/diary.png`, alt: labels.diary },
-    insights: { src: `assets/web-2026-10-07/${language}/insights.png`, alt: labels.insights },
-    medication: { src: `assets/web-2026-10-07/${language}/medication.png`, alt: labels.medication },
-    care: { src: `assets/web-2026-10-07/${language}/care.png`, alt: labels.care }
+    hero: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/hero.png`, alt: labels.hero },
+    log: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/log.png`, alt: labels.log },
+    diary: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/diary.png`, alt: labels.diary },
+    insights: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/insights.png`, alt: labels.insights },
+    medication: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/medication.png`, alt: labels.medication },
+    care: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/care.png`, alt: labels.care }
   });
 
   window.PRODUCT_TRANSLATIONS = {
     nl: {
       meta: {
-        title: "MigraineMaatje - migraine bijhouden zonder gedoe",
-        description: "Leg een migraineaanval snel vast, vul later aan en ontdek wat in jouw eigen dagboek, medicatie en herstel opvalt.",
+        title: "MigraineMaatje | Migraine- en hoofdpijndagboek app",
+        description: "Gratis migraine en hoofdpijn vastleggen, medicatie bijhouden en een basisrapport voor je arts maken. Met uitleg over je dagboek, duizeligheid en PPPD.",
         locale: "nl_NL"
       },
       global: { skip: "Ga naar inhoud", byStudio: "door de Bruin Studio", navigationLabel: "Hoofdnavigatie", languageLabel: "Kies taal", footerLabel: "Voettekstlinks" },
@@ -76,6 +76,12 @@
         threeTitle: "Voorzichtige uitleg", threeText: "Geen diagnose, voorspelling of medisch advies.",
         fourTitle: "Jouw eigen opslag", fourText: "Op iPhone kies je zelf waar je een export bewaart. Op Android is synchronisatie met je eigen Google Drive optioneel."
       },
+      guides: {
+        eyebrow: "Praktische uitleg", title: "Migraine, duizeligheid en je dagboek.",
+        description: "Wat leg je vast en wat neem je mee naar je arts? Twee korte gidsen met voorbeelden en verwijzingen naar medische informatie.",
+        diaryTitle: "Een migraine- en hoofdpijndagboek bijhouden", diaryText: "Wat je tijdens een aanval vastlegt, wat later kan en hoe je medicatie en herstel terugvindt.",
+        pppdTitle: "PPPD en migraine: duizeligheid beschrijven", pppdText: "Waarom duizeligheid en migraine niet hetzelfde zijn. Met een voorbeeldnotitie en vragen voor je afspraak."
+      },
       final: { title: "Minder invullen. Meer terugvinden.", description: "Begin gratis met vastleggen. Persoonlijke inzichten groeien mee wanneer er genoeg van jouw eigen gegevens zijn." },
       footer: { support: "Support", privacy: "Privacy", terms: "Voorwaarden", studio: "Alle apps" },
       images: images("nl", { hero: "Mijn dag in MigraineMaatje", log: "Snel een aanvalstype kiezen", diary: "Het dagboek van MigraineMaatje", insights: "Persoonlijke inzichten in MigraineMaatje", medication: "Medicatie beheren in MigraineMaatje", care: "Zorg en afspraken in MigraineMaatje" })
@@ -83,7 +89,7 @@
 
     en: {
       meta: {
-        title: "MigraineMaatje - Migraine and Headache Diary",
+        title: "MigraineMaatje | Migraine and Headache Diary App",
         description: "Log a migraine attack quickly, add details later and see what stands out in your own diary, medication and recovery.",
         locale: "en_US"
       },
@@ -146,6 +152,12 @@
         threeTitle: "Careful interpretation", threeText: "No diagnosis, prediction or medical advice.",
         fourTitle: "Your own storage", fourText: "On iPhone, you choose where to save an export. On Android, sync with your own Google Drive is optional."
       },
+      guides: {
+        eyebrow: "Guides in Dutch", title: "Migraine, dizziness and your diary.",
+        description: "What can you record and bring to your doctor? These two Dutch-language guides include examples and links to medical information.",
+        diaryTitle: "Keeping a migraine and headache diary (Dutch)", diaryText: "What to record during an attack, what can wait and how to review medication and recovery.",
+        pppdTitle: "PPPD and migraine: describing dizziness (Dutch)", pppdText: "Why dizziness and migraine are not the same, with a sample note and questions for your appointment."
+      },
       final: { title: "Record less. Remember more.", description: "Start tracking for free. Personal insights grow once there is enough of your own data." },
       footer: { support: "Support", privacy: "Privacy", terms: "Terms", studio: "All apps" },
       images: images("en", { hero: "My day in MigraineMaatje", log: "Quickly choosing an attack type", diary: "The MigraineMaatje diary", insights: "Personal insights in MigraineMaatje", medication: "Managing medication in MigraineMaatje", care: "Care and appointments in MigraineMaatje" })
@@ -153,7 +165,7 @@
 
     de: {
       meta: {
-        title: "MigraineMaatje - Migräne dokumentieren ohne zusätzlichen Stress",
+        title: "MigraineMaatje | Migräne- und Kopfschmerztagebuch",
         description: "Dokumentiere eine Migräneattacke schnell, ergänze später Details und erkenne, was in deinem eigenen Tagebuch auffällt.",
         locale: "de_DE"
       },
@@ -216,6 +228,12 @@
         threeTitle: "Vorsichtige Einordnung", threeText: "Keine Diagnose, Vorhersage oder medizinische Beratung.",
         fourTitle: "Dein eigener Speicher", fourText: "Auf dem iPhone wählst du den Speicherort eines Exports selbst. Unter Android ist die Synchronisierung mit deinem Google Drive freiwillig."
       },
+      guides: {
+        eyebrow: "Ratgeber auf Niederländisch", title: "Migräne, Schwindel und dein Tagebuch.",
+        description: "Was kannst du festhalten und zum Arztgespräch mitnehmen? Zwei niederländische Ratgeber mit Beispielen und medizinischen Quellen.",
+        diaryTitle: "Migräne- und Kopfschmerztagebuch führen (Niederländisch)", diaryText: "Was du während einer Attacke festhältst, was warten kann und wie du Medikamente und Erholung wiederfindest.",
+        pppdTitle: "PPPD und Migräne: Schwindel beschreiben (Niederländisch)", pppdText: "Warum Schwindel und Migräne nicht dasselbe sind, mit einer Beispielnotiz und Fragen für deinen Termin."
+      },
       final: { title: "Weniger eintragen. Mehr wiederfinden.", description: "Starte kostenlos. Persönliche Einblicke wachsen, sobald genug eigene Daten vorhanden sind." },
       footer: { support: "Support", privacy: "Datenschutz", terms: "Bedingungen", studio: "Alle Apps" },
       images: images("de", { hero: "Mein Tag in MigraineMaatje", log: "Schnelle Wahl des Attackentyps", diary: "Das MigraineMaatje-Tagebuch", insights: "Persönliche Einblicke in MigraineMaatje", medication: "Medikamente verwalten in MigraineMaatje", care: "Versorgung und Termine in MigraineMaatje" })
@@ -223,7 +241,7 @@
 
     fr: {
       meta: {
-        title: "MigraineMaatje - suivre vos migraines sans surcharge",
+        title: "MigraineMaatje | Journal de migraine et de maux de tête",
         description: "Enregistrez rapidement une crise, complétez les détails plus tard et découvrez ce qui ressort de votre propre journal.",
         locale: "fr_FR"
       },
@@ -285,6 +303,12 @@
         twoTitle: "Connexions facultatives", twoText: "L’app reste utile sans Apple Santé ni Health Connect.",
         threeTitle: "Interprétation prudente", threeText: "Aucun diagnostic, prédiction ou conseil médical.",
         fourTitle: "Votre propre stockage", fourText: "Sur iPhone, vous choisissez où enregistrer un export. Sur Android, la synchronisation avec votre Google Drive est facultative."
+      },
+      guides: {
+        eyebrow: "Guides en néerlandais", title: "Migraine, vertiges et votre journal.",
+        description: "Que noter et apporter à votre médecin ? Deux guides en néerlandais avec des exemples et des sources médicales.",
+        diaryTitle: "Tenir un journal de migraine et de maux de tête (néerlandais)", diaryText: "Que noter pendant une crise, ce qui peut attendre et comment retrouver les médicaments et la récupération.",
+        pppdTitle: "PPPD et migraine : décrire les vertiges (néerlandais)", pppdText: "Pourquoi les vertiges et la migraine sont différents, avec une note fictive et des questions pour votre rendez-vous."
       },
       final: { title: "Moins de saisie. Plus de repères.", description: "Commencez gratuitement. Les analyses personnelles évoluent lorsqu’il y a assez de vos propres données." },
       footer: { support: "Assistance", privacy: "Confidentialité", terms: "Conditions", studio: "Toutes les apps" },
