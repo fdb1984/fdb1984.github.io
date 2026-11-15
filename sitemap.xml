@@ -96,8 +96,29 @@
 </url>
 <url>
 <loc>https://debruinstudio.nl/homescreen/</loc>
+<lastmod>2026-11-15</lastmod>
+<xhtml:link rel="alternate" hreflang="nl" href="https://debruinstudio.nl/homescreen/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://debruinstudio.nl/homescreen/en/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://debruinstudio.nl/homescreen/de/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://debruinstudio.nl/homescreen/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
+</url>
+<url>
+<loc>https://debruinstudio.nl/homescreen/en/</loc>
+<lastmod>2026-11-15</lastmod>
+<xhtml:link rel="alternate" hreflang="nl" href="https://debruinstudio.nl/homescreen/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://debruinstudio.nl/homescreen/en/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://debruinstudio.nl/homescreen/de/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://debruinstudio.nl/homescreen/" />
+</url>
+<url>
+<loc>https://debruinstudio.nl/homescreen/de/</loc>
+<lastmod>2026-11-15</lastmod>
+<xhtml:link rel="alternate" hreflang="nl" href="https://debruinstudio.nl/homescreen/" />
+<xhtml:link rel="alternate" hreflang="en" href="https://debruinstudio.nl/homescreen/en/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://debruinstudio.nl/homescreen/de/" />
+<xhtml:link rel="alternate" hreflang="x-default" href="https://debruinstudio.nl/homescreen/" />
 </url>
 <url>
 <loc>https://debruinstudio.nl/homescreen/privacy.html</loc>

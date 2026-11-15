@@ -1,17 +1,17 @@
 (() => {
   const images = (language, labels) => ({
-    dashboard: { src: `assets/web-2026-10-07/${language}/iPad-13/01-dashboard.png`, alt: labels.dashboard },
-    controls: { src: `assets/web-2026-10-07/${language}/iPad-13/09-light-controls.png`, alt: labels.controls },
-    alerts: { src: `assets/web-2026-10-07/${language}/iPad-13/08-alerts.png`, alt: labels.alerts },
-    settings: { src: `assets/web-2026-10-07/${language}/iPad-13/10-settings.png`, alt: labels.settings },
-    phoneDashboard: { src: `assets/web-2026-10-07/${language}/iPhone-6.9/01-dashboard.png`, alt: labels.phoneDashboard },
-    phoneControls: { src: `assets/web-2026-10-07/${language}/iPhone-6.9/09-light-controls.png`, alt: labels.phoneControls },
-    phoneScenes: { src: `assets/web-2026-10-07/${language}/iPhone-6.9/03-scenes.png`, alt: labels.phoneScenes }
+    dashboard: { src: `/homescreen/assets/web-2026-10-07/${language}/iPad-13/01-dashboard.png`, alt: labels.dashboard },
+    controls: { src: `/homescreen/assets/web-2026-10-07/${language}/iPad-13/09-light-controls.png`, alt: labels.controls },
+    alerts: { src: `/homescreen/assets/web-2026-10-07/${language}/iPad-13/08-alerts.png`, alt: labels.alerts },
+    settings: { src: `/homescreen/assets/web-2026-10-07/${language}/iPad-13/10-settings.png`, alt: labels.settings },
+    phoneDashboard: { src: `/homescreen/assets/web-2026-10-07/${language}/iPhone-6.9/01-dashboard.png`, alt: labels.phoneDashboard },
+    phoneControls: { src: `/homescreen/assets/web-2026-10-07/${language}/iPhone-6.9/09-light-controls.png`, alt: labels.phoneControls },
+    phoneScenes: { src: `/homescreen/assets/web-2026-10-07/${language}/iPhone-6.9/03-scenes.png`, alt: labels.phoneScenes }
   });
 
   window.PRODUCT_TRANSLATIONS = {
     nl: {
-      meta: { title: "HomeScreen for HomeKit - je huis in één oogopslag", description: "Je HomeKit-dashboard voor iPhone en iPad, met CarPlay, widgets en klimaatbediening. Probeer alles 30 dagen; daarna één aankoop, geen abonnement.", locale: "nl_NL" },
+      meta: { title: "HomeScreen for HomeKit - iPad-dashboard en bediening", description: "Maak van je iPad een HomeKit-bedienpaneel voor het hele huishouden. Ook op iPhone, met CarPlay en widgets. 30 dagen proberen, daarna één aankoop.", locale: "nl_NL" },
       global: { skip: "Ga naar inhoud", byStudio: "door de Bruin Studio", navigationLabel: "Hoofdnavigatie", languageLabel: "Kies taal", footerLabel: "Voettekstlinks" },
       nav: { overview: "Overzicht", control: "Bediening", trial: "Proberen", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Probeer 30 dagen", discover: "Bekijk hoe het werkt", support: "Lees de handleiding" },
@@ -35,7 +35,7 @@
         cardThreeTitle: "Een bord per plek", cardThreeText: "Maak een eigen selectie voor woonkamer, keuken, hal of een compacte iPhone-weergave."
       },
       dashboard: {
-        eyebrow: "Het iPad-dashboard", title: "De bediening die je thuis nodig hebt.", description: "Geef je iPad een vaste plek op tafel of aan de muur. Zet veelgebruikte scènes en apparaten als favoriet klaar, naast het weer en de status van je woning. De inrichting bepaal jij; huisgenoten vinden de gekozen bediening op het dashboard.",
+        eyebrow: "Het iPad-dashboard", title: "Een HomeKit-dashboard voor je iPad aan de muur.", description: "Geef je iPad een vaste plek op tafel of aan de muur. Zet veelgebruikte scènes en apparaten als favoriet klaar, naast het weer en de status van je woning. De inrichting bepaal jij; huisgenoten vinden de gekozen bediening op het dashboard.",
         pointOneTitle: "Lokaal weer", pointOneText: "Apple Weather naast de status van je woning.",
         pointTwoTitle: "Favorieten vooraan", pointTwoText: "Wat je vaak gebruikt blijft direct bereikbaar.",
         pointThreeTitle: "Camera's op verzoek", pointThreeText: "Bekijk een HomeKit-camera schermvullend wanneer je die nodig hebt."
@@ -67,12 +67,32 @@
         widgetsTitle: "Favorieten en meldingen als widget", widgetsText: "Bedien je favorieten of bekijk woningmeldingen zonder eerst de app te openen. Kies een passend formaat en wissel in de favorietenwidget tussen je woningen. Widgetstatussen worden periodiek bijgewerkt."
       },
       final: { title: "Probeer het met jouw woning.", description: "30 dagen alle functies op iPhone en iPad, inclusief CarPlay en widgets. Daarna één aankoop, geen abonnement." },
+      faq: {
+        title: "Vragen over HomeScreen for HomeKit",
+        description: "Wat je nodig hebt, wat je kunt bedienen en hoe de aankoop werkt.",
+        purposeQuestion: "Wat is HomeScreen for HomeKit?",
+        purposeAnswer: "HomeScreen for HomeKit is een dashboard en bedieningsapp voor iPad en iPhone van de Bruin Studio. Je ziet tijd, weer en woningstatus en bedient je geselecteerde lampen, scènes en accessoires. De app gebruikt je bestaande woning in Apple Woning; het is geen vervanging voor het inrichten van HomeKit of het maken van automatiseringen.",
+        ipadQuestion: "Kan ik van mijn iPad een HomeKit-bedienpaneel maken?",
+        ipadAnswer: "Ja. Plaats een compatibele iPad op tafel of aan de muur en kies welke kamers, scènes en apparaten zichtbaar zijn. Het dashboard is bedoeld voor liggend gebruik op iPad en ondersteunt Begeleide toegang. Op iPhone kun je het ook staand gebruiken. Controleer de actuele apparaat- en systeemvereisten in de App Store.",
+        devicesQuestion: "Werkt HomeScreen met mijn lampen, Shelly's of andere slimme apparaten?",
+        devicesAnswer: "HomeScreen leest apparaten en scènes die in je Apple Woning beschikbaar zijn. Een apparaat moet via HomeKit of een geschikte bridge aan die woning zijn toegevoegd. Alleen een account bij bijvoorbeeld Hue, Shelly of Home Assistant is niet voldoende. De beschikbare bediening hangt af van wat het apparaat via HomeKit doorgeeft; probeer dit met je eigen woning tijdens de proefperiode.",
+        carplayQuestion: "Kan ik HomeKit-scènes vanuit CarPlay starten?",
+        carplayAnswer: "Ja. Kies op je iPhone maximaal vier CarPlay-favorieten per woning, apart van je dashboardfavorieten. Een compatibele auto of autoradio is nodig. Apple kan voor beveiligde acties, zoals een garage of slot openen, bevestiging of het ontgrendelen van de iPhone vereisen. HomeScreen omzeilt die beveiliging niet.",
+        widgetsQuestion: "Zijn er widgets voor favorieten en meldingen?",
+        widgetsAnswer: "Ja. Je kunt favorieten bedienen en woningmeldingen bekijken via widgets op je beginscherm. In de favorietenwidget kun je tussen woningen wisselen. Widgetstatussen worden periodiek bijgewerkt; het zijn geen continu bijgewerkte camerabeelden.",
+        purchaseQuestion: "Heeft HomeScreen een abonnement?",
+        purchaseAnswer: "Nee. Je kunt alle functies 30 dagen proberen. Daarna kun je de volledige versie eenmalig in de app ontgrendelen via Apple, inclusief Delen met gezin. Na de proefperiode wordt niets automatisch afgeschreven. De actuele prijs voor jouw land staat bij de aankoop in de app.",
+        cloudQuestion: "Wordt mijn HomeKit-woning opgeslagen op een eigen server?",
+        cloudAnswer: "Nee. Er is geen apart HomeScreen-account, geen advertentietracking en geen eigen woningcloud van de Bruin Studio. Dashboards en gedeelde instellingen kunnen via je Apple-account in iCloud worden bewaard. Favorieten en schermgedrag blijven per apparaat. Dit is geen back-up van je HomeKit-woning of automatiseringen.",
+        helpQuestion: "Waar vind ik de handleiding en ondersteuning?",
+        helpAnswer: "Lees de HomeScreen-handleiding voor instellingen, camera's, zichtbaarheid, iCloud en hulp bij aankopen. HomeScreen for HomeKit wordt ontwikkeld door de Bruin Studio. Voor persoonlijke hulp kun je mailen naar support@dbruin.com."
+      },
       footer: { support: "Support", privacy: "Privacy", terms: "Voorwaarden", studio: "Alle apps" },
       images: images("nl", { dashboard: "HomeScreen 2.1.4-dashboard op iPad met voorbeeldwoning", controls: "Lichtsterkte instellen in HomeScreen op iPad", alerts: "Woningmeldingen in HomeScreen op iPad", settings: "Instellingen met zijbalk op iPad", phoneDashboard: "HomeScreen-dashboard op iPhone in staande weergave", phoneControls: "Een lamp dimmen op iPhone", phoneScenes: "Scènes per ruimte op iPhone" })
     },
 
     en: {
-      meta: { title: "HomeScreen for HomeKit - your home at a glance", description: "Your HomeKit dashboard for iPhone and iPad, with CarPlay, widgets and climate controls. Try everything for 30 days; then one purchase, no subscription.", locale: "en_US" },
+      meta: { title: "HomeScreen for HomeKit - iPad dashboard and controls", description: "Turn your iPad into a HomeKit control panel for your household. Also on iPhone, with CarPlay and widgets. Try for 30 days, then unlock once.", locale: "en_US" },
       global: { skip: "Skip to content", byStudio: "by de Bruin Studio", navigationLabel: "Main navigation", languageLabel: "Choose language", footerLabel: "Footer links" },
       nav: { overview: "Overview", control: "Controls", trial: "Try it", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Try for 30 days", discover: "See how it works", support: "Read the guide" },
@@ -96,7 +116,7 @@
         cardThreeTitle: "A board for every place", cardThreeText: "Create a selection for the living room, kitchen, hallway or a compact iPhone view."
       },
       dashboard: {
-        eyebrow: "The iPad dashboard", title: "The controls you need at home.", description: "Give your iPad a place on a table or wall. Add frequently used scenes and devices as favourites, alongside weather and home status. You choose the setup; your household finds the selected controls on the dashboard.",
+        eyebrow: "The iPad dashboard", title: "A HomeKit dashboard for your wall-mounted iPad.", description: "Give your iPad a place on a table or wall. Add frequently used scenes and devices as favourites, alongside weather and home status. You choose the setup; your household finds the selected controls on the dashboard.",
         pointOneTitle: "Local weather", pointOneText: "Apple Weather alongside the state of your home.",
         pointTwoTitle: "Favourites first", pointTwoText: "What you use often remains immediately available.",
         pointThreeTitle: "Cameras on demand", pointThreeText: "Open a HomeKit camera full screen when you need it."
@@ -128,12 +148,32 @@
         widgetsTitle: "Favourites and alerts as widgets", widgetsText: "Control favourites or check home alerts without opening the app first. Choose a suitable size and switch between homes in the favourites widget. Widget status updates periodically."
       },
       final: { title: "Try it with your own home.", description: "30 days with all features on iPhone and iPad, including CarPlay and widgets. Then one purchase, no subscription." },
+      faq: {
+        title: "Questions about HomeScreen for HomeKit",
+        description: "What you need, what you can control and how the purchase works.",
+        purposeQuestion: "What is HomeScreen for HomeKit?",
+        purposeAnswer: "HomeScreen for HomeKit is an iPad and iPhone dashboard and control app by de Bruin Studio. See time, weather and home status, and control your selected lights, scenes and accessories. It uses your existing home in Apple's Home app; it does not replace HomeKit setup or automation editing.",
+        ipadQuestion: "Can I turn my iPad into a HomeKit control panel?",
+        ipadAnswer: "Yes. Place a compatible iPad on a table or wall and choose which rooms, scenes and devices appear. The iPad dashboard is designed for landscape use and supports Guided Access. On iPhone, you can also use portrait mode. Check the App Store for current device and system requirements.",
+        devicesQuestion: "Does HomeScreen work with my lights, Shelly devices or other smart devices?",
+        devicesAnswer: "HomeScreen reads devices and scenes available in your Apple Home. A device must be added to that home through HomeKit or a suitable bridge. An account with Hue, Shelly or Home Assistant alone is not enough. Available controls depend on what the device exposes through HomeKit; check your own home during the trial.",
+        carplayQuestion: "Can I run HomeKit scenes from CarPlay?",
+        carplayAnswer: "Yes. Choose up to four CarPlay favourites per home on your iPhone, independently of your dashboard favourites. A compatible car or head unit is required. Apple may require confirmation or an unlocked iPhone for secure actions such as opening a garage or lock. HomeScreen does not bypass that protection.",
+        widgetsQuestion: "Are there widgets for favourites and alerts?",
+        widgetsAnswer: "Yes. Home Screen widgets let you control favourites and view home alerts. You can switch homes in the favourites widget. Widget status updates periodically; these are not continuously updated camera feeds.",
+        purchaseQuestion: "Does HomeScreen require a subscription?",
+        purchaseAnswer: "No. Try all features for 30 days, then unlock the full version with a one-time in-app purchase through Apple, including Family Sharing. There is no automatic charge when the trial ends. The in-app purchase shows the current price for your country.",
+        cloudQuestion: "Is my HomeKit home stored on a separate server?",
+        cloudAnswer: "No. There is no separate HomeScreen account, advertising tracking or proprietary home cloud at de Bruin Studio. Dashboards and shared settings can be saved to iCloud using your Apple account. Favourites and idle-screen behaviour remain per device. This is not a backup of your HomeKit home or automations.",
+        helpQuestion: "Where can I find the guide and support?",
+        helpAnswer: "Read the HomeScreen guide for settings, cameras, visibility, iCloud and purchase help. HomeScreen for HomeKit is developed by de Bruin Studio. For individual help, email support@dbruin.com."
+      },
       footer: { support: "Support", privacy: "Privacy", terms: "Terms", studio: "All apps" },
       images: images("en", { dashboard: "HomeScreen 2.1.4 dashboard on iPad with a sample home", controls: "Adjusting light brightness on iPad", alerts: "Home alerts on iPad", settings: "Settings sidebar on iPad", phoneDashboard: "HomeScreen dashboard on iPhone in portrait mode", phoneControls: "Dimming a light on iPhone", phoneScenes: "Scenes by room on iPhone" })
     },
 
     de: {
-      meta: { title: "HomeScreen for HomeKit - dein Zuhause auf einen Blick", description: "Dein HomeKit-Dashboard für iPhone und iPad mit CarPlay, Widgets und Klimasteuerung. 30 Tage alles testen, danach einmal kaufen. Kein Abo.", locale: "de_DE" },
+      meta: { title: "HomeScreen for HomeKit - iPad-Dashboard und Steuerung", description: "Dein iPad als HomeKit-Bedienpanel für den Haushalt. Auch auf dem iPhone, mit CarPlay und Widgets. 30 Tage testen, danach einmal freischalten.", locale: "de_DE" },
       global: { skip: "Zum Inhalt springen", byStudio: "von de Bruin Studio", navigationLabel: "Hauptnavigation", languageLabel: "Sprache wählen", footerLabel: "Links im Seitenfuß" },
       nav: { overview: "Übersicht", control: "Bedienung", trial: "Ausprobieren", privacy: "Datenschutz", download: "Laden" },
       actions: { appStore: "30 Tage testen", discover: "So funktioniert es", support: "Anleitung lesen" },
@@ -157,7 +197,7 @@
         cardThreeTitle: "Ein Board für jeden Ort", cardThreeText: "Erstelle eine Auswahl für Wohnzimmer, Küche, Flur oder eine kompakte iPhone-Ansicht."
       },
       dashboard: {
-        eyebrow: "Das iPad-Dashboard", title: "Die Bedienung, die du zu Hause brauchst.", description: "Gib deinem iPad einen Platz auf dem Tisch oder an der Wand. Lege häufig genutzte Szenen und Geräte als Favoriten neben Wetter und Hausstatus ab. Du bestimmst die Einrichtung; dein Haushalt findet die ausgewählten Bedienelemente auf dem Dashboard.",
+        eyebrow: "Das iPad-Dashboard", title: "Ein HomeKit-Dashboard für dein iPad an der Wand.", description: "Gib deinem iPad einen Platz auf dem Tisch oder an der Wand. Lege häufig genutzte Szenen und Geräte als Favoriten neben Wetter und Hausstatus ab. Du bestimmst die Einrichtung; dein Haushalt findet die ausgewählten Bedienelemente auf dem Dashboard.",
         pointOneTitle: "Lokales Wetter", pointOneText: "Apple Weather neben dem Status deines Zuhauses.",
         pointTwoTitle: "Favoriten zuerst", pointTwoText: "Häufig Genutztes bleibt direkt erreichbar.",
         pointThreeTitle: "Kameras bei Bedarf", pointThreeText: "Öffne eine HomeKit-Kamera bei Bedarf bildschirmfüllend."
@@ -189,6 +229,26 @@
         widgetsTitle: "Favoriten und Meldungen als Widgets", widgetsText: "Bediene Favoriten oder prüfe Meldungen, ohne zuerst die App zu öffnen. Wähle eine passende Größe und wechsle im Favoriten-Widget zwischen deinen Zuhause. Der Widgetstatus wird regelmäßig aktualisiert."
       },
       final: { title: "Teste es mit deinem Zuhause.", description: "30 Tage alle Funktionen auf iPhone und iPad, einschließlich CarPlay und Widgets. Danach ein Kauf, kein Abonnement." },
+      faq: {
+        title: "Fragen zu HomeScreen for HomeKit",
+        description: "Was du brauchst, was du steuern kannst und wie der Kauf funktioniert.",
+        purposeQuestion: "Was ist HomeScreen for HomeKit?",
+        purposeAnswer: "HomeScreen for HomeKit ist eine Dashboard- und Steuerungs-App für iPad und iPhone von de Bruin Studio. Sie zeigt Uhrzeit, Wetter und Hausstatus und steuert ausgewählte Lampen, Szenen und Geräte. Die App nutzt dein vorhandenes Zuhause in Apples Home-App; sie ersetzt weder die HomeKit-Einrichtung noch das Bearbeiten von Automationen.",
+        ipadQuestion: "Kann ich mein iPad als HomeKit-Bedienpanel nutzen?",
+        ipadAnswer: "Ja. Stelle ein kompatibles iPad auf den Tisch oder befestige es an der Wand und wähle die sichtbaren Räume, Szenen und Geräte. Das iPad-Dashboard ist für das Querformat ausgelegt und unterstützt den geführten Zugriff. Auf dem iPhone kannst du auch das Hochformat nutzen. Aktuelle Geräte- und Systemanforderungen findest du im App Store.",
+        devicesQuestion: "Funktioniert HomeScreen mit meinen Lampen, Shelly-Geräten oder anderen smarten Geräten?",
+        devicesAnswer: "HomeScreen liest Geräte und Szenen, die in deinem Apple-Zuhause verfügbar sind. Ein Gerät muss über HomeKit oder eine geeignete Bridge hinzugefügt sein. Ein Konto bei Hue, Shelly oder Home Assistant allein reicht nicht aus. Die Bedienmöglichkeiten hängen davon ab, was das Gerät über HomeKit bereitstellt. Prüfe dein eigenes Zuhause im Testzeitraum.",
+        carplayQuestion: "Kann ich HomeKit-Szenen über CarPlay starten?",
+        carplayAnswer: "Ja. Wähle auf deinem iPhone bis zu vier CarPlay-Favoriten pro Zuhause, unabhängig von den Dashboard-Favoriten. Ein kompatibles Auto oder Autoradio ist erforderlich. Apple kann bei sicherheitsrelevanten Aktionen wie dem Öffnen einer Garage oder eines Schlosses eine Bestätigung oder ein entsperrtes iPhone verlangen. HomeScreen umgeht diesen Schutz nicht.",
+        widgetsQuestion: "Gibt es Widgets für Favoriten und Meldungen?",
+        widgetsAnswer: "Ja. Mit Widgets auf dem Home-Bildschirm kannst du Favoriten bedienen und Hausmeldungen ansehen. Im Favoriten-Widget kannst du zwischen deinen Zuhause wechseln. Der Widgetstatus wird regelmäßig aktualisiert; es handelt sich nicht um ständig aktualisierte Kamerabilder.",
+        purchaseQuestion: "Braucht HomeScreen ein Abonnement?",
+        purchaseAnswer: "Nein. Teste alle Funktionen 30 Tage und schalte danach die Vollversion mit einem einmaligen In-App-Kauf über Apple frei, einschließlich Familienfreigabe. Am Ende des Testzeitraums wird nichts automatisch abgebucht. Der In-App-Kauf zeigt den aktuellen Preis für dein Land.",
+        cloudQuestion: "Wird mein HomeKit-Zuhause auf einem eigenen Server gespeichert?",
+        cloudAnswer: "Nein. Es gibt kein separates HomeScreen-Konto, kein Werbetracking und keine eigene Zuhause-Cloud bei de Bruin Studio. Dashboards und gemeinsame Einstellungen können über deinen Apple-Account in iCloud gespeichert werden. Favoriten und Ruhebildschirm bleiben pro Gerät eingestellt. Dies ist kein Backup deines HomeKit-Zuhauses oder deiner Automationen.",
+        helpQuestion: "Wo finde ich die Anleitung und Hilfe?",
+        helpAnswer: "Lies die HomeScreen-Anleitung zu Einstellungen, Kameras, Sichtbarkeit, iCloud und Kaufhilfe. HomeScreen for HomeKit wird von de Bruin Studio entwickelt. Für persönliche Hilfe schreibe an support@dbruin.com."
+      },
       footer: { support: "Support", privacy: "Datenschutz", terms: "Bedingungen", studio: "Alle Apps" },
       images: images("de", { dashboard: "HomeScreen 2.1.4-Dashboard auf dem iPad mit einem Beispiel-Zuhause", controls: "Lichthelligkeit auf dem iPad einstellen", alerts: "Hausmeldungen auf dem iPad", settings: "Einstellungen mit Seitenleiste auf dem iPad", phoneDashboard: "HomeScreen-Dashboard auf dem iPhone im Hochformat", phoneControls: "Eine Lampe auf dem iPhone dimmen", phoneScenes: "Szenen nach Raum auf dem iPhone" })
     }

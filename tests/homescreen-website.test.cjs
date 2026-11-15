@@ -22,7 +22,7 @@ for (const language of ['nl', 'en', 'de']) {
     for (const [key, image] of Object.entries(copy[language].images)) {
       assert.ok(image.src.includes(`web-2026-10-07/${language}/`));
       assert.ok(image.alt.length > 10);
-      const png = fs.readFileSync(path.join(root, 'homescreen', image.src));
+      const png = fs.readFileSync(path.join(root, image.src));
       assert.equal(png.subarray(1, 4).toString(), 'PNG');
       assert.equal(png.readUInt32BE(16), key.startsWith('phone') ? 1320 : 2752);
       assert.equal(png.readUInt32BE(20), key.startsWith('phone') ? 2868 : 2064);
@@ -40,7 +40,7 @@ for (const language of ['nl', 'en', 'de']) {
   });
 
   test(`${language}: studio preview uses the same current dashboard`, () => {
-    assert.equal(studio[language].images.homeDashboard.src, `homescreen/${copy[language].images.dashboard.src}`);
+    assert.equal(`/${studio[language].images.homeDashboard.src}`, copy[language].images.dashboard.src);
   });
 }
 
