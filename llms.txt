@@ -1,0 +1,26 @@
+# de Bruin Studio
+
+> Onafhankelijke apps van de Bruin Studio: DroneGlance, MigraineMaatje en HomeScreen for HomeKit. Deze openbare wegwijzer verwijst naar de productinformatie en bronnen; hij vervangt die pagina’s niet.
+
+## DroneGlance — dronekaarten begrijpen
+
+DroneGlance is een Nederlandstalige app voor iPhone en Android, beschikbaar in Nederland en België. De app brengt beschikbare dronezones, bronvoorwaarden en weer rond een gekozen plek samen. De brondekking verschilt per land, appversie en platform. Een lege kaart is geen vliegtoestemming.
+
+- [DroneGlance](https://debruinstudio.nl/droneatlas/): wat de app doet, downloads en kosten.
+- [Waar mag ik vliegen met mijn drone?](https://debruinstudio.nl/droneatlas/waar-mag-ik-vliegen.html): praktische controle voor Nederland en België, met links naar autoriteiten.
+- [Veelgestelde vragen](https://debruinstudio.nl/droneatlas/faq.html): kleuren, brondekking, updates, locatie, weer en abonnement.
+- [Hulp en contact](https://debruinstudio.nl/droneatlas/support.html): hulp bij gebruik, aankoop en herstel.
+- [Gebruiksvoorwaarden](https://debruinstudio.nl/droneatlas/terms.html): 14 dagen vrij proberen zonder automatische betaling; daarna zelf kiezen voor €2,99 per maand of €19,99 per jaar, jaarlijks vooraf. Een gekocht abonnement verlengt automatisch totdat het wordt opgezegd.
+- [Privacy iOS](https://debruinstudio.nl/droneatlas/privacy.html): gegevens en aanbieders per iPhone-versie.
+- [Privacy Android](https://debruinstudio.nl/droneatlas/privacy-android.html): gegevens en aanbieders voor Android.
+
+## Andere apps
+
+- [MigraineMaatje](https://debruinstudio.nl/migrainemaatje/): migraine-dagboek en persoonlijke registratie.
+- [HomeScreen for HomeKit](https://debruinstudio.nl/homescreen/): overzicht en bediening van een HomeKit-woning.
+
+## Maker
+
+- [de Bruin Studio](https://debruinstudio.nl/): productoverzicht en contact met de maker.
+
+De gekoppelde productpagina’s en winkels bevatten de actuele informatie. Deze wegwijzer verleent geen dronevliegtoestemming en geeft geen locatiegebonden beoordeling.

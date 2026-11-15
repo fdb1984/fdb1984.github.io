@@ -36,6 +36,6 @@ jobs:
       - name: Publish website
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Notify search engines about changed MigraineMaatje pages
+      - name: Notify search engines about changed public pages
         continue-on-error: true
         run: node scripts/notify-search-engines.cjs

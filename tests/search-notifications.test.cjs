@@ -52,3 +52,14 @@ test('a rejected API request is not reported as submitted', async () => {
     return ++calls === 1 ? { ok: true, status: 200, text: async () => key } : { status: 429 };
   }), /HTTP 429/);
 });
+
+
+test('DroneGlance guide and FAQ plus studio root are eligible, assets and unknown routes are not', () => {
+  assert.deepEqual(buildURLList(['index.html', 'droneatlas/index.html', 'droneatlas/faq.html',
+    'droneatlas/waar-mag-ik-vliegen.html', 'droneatlas/privacy.html', 'droneatlas/faq.html',
+    'droneatlas/icon.png', 'llms.txt', 'robots.txt', 'droneatlas/unknown.html', 'droneatlas/../private.html']), [
+    'https://debruinstudio.nl/', 'https://debruinstudio.nl/droneatlas/',
+    'https://debruinstudio.nl/droneatlas/faq.html', 'https://debruinstudio.nl/droneatlas/waar-mag-ik-vliegen.html',
+    'https://debruinstudio.nl/droneatlas/privacy.html'
+  ]);
+});

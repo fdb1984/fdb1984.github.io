@@ -14,20 +14,89 @@
   <meta property="og:locale" content="nl_NL">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="de Bruin Studio">
-  <meta name="twitter:description" content="Rustige apps voor gezondheid en thuis.">
+  <meta name="twitter:description" content="MigraineMaatje, HomeScreen for HomeKit en DroneGlance van de Bruin Studio.">
   <link rel="canonical" href="https://debruinstudio.nl/">
   <link rel="icon" href="favicon.svg">
   <link rel="stylesheet" href="product-site.css?v=20260830e">
-  <link rel="stylesheet" href="droneatlas/drone.css?v=20261008">
+  <link rel="stylesheet" href="droneatlas/drone.css?v=20261115-discovery">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "de Bruin Studio",
-    "url": "https://debruinstudio.nl",
-    "sameAs": ["https://github.com/fdb1984"]
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://debruinstudio.nl/#organization",
+      "name": "de Bruin Studio",
+      "url": "https://debruinstudio.nl/",
+      "logo": "https://debruinstudio.nl/de-bruin-studio-mark.svg",
+      "sameAs": [
+        "https://github.com/fdb1984"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "klantenservice",
+        "email": "info@debruinstudio.nl",
+        "availableLanguage": "nl"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://debruinstudio.nl/#website",
+      "name": "de Bruin Studio",
+      "url": "https://debruinstudio.nl/",
+      "publisher": {
+        "@id": "https://debruinstudio.nl/#organization"
+      },
+      "inLanguage": [
+        "nl",
+        "en",
+        "de",
+        "fr"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://debruinstudio.nl/#webpage",
+      "url": "https://debruinstudio.nl/",
+      "name": "de Bruin Studio — MigraineMaatje, HomeScreen en DroneGlance",
+      "isPartOf": {
+        "@id": "https://debruinstudio.nl/#website"
+      },
+      "about": {
+        "@id": "https://debruinstudio.nl/#organization"
+      },
+      "mainEntity": {
+        "@id": "https://debruinstudio.nl/#apps"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://debruinstudio.nl/#apps",
+      "name": "Apps van de Bruin Studio",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "MigraineMaatje",
+          "url": "https://debruinstudio.nl/migrainemaatje/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "HomeScreen for HomeKit",
+          "url": "https://debruinstudio.nl/homescreen/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "DroneGlance",
+          "url": "https://debruinstudio.nl/droneatlas/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body class="studio-home studio-home-v3" data-languages="nl,en,de,fr" data-default-language="nl">
   <a class="skip-link" href="#main" data-i18n="global.skip">Ga naar inhoud</a>
@@ -88,9 +157,9 @@
           <article class="studio-v3-card studio-v3-drone" id="droneatlas" data-reveal>
             <div class="studio-v3-card-copy">
               <div class="studio-v3-app-name"><img src="droneatlas/icon.png" alt="" width="54" height="54"><div><span data-i18n="drone.status">iPhone en Android · NL en BE</span><strong>DroneGlance</strong></div></div>
-              <h2 data-i18n="drone.promise">Je wilt vliegen. Kijk eerst hier.</h2>
-              <p data-i18n="drone.description">Je plek, de beschikbare kaartvoorwaarden en het weer bij elkaar. Nu voor iPhone en Android in Nederland en België, met een Nederlandse interface.</p>
-              <div class="studio-v3-actions"><a class="primary-action" href="https://apps.apple.com/nl/app/droneglance/id6820891449" data-i18n="drone.action">Download voor iPhone</a><a class="secondary-action" href="https://play.google.com/store/apps/details?id=nl.debruinstudio.droneglance" data-i18n="drone.androidAction">Download voor Android</a><a class="secondary-action" href="droneatlas/" data-i18n="drone.details">Ontdek DroneGlance</a></div>
+              <h2 data-i18n="drone.promise">Mag ik hier vliegen met mijn drone?</h2>
+              <p data-i18n="drone.description">Een dronekaart-app voor de vraag: mag ik hier vliegen? Bekijk beschikbare vliegzones, voorwaarden en weer. Voor iPhone en Android in Nederland en België, met een Nederlandse interface.</p>
+              <div class="studio-v3-actions"><a class="primary-action" href="https://apps.apple.com/nl/app/droneglance/id6820891449" data-i18n="drone.action">Download voor iPhone</a><a class="secondary-action" href="https://play.google.com/store/apps/details?id=nl.debruinstudio.droneglance" data-i18n="drone.androidAction">Download voor Android</a><a class="secondary-action" href="droneatlas/" data-i18n="drone.details">Ontdek DroneGlance</a><a class="studio-drone-guide" href="droneatlas/waar-mag-ik-vliegen.html" data-i18n="drone.guide">Waar mag ik vliegen? Lees de vliegcheck</a></div>
             </div>
             <div class="studio-v3-card-media" aria-hidden="true"><img src="droneatlas/drone-render.png" alt="" width="1254" height="1254" loading="lazy"></div>
           </article>
@@ -118,7 +187,7 @@
     </div>
   </footer>
 
-  <script src="studio-copy.js?v=20261013-googleplay"></script>
+  <script src="studio-copy.js?v=20261115-discovery"></script>
   <script src="product-site.js?v=20260830e"></script>
 </body>
 </html>

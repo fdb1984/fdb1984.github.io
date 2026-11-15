@@ -1,5 +1,14 @@
 User-Agent: *
 Allow: /
 
-Host: https://debruinstudio.nl
+# Search discovery; public-content access was already allowed by the wildcard rule.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
 Sitemap: https://debruinstudio.nl/sitemap.xml

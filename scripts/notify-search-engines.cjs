@@ -8,6 +8,14 @@ const origin = 'https://debruinstudio.nl';
 const keyFile = '812d6ef9318a1086dd6c06a405cce3ba.txt';
 const endpoint = 'https://api.indexnow.org/indexnow';
 const publicPages = new Map([
+  ['index.html', '/'],
+  ['droneatlas/index.html', '/droneatlas/'],
+  ['droneatlas/faq.html', '/droneatlas/faq.html'],
+  ['droneatlas/waar-mag-ik-vliegen.html', '/droneatlas/waar-mag-ik-vliegen.html'],
+  ['droneatlas/support.html', '/droneatlas/support.html'],
+  ['droneatlas/privacy.html', '/droneatlas/privacy.html'],
+  ['droneatlas/privacy-android.html', '/droneatlas/privacy-android.html'],
+  ['droneatlas/terms.html', '/droneatlas/terms.html'],
   ['migrainemaatje/index.html', '/migrainemaatje/'],
   ['migrainemaatje/en/index.html', '/migrainemaatje/en/'],
   ['migrainemaatje/de/index.html', '/migrainemaatje/de/'],
@@ -29,7 +37,7 @@ function makeSubmission(changedPaths, publicKey) {
 }
 
 async function notify(payload, fetcher = fetch) {
-  if (!payload.urlList.length) return { submitted: false, reason: 'No changed public MigraineMaatje pages' };
+  if (!payload.urlList.length) return { submitted: false, reason: 'No changed maintained public pages' };
   let verification;
   for (let attempt = 0; attempt < 5; attempt++) {
     verification = await fetcher(payload.keyLocation, { redirect: 'error', signal: AbortSignal.timeout(15000) });
@@ -53,8 +61,8 @@ async function notify(payload, fetcher = fetch) {
 async function main() {
   const args = process.argv.slice(2);
   const changedPaths = args.includes('--all-current')
-    ? [...publicPages.keys()].filter(file => file.endsWith('/index.html'))
-    : execFileSync('git', ['diff', '--name-only', '--diff-filter=ACMR', 'HEAD^', 'HEAD', '--', 'migrainemaatje/'], { cwd: root, encoding: 'utf8' }).trim().split('\n').filter(Boolean);
+    ? [...publicPages.keys()].filter(file => file === 'index.html' || file.endsWith('/index.html'))
+    : execFileSync('git', ['diff', '--name-only', '--diff-filter=ACMR', 'HEAD^', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim().split('\n').filter(Boolean);
   const payload = makeSubmission(changedPaths, fs.readFileSync(path.join(root, keyFile), 'utf8').trim());
   if (args.includes('--dry-run')) {
     console.log(JSON.stringify({ dryRun: true, endpoint, urls: payload.urlList }, null, 2));

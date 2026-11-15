@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
 <loc>https://debruinstudio.nl/</loc>
+<lastmod>2026-11-15</lastmod>
 <xhtml:link rel="alternate" hreflang="nl" href="https://debruinstudio.nl/" />
 <xhtml:link rel="alternate" hreflang="en" href="https://debruinstudio.nl/en/" />
 <xhtml:link rel="alternate" hreflang="de" href="https://debruinstudio.nl/de/" />
@@ -125,9 +126,11 @@
 <changefreq>yearly</changefreq>
 <priority>0.4</priority>
 </url>
-  <url><loc>https://debruinstudio.nl/droneatlas/</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://debruinstudio.nl/droneatlas/privacy.html</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://debruinstudio.nl/droneatlas/support.html</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://debruinstudio.nl/droneatlas/terms.html</loc><lastmod>2026-10-08</lastmod></url>
-  <url><loc>https://debruinstudio.nl/droneatlas/faq.html</loc><lastmod>2026-10-08</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/privacy.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/support.html</loc><lastmod>2026-10-13</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/terms.html</loc><lastmod>2026-10-13</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/faq.html</loc><lastmod>2026-11-15</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/privacy-android.html</loc><lastmod>2026-10-19</lastmod></url>
+  <url><loc>https://debruinstudio.nl/droneatlas/waar-mag-ik-vliegen.html</loc><lastmod>2026-11-15</lastmod></url>
 </urlset>

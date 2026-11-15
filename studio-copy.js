@@ -206,47 +206,51 @@ window.PRODUCT_TRANSLATIONS = (() => {
   const additions = {
     "nl": {
         "status": "iPhone en Android · NL en BE",
-        "promise": "Je wilt vliegen. Kijk eerst hier.",
-        "description": "Je plek, de beschikbare kaartvoorwaarden en het weer bij elkaar. Nu voor iPhone en Android in Nederland en België, met een Nederlandse interface.",
+        "promise": "Mag ik hier vliegen met mijn drone?",
+        "description": "Een dronekaart-app voor de vraag: mag ik hier vliegen? Bekijk beschikbare vliegzones, voorwaarden en weer. Voor iPhone en Android in Nederland en België, met een Nederlandse interface.",
         "action": "Download voor iPhone",
         "details": "Ontdek DroneGlance",
         "hero": "Duidelijkheid voor echte momenten.",
         "intro": "Voor migraine, voor thuis en vóór je dronevlucht. Gemaakt om snel te begrijpen en prettig te gebruiken.",
         "meta": "MigraineMaatje, HomeScreen for HomeKit en DroneGlance voor iPhone en Android. Duidelijke apps van de Bruin Studio.",
-        "androidAction": "Download voor Android"
+        "androidAction": "Download voor Android",
+        "guide": "Waar mag ik vliegen? Lees de vliegcheck"
     },
     "en": {
         "status": "iPhone and Android · NL and BE",
-        "promise": "Ready to fly? Check here first.",
-        "description": "Your location, available drone-zone conditions and the weather together. Now on iPhone and Android in the Netherlands and Belgium, with a Dutch interface.",
+        "promise": "Can I fly my drone here?",
+        "description": "A drone map app for your chosen location: available flight zones, conditions and weather together. For iPhone and Android in the Netherlands and Belgium, with a Dutch interface.",
         "action": "Download for iPhone",
         "details": "Explore DroneGlance · in Dutch",
         "hero": "Clarity for everyday moments.",
         "intro": "For migraine, for home, and for your drone flight. Built to be easy to understand and pleasant to use.",
         "meta": "MigraineMaatje, HomeScreen for HomeKit and DroneGlance for iPhone and Android. Clear apps by de Bruin Studio.",
-        "androidAction": "Download for Android"
+        "androidAction": "Download for Android",
+        "guide": "Where may I fly? Flight check · in Dutch"
     },
     "de": {
         "status": "iPhone und Android · NL und BE",
-        "promise": "Bereit zum Fliegen? Schau zuerst hier.",
-        "description": "Dein Standort, verfügbare Drohnenzonen und das Wetter an einem Ort. Jetzt für iPhone und Android in den Niederlanden und Belgien, mit niederländischer Oberfläche.",
+        "promise": "Darf ich hier meine Drohne fliegen?",
+        "description": "Eine Drohnenkarten-App für deinen Standort: verfügbare Flugzonen, Bedingungen und Wetter zusammen. Für iPhone und Android in den Niederlanden und Belgien, mit niederländischer Oberfläche.",
         "action": "Für iPhone laden",
         "details": "DroneGlance entdecken · auf Niederländisch",
         "hero": "Klarheit für echte Momente.",
         "intro": "Bei Migräne, zu Hause und vor deinem Drohnenflug. Leicht zu verstehen und angenehm zu nutzen.",
         "meta": "MigraineMaatje, HomeScreen for HomeKit und DroneGlance für iPhone und Android. Klare Apps von de Bruin Studio.",
-        "androidAction": "Für Android laden"
+        "androidAction": "Für Android laden",
+        "guide": "Wo darf ich fliegen? Flugcheck · auf Niederländisch"
     },
     "fr": {
         "status": "iPhone et Android · Pays-Bas et Belgique",
-        "promise": "Prêt à voler ? Vérifiez ici d’abord.",
-        "description": "Votre position, les conditions des zones disponibles et la météo réunies. Maintenant sur iPhone et Android aux Pays-Bas et en Belgique, avec une interface en néerlandais.",
+        "promise": "Puis-je faire voler mon drone ici ?",
+        "description": "Une app de cartes pour drones : zones disponibles, conditions et météo autour du lieu choisi. Pour iPhone et Android aux Pays-Bas et en Belgique, avec une interface en néerlandais.",
         "action": "Télécharger pour iPhone",
         "details": "Découvrir DroneGlance · en néerlandais",
         "hero": "De la clarté au quotidien.",
         "intro": "Pour la migraine, la maison et vos vols de drone. Des apps simples à comprendre et agréables à utiliser.",
         "meta": "MigraineMaatje, HomeScreen for HomeKit et DroneGlance pour iPhone et Android. Des apps claires par de Bruin Studio.",
-        "androidAction": "Télécharger pour Android"
+        "androidAction": "Télécharger pour Android",
+        "guide": "Où puis-je voler ? Vérifications · en néerlandais"
     }
 };
   for (const [language, text] of Object.entries(additions)) {
