@@ -86,11 +86,6 @@
         threeTitle: "Voorzichtige uitleg", threeText: "Geen diagnose, voorspelling of medisch advies.",
         fourTitle: "Jouw eigen opslag", fourText: "Op iPhone kies je zelf waar je een export bewaart. Op Android is synchronisatie met je eigen Google Drive optioneel."
       },
-      choice: {
-        title: "Past MigraineMaatje bij jou?",
-        text: "Bekijk wat gratis is, welke toestemming waarvoor dient en hoe je gegevens bewaart. Lees ervaringen in de winkels en bespreek je gratis basisrapport met je arts.",
-        link: "Bekijk de vijf aandachtspunten", limits: "Onze eigen toelichting, geen keurmerk of aanbeveling van Patiëntenfederatie Nederland."
-      },
       guides: {
         eyebrow: "Praktische uitleg", title: "Migraine, duizeligheid en je dagboek.",
         description: "Wat leg je vast en wat neem je mee naar je arts? Twee korte gidsen met voorbeelden en verwijzingen naar medische informatie.",
@@ -176,11 +171,6 @@
         twoTitle: "Connections are optional", twoText: "The app remains useful without Apple Health or Health Connect.",
         threeTitle: "Careful interpretation", threeText: "No diagnosis, prediction or medical advice.",
         fourTitle: "Your own storage", fourText: "On iPhone, you choose where to save an export. On Android, sync with your own Google Drive is optional."
-      },
-      choice: {
-        title: "Is MigraineMaatje right for you?",
-        text: "Check what is free, why permissions are requested and how to keep your data. Read store reviews and discuss your free basic report with your doctor.",
-        link: "Check the five points", limits: "Our own explanation, not a quality label or endorsement by the Dutch Patient Federation."
       },
       guides: {
         eyebrow: "Guides in Dutch", title: "Migraine, dizziness and your diary.",
@@ -268,11 +258,6 @@
         threeTitle: "Vorsichtige Einordnung", threeText: "Keine Diagnose, Vorhersage oder medizinische Beratung.",
         fourTitle: "Dein eigener Speicher", fourText: "Auf dem iPhone wählst du den Speicherort eines Exports selbst. Unter Android ist die Synchronisierung mit deinem Google Drive freiwillig."
       },
-      choice: {
-        title: "Passt MigraineMaatje zu dir?",
-        text: "Prüfe, was kostenlos ist, wofür Berechtigungen dienen und wie du deine Daten sicherst. Lies Store-Bewertungen und besprich deinen kostenlosen Basisbericht mit deinem Arzt.",
-        link: "Die fünf Punkte ansehen", limits: "Unsere eigene Erläuterung, kein Gütesiegel und keine Empfehlung der niederländischen Patientenföderation."
-      },
       guides: {
         eyebrow: "Ratgeber auf Niederländisch", title: "Migräne, Schwindel und dein Tagebuch.",
         description: "Was kannst du festhalten und zum Arztgespräch mitnehmen? Zwei niederländische Ratgeber mit Beispielen und medizinischen Quellen.",
@@ -358,11 +343,6 @@
         twoTitle: "Connexions facultatives", twoText: "L’app reste utile sans Apple Santé ni Health Connect.",
         threeTitle: "Interprétation prudente", threeText: "Aucun diagnostic, prédiction ou conseil médical.",
         fourTitle: "Votre propre stockage", fourText: "Sur iPhone, vous choisissez où enregistrer un export. Sur Android, la synchronisation avec votre Google Drive est facultative."
-      },
-      choice: {
-        title: "MigraineMaatje vous convient-elle ?",
-        text: "Vérifiez ce qui est gratuit, à quoi servent les autorisations et comment conserver vos données. Lisez les avis des boutiques et discutez du rapport de base gratuit avec votre médecin.",
-        link: "Voir les cinq points", limits: "Notre propre explication, sans label ni recommandation de la Fédération néerlandaise des patients."
       },
       guides: {
         eyebrow: "Guides en néerlandais", title: "Migraine, vertiges et votre journal.",
