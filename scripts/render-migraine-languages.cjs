@@ -55,6 +55,12 @@ const route = language => `/migrainemaatje/${language === 'nl' ? '' : `${languag
           if (node.dataset.lang === language) node.setAttribute('aria-current', 'page');
           else node.removeAttribute('aria-current');
         }
+        for (const node of document.querySelectorAll('[data-language-anchor]')) {
+          const url = new URL(node.getAttribute('href'), 'https://debruinstudio.nl');
+          url.searchParams.set('lang', language);
+          url.hash = `${node.dataset.languageAnchor}-${language}`;
+          node.setAttribute('href', `${url.pathname}${url.search}${url.hash}`);
+        }
         for (const node of document.querySelectorAll('[href], [src]')) {
           for (const attribute of ['href', 'src']) {
             const value = node.getAttribute(attribute);
@@ -79,7 +85,7 @@ const route = language => `/migrainemaatje/${language === 'nl' ? '' : `${languag
           }
           node.textContent = `\n${JSON.stringify(schema, null, 2)}\n`;
         }
-        for (const src of ['/migrainemaatje/product-copy.js?v=20261115-discovery', '/product-site.js?v=20261115-search']) {
+        for (const src of ['/migrainemaatje/product-copy.js?v=20261116-choice', '/product-site.js?v=20261116-choice']) {
           const script = document.createElement('script'); script.src = src; document.body.append(script);
         }
         return '<!doctype html>\n' + document.documentElement.outerHTML + '\n';

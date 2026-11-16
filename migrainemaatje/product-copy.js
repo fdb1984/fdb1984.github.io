@@ -58,7 +58,7 @@
       },
       insight: {
         eyebrow: "Jouw verhaal, niet een gemiddelde", title: "Van registreren naar iets waar je wat aan hebt.",
-        description: "Het dagboek blijft overzichtelijk. Als er genoeg gegevens zijn, maakt Premium zichtbaar wat in jouw vastgelegde aanvallen, medicatie en herstel terugkomt.",
+        description: "Je eigen tellingen blijven zichtbaar. Vanaf versie 2.3.1 zie je bij voldoende gegevens eerst één persoonlijke uitkomst, voordat je Premium kiest. Met weinig gegevens blijft het overzicht klein.",
         pointOneTitle: "Wat helpt?", pointOneText: "Effect per middel, rustig geteld uit afgeronde aanvallen.",
         pointTwoTitle: "Wat kwam terug?", pointTwoText: "Terugkeer binnen 24 uur blijft apart zichtbaar.",
         pointThreeTitle: "Wat veranderde?", pointThreeText: "Vergelijk migrainedagen en medicatiedagen met de vorige periode."
@@ -72,7 +72,7 @@
       },
       value: {
         eyebrow: "Gratis en Premium", title: "Gratis bijhouden. Premium begrijpen.",
-        description: "De basis blijft bruikbaar zonder abonnement. Premium is er voor terugkerende persoonlijke verdieping.",
+        description: "De basis blijft bruikbaar zonder abonnement. Premium is optioneel. De winkel toont vóór aankoop de prijs, verlenging en een eventuele proefperiode waarvoor je in aanmerking komt.",
         freeTitle: "Altijd gratis", freeText: "Alles wat je nodig hebt om een betrouwbaar migraine-dagboek bij te houden.",
         freeOne: "Aanvallen vastleggen en later afronden", freeTwo: "Dagboek, kalender en medicatiebeheer", freeThree: "Basisstatus en basisrapport voor je arts", freeFour: "Reservekopie en herstel op je eigen platform",
         premiumTitle: "Wat verandert er bij mij?", premiumText: "Persoonlijke uitleg uit wat je zelf vastlegt, zonder te doen alsof een verband een zekerheid is.",
@@ -85,6 +85,11 @@
         twoTitle: "Koppelingen zijn optioneel", twoText: "De app blijft bruikbaar zonder Apple Gezondheid of Health Connect.",
         threeTitle: "Voorzichtige uitleg", threeText: "Geen diagnose, voorspelling of medisch advies.",
         fourTitle: "Jouw eigen opslag", fourText: "Op iPhone kies je zelf waar je een export bewaart. Op Android is synchronisatie met je eigen Google Drive optioneel."
+      },
+      choice: {
+        title: "Past MigraineMaatje bij jou?",
+        text: "Bekijk wat gratis is, welke toestemming waarvoor dient en hoe je gegevens bewaart. Lees ervaringen in de winkels en bespreek je gratis basisrapport met je arts.",
+        link: "Bekijk de vijf aandachtspunten", limits: "Onze eigen toelichting, geen keurmerk of aanbeveling van Patiëntenfederatie Nederland."
       },
       guides: {
         eyebrow: "Praktische uitleg", title: "Migraine, duizeligheid en je dagboek.",
@@ -144,7 +149,7 @@
       },
       insight: {
         eyebrow: "Your story, not an average", title: "Turn tracking into something useful.",
-        description: "The diary stays clear. Once there is enough data, Premium shows what recurs across your recorded attacks, medication and recovery.",
+        description: "Your own counts stay visible. From version 2.3.1, when enough data is available, see one personal result before choosing Premium. With little data, the overview stays simple.",
         pointOneTitle: "What helped?", pointOneText: "Effect per medication, carefully counted from finished attacks.",
         pointTwoTitle: "What came back?", pointTwoText: "Recurrence within 24 hours stays visible on its own.",
         pointThreeTitle: "What changed?", pointThreeText: "Compare migraine days and medication days with the previous period."
@@ -158,7 +163,7 @@
       },
       value: {
         eyebrow: "Free and Premium", title: "Track for free. Understand with Premium.",
-        description: "Essential care remains useful without a subscription. Premium adds recurring personal interpretation.",
+        description: "The basics remain useful without a subscription. Premium is optional. Before purchase, the store shows the price, renewal and any trial you are eligible for.",
         freeTitle: "Always free", freeText: "Everything you need for a dependable migraine diary.",
         freeOne: "Log attacks and finish them later", freeTwo: "Diary, calendar and medication management", freeThree: "Basic status and basic doctor report", freeFour: "Backup and restore on your own platform",
         premiumTitle: "What is changing for me?", premiumText: "Personal explanation from what you record, without treating an association as certainty.",
@@ -171,6 +176,11 @@
         twoTitle: "Connections are optional", twoText: "The app remains useful without Apple Health or Health Connect.",
         threeTitle: "Careful interpretation", threeText: "No diagnosis, prediction or medical advice.",
         fourTitle: "Your own storage", fourText: "On iPhone, you choose where to save an export. On Android, sync with your own Google Drive is optional."
+      },
+      choice: {
+        title: "Is MigraineMaatje right for you?",
+        text: "Check what is free, why permissions are requested and how to keep your data. Read store reviews and discuss your free basic report with your doctor.",
+        link: "Check the five points", limits: "Our own explanation, not a quality label or endorsement by the Dutch Patient Federation."
       },
       guides: {
         eyebrow: "Guides in Dutch", title: "Migraine, dizziness and your diary.",
@@ -230,7 +240,7 @@
       },
       insight: {
         eyebrow: "Deine Geschichte, kein Durchschnitt", title: "Aus Dokumentation wird etwas Nützliches.",
-        description: "Das Tagebuch bleibt übersichtlich. Mit genügend Daten zeigt Premium, was sich in deinen erfassten Attacken, Medikamenten und Erholungsphasen wiederholt.",
+        description: "Deine eigenen Zählungen bleiben sichtbar. Ab Version 2.3.1 siehst du bei genügend Daten ein persönliches Ergebnis, bevor du Premium wählst. Bei wenigen Daten bleibt die Übersicht einfach.",
         pointOneTitle: "Was hat geholfen?", pointOneText: "Wirkung je Medikament, vorsichtig aus abgeschlossenen Attacken gezählt.",
         pointTwoTitle: "Was kam zurück?", pointTwoText: "Wiederkehr innerhalb von 24 Stunden bleibt separat sichtbar.",
         pointThreeTitle: "Was hat sich verändert?", pointThreeText: "Vergleiche Migräne- und Medikamententage mit dem vorherigen Zeitraum."
@@ -244,7 +254,7 @@
       },
       value: {
         eyebrow: "Kostenlos und Premium", title: "Kostenlos dokumentieren. Mit Premium verstehen.",
-        description: "Die wichtige Basis bleibt ohne Abo nutzbar. Premium ergänzt wiederkehrende persönliche Einordnung.",
+        description: "Die Basis bleibt ohne Abo nutzbar. Premium ist freiwillig. Vor dem Kauf zeigt der Store Preis, Verlängerung und eine mögliche Probephase, für die du berechtigt bist.",
         freeTitle: "Immer kostenlos", freeText: "Alles für ein verlässliches Migränetagebuch.",
         freeOne: "Attacken erfassen und später abschließen", freeTwo: "Tagebuch, Kalender und Medikamentenverwaltung", freeThree: "Basisstatus und Basisbericht für den Arzt", freeFour: "Sicherung und Wiederherstellung auf deiner Plattform",
         premiumTitle: "Was verändert sich bei mir?", premiumText: "Persönliche Erklärungen aus deinen Einträgen, ohne einen Zusammenhang als Gewissheit darzustellen.",
@@ -257,6 +267,11 @@
         twoTitle: "Verknüpfungen sind freiwillig", twoText: "Die App bleibt ohne Apple Health oder Health Connect nutzbar.",
         threeTitle: "Vorsichtige Einordnung", threeText: "Keine Diagnose, Vorhersage oder medizinische Beratung.",
         fourTitle: "Dein eigener Speicher", fourText: "Auf dem iPhone wählst du den Speicherort eines Exports selbst. Unter Android ist die Synchronisierung mit deinem Google Drive freiwillig."
+      },
+      choice: {
+        title: "Passt MigraineMaatje zu dir?",
+        text: "Prüfe, was kostenlos ist, wofür Berechtigungen dienen und wie du deine Daten sicherst. Lies Store-Bewertungen und besprich deinen kostenlosen Basisbericht mit deinem Arzt.",
+        link: "Die fünf Punkte ansehen", limits: "Unsere eigene Erläuterung, kein Gütesiegel und keine Empfehlung der niederländischen Patientenföderation."
       },
       guides: {
         eyebrow: "Ratgeber auf Niederländisch", title: "Migräne, Schwindel und dein Tagebuch.",
@@ -316,7 +331,7 @@
       },
       insight: {
         eyebrow: "Votre histoire, pas une moyenne", title: "Transformez le suivi en quelque chose d’utile.",
-        description: "Le journal reste clair. Avec assez de données, Premium montre ce qui revient dans vos crises, vos médicaments et votre récupération enregistrés.",
+        description: "Vos propres décomptes restent visibles. À partir de la version 2.3.1, si les données suffisent, découvrez un résultat personnel avant de choisir Premium. Avec peu de données, la vue reste simple.",
         pointOneTitle: "Qu’est-ce qui a aidé ?", pointOneText: "Effet par médicament, compté avec prudence dans les crises terminées.",
         pointTwoTitle: "Qu’est-ce qui est revenu ?", pointTwoText: "Le retour dans les 24 heures reste visible séparément.",
         pointThreeTitle: "Qu’est-ce qui a changé ?", pointThreeText: "Comparez les jours de migraine et de médicaments à la période précédente."
@@ -330,7 +345,7 @@
       },
       value: {
         eyebrow: "Gratuit et Premium", title: "Suivre gratuitement. Comprendre avec Premium.",
-        description: "L’essentiel reste utile sans abonnement. Premium ajoute une interprétation personnelle régulière.",
+        description: "L’essentiel reste utile sans abonnement. Premium est facultatif. Avant l’achat, la boutique affiche le prix, le renouvellement et tout essai auquel vous êtes éligible.",
         freeTitle: "Toujours gratuit", freeText: "Tout le nécessaire pour un journal de migraine fiable.",
         freeOne: "Enregistrer les crises et les terminer plus tard", freeTwo: "Journal, calendrier et gestion des médicaments", freeThree: "Statut de base et rapport de base pour le médecin", freeFour: "Sauvegarde et restauration sur votre plateforme",
         premiumTitle: "Qu’est-ce qui change pour moi ?", premiumText: "Une explication personnelle à partir de vos saisies, sans présenter une association comme une certitude.",
@@ -343,6 +358,11 @@
         twoTitle: "Connexions facultatives", twoText: "L’app reste utile sans Apple Santé ni Health Connect.",
         threeTitle: "Interprétation prudente", threeText: "Aucun diagnostic, prédiction ou conseil médical.",
         fourTitle: "Votre propre stockage", fourText: "Sur iPhone, vous choisissez où enregistrer un export. Sur Android, la synchronisation avec votre Google Drive est facultative."
+      },
+      choice: {
+        title: "MigraineMaatje vous convient-elle ?",
+        text: "Vérifiez ce qui est gratuit, à quoi servent les autorisations et comment conserver vos données. Lisez les avis des boutiques et discutez du rapport de base gratuit avec votre médecin.",
+        link: "Voir les cinq points", limits: "Notre propre explication, sans label ni recommandation de la Fédération néerlandaise des patients."
       },
       guides: {
         eyebrow: "Guides en néerlandais", title: "Migraine, vertiges et votre journal.",

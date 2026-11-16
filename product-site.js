@@ -98,6 +98,7 @@
   document.querySelectorAll("[data-keep-language]").forEach((link) => {
     const next = new URL(link.href, window.location.href);
     next.searchParams.set("lang", language);
+    if (link.dataset.languageAnchor) next.hash = `${link.dataset.languageAnchor}-${language}`;
     link.href = next.toString();
   });
 
