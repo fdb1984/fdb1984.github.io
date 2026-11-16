@@ -48,7 +48,11 @@ const output = process.env.SCREENSHOT_DIR || '/tmp/migrainemaatje-patient-choice
     }
     await noJs.goto(`${base}/migrainemaatje/support.html`);
     for (const lang of ['nl', 'en', 'de', 'fr']) assert.ok(await noJs.locator(`#app-check-${lang}`).isVisible());
-    console.log('PASS no JavaScript: all four static product links and readable manual');
+    for (const name of ['privacy', 'terms']) {
+      await noJs.goto(`${base}/migrainemaatje/${name}.html`);
+      for (const lang of ['nl', 'en', 'de', 'fr']) assert.ok(await noJs.locator(`[data-lang="${lang}"]`).isVisible());
+    }
+    console.log('PASS no JavaScript: all four static product links, manual, privacy and terms');
     await noJs.close();
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

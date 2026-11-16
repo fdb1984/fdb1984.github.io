@@ -41,3 +41,9 @@ test('no fabricated approval or universal trial is promised', () => {
   assert.match(support, /Tout le monde n’est pas éligible/);
   assert.doesNotMatch(support, /100% veilig|clinically proven|garantiert sicher/);
 });
+
+test('support and legal information stay readable when JavaScript is unavailable', () => {
+  for (const file of ['support', 'privacy', 'terms']) {
+    assert.match(read(`migrainemaatje/${file}.html`), /<noscript><style>body\.app-page \[data-lang\] \{ display: block; \}/);
+  }
+});
