@@ -1,11 +1,11 @@
 (() => {
   const images = (language, labels) => ({
-    hero: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/hero.png`, alt: labels.hero },
-    log: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/log.png`, alt: labels.log },
-    diary: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/diary.png`, alt: labels.diary },
-    insights: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/insights.png`, alt: labels.insights },
-    medication: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/medication.png`, alt: labels.medication },
-    care: { src: `/migrainemaatje/assets/web-2026-10-07/${language}/care.png`, alt: labels.care }
+    hero: { src: `/migrainemaatje/assets/web-2026-11-16/${language}/hero.webp`, alt: labels.hero },
+    log: { src: `/migrainemaatje/assets/web-2026-11-16/${language}/log.webp`, alt: labels.log },
+    diary: { src: `/migrainemaatje/assets/web-2026-11-16/${language}/diary.webp`, alt: labels.diary },
+    insights: { src: `/migrainemaatje/assets/web-2026-11-16/${language}/insights.webp`, alt: labels.insights },
+    medication: { src: `/migrainemaatje/assets/web-2026-11-16/${language}/medication.webp`, alt: labels.medication },
+    care: { src: `/migrainemaatje/assets/web-2026-11-16/${language}/care.webp`, alt: labels.care }
   });
 
   window.PRODUCT_TRANSLATIONS = {
@@ -21,16 +21,16 @@
       hero: {
         identity: "Voor iPhone, iPad, Apple Watch en Android",
         eyebrow: "Gratis migraine- en hoofdpijndagboek",
-        promise: "Snel vastleggen. Later zien wat hielp.",
-        description: "Leg een aanval in een paar tikken vast. Vul later medicatie en herstel aan en bewaar wat je met je arts wilt bespreken.",
+        promise: "Migraine? Leg alleen het nodige vast.",
+        description: "Bewaar je aanval in een paar tikken. Vul medicatie en herstel later aan. Zo hoef je bij je volgende afspraak niet alles uit je hoofd te vertellen.",
         trustLine: "Geen advertenties · geen verkoop van gezondheidsdata",
         factOne: "Snel vastleggen blijft gratis", factTwo: "Geen advertenties", factThree: "Geen verkoop van gezondheidsdata",
         noteOneTitle: "Aanval vastgelegd", noteOneText: "De rest kan wachten.", noteTwoTitle: "Later aanvullen", noteTwoText: "Medicatie, herstel en terugkeer."
       },
       trust: {
         oneTitle: "Rust tijdens migraine", oneText: "Alleen vastleggen wat nu nodig is",
-        twoTitle: "Inzicht uit je eigen gegevens", twoText: "Geen algemene conclusie vermomd als zekerheid",
-        threeTitle: "Gebouwd voor vertrouwen", threeText: "Jij kiest welke koppelingen je gebruikt"
+        twoTitle: "Terugzien wat hielp", twoText: "Je eigen medicatie- en herstelgegevens bij elkaar",
+        threeTitle: "Je vragen niet vergeten", threeText: "Bereid je artsbezoek op je eigen moment voor"
       },
       facts: {
         title: "Een migrainedagboek voor iPhone en Android",
@@ -57,8 +57,8 @@
         pointThreeTitle: "Open aanval blijft zichtbaar", pointThreeText: "Aanpassen, afronden of verwijderen blijft helder."
       },
       insight: {
-        eyebrow: "Jouw verhaal, niet een gemiddelde", title: "Van registreren naar iets waar je wat aan hebt.",
-        description: "Je eigen tellingen blijven zichtbaar. Vanaf versie 2.3.1 zie je bij voldoende gegevens eerst één persoonlijke uitkomst, voordat je Premium kiest. Met weinig gegevens blijft het overzicht klein.",
+        eyebrow: "Persoonlijk inzicht met Premium", title: "Wat deed je medicatie bij jouw aanvallen?",
+        description: "Je noteert of een middel hielp, deels hielp of niet hielp. MigraineMaatje zet je antwoorden naast elkaar. Ook zie je of klachten terugkwamen en wat er tussen maanden veranderde. Inzichten verschijnen wanneer je gegevens daarvoor voldoende zijn.",
         pointOneTitle: "Wat helpt?", pointOneText: "Effect per middel, rustig geteld uit afgeronde aanvallen.",
         pointTwoTitle: "Wat kwam terug?", pointTwoText: "Terugkeer binnen 24 uur blijft apart zichtbaar.",
         pointThreeTitle: "Wat veranderde?", pointThreeText: "Vergelijk migrainedagen en medicatiedagen met de vorige periode."
@@ -75,8 +75,19 @@
         description: "De basis blijft bruikbaar zonder abonnement. Premium is optioneel. De winkel toont vóór aankoop de prijs, verlenging en een eventuele proefperiode waarvoor je in aanmerking komt.",
         freeTitle: "Altijd gratis", freeText: "Alles wat je nodig hebt om een betrouwbaar migraine-dagboek bij te houden.",
         freeOne: "Aanvallen vastleggen en later afronden", freeTwo: "Dagboek, kalender en medicatiebeheer", freeThree: "Basisstatus en basisrapport voor je arts", freeFour: "Reservekopie en herstel op je eigen platform",
-        premiumTitle: "Wat verandert er bij mij?", premiumText: "Persoonlijke uitleg uit wat je zelf vastlegt, zonder te doen alsof een verband een zekerheid is.",
+        premiumTitle: "Neem meer mee uit je dagboek", premiumText: "Bekijk wat je als helpend hebt genoteerd, volg veranderingen en zet je vragen voor je arts klaar.",
         premiumOne: "Waarom je actuele status verandert", premiumTwo: "Medicatie-effect en terugkeer binnen 24 uur", premiumThree: "Maandanalyse in gewone taal", premiumFour: "Consultvoorbereiding en bespreekpunten"
+      },
+      proof: {
+        label: "Verzonnen voorbeeld", title: "Eén middel bij 10 afgeronde aanvallen",
+        helped: "keer als helpend genoteerd", partly: "keer als deels helpend genoteerd", notHelped: "keer als niet helpend genoteerd",
+        note: "Een samenvatting van ingevulde antwoorden, geen beoordeling van welk middel je moet nemen.",
+        caption: "Echte appschermen met voorbeeldgegevens. De beelden tonen de iPhone-app."
+      },
+      price: {
+        title: "Begin gratis. Kies zelf of je meer wilt.",
+        text: "In de Nederlandse App Store: € 1,99 per maand of € 19,99 per jaar. Google Play en andere landen kunnen andere prijzen tonen.",
+        terms: "Premium is een automatisch verlengend abonnement. De winkel toont vóór aankoop de actuele prijs, voorwaarden en een eventuele proefperiode. Je kunt opzeggen via je winkelaccount."
       },
       privacy: {
         eyebrow: "Gezondheidsdata vraagt om vertrouwen", title: "Jouw gegevens blijven van jou.",
@@ -107,16 +118,16 @@
       nav: { how: "How it works", insight: "Insights", care: "For your doctor", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Download on the App Store", playStore: "Get it on Google Play" },
       hero: {
-        identity: "For iPhone, iPad, Apple Watch and Android", eyebrow: "Free migraine and headache diary", promise: "Log it quickly. See what helped later.",
-        description: "Log an attack in a few taps. Add medication and recovery later, and keep what you want to discuss with your doctor.",
+        identity: "For iPhone, iPad, Apple Watch and Android", eyebrow: "Free migraine and headache diary", promise: "Migraine? Record just the essentials.",
+        description: "Save an attack in a few taps. Add medication and recovery later. At your next appointment, you will not have to remember everything on the spot.",
         trustLine: "No ads · no sale of health data",
         factOne: "Quick logging stays free", factTwo: "No advertising", factThree: "No sale of health data",
         noteOneTitle: "Attack saved", noteOneText: "Everything else can wait.", noteTwoTitle: "Add details later", noteTwoText: "Medication, recovery and recurrence."
       },
       trust: {
         oneTitle: "Calm during migraine", oneText: "Only record what matters right now",
-        twoTitle: "Insight from your own data", twoText: "No generic conclusion presented as certainty",
-        threeTitle: "Built for trust", threeText: "You choose which connections to use"
+        twoTitle: "Look back at what helped", twoText: "Your own medication and recovery records together",
+        threeTitle: "Remember your questions", threeText: "Prepare for your appointment in your own time"
       },
       facts: {
         title: "A migraine diary for iPhone and Android",
@@ -143,8 +154,8 @@
         pointThreeTitle: "An open attack stays visible", pointThreeText: "Adjusting, finishing or deleting remains clear."
       },
       insight: {
-        eyebrow: "Your story, not an average", title: "Turn tracking into something useful.",
-        description: "Your own counts stay visible. From version 2.3.1, when enough data is available, see one personal result before choosing Premium. With little data, the overview stays simple.",
+        eyebrow: "Personal insights with Premium", title: "How did you record your medication helping?",
+        description: "Record whether a medication helped, partly helped or did not help. MigraineMaatje puts your answers together. Review returning symptoms and changes between months too. Insights appear when your records contain enough information.",
         pointOneTitle: "What helped?", pointOneText: "Effect per medication, carefully counted from finished attacks.",
         pointTwoTitle: "What came back?", pointTwoText: "Recurrence within 24 hours stays visible on its own.",
         pointThreeTitle: "What changed?", pointThreeText: "Compare migraine days and medication days with the previous period."
@@ -161,8 +172,19 @@
         description: "The basics remain useful without a subscription. Premium is optional. Before purchase, the store shows the price, renewal and any trial you are eligible for.",
         freeTitle: "Always free", freeText: "Everything you need for a dependable migraine diary.",
         freeOne: "Log attacks and finish them later", freeTwo: "Diary, calendar and medication management", freeThree: "Basic status and basic doctor report", freeFour: "Backup and restore on your own platform",
-        premiumTitle: "What is changing for me?", premiumText: "Personal explanation from what you record, without treating an association as certainty.",
+        premiumTitle: "Get more from your diary", premiumText: "Review what you recorded as helpful, follow changes and keep your questions ready for your doctor.",
         premiumOne: "Why your current status changes", premiumTwo: "Medication effect and recurrence within 24 hours", premiumThree: "Monthly analysis in plain language", premiumFour: "Consultation preparation and discussion points"
+      },
+      proof: {
+        label: "Fictional example", title: "One medication across 10 completed attacks",
+        helped: "recorded as helpful", partly: "recorded as partly helpful", notHelped: "recorded as not helpful",
+        note: "A summary of recorded answers, not a recommendation of which medication to take.",
+        caption: "Real app screens with sample data. Images show the iPhone app."
+      },
+      price: {
+        title: "Start free. Choose more when it helps.",
+        text: "In the Dutch App Store: €1.99 per month or €19.99 per year. Google Play and other countries may show different prices.",
+        terms: "Premium is an auto-renewing subscription. Before purchase, the store shows the current price, terms and any eligible trial. Cancel through your store account."
       },
       privacy: {
         eyebrow: "Health data deserves trust", title: "Your data remains yours.",
@@ -193,16 +215,16 @@
       nav: { how: "So funktioniert es", insight: "Einblicke", care: "Für deinen Arzt", privacy: "Datenschutz", download: "Laden" },
       actions: { appStore: "Im App Store laden", playStore: "Bei Google Play herunterladen" },
       hero: {
-        identity: "Für iPhone, iPad, Apple Watch und Android", eyebrow: "Kostenloses Migräne- und Kopfschmerztagebuch", promise: "Schnell festhalten. Später sehen, was geholfen hat.",
-        description: "Halte eine Attacke mit wenigen Fingertipps fest. Ergänze später Medikamente und Erholung und bewahre auf, was du mit deinem Arzt besprechen möchtest.",
+        identity: "Für iPhone, iPad, Apple Watch und Android", eyebrow: "Kostenloses Migräne- und Kopfschmerztagebuch", promise: "Migräne? Halte nur das Nötige fest.",
+        description: "Speichere eine Attacke mit wenigen Fingertipps. Medikamente und Erholung ergänzt du später. Beim nächsten Arztgespräch musst du dich nicht an alles auf einmal erinnern.",
         trustLine: "Keine Werbung · kein Verkauf von Gesundheitsdaten",
         factOne: "Schnelles Erfassen bleibt kostenlos", factTwo: "Keine Werbung", factThree: "Kein Verkauf von Gesundheitsdaten",
         noteOneTitle: "Attacke gespeichert", noteOneText: "Alles andere kann warten.", noteTwoTitle: "Später ergänzen", noteTwoText: "Medikamente, Erholung und Wiederkehr."
       },
       trust: {
         oneTitle: "Ruhe während der Migräne", oneText: "Nur festhalten, was gerade nötig ist",
-        twoTitle: "Einblicke aus deinen eigenen Daten", twoText: "Keine allgemeine Aussage als Gewissheit",
-        threeTitle: "Auf Vertrauen ausgelegt", threeText: "Du entscheidest, welche Verknüpfungen du nutzt"
+        twoTitle: "Nachsehen, was geholfen hat", twoText: "Deine Angaben zu Medikamenten und Erholung zusammen",
+        threeTitle: "Deine Fragen nicht vergessen", threeText: "Bereite dein Arztgespräch in deinem Tempo vor"
       },
       facts: {
         title: "Ein Migränetagebuch für iPhone und Android",
@@ -229,8 +251,8 @@
         pointThreeTitle: "Offene Attacke bleibt sichtbar", pointThreeText: "Anpassen, abschließen oder löschen bleibt eindeutig."
       },
       insight: {
-        eyebrow: "Deine Geschichte, kein Durchschnitt", title: "Aus Dokumentation wird etwas Nützliches.",
-        description: "Deine eigenen Zählungen bleiben sichtbar. Ab Version 2.3.1 siehst du bei genügend Daten ein persönliches Ergebnis, bevor du Premium wählst. Bei wenigen Daten bleibt die Übersicht einfach.",
+        eyebrow: "Persönliche Einblicke mit Premium", title: "Wie hast du die Wirkung deiner Medikamente erlebt?",
+        description: "Halte fest, ob ein Mittel geholfen, teilweise geholfen oder nicht geholfen hat. MigraineMaatje fasst deine Antworten zusammen. Sieh auch, ob Beschwerden zurückkamen und was sich zwischen Monaten verändert hat. Einblicke erscheinen, wenn genügend Angaben vorliegen.",
         pointOneTitle: "Was hat geholfen?", pointOneText: "Wirkung je Medikament, vorsichtig aus abgeschlossenen Attacken gezählt.",
         pointTwoTitle: "Was kam zurück?", pointTwoText: "Wiederkehr innerhalb von 24 Stunden bleibt separat sichtbar.",
         pointThreeTitle: "Was hat sich verändert?", pointThreeText: "Vergleiche Migräne- und Medikamententage mit dem vorherigen Zeitraum."
@@ -247,8 +269,19 @@
         description: "Die Basis bleibt ohne Abo nutzbar. Premium ist freiwillig. Vor dem Kauf zeigt der Store Preis, Verlängerung und eine mögliche Probephase, für die du berechtigt bist.",
         freeTitle: "Immer kostenlos", freeText: "Alles für ein verlässliches Migränetagebuch.",
         freeOne: "Attacken erfassen und später abschließen", freeTwo: "Tagebuch, Kalender und Medikamentenverwaltung", freeThree: "Basisstatus und Basisbericht für den Arzt", freeFour: "Sicherung und Wiederherstellung auf deiner Plattform",
-        premiumTitle: "Was verändert sich bei mir?", premiumText: "Persönliche Erklärungen aus deinen Einträgen, ohne einen Zusammenhang als Gewissheit darzustellen.",
+        premiumTitle: "Mehr aus deinem Tagebuch mitnehmen", premiumText: "Sieh, was du als hilfreich festgehalten hast, verfolge Veränderungen und sammle Fragen für dein Arztgespräch.",
         premiumOne: "Warum sich dein aktueller Status verändert", premiumTwo: "Medikamentenwirkung und Wiederkehr innerhalb von 24 Stunden", premiumThree: "Monatsanalyse in klarer Sprache", premiumFour: "Terminvorbereitung und Gesprächspunkte"
+      },
+      proof: {
+        label: "Fiktives Beispiel", title: "Ein Medikament bei 10 abgeschlossenen Attacken",
+        helped: "als hilfreich festgehalten", partly: "als teilweise hilfreich festgehalten", notHelped: "als nicht hilfreich festgehalten",
+        note: "Eine Zusammenfassung eingetragener Antworten, keine Empfehlung zur Medikamentenwahl.",
+        caption: "Echte App-Ansichten mit Beispieldaten. Die Bilder zeigen die iPhone-App."
+      },
+      price: {
+        title: "Kostenlos starten. Selbst entscheiden.",
+        text: "Im niederländischen App Store: 1,99 € pro Monat oder 19,99 € pro Jahr. Google Play und andere Länder können andere Preise anzeigen.",
+        terms: "Premium ist ein automatisch verlängerndes Abonnement. Der Store zeigt vor dem Kauf den aktuellen Preis, die Bedingungen und eine mögliche Probephase. Kündige über dein Store-Konto."
       },
       privacy: {
         eyebrow: "Gesundheitsdaten brauchen Vertrauen", title: "Deine Daten bleiben deine.",
@@ -279,16 +312,16 @@
       nav: { how: "Fonctionnement", insight: "Analyses", care: "Pour votre médecin", privacy: "Confidentialité", download: "Télécharger" },
       actions: { appStore: "Télécharger dans l’App Store", playStore: "Disponible sur Google Play" },
       hero: {
-        identity: "Pour iPhone, iPad, Apple Watch et Android", eyebrow: "Journal gratuit de migraine et de maux de tête", promise: "Enregistrer vite. Voir ensuite ce qui a aidé.",
-        description: "Enregistrez une crise en quelques gestes. Ajoutez plus tard les médicaments et la récupération, puis gardez ce que vous souhaitez aborder avec votre médecin.",
+        identity: "Pour iPhone, iPad, Apple Watch et Android", eyebrow: "Journal gratuit de migraine et de maux de tête", promise: "Une migraine ? Notez seulement l’essentiel.",
+        description: "Enregistrez une crise en quelques gestes. Ajoutez les médicaments et la récupération plus tard. Lors de votre prochain rendez-vous, vous n’aurez pas à tout raconter de mémoire.",
         trustLine: "Sans publicité · aucune vente de données de santé",
         factOne: "L’enregistrement rapide reste gratuit", factTwo: "Sans publicité", factThree: "Aucune vente de données de santé",
         noteOneTitle: "Crise enregistrée", noteOneText: "Le reste peut attendre.", noteTwoTitle: "Compléter plus tard", noteTwoText: "Médicaments, récupération et retour."
       },
       trust: {
         oneTitle: "Du calme pendant la migraine", oneText: "Notez seulement ce qui compte maintenant",
-        twoTitle: "Des éclairages issus de vos données", twoText: "Aucune généralité présentée comme une certitude",
-        threeTitle: "Conçu pour la confiance", threeText: "Vous choisissez les connexions utilisées"
+        twoTitle: "Retrouvez ce qui a aidé", twoText: "Vos notes sur les médicaments et la récupération réunies",
+        threeTitle: "N’oubliez pas vos questions", threeText: "Préparez votre consultation à votre rythme"
       },
       facts: {
         title: "Un journal de migraine pour iPhone et Android",
@@ -315,8 +348,8 @@
         pointThreeTitle: "La crise ouverte reste visible", pointThreeText: "Modifier, terminer ou supprimer reste clair."
       },
       insight: {
-        eyebrow: "Votre histoire, pas une moyenne", title: "Transformez le suivi en quelque chose d’utile.",
-        description: "Vos propres décomptes restent visibles. À partir de la version 2.3.1, si les données suffisent, découvrez un résultat personnel avant de choisir Premium. Avec peu de données, la vue reste simple.",
+        eyebrow: "Des observations personnelles avec Premium", title: "Quel effet avez-vous noté pour vos médicaments ?",
+        description: "Notez si un médicament a aidé, a aidé en partie ou n’a pas aidé. MigraineMaatje rassemble vos réponses. Retrouvez aussi les retours de symptômes et les changements entre les mois. Les observations apparaissent lorsque vos notes sont suffisantes.",
         pointOneTitle: "Qu’est-ce qui a aidé ?", pointOneText: "Effet par médicament, compté avec prudence dans les crises terminées.",
         pointTwoTitle: "Qu’est-ce qui est revenu ?", pointTwoText: "Le retour dans les 24 heures reste visible séparément.",
         pointThreeTitle: "Qu’est-ce qui a changé ?", pointThreeText: "Comparez les jours de migraine et de médicaments à la période précédente."
@@ -333,8 +366,19 @@
         description: "L’essentiel reste utile sans abonnement. Premium est facultatif. Avant l’achat, la boutique affiche le prix, le renouvellement et tout essai auquel vous êtes éligible.",
         freeTitle: "Toujours gratuit", freeText: "Tout le nécessaire pour un journal de migraine fiable.",
         freeOne: "Enregistrer les crises et les terminer plus tard", freeTwo: "Journal, calendrier et gestion des médicaments", freeThree: "Statut de base et rapport de base pour le médecin", freeFour: "Sauvegarde et restauration sur votre plateforme",
-        premiumTitle: "Qu’est-ce qui change pour moi ?", premiumText: "Une explication personnelle à partir de vos saisies, sans présenter une association comme une certitude.",
+        premiumTitle: "Tirez davantage de votre journal", premiumText: "Retrouvez ce que vous avez noté comme utile, suivez les changements et gardez vos questions pour le médecin.",
         premiumOne: "Pourquoi votre statut actuel change", premiumTwo: "Effet des médicaments et retour dans les 24 heures", premiumThree: "Analyse mensuelle en langage clair", premiumFour: "Préparation de consultation et points à discuter"
+      },
+      proof: {
+        label: "Exemple fictif", title: "Un médicament pour 10 crises terminées",
+        helped: "fois noté comme utile", partly: "fois noté comme partiellement utile", notHelped: "fois noté comme sans effet",
+        note: "Un résumé des réponses saisies, pas une recommandation sur le médicament à prendre.",
+        caption: "Vrais écrans de l’app avec des données fictives. Les images montrent l’app iPhone."
+      },
+      price: {
+        title: "Commencez gratuitement. Choisissez la suite.",
+        text: "Dans l’App Store néerlandais : 1,99 € par mois ou 19,99 € par an. Google Play et les autres pays peuvent afficher des prix différents.",
+        terms: "Premium est un abonnement à renouvellement automatique. Avant l’achat, la boutique affiche le prix actuel, les conditions et tout essai disponible. Résiliez depuis votre compte de boutique."
       },
       privacy: {
         eyebrow: "Les données de santé exigent de la confiance", title: "Vos données restent les vôtres.",

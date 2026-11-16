@@ -1,0 +1,170 @@
+[
+  {
+    "language": "nl",
+    "key": "hero",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/iphone-6-9-product-page-attack.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/nl/hero.webp",
+    "sampleData": true
+  },
+  {
+    "language": "nl",
+    "key": "log",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/iphone-6-9-website-log.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/nl/log.webp",
+    "sampleData": true
+  },
+  {
+    "language": "nl",
+    "key": "diary",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/iphone-6-9-website-diary.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/nl/diary.webp",
+    "sampleData": true
+  },
+  {
+    "language": "nl",
+    "key": "insights",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/iphone-6-9-growth-02-personal-insight.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/nl/insights.webp",
+    "sampleData": true
+  },
+  {
+    "language": "nl",
+    "key": "medication",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/iphone-6-9-website-medication.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/nl/medication.webp",
+    "sampleData": true
+  },
+  {
+    "language": "nl",
+    "key": "care",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/iphone-6-9-premium-consult-day-overview.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/nl/care.webp",
+    "sampleData": true
+  },
+  {
+    "language": "en",
+    "key": "hero",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/en-iphone-6-9-product-page-attack.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/en/hero.webp",
+    "sampleData": true
+  },
+  {
+    "language": "en",
+    "key": "log",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/en-iphone-6-9-website-log.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/en/log.webp",
+    "sampleData": true
+  },
+  {
+    "language": "en",
+    "key": "diary",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/en-iphone-6-9-website-diary.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/en/diary.webp",
+    "sampleData": true
+  },
+  {
+    "language": "en",
+    "key": "insights",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/en-iphone-6-9-growth-02-personal-insight.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/en/insights.webp",
+    "sampleData": true
+  },
+  {
+    "language": "en",
+    "key": "medication",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/en-iphone-6-9-website-medication.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/en/medication.webp",
+    "sampleData": true
+  },
+  {
+    "language": "en",
+    "key": "care",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/en-iphone-6-9-premium-consult-day-overview.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/en/care.webp",
+    "sampleData": true
+  },
+  {
+    "language": "de",
+    "key": "hero",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/de-iphone-6-9-product-page-attack.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/de/hero.webp",
+    "sampleData": true
+  },
+  {
+    "language": "de",
+    "key": "log",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/de-iphone-6-9-website-log.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/de/log.webp",
+    "sampleData": true
+  },
+  {
+    "language": "de",
+    "key": "diary",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/de-iphone-6-9-website-diary.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/de/diary.webp",
+    "sampleData": true
+  },
+  {
+    "language": "de",
+    "key": "insights",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/de-iphone-6-9-growth-02-personal-insight.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/de/insights.webp",
+    "sampleData": true
+  },
+  {
+    "language": "de",
+    "key": "medication",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/de-iphone-6-9-website-medication.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/de/medication.webp",
+    "sampleData": true
+  },
+  {
+    "language": "de",
+    "key": "care",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/de-iphone-6-9-premium-consult-day-overview.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/de/care.webp",
+    "sampleData": true
+  },
+  {
+    "language": "fr",
+    "key": "hero",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/fr-iphone-6-9-product-page-attack.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/fr/hero.webp",
+    "sampleData": true
+  },
+  {
+    "language": "fr",
+    "key": "log",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/fr-iphone-6-9-website-log.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/fr/log.webp",
+    "sampleData": true
+  },
+  {
+    "language": "fr",
+    "key": "diary",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/fr-iphone-6-9-website-diary.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/fr/diary.webp",
+    "sampleData": true
+  },
+  {
+    "language": "fr",
+    "key": "insights",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/fr-iphone-6-9-growth-02-personal-insight.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/fr/insights.webp",
+    "sampleData": true
+  },
+  {
+    "language": "fr",
+    "key": "medication",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/fr-iphone-6-9-website-medication.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/fr/medication.webp",
+    "sampleData": true
+  },
+  {
+    "language": "fr",
+    "key": "care",
+    "source": "ProgressOutputs/StoreConversion-20261116/Apple-iPhone/raw/fr-iphone-6-9-premium-consult-day-overview.png",
+    "asset": "migrainemaatje/assets/web-2026-11-16/fr/care.webp",
+    "sampleData": true
+  }
+]

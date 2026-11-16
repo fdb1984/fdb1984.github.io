@@ -1,0 +1,25 @@
+.product-migraine #download { scroll-margin-top: 100px; }
+.product-migraine .hero-actions { gap: 12px; }
+.product-migraine .hero-actions .primary-action { min-height: 50px; text-align: center; }
+.product-migraine .sample-result { margin-top: 32px; padding-top: 24px; border-top: 1px solid #ffffff24; }
+.product-migraine .sample-label { margin-bottom: 8px; color: #74dfbd; font-size: 14px; font-weight: 700; }
+.product-migraine .sample-result h3 { margin: 0 0 20px; color: #f5f7f7; font-size: 21px; line-height: 1.4; }
+.product-migraine .sample-counts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0; }
+.product-migraine .sample-counts div { display: flex; flex-direction: column; gap: 8px; }
+.product-migraine .sample-counts dt { order: 2; color: #c1ccca; font-size: 14px; line-height: 1.5; }
+.product-migraine .sample-counts dd { order: 1; margin: 0; color: #74dfbd; font-size: 34px; font-weight: 700; line-height: 1.15; }
+.product-migraine .sample-note { margin: 18px 0 0; color: #b3bfbd; font-size: 14px; line-height: 1.6; }
+.product-migraine #insight .feature-shot { display: flex; flex-direction: column; height: auto; min-height: 0; padding: 20px 0; overflow: visible; }
+.product-migraine #insight .visual-phone.front { position: relative; inset: auto; width: min(340px, calc(100% - 36px)); margin-inline: auto; border-bottom: 1px solid #ffffff30; border-radius: 39px; }
+.product-migraine .screenshot-caption { position: relative; z-index: 4; max-width: 340px; margin: 22px auto 0; color: #b3bfbd; font-size: 13px; line-height: 1.6; text-align: center; }
+.product-migraine .price-note { margin-top: 34px; padding-top: 28px; border-top: 1px solid #ffffff24; max-width: 800px; }
+.product-migraine .price-note h3 { color: #f5f7f7; font-size: 22px; line-height: 1.4; }
+.product-migraine .price-note p { color: #d1d9d7; line-height: 1.7; }
+.product-migraine .price-note .price-terms { color: #b3bfbd; font-size: 14px; }
+@media (max-width: 600px) {
+  .product-migraine .sample-counts { gap: 12px; }
+  .product-migraine .sample-counts dt { font-size: 13px; overflow-wrap: anywhere; }
+  .product-migraine .sample-result h3 { font-size: 20px; }
+  .product-migraine .price-note { margin-top: 24px; }
+  .product-migraine .hero-actions .primary-action { width: 100%; }
+}

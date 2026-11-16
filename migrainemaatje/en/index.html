@@ -18,6 +18,7 @@
   <link rel="icon" href="/migrainemaatje-icon.png">
   <link rel="stylesheet" href="/product-site.css?v=20260830e">
   <link rel="stylesheet" href="/migrainemaatje/knowledge.css?v=20261115-discovery">
+  <link rel="stylesheet" href="/migrainemaatje/conversion.css?v=20261116">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -80,7 +81,7 @@
           <a href="/migrainemaatje/de/" data-lang="de" lang="de" aria-label="Deutsch">DE</a>
           <a href="/migrainemaatje/fr/" data-lang="fr" lang="fr" aria-label="Français">FR</a>
         </div>
-        <a class="nav-store" href="https://apps.apple.com/app/id6779200491" data-i18n="nav.download">Download</a>
+        <a class="nav-store" href="#download" data-i18n="nav.download">Download</a>
       </div>
     </div>
   </header>
@@ -95,11 +96,11 @@
           </div>
           <p class="eyebrow" data-i18n="hero.eyebrow">Free migraine and headache diary</p>
           <h1>MigraineMaatje</h1>
-          <p class="hero-promise" data-i18n="hero.promise">Log it quickly. See what helped later.</p>
-          <p class="hero-description" data-i18n="hero.description">Log an attack in a few taps. Add medication and recovery later, and keep what you want to discuss with your doctor.</p>
-          <div class="hero-actions">
+          <p class="hero-promise" data-i18n="hero.promise">Migraine? Record just the essentials.</p>
+          <p class="hero-description" data-i18n="hero.description">Save an attack in a few taps. Add medication and recovery later. At your next appointment, you will not have to remember everything on the spot.</p>
+          <div class="hero-actions" id="download">
             <a class="primary-action" href="https://apps.apple.com/app/id6779200491" data-i18n="actions.appStore">Download on the App Store</a>
-            <a class="secondary-action" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" data-i18n="actions.playStore">Get it on Google Play</a>
+            <a class="primary-action" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" data-i18n="actions.playStore">Get it on Google Play</a>
           </div>
           <p class="hero-trust" data-i18n="hero.trustLine">No ads · no sale of health data</p>
           <ul class="hero-facts">
@@ -111,8 +112,8 @@
       </div>
       <div class="hero-media" aria-hidden="true">
         <div class="phone-stage">
-          <div class="phone-device secondary"><img data-image="log" width="1320" height="2868" loading="eager" src="/migrainemaatje/assets/web-2026-10-07/en/log.png" alt="Quickly choosing an attack type"></div>
-          <div class="phone-device primary"><img data-image="hero" width="1320" height="2868" loading="eager" src="/migrainemaatje/assets/web-2026-10-07/en/hero.png" alt="My day in MigraineMaatje"></div>
+          <div class="phone-device secondary"><img data-image="log" width="1320" height="2868" loading="eager" src="/migrainemaatje/assets/web-2026-11-16/en/log.webp" alt="Quickly choosing an attack type"></div>
+          <div class="phone-device primary"><img data-image="hero" width="1320" height="2868" loading="eager" src="/migrainemaatje/assets/web-2026-11-16/en/hero.webp" alt="My day in MigraineMaatje"></div>
           <div class="floating-note note-one">
             <strong><span class="live-dot"></span><span data-i18n="hero.noteOneTitle">Attack saved</span></strong>
             <small data-i18n="hero.noteOneText">Everything else can wait.</small>
@@ -128,23 +129,8 @@
     <section class="trust-strip">
       <div class="shell trust-grid">
         <div class="trust-item"><span class="trust-mark">01</span><div><strong data-i18n="trust.oneTitle">Calm during migraine</strong><span data-i18n="trust.oneText">Only record what matters right now</span></div></div>
-        <div class="trust-item"><span class="trust-mark">02</span><div><strong data-i18n="trust.twoTitle">Insight from your own data</strong><span data-i18n="trust.twoText">No generic conclusion presented as certainty</span></div></div>
-        <div class="trust-item"><span class="trust-mark">03</span><div><strong data-i18n="trust.threeTitle">Built for trust</strong><span data-i18n="trust.threeText">You choose which connections to use</span></div></div>
-      </div>
-    </section>
-
-    <section class="section product-facts" id="migraine-dagboek-app" aria-labelledby="facts-title">
-      <div class="shell">
-        <h2 id="facts-title" data-i18n="facts.title">A migraine diary for iPhone and Android</h2>
-        <p class="facts-summary" data-i18n="facts.summary">MigraineMaatje is a migraine and headache diary app for recording attacks, medication and recovery. Start for free and create a basic report for your doctor or neurologist.</p>
-        <dl class="facts-list">
-          <div><dt data-i18n="facts.platformsLabel">Devices</dt><dd data-i18n="facts.platforms">iPhone, iPad and Android, with a companion Apple Watch app.</dd></div>
-          <div><dt data-i18n="facts.languagesLabel">Languages</dt><dd data-i18n="facts.languages">Dutch, English, German and French.</dd></div>
-          <div><dt data-i18n="facts.freeLabel">Free basics</dt><dd data-i18n="facts.free">Recording and finishing attacks, diary, calendar, medication, basic status, medication days and a basic report.</dd></div>
-          <div><dt data-i18n="facts.premiumLabel">Optional Premium</dt><dd data-i18n="facts.premium">Personal explanations, medication effect, monthly analysis and appointment preparation. No subscription is needed to keep your diary.</dd></div>
-          <div><dt data-i18n="facts.watchLabel">Without a smartwatch</dt><dd data-i18n="facts.watch">Yes. Record attacks and medication manually. Apple Health and Health Connect are optional.</dd></div>
-          <div><dt data-i18n="facts.privacyLabel">Privacy</dt><dd data-i18n="facts.privacy">No ads and no sale of health data. You choose which connections and backup options to use.</dd></div>
-        </dl>
+        <div class="trust-item"><span class="trust-mark">02</span><div><strong data-i18n="trust.twoTitle">Look back at what helped</strong><span data-i18n="trust.twoText">Your own medication and recovery records together</span></div></div>
+        <div class="trust-item"><span class="trust-mark">03</span><div><strong data-i18n="trust.threeTitle">Remember your questions</strong><span data-i18n="trust.threeText">Prepare for your appointment in your own time</span></div></div>
       </div>
     </section>
 
@@ -161,7 +147,7 @@
           </ul>
         </div>
         <div class="visual-composition feature-shot" aria-hidden="true" data-reveal="" data-reveal-delay="1">
-          <div class="visual-phone front"><img data-image="log" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-10-07/en/log.png" alt="Quickly choosing an attack type"></div>
+          <div class="visual-phone front"><img data-image="log" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-11-16/en/log.webp" alt="Quickly choosing an attack type"></div>
         </div>
       </div>
     </section>
@@ -169,17 +155,28 @@
     <section class="section" id="insight">
       <div class="shell showcase-split reverse">
         <div class="split-copy" data-reveal="">
-          <p class="eyebrow" data-i18n="insight.eyebrow">Your story, not an average</p>
-          <h2 data-i18n="insight.title">Turn tracking into something useful.</h2>
-          <p data-i18n="insight.description">Your own counts stay visible. From version 2.3.1, when enough data is available, see one personal result before choosing Premium. With little data, the overview stays simple.</p>
+          <p class="eyebrow" data-i18n="insight.eyebrow">Personal insights with Premium</p>
+          <h2 data-i18n="insight.title">How did you record your medication helping?</h2>
+          <p data-i18n="insight.description">Record whether a medication helped, partly helped or did not help. MigraineMaatje puts your answers together. Review returning symptoms and changes between months too. Insights appear when your records contain enough information.</p>
           <ul class="insight-list">
             <li><span>01</span><div><strong data-i18n="insight.pointOneTitle">What helped?</strong><small data-i18n="insight.pointOneText">Effect per medication, carefully counted from finished attacks.</small></div></li>
             <li><span>02</span><div><strong data-i18n="insight.pointTwoTitle">What came back?</strong><small data-i18n="insight.pointTwoText">Recurrence within 24 hours stays visible on its own.</small></div></li>
             <li><span>03</span><div><strong data-i18n="insight.pointThreeTitle">What changed?</strong><small data-i18n="insight.pointThreeText">Compare migraine days and medication days with the previous period.</small></div></li>
           </ul>
+          <div class="sample-result" aria-labelledby="sample-result-title">
+            <p class="sample-label" data-i18n="proof.label">Fictional example</p>
+            <h3 id="sample-result-title" data-i18n="proof.title">One medication across 10 completed attacks</h3>
+            <dl class="sample-counts">
+              <div><dt data-i18n="proof.helped">recorded as helpful</dt><dd>7</dd></div>
+              <div><dt data-i18n="proof.partly">recorded as partly helpful</dt><dd>3</dd></div>
+              <div><dt data-i18n="proof.notHelped">recorded as not helpful</dt><dd>0</dd></div>
+            </dl>
+            <p class="sample-note" data-i18n="proof.note">A summary of recorded answers, not a recommendation of which medication to take.</p>
+          </div>
         </div>
         <div class="visual-composition feature-shot" aria-hidden="true" data-reveal="" data-reveal-delay="1">
-          <div class="visual-phone front"><img data-image="insights" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-10-07/en/insights.png" alt="Personal insights in MigraineMaatje"></div>
+          <div class="visual-phone front"><img data-image="insights" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-11-16/en/insights.webp" alt="Personal insights in MigraineMaatje"></div>
+          <p class="screenshot-caption" data-i18n="proof.caption">Real app screens with sample data. Images show the iPhone app.</p>
         </div>
       </div>
     </section>
@@ -192,9 +189,9 @@
           <p data-i18n="gallery.description">Your calendar, medication and appointment preparation form one calm overview, without loose notes before a consultation.</p>
         </div>
         <div class="screen-gallery">
-          <figure class="screen-shot" data-reveal=""><div class="screen-frame"><img data-image="diary" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-10-07/en/diary.png" alt="The MigraineMaatje diary"></div><figcaption><span data-i18n="gallery.diaryTitle">Diary and calendar</span><small data-i18n="gallery.diaryText">Find attacks, headaches and medication days.</small></figcaption></figure>
-          <figure class="screen-shot" data-reveal="" data-reveal-delay="1"><div class="screen-frame"><img data-image="medication" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-10-07/en/medication.png" alt="Managing medication in MigraineMaatje"></div><figcaption><span data-i18n="gallery.medicationTitle">Medication together</span><small data-i18n="gallery.medicationText">Acute medication, prevention, stock and changes.</small></figcaption></figure>
-          <figure class="screen-shot" data-reveal="" data-reveal-delay="2"><div class="screen-frame"><img data-image="care" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-10-07/en/care.png" alt="Care and appointments in MigraineMaatje"></div><figcaption><span data-i18n="gallery.careTitle">Prepared for your doctor</span><small data-i18n="gallery.careText">Keep questions, agreements and follow-up points.</small></figcaption></figure>
+          <figure class="screen-shot" data-reveal=""><div class="screen-frame"><img data-image="diary" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-11-16/en/diary.webp" alt="The MigraineMaatje diary"></div><figcaption><span data-i18n="gallery.diaryTitle">Diary and calendar</span><small data-i18n="gallery.diaryText">Find attacks, headaches and medication days.</small></figcaption></figure>
+          <figure class="screen-shot" data-reveal="" data-reveal-delay="1"><div class="screen-frame"><img data-image="medication" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-11-16/en/medication.webp" alt="Managing medication in MigraineMaatje"></div><figcaption><span data-i18n="gallery.medicationTitle">Medication together</span><small data-i18n="gallery.medicationText">Acute medication, prevention, stock and changes.</small></figcaption></figure>
+          <figure class="screen-shot" data-reveal="" data-reveal-delay="2"><div class="screen-frame"><img data-image="care" width="1320" height="2868" loading="lazy" src="/migrainemaatje/assets/web-2026-11-16/en/care.webp" alt="Care and appointments in MigraineMaatje"></div><figcaption><span data-i18n="gallery.careTitle">Prepared for your doctor</span><small data-i18n="gallery.careText">Keep questions, agreements and follow-up points.</small></figcaption></figure>
         </div>
       </div>
     </section>
@@ -212,10 +209,30 @@
             <ul class="plain-list"><li data-i18n="value.freeOne">Log attacks and finish them later</li><li data-i18n="value.freeTwo">Diary, calendar and medication management</li><li data-i18n="value.freeThree">Basic status and basic doctor report</li><li data-i18n="value.freeFour">Backup and restore on your own platform</li></ul>
           </article>
           <article class="value-panel featured" data-reveal="" data-reveal-delay="1">
-            <p class="eyebrow">Premium</p><h3 data-i18n="value.premiumTitle">What is changing for me?</h3><p data-i18n="value.premiumText">Personal explanation from what you record, without treating an association as certainty.</p>
+            <p class="eyebrow">Premium</p><h3 data-i18n="value.premiumTitle">Get more from your diary</h3><p data-i18n="value.premiumText">Review what you recorded as helpful, follow changes and keep your questions ready for your doctor.</p>
             <ul class="plain-list"><li data-i18n="value.premiumOne">Why your current status changes</li><li data-i18n="value.premiumTwo">Medication effect and recurrence within 24 hours</li><li data-i18n="value.premiumThree">Monthly analysis in plain language</li><li data-i18n="value.premiumFour">Consultation preparation and discussion points</li></ul>
           </article>
         </div>
+        <div class="price-note">
+          <h3 data-i18n="price.title">Start free. Choose more when it helps.</h3>
+          <p data-i18n="price.text">In the Dutch App Store: €1.99 per month or €19.99 per year. Google Play and other countries may show different prices.</p>
+          <p class="price-terms" data-i18n="price.terms">Premium is an auto-renewing subscription. Before purchase, the store shows the current price, terms and any eligible trial. Cancel through your store account.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-facts" id="migraine-dagboek-app" aria-labelledby="facts-title">
+      <div class="shell">
+        <h2 id="facts-title" data-i18n="facts.title">A migraine diary for iPhone and Android</h2>
+        <p class="facts-summary" data-i18n="facts.summary">MigraineMaatje is a migraine and headache diary app for recording attacks, medication and recovery. Start for free and create a basic report for your doctor or neurologist.</p>
+        <dl class="facts-list">
+          <div><dt data-i18n="facts.platformsLabel">Devices</dt><dd data-i18n="facts.platforms">iPhone, iPad and Android, with a companion Apple Watch app.</dd></div>
+          <div><dt data-i18n="facts.languagesLabel">Languages</dt><dd data-i18n="facts.languages">Dutch, English, German and French.</dd></div>
+          <div><dt data-i18n="facts.freeLabel">Free basics</dt><dd data-i18n="facts.free">Recording and finishing attacks, diary, calendar, medication, basic status, medication days and a basic report.</dd></div>
+          <div><dt data-i18n="facts.premiumLabel">Optional Premium</dt><dd data-i18n="facts.premium">Personal explanations, medication effect, monthly analysis and appointment preparation. No subscription is needed to keep your diary.</dd></div>
+          <div><dt data-i18n="facts.watchLabel">Without a smartwatch</dt><dd data-i18n="facts.watch">Yes. Record attacks and medication manually. Apple Health and Health Connect are optional.</dd></div>
+          <div><dt data-i18n="facts.privacyLabel">Privacy</dt><dd data-i18n="facts.privacy">No ads and no sale of health data. You choose which connections and backup options to use.</dd></div>
+        </dl>
       </div>
     </section>
 
@@ -249,7 +266,7 @@
       <img class="app-icon-large" src="/migrainemaatje-icon.png" alt="MigraineMaatje app-icoon" width="80" height="80" data-reveal="">
       <h2 data-i18n="final.title" data-reveal="">Record less. Remember more.</h2>
       <p data-i18n="final.description" data-reveal="">Start tracking for free. Personal insights grow once there is enough of your own data.</p>
-      <div class="final-actions" data-reveal=""><a class="primary-action" href="https://apps.apple.com/app/id6779200491" data-i18n="actions.appStore">Download on the App Store</a><a class="secondary-action" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" data-i18n="actions.playStore">Get it on Google Play</a></div>
+      <div class="final-actions" data-reveal=""><a class="primary-action" href="https://apps.apple.com/app/id6779200491" data-i18n="actions.appStore">Download on the App Store</a><a class="primary-action" href="https://play.google.com/store/apps/details?id=com.fdbruin.migrainemaatje" data-i18n="actions.playStore">Get it on Google Play</a></div>
     </section>
   </main>
 
@@ -275,4 +292,4 @@
 
 
 
-<script src="/migrainemaatje/product-copy.js?v=20261116-guide"></script><script src="/product-site.js?v=20261116-guide"></script></body></html>
+<script src="/migrainemaatje/product-copy.js?v=20261116-conversion"></script><script src="/product-site.js?v=20261116-guide"></script></body></html>
