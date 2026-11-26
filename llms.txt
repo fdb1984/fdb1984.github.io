@@ -4,13 +4,14 @@
 
 ## DroneGlance — dronekaarten begrijpen
 
-DroneGlance is een Nederlandstalige app voor iPhone en Android, beschikbaar in Nederland en België. De app brengt beschikbare dronezones, bronvoorwaarden en weer rond een gekozen plek samen. De brondekking verschilt per land, appversie en platform. Een lege kaart is geen vliegtoestemming.
+DroneGlance voor iPhone en Android is vanaf versie 1.0.6 in het Nederlands en Engels te gebruiken; de winkeluitgave blijft Nederland en België. Eén ondersteund land is gratis met advertenties; optioneel Premium biedt alle op het platform ondersteunde landen zonder advertenties. De app brengt beschikbare dronezones, bronvoorwaarden en weer rond een gekozen plek samen. De brondekking verschilt per land, appversie en platform. Een lege kaart is geen vliegtoestemming.
 
 - [DroneGlance](https://debruinstudio.nl/droneatlas/): wat de app doet, downloads en kosten.
+- [DroneGlance in English](https://debruinstudio.nl/droneatlas/en.html): place check, platform-specific map coverage, free access, Premium and English FAQ.
 - [Waar mag ik vliegen met mijn drone?](https://debruinstudio.nl/droneatlas/waar-mag-ik-vliegen.html): praktische controle voor Nederland en België, met links naar autoriteiten.
 - [Veelgestelde vragen](https://debruinstudio.nl/droneatlas/faq.html): kleuren, brondekking, updates, locatie, weer en abonnement.
 - [Hulp en contact](https://debruinstudio.nl/droneatlas/support.html): hulp bij gebruik, aankoop en herstel.
-- [Gebruiksvoorwaarden](https://debruinstudio.nl/droneatlas/terms.html): 14 dagen vrij proberen zonder automatische betaling; daarna zelf kiezen voor €2,99 per maand of €19,99 per jaar, jaarlijks vooraf. Een gekocht abonnement verlengt automatisch totdat het wordt opgezegd.
+- [Gebruiksvoorwaarden](https://debruinstudio.nl/droneatlas/terms.html): één vast ondersteund thuisland gratis met advertenties; Premium optioneel via een maand- of jaarabonnement. De app toont de actuele winkelprijs vóór je aankoop; het jaarbedrag betaal je vooraf. Alleen een zelf gekocht abonnement verlengt automatisch totdat het wordt opgezegd. Een nog geldige oude proefperiode houdt haar resterende tijd; er start geen nieuwe proefperiode.
 - [Privacy iOS](https://debruinstudio.nl/droneatlas/privacy.html): gegevens en aanbieders per iPhone-versie.
 - [Privacy Android](https://debruinstudio.nl/droneatlas/privacy-android.html): gegevens en aanbieders voor Android.
 
@@ -24,3 +25,4 @@ DroneGlance is een Nederlandstalige app voor iPhone en Android, beschikbaar in N
 - [de Bruin Studio](https://debruinstudio.nl/): productoverzicht en contact met de maker.
 
 De gekoppelde productpagina’s en winkels bevatten de actuele informatie. Deze wegwijzer verleent geen dronevliegtoestemming en geeft geen locatiegebonden beoordeling.
+
