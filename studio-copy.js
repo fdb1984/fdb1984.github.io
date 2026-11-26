@@ -9,11 +9,11 @@ window.PRODUCT_TRANSLATIONS = (() => {
       alt: labels.migraineInsights
     },
     homeDashboard: {
-      src: `homescreen/assets/web-2026-10-07/${homeLanguage}/iPad-13/01-dashboard.png`,
+      src: `homescreen/assets/web-2026-11-26/ipad/${homeLanguage}/01-dashboard.png`,
       alt: labels.homeDashboard
     },
     homeControls: {
-      src: `homescreen/assets/web-2026-10-07/${homeLanguage}/iPad-13/09-light-controls.png`,
+      src: `homescreen/assets/web-2026-11-26/ipad/${homeLanguage}/09-light-controls.png`,
       alt: labels.homeControls
     }
   });

@@ -14,18 +14,18 @@ function translations(file) {
 
 const copy = translations('homescreen/product-copy.js');
 const studio = translations('studio-copy.js');
-const imageKeys = ['dashboard', 'controls', 'alerts', 'settings', 'phoneDashboard', 'phoneControls', 'phoneScenes'];
+const imageKeys = ['dashboard', 'controls', 'idle', 'scenes', 'phoneDashboard', 'phoneControls', 'phoneSearch'];
 
 for (const language of ['nl', 'en', 'de']) {
   test(`${language}: all seven localized screenshots exist at their native aspect ratios`, () => {
     assert.deepEqual(Object.keys(copy[language].images), imageKeys);
     for (const [key, image] of Object.entries(copy[language].images)) {
-      assert.ok(image.src.includes(`web-2026-10-07/${language}/`));
+      assert.ok(image.src.includes(`web-2026-11-26/${key.startsWith('phone') ? 'iphone' : 'ipad'}/${language}/`));
       assert.ok(image.alt.length > 10);
       const png = fs.readFileSync(path.join(root, image.src));
       assert.equal(png.subarray(1, 4).toString(), 'PNG');
-      assert.equal(png.readUInt32BE(16), key.startsWith('phone') ? 1320 : 2752);
-      assert.equal(png.readUInt32BE(20), key.startsWith('phone') ? 2868 : 2064);
+      assert.equal(png.readUInt32BE(16), key.startsWith('phone') ? 1206 : 2752);
+      assert.equal(png.readUInt32BE(20), key.startsWith('phone') ? 2622 : 2064);
     }
   });
 
@@ -36,11 +36,20 @@ for (const language of ['nl', 'en', 'de']) {
     assert.equal(copy[language].release, undefined);
     assert.equal(Object.keys(copy[language].phone).length, 9);
     assert.ok(copy[language].value.afterOne.length > 15);
-    assert.ok(copy[language].gallery.settingsText.length > 20);
+    assert.ok(copy[language].gallery.idleText.includes('15'));
+    assert.match(copy[language].gallery.idleTitle, /2\.5/);
+    assert.match(copy[language].value.trialText, /2\.5.*HomeKit/);
   });
 
   test(`${language}: studio preview uses the same current dashboard`, () => {
     assert.equal(`/${studio[language].images.homeDashboard.src}`, copy[language].images.dashboard.src);
+  });
+
+  test(`${language}: static product page identifies the 2.5 screenshots`, () => {
+    const route = language === 'nl' ? 'homescreen/index.html' : `homescreen/${language}/index.html`;
+    const html = fs.readFileSync(path.join(root, route), 'utf8');
+    assert.match(copy[language].preview, /2\.5.*App Store/);
+    assert.ok(html.includes(`data-i18n="preview">${copy[language].preview}</small>`));
   });
 }
 

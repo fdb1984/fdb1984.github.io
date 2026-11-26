@@ -92,7 +92,7 @@ const routes = { nl: '/homescreen/', en: '/homescreen/en/', de: '/homescreen/de/
           ]
         };
         document.querySelector('script[type="application/ld+json"]').textContent = '\n' + JSON.stringify(schema, null, 2) + '\n';
-        for (const src of ['/homescreen/product-copy.js?v=20261115-search', '/product-site.js?v=20261115-search']) {
+        for (const src of ['/homescreen/product-copy.js?v=20261126-2.5', '/product-site.js?v=20261115-search']) {
           const script = document.createElement('script'); script.src = src; document.body.append(script);
         }
         return '<!doctype html>\n' + document.documentElement.outerHTML + '\n';

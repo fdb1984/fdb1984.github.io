@@ -1,12 +1,12 @@
 (() => {
   const images = (language, labels) => ({
-    dashboard: { src: `/homescreen/assets/web-2026-10-07/${language}/iPad-13/01-dashboard.png`, alt: labels.dashboard },
-    controls: { src: `/homescreen/assets/web-2026-10-07/${language}/iPad-13/09-light-controls.png`, alt: labels.controls },
-    alerts: { src: `/homescreen/assets/web-2026-10-07/${language}/iPad-13/08-alerts.png`, alt: labels.alerts },
-    settings: { src: `/homescreen/assets/web-2026-10-07/${language}/iPad-13/10-settings.png`, alt: labels.settings },
-    phoneDashboard: { src: `/homescreen/assets/web-2026-10-07/${language}/iPhone-6.9/01-dashboard.png`, alt: labels.phoneDashboard },
-    phoneControls: { src: `/homescreen/assets/web-2026-10-07/${language}/iPhone-6.9/09-light-controls.png`, alt: labels.phoneControls },
-    phoneScenes: { src: `/homescreen/assets/web-2026-10-07/${language}/iPhone-6.9/03-scenes.png`, alt: labels.phoneScenes }
+    dashboard: { src: `/homescreen/assets/web-2026-11-26/ipad/${language}/01-dashboard.png`, alt: labels.dashboard },
+    controls: { src: `/homescreen/assets/web-2026-11-26/ipad/${language}/09-light-controls.png`, alt: labels.controls },
+    idle: { src: `/homescreen/assets/web-2026-11-26/ipad/${language}/12-idle-overview.png`, alt: labels.idle },
+    scenes: { src: `/homescreen/assets/web-2026-11-26/ipad/${language}/03-scenes.png`, alt: labels.scenes },
+    phoneDashboard: { src: `/homescreen/assets/web-2026-11-26/iphone/${language}/01-dashboard.png`, alt: labels.phoneDashboard },
+    phoneControls: { src: `/homescreen/assets/web-2026-11-26/iphone/${language}/09-light-controls.png`, alt: labels.phoneControls },
+    phoneSearch: { src: `/homescreen/assets/web-2026-11-26/iphone/${language}/05-search.png`, alt: labels.phoneSearch }
   });
 
   window.PRODUCT_TRANSLATIONS = {
@@ -15,8 +15,9 @@
       global: { skip: "Ga naar inhoud", byStudio: "door de Bruin Studio", navigationLabel: "Hoofdnavigatie", languageLabel: "Kies taal", footerLabel: "Voettekstlinks" },
       nav: { overview: "Overzicht", control: "Bediening", trial: "Proberen", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Probeer 30 dagen", discover: "Bekijk hoe het werkt", support: "Lees de handleiding" },
+      preview: "De schermafbeeldingen tonen versie 2.5. Kijk in de App Store welke versie nu beschikbaar is.",
       requirements: { title: "Voor je bestaande HomeKit-woning", text: "HomeScreen gebruikt de woning die je al in Apple Woning hebt ingericht. Je kiest zelf welke onderdelen zichtbaar zijn. Beschikbare informatie en bediening hangen af van je HomeKit-apparaten." },
-      phone: { eyebrow: "Op je iPhone", title: "Je huis bedienen, waar je ook bent.", description: "Bekijk je woning, start een scène of stel een lamp in. De staande weergave houdt de bediening binnen bereik.", dashboardTitle: "Jouw overzicht", dashboardText: "Woningstatus en favorieten op het dashboard.", scenesTitle: "Scènes per ruimte", scenesText: "Vind de juiste scène en voer hem uit.", controlsTitle: "De juiste lichtsterkte", controlsText: "Kies uit, de laatste aan-stand of een eigen percentage." },
+      phone: { eyebrow: "Op je iPhone", title: "Je huis bedienen, waar je ook bent.", description: "In staande weergave blijven Menu en Instellingen onderaan bereikbaar, ook als je scrolt.", dashboardTitle: "Jouw overzicht", dashboardText: "Woningstatus en favorieten op het dashboard.", searchTitle: "Zoek zonder omweg", searchText: "Vind een lamp, scène of scherm zonder eerst een kamer te openen.", controlsTitle: "De juiste lichtsterkte", controlsText: "Kies uit, de laatste aan-stand of een eigen percentage." },
       hero: {
         identity: "Voor je bestaande HomeKit-woning", eyebrow: "Dashboard en bediening", promise: "Een bedienpaneel voor het hele huishouden.",
         description: "Nog lampen aan? Een raam open? Maak van je iPad een vaste plek voor je woningstatus en dagelijkse scènes. Kies wat zichtbaar is, zodat huisgenoten niet door alle apparaten hoeven te zoeken.",
@@ -43,12 +44,12 @@
       gallery: {
         eyebrow: "Kijken én bedienen", title: "Je woning binnen een paar tikken.", description: "Gebruik favorieten, Recent en zoeken om niet telkens door alle kamers en accessoires te hoeven gaan.",
         controlsTitle: "Snelle bediening", controlsText: "Lampen, scenes, schakelaars, schermen en ondersteunde thermostaten en airco's.",
-        alertsTitle: "Aandacht zonder onrust", alertsText: "Zie open deuren, lage batterijen of een offline apparaat.",
-        settingsTitle: "Jouw instellingen", settingsText: "Een vaste zijbalk op iPad; een compacte categoriekeuze op iPhone."
+        idleTitle: "Rustscherm op iPad (2.5)", idleText: "Op een liggende iPad aan de stroom toont het optionele rustscherm tijd, weer en woningstatus. Na 15 minuten wordt het beeld zwart. Eén tik brengt je terug.",
+        scenesTitle: "Scènes per ruimte", scenesText: "Start een bestaande HomeKit-scène of zet die als favoriet klaar."
       },
       value: {
-        eyebrow: "Eerst thuis proberen", title: "30 dagen alles gebruiken. Daarna één keer kiezen.", description: "Geen abonnement en geen uitgeklede demo. Kijk rustig of HomeScreen bij jouw woning en scherm past.",
-        trialTitle: "De eerste 30 dagen", trialText: "Probeer alle functies met je eigen woning, inclusief CarPlay, klimaatbediening en widgets.",
+        eyebrow: "Eerst thuis proberen", title: "30 dagen alles gebruiken. Daarna één keer kiezen.", description: "Bekijk HomeScreen eerst met een voorbeeldwoning. Probeer daarna de volledige app met je eigen woning.",
+        trialTitle: "De eerste 30 dagen", trialText: "Vanaf versie 2.5 begint de proefperiode pas als je eigen dashboard klaarstaat met ondersteunde HomeKit-apparaten of scènes. De voorbeeldwoning start dan geen proefperiode.",
         trialOne: "Dashboard op iPad en bediening op iPhone", trialTwo: "Eigen favorieten in CarPlay en widgets", trialThree: "Camera's, klimaat en woningmeldingen",
         afterEyebrow: "Daarna", afterTitle: "Eenmalig ontgrendelen", afterText: "Je kiest zelf of je HomeScreen koopt. Geen automatische afschrijving na de proefperiode en geen maandelijkse kosten.",
         afterOne: "Inclusief Delen met gezin via Apple", afterTwo: "Aankoop herstellen via Apple", afterThree: "Hulp bij aankoop en herstel via support"
@@ -88,7 +89,7 @@
         helpAnswer: "Lees de HomeScreen-handleiding voor instellingen, camera's, zichtbaarheid, iCloud en hulp bij aankopen. HomeScreen for HomeKit wordt ontwikkeld door de Bruin Studio. Voor persoonlijke hulp kun je mailen naar support@dbruin.com."
       },
       footer: { support: "Support", privacy: "Privacy", terms: "Voorwaarden", studio: "Alle apps" },
-      images: images("nl", { dashboard: "HomeScreen 2.1.4-dashboard op iPad met voorbeeldwoning", controls: "Lichtsterkte instellen in HomeScreen op iPad", alerts: "Woningmeldingen in HomeScreen op iPad", settings: "Instellingen met zijbalk op iPad", phoneDashboard: "HomeScreen-dashboard op iPhone in staande weergave", phoneControls: "Een lamp dimmen op iPhone", phoneScenes: "Scènes per ruimte op iPhone" })
+      images: images("nl", { dashboard: "HomeScreen 2.5-dashboard op iPad met voorbeeldwoning", controls: "Lichtsterkte instellen in HomeScreen op iPad", idle: "iPad-rustscherm met tijd, weer en een open raam", scenes: "HomeKit-scènes per ruimte op iPad", phoneDashboard: "HomeScreen-dashboard op iPhone in staande weergave", phoneControls: "Een lamp dimmen op iPhone", phoneSearch: "Apparaten en scènes zoeken op iPhone" })
     },
 
     en: {
@@ -96,8 +97,9 @@
       global: { skip: "Skip to content", byStudio: "by de Bruin Studio", navigationLabel: "Main navigation", languageLabel: "Choose language", footerLabel: "Footer links" },
       nav: { overview: "Overview", control: "Controls", trial: "Try it", privacy: "Privacy", download: "Download" },
       actions: { appStore: "Try for 30 days", discover: "See how it works", support: "Read the guide" },
+      preview: "The screenshots show version 2.5. Check the App Store for the version available now.",
       requirements: { title: "For your existing HomeKit home", text: "HomeScreen uses the home you have already set up in Apple's Home app. You choose which items appear. Available information and controls depend on your HomeKit devices." },
-      phone: { eyebrow: "On your iPhone", title: "Control your home, wherever you are.", description: "Check your home, run a scene or adjust a light. Portrait mode keeps the controls within reach.", dashboardTitle: "Your overview", dashboardText: "Home status and favourites on the dashboard.", scenesTitle: "Scenes by room", scenesText: "Find the right scene and run it.", controlsTitle: "The right brightness", controlsText: "Choose off, the last on-state or your own percentage." },
+      phone: { eyebrow: "On your iPhone", title: "Control your home, wherever you are.", description: "In portrait, Menu and Settings stay at the bottom as you scroll.", dashboardTitle: "Your overview", dashboardText: "Home status and favourites on the dashboard.", searchTitle: "Find a control quickly", searchText: "Find a light, scene or shade without opening a room first.", controlsTitle: "The right brightness", controlsText: "Choose off, the last on-state or your own percentage." },
       hero: {
         identity: "For your existing HomeKit home", eyebrow: "Dashboard and controls", promise: "A home control panel for your household.",
         description: "Lights still on? A window open? Give your iPad a fixed place for home status and everyday scenes. Choose what appears, so your household does not have to search through every device.",
@@ -124,12 +126,12 @@
       gallery: {
         eyebrow: "See and control", title: "Your home within a few taps.", description: "Use Favourites, Recent and search instead of navigating every room and accessory.",
         controlsTitle: "Quick controls", controlsText: "Lights, scenes, switches, shades, and supported thermostats and air conditioners.",
-        alertsTitle: "Attention without noise", alertsText: "See open doors, low batteries or an offline device.",
-        settingsTitle: "Your settings", settingsText: "A fixed sidebar on iPad; a compact category picker on iPhone."
+        idleTitle: "Screensaver on iPad (2.5)", idleText: "On a plugged-in iPad in landscape, the optional screensaver shows the time, weather and home status. It goes black after 15 minutes. Tap once to return.",
+        scenesTitle: "Scenes by room", scenesText: "Run an existing HomeKit scene or add it to your favorites."
       },
       value: {
-        eyebrow: "Try it at home first", title: "Use everything for 30 days. Decide once afterwards.", description: "No subscription and no stripped-down demo. See whether HomeScreen fits your home and display.",
-        trialTitle: "The first 30 days", trialText: "Try every feature with your own home, including CarPlay, climate controls and widgets.",
+        eyebrow: "Try it at home first", title: "Use everything for 30 days. Decide once afterwards.", description: "Explore HomeScreen with a sample home first. Then try the full app with your own home.",
+        trialTitle: "The first 30 days", trialText: "Starting with version 2.5, the trial begins only when your own dashboard is ready with supported HomeKit devices or scenes. The sample home does not start the trial in 2.5.",
         trialOne: "iPad dashboard and iPhone controls", trialTwo: "Your own favourites in CarPlay and widgets", trialThree: "Cameras, climate and home alerts",
         afterEyebrow: "Afterwards", afterTitle: "Unlock once", afterText: "You decide whether to buy HomeScreen. No automatic charge when the trial ends and no monthly cost.",
         afterOne: "Includes Family Sharing through Apple", afterTwo: "Restore purchase through Apple", afterThree: "Help with purchases and restoring access"
@@ -169,7 +171,7 @@
         helpAnswer: "Read the HomeScreen guide for settings, cameras, visibility, iCloud and purchase help. HomeScreen for HomeKit is developed by de Bruin Studio. For individual help, email support@dbruin.com."
       },
       footer: { support: "Support", privacy: "Privacy", terms: "Terms", studio: "All apps" },
-      images: images("en", { dashboard: "HomeScreen 2.1.4 dashboard on iPad with a sample home", controls: "Adjusting light brightness on iPad", alerts: "Home alerts on iPad", settings: "Settings sidebar on iPad", phoneDashboard: "HomeScreen dashboard on iPhone in portrait mode", phoneControls: "Dimming a light on iPhone", phoneScenes: "Scenes by room on iPhone" })
+      images: images("en", { dashboard: "HomeScreen 2.5 dashboard on iPad with a sample home", controls: "Adjusting light brightness on iPad", idle: "iPad screensaver showing the time, weather and an open window", scenes: "HomeKit scenes by room on iPad", phoneDashboard: "HomeScreen dashboard on iPhone in portrait mode", phoneControls: "Dimming a light on iPhone", phoneSearch: "Searching for devices and scenes on iPhone" })
     },
 
     de: {
@@ -177,8 +179,9 @@
       global: { skip: "Zum Inhalt springen", byStudio: "von de Bruin Studio", navigationLabel: "Hauptnavigation", languageLabel: "Sprache wählen", footerLabel: "Links im Seitenfuß" },
       nav: { overview: "Übersicht", control: "Bedienung", trial: "Ausprobieren", privacy: "Datenschutz", download: "Laden" },
       actions: { appStore: "30 Tage testen", discover: "So funktioniert es", support: "Anleitung lesen" },
+      preview: "Die Screenshots zeigen Version 2.5. Im App Store siehst du, welche Version aktuell verfügbar ist.",
       requirements: { title: "Für dein vorhandenes HomeKit-Zuhause", text: "HomeScreen nutzt das Zuhause, das du bereits in Apples Home-App eingerichtet hast. Du wählst aus, welche Elemente angezeigt werden. Verfügbare Informationen und Bedienelemente hängen von deinen HomeKit-Geräten ab." },
-      phone: { eyebrow: "Auf deinem iPhone", title: "Dein Zuhause bedienen, auch unterwegs.", description: "Prüfe dein Zuhause, starte eine Szene oder stelle eine Lampe ein. Im Hochformat bleibt die Bedienung griffbereit.", dashboardTitle: "Deine Übersicht", dashboardText: "Hausstatus und Favoriten auf dem Dashboard.", scenesTitle: "Szenen nach Raum", scenesText: "Finde die passende Szene und führe sie aus.", controlsTitle: "Die passende Helligkeit", controlsText: "Wähle aus, den letzten Ein-Zustand oder einen eigenen Prozentwert." },
+      phone: { eyebrow: "Auf deinem iPhone", title: "Dein Zuhause bedienen, auch unterwegs.", description: "Im Hochformat bleiben Menü und Einstellungen auch beim Scrollen unten griffbereit.", dashboardTitle: "Deine Übersicht", dashboardText: "Hausstatus und Favoriten auf dem Dashboard.", searchTitle: "Schnell finden und bedienen", searchText: "Finde eine Lampe, Szene oder Beschattung, ohne zuerst einen Raum zu öffnen.", controlsTitle: "Die passende Helligkeit", controlsText: "Wähle aus, den letzten Ein-Zustand oder einen eigenen Prozentwert." },
       hero: {
         identity: "Für dein vorhandenes HomeKit-Zuhause", eyebrow: "Dashboard und Bedienung", promise: "Ein Bedienpanel für deinen Haushalt.",
         description: "Noch Licht an? Ein Fenster offen? Gib deinem iPad einen festen Platz für den Hausstatus und alltägliche Szenen. Du wählst, was angezeigt wird, damit dein Haushalt nicht alle Geräte durchsuchen muss.",
@@ -205,12 +208,12 @@
       gallery: {
         eyebrow: "Sehen und bedienen", title: "Dein Zuhause mit wenigen Fingertipps.", description: "Nutze Favoriten, Zuletzt und die Suche, statt jedes Zimmer und Zubehör zu durchlaufen.",
         controlsTitle: "Schnelle Bedienung", controlsText: "Licht, Szenen, Schalter, Beschattung sowie unterstützte Thermostate und Klimaanlagen.",
-        alertsTitle: "Aufmerksamkeit ohne Unruhe", alertsText: "Sieh offene Türen, niedrige Batterien oder ein Offline-Gerät.",
-        settingsTitle: "Deine Einstellungen", settingsText: "Eine feste Seitenleiste auf dem iPad; eine kompakte Kategorieauswahl auf dem iPhone."
+        idleTitle: "Ruheansicht auf dem iPad (2.5)", idleText: "Auf einem iPad im Querformat am Strom zeigt die optionale Ruheansicht Uhrzeit, Wetter und den Status des Zuhauses. Nach 15 Minuten wird sie schwarz. Ein Tipp bringt dich zurück.",
+        scenesTitle: "Szenen nach Raum", scenesText: "Starte eine vorhandene HomeKit-Szene oder füge sie zu deinen Favoriten hinzu."
       },
       value: {
-        eyebrow: "Erst zu Hause testen", title: "30 Tage alles nutzen. Danach einmal entscheiden.", description: "Kein Abonnement und keine eingeschränkte Demo. Prüfe in Ruhe, ob HomeScreen zu deinem Zuhause passt.",
-        trialTitle: "Die ersten 30 Tage", trialText: "Teste alle Funktionen mit deinem Zuhause, einschließlich CarPlay, Klimasteuerung und Widgets.",
+        eyebrow: "Erst zu Hause testen", title: "30 Tage alles nutzen. Danach einmal entscheiden.", description: "Entdecke HomeScreen zuerst mit einem Beispiel-Zuhause. Teste danach die vollständige App mit deinem eigenen Zuhause.",
+        trialTitle: "Die ersten 30 Tage", trialText: "Ab Version 2.5 beginnt der Testzeitraum erst, wenn dein Dashboard mit unterstützten HomeKit-Geräten oder Szenen bereit ist. Das Beispiel-Zuhause startet dann keinen Testzeitraum.",
         trialOne: "iPad-Dashboard und iPhone-Bedienung", trialTwo: "Eigene Favoriten in CarPlay und Widgets", trialThree: "Kameras, Klima und Meldungen",
         afterEyebrow: "Danach", afterTitle: "Einmal freischalten", afterText: "Du entscheidest, ob du HomeScreen kaufst. Keine automatische Abbuchung nach dem Testzeitraum und keine monatlichen Kosten.",
         afterOne: "Mit Familienfreigabe über Apple", afterTwo: "Kauf über Apple wiederherstellen", afterThree: "Hilfe beim Kauf und Wiederherstellen"
@@ -250,7 +253,7 @@
         helpAnswer: "Lies die HomeScreen-Anleitung zu Einstellungen, Kameras, Sichtbarkeit, iCloud und Kaufhilfe. HomeScreen for HomeKit wird von de Bruin Studio entwickelt. Für persönliche Hilfe schreibe an support@dbruin.com."
       },
       footer: { support: "Support", privacy: "Datenschutz", terms: "Bedingungen", studio: "Alle Apps" },
-      images: images("de", { dashboard: "HomeScreen 2.1.4-Dashboard auf dem iPad mit einem Beispiel-Zuhause", controls: "Lichthelligkeit auf dem iPad einstellen", alerts: "Hausmeldungen auf dem iPad", settings: "Einstellungen mit Seitenleiste auf dem iPad", phoneDashboard: "HomeScreen-Dashboard auf dem iPhone im Hochformat", phoneControls: "Eine Lampe auf dem iPhone dimmen", phoneScenes: "Szenen nach Raum auf dem iPhone" })
+      images: images("de", { dashboard: "HomeScreen 2.5-Dashboard auf dem iPad mit einem Beispiel-Zuhause", controls: "Lichthelligkeit auf dem iPad einstellen", idle: "iPad-Ruheansicht mit Uhrzeit, Wetter und offenem Fenster", scenes: "HomeKit-Szenen nach Raum auf dem iPad", phoneDashboard: "HomeScreen-Dashboard auf dem iPhone im Hochformat", phoneControls: "Eine Lampe auf dem iPhone dimmen", phoneSearch: "Geräte und Szenen auf dem iPhone suchen" })
     }
   };
 })();
