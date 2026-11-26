@@ -16,7 +16,7 @@
   <meta property="og:locale" content="nl_NL">
   <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="../product-site.css?v=20260830e">
-  <link rel="stylesheet" href="drone.css?v=20261115-discovery">
+  <link rel="stylesheet" href="drone.css?v=20261126-real-app">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,7 +28,7 @@
       "name": "DroneGlance: mag ik hier vliegen met mijn drone?",
       "description": "Dronekaart-app voor iPhone en Android: bekijk beschikbare vliegzones, voorwaarden en het weer bij je plek. Voor Nederland en België. Probeer 14 dagen gratis.",
       "inLanguage": "nl-NL",
-      "dateModified": "2026-11-15",
+      "dateModified": "2026-11-26",
       "isPartOf": {
         "@id": "https://debruinstudio.nl/#website"
       },
@@ -169,25 +169,19 @@
   <main id="main">
     <section class="drone-hero"><div class="shell drone-hero-grid">
       <div class="drone-hero-copy">
-        <p class="release-label"><span class="release-dot"></span> Nu voor iPhone en Android · NL en BE</p>
+        <p class="release-label">Voor iPhone en Android · Nederland en België</p>
         <h1>Mag ik hier<br><span>vliegen?</span></h1>
-        <p class="drone-lead">DroneGlance brengt dronekaarten, vliegzones, voorwaarden en het weer bij je plek samen. Open je locatie of zoek vooraf een vliegplek in Nederland of België.</p>
-        <div class="hero-actions"><a class="primary-action" href="https://apps.apple.com/nl/app/droneglance/id6820891449">Download in de App Store <span aria-hidden="true">↗</span></a><a class="secondary-action" href="https://play.google.com/store/apps/details?id=nl.debruinstudio.droneglance">Download via Google Play <span aria-hidden="true">↗</span></a></div>
-        <p class="drone-trial-summary"><a href="#gratis-proberen">14 dagen zonder abonnement</a>. Daarna kies je zelf € 2,99 per maand of € 19,99 per jaar, met het jaarbedrag vooraf betaald. Geen automatische kosten voor de proefperiode.</p>
-        <p class="drone-byline">Van de maker van <a href="../migrainemaatje/">MigraineMaatje</a> en <a href="../homescreen/">HomeScreen</a>.</p>
-      </div>
-      <figure class="drone-glance-demo" id="in-de-app" aria-labelledby="drone-demo-title" aria-describedby="drone-demo-caption">
-        <div class="drone-demo-header"><span>Zo komt informatie samen</span><span class="drone-demo-example">Voorbeeld</span></div>
-        <p class="drone-demo-place"><span aria-hidden="true">⌖</span> Jouw gekozen plek</p>
-        <p class="drone-demo-question" id="drone-demo-title">Mag ik hier vliegen?</p>
-        <div class="drone-demo-verdict"><span class="drone-demo-alert" aria-hidden="true">!</span><div><p>Eerst toestemming regelen</p><span>Vraag de benodigde toestemming vóór je opstijgt.</span></div></div>
-        <div class="drone-demo-weather">
-          <svg class="drone-demo-windmill" viewBox="0 0 52 64" fill="none" aria-hidden="true" focusable="false"><path d="M26 29v30M15 60h22" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="26" cy="27" r="4" fill="currentColor"/><path d="M25 23 12 5c-2-3-6-1-4 2l12 19M30 26l19-6c3-1 2-6-1-5l-20 7M24 31l-6 20c-1 3-6 2-5-1l6-20" fill="currentColor"/></svg>
-          <div><p>Wind <strong>3 m/s</strong></p><span>Stoten 5 m/s</span></div>
-          <div class="drone-demo-temperature"><svg viewBox="0 0 36 36" fill="none" aria-hidden="true" focusable="false"><circle cx="18" cy="18" r="6" stroke="currentColor" stroke-width="2"/><path d="M18 3v4m0 22v4M3 18h4m22 0h4M7 7l3 3m16 16 3 3M7 29l3-3M26 10l3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><strong>16°</strong></div>
+        <p class="drone-lead">Je vliegplek, de voorwaarden voor je drone en het weer bij elkaar.</p>
+        <div class="drone-download-block">
+          <p class="drone-trial-promise"><strong>14 dagen gratis proberen.</strong><br>Zonder aankoop of automatische kosten.</p>
+          <div class="hero-actions"><a class="primary-action" href="https://apps.apple.com/nl/app/droneglance/id6820891449">Download in de App Store</a><a class="secondary-action" href="https://play.google.com/store/apps/details?id=nl.debruinstudio.droneglance">Download via Google Play</a></div>
+          <p class="drone-trial-summary">Daarna kies je zelf € 2,99 per maand of € 19,99 per jaar. Het jaarbedrag betaal je vooraf. Een gekocht abonnement wordt automatisch verlengd totdat je opzegt. <a href="#gratis-proberen">Zo werkt de proefperiode</a>.</p>
+          <p class="drone-byline">Van de maker van <a href="../migrainemaatje/">MigraineMaatje</a> en <a href="../homescreen/">HomeScreen</a>.</p>
         </div>
-        <a class="drone-demo-action" href="faq.html#faq-overlap">Zo lees je de voorwaarden <span aria-hidden="true">↗</span></a>
-        <figcaption id="drone-demo-caption">Voorbeeldwaarden ter illustratie. Geen controle van een echte vliegplek.</figcaption>
+      </div>
+      <figure class="drone-live-preview" id="in-de-app" aria-describedby="drone-live-caption">
+        <div class="drone-preview-frame"><img src="screens/map-iphone-104-20261126.png" width="1320" height="2868" alt="DroneGlance toont de gekozen plek op de Hoge Veluwe, gekleurde bronzones, het antwoord Nee en het weer met tijdstip en bron." fetchpriority="high" decoding="async"></div>
+        <figcaption id="drone-live-caption">Echte iPhone-app, versie 1.0.4. Vastgelegd op 26 november 2026. Controleer je eigen plek altijd opnieuw in de app.</figcaption>
       </figure>
     </div></section>
 
@@ -201,13 +195,19 @@
       <aside class="drone-reading-card"><div><p class="eyebrow">Je plek controleren</p><h3>Waar mag je vliegen met je drone?</h3><p>Van een gekozen locatie naar zones, toestemming en de situatie ter plaatse. Lees de praktische stappen voor Nederland en België.</p></div><a class="text-link" href="waar-mag-ik-vliegen.html">Bekijk de vliegcheck <span aria-hidden="true">↗</span></a></aside>
     </div></section>
 
-    <section class="section"><div class="shell drone-detail-grid">
-      <div class="split-copy"><p class="eyebrow">Voor het moment vóór je vlucht</p><h2>Minder zoeken.<br>Meer overzicht.</h2><p>Bewaar een plek die je wilt terugvinden. Bekijk het weer voor nu of een geplande tijd. Lees de bronvoorwaarden zonder eerst door allerlei losse kaarten te bladeren.</p></div>
-      <div class="drone-detail-list">
-        <article><span aria-hidden="true">↻</span><div><h3>Bronnen opnieuw gecontroleerd</h3><p>Tijdens gebruik worden aangesloten bronnen automatisch opnieuw gecontroleerd. Een mislukte update of oudere bron blijft herkenbaar.</p></div></article>
-        <article><span aria-hidden="true">⌖</span><div><h3>Europa, per plek bekeken</h3><p>Bronnen en voorwaarden verschillen per land. De app laat zien wat beschikbaar is en welke informatie nog ontbreekt. Volledige, actuele EU-dekking is niet gegarandeerd.</p></div></article>
-        <article><span aria-hidden="true">☁</span><div><h3>Wind met zijn bron erbij</h3><p>Bekijk beschikbare wind, windstoten en weergegevens. De bron en het tijdstip staan erbij; weergegevens zijn geen garantie dat een vlucht veilig is.</p></div></article>
+    <section class="section section-soft drone-real-features" aria-labelledby="drone-features-title"><div class="shell">
+      <div class="section-heading"><p class="eyebrow">Kijk verder dan een kleur</p><h2 id="drone-features-title">De uitleg staat<br>gewoon in de app.</h2></div>
+      <div class="drone-feature-panels">
+        <article class="drone-feature-panel">
+          <div class="drone-feature-copy"><h3>Begrijp de beperking.</h3><p>Lees waarom een zone opvalt en welke voorwaarden erbij horen. De oorspronkelijke broninformatie blijft erbij, zodat je kunt zien waarop de uitleg is gebaseerd.</p></div>
+          <figure><div class="drone-preview-frame"><img src="screens/conditions-iphone-104-20261126.png" width="1320" height="2868" alt="Het echte voorwaardenscherm legt een vliegverbod voor de open categorie uit en toont de oorspronkelijke broninformatie." loading="lazy" decoding="async"></div><figcaption>Het antwoord en de bijbehorende bronvoorwaarden.</figcaption></figure>
+        </article>
+        <article class="drone-feature-panel">
+          <div class="drone-feature-copy"><h3>Neem het weer mee.</h3><p>Bekijk wind, temperatuur en beschikbare neerslaggegevens bij je gekozen plek. Je ziet het tijdstip en de bron; als een waarde ontbreekt, blijft dat zichtbaar.</p></div>
+          <figure><div class="drone-preview-frame"><img src="screens/weather-iphone-104-20261126.png" width="1320" height="2868" alt="Het echte weerscherm toont wind, temperatuur en een neerslagverwachting. Ontbrekende windstoten en neerslagkans staan als niet beschikbaar vermeld." loading="lazy" decoding="async"></div><figcaption>Weer helpt bij je voorbereiding en geeft geen vliegtoestemming.</figcaption></figure>
+        </article>
       </div>
+      <p class="screen-context drone-native-context">Ook deze beelden zijn vastgelegd in iPhone-versie 1.0.4 op 26 november 2026. Beschikbare waarden en de situatie op jouw vliegplek kunnen verschillen.</p>
     </div></section>
 
     <section class="drone-flow section" id="gratis-proberen"><div class="shell">
